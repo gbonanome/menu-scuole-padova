@@ -317,8 +317,8 @@ async function avvia() {
   });
 
   const m = stato.meta;
-  const quando = m.ultimaVerificaFonte ?? m.generato.slice(0, 10);
-  $('#aggiornato').textContent = `Aggiornato il ${numGiorno(quando)} ${mese(quando)} ${quando.slice(0, 4)}.`;
+  const quando = iso(new Date(m.generato));
+  $('#aggiornato').textContent = `Ultimo controllo della fonte: ${numGiorno(quando)} ${mese(quando)} ${quando.slice(0, 4)}.`;
 
   const h = location.hash.slice(1);
   const salvato = leggi();

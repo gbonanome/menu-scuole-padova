@@ -115,7 +115,6 @@ export async function aggiorna({ get, oggi, dry = false, dati = DATI }) {
   }
   variazioni.sort((a, b) => a.pubblicata.localeCompare(b.pubblicata) || a.id.localeCompare(b.id));
 
-  stato.aggiornato = oggi;
   if (!dry) {
     await scriviJson(statoPath, stato);
     await scriviJson(path.join(dati, 'variations.json'), variazioni);

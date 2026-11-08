@@ -29,7 +29,6 @@ export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), 
   const menus = await caricaMenus(path.join(dati, 'menus'), anno);
   const variazioni = await leggiJson(path.join(dati, 'variations.json'), []);
   const scuole = await leggiJson(path.join(dati, 'scuole-padova.json'));
-  const statoScrape = await leggiJson(path.join(dati, 'state.json'), {});
   const statoIcsPath = path.join(dati, 'ics-state.json');
   const statoIcs = await leggiJson(statoIcsPath, {});
 
@@ -52,7 +51,7 @@ export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), 
       variati: giorni.filter((g) => g.variazioni?.length).length
     });
   }
-  const meta = { generato: ora, ultimaVerificaFonte: statoScrape.aggiornato ?? null, annoScolastico: anno, fonte: FONTE, baseUrl: BASE_URL };
+  const meta = { generato: ora, annoScolastico: anno, fonte: FONTE, baseUrl: BASE_URL };
   await scrivi(path.join(out, 'data', 'feeds.json'), `${JSON.stringify({ ...meta, feeds: indice }, null, 2)}\n`);
   const indiceScuole = scuole.scuole.map((s) => ({
     nome: s.nome,
@@ -80,5 +79,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const { indice, problemi } = await build({ ora, out, anno });
   for (const f of indice) console.log(`${f.slug.padEnd(32)} ${f.copertura ? `${f.copertura.dal} → ${f.copertura.al}` : 'nessun menu'}  variati: ${f.variati}`);
   for (const p of problemi) console.log(`[${p.livello}] ${p.id}: ${p.msg}`);
+  if (arg('--problemi')) await writeFile(arg('--problemi'), `${JSON.stringify(problemi, null, 2)}\n`);
   console.log(`Build in ${out}`);
 }
