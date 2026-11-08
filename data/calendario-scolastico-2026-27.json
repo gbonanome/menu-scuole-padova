@@ -1,0 +1,101 @@
+{
+  "_meta": {
+    "anno": "2026-27",
+    "fonte": "Regione Veneto, DGR 239 del 14/04/2026 modificata da DGR 712 del 07/07/2026: https://www.regione.veneto.it/web/formazione-e-istruzione/calendario_scolastico",
+    "attenzione": [
+      "Il calendario dei NIDI comunali è stabilito dal Comune di Padova e non dalla Regione: cercarlo su padovanet.it e aggiungerlo come chiave separata.",
+      "Ponte di Ognissanti (30/10 e 02/11/2026): riportato da alcune testate per la delibera originaria, ma non compare nella pagina regionale aggiornata. Da verificare (ormai passato, serve solo per lo storico).",
+      "Le singole scuole possono deliberare adattamenti: questo file copre solo il calendario regionale.",
+      "Le date di inizio e fine del servizio mensa sono quelle scritte nei PDF dei menu, non quelle del calendario regionale. Il campo 'periodi' vale solo per le attività scolastiche.",
+      "San Francesco (04/10/2026) e Sant'Antonio (13/06/2027) cadono di domenica: nessun effetto sui feed."
+    ],
+    "aggiornato": "2026-11-08"
+  },
+  "periodi": {
+    "primo_ciclo": {
+      "inizio": "2026-09-10",
+      "fine": "2027-06-08"
+    },
+    "infanzia": {
+      "inizio": "2026-09-10",
+      "fine": "2027-06-30"
+    }
+  },
+  "festivita": [
+    {
+      "data": "2026-10-04",
+      "nome": "San Francesco d'Assisi"
+    },
+    {
+      "data": "2026-11-01",
+      "nome": "Ognissanti"
+    },
+    {
+      "data": "2026-12-08",
+      "nome": "Immacolata Concezione"
+    },
+    {
+      "data": "2026-12-25",
+      "nome": "Natale"
+    },
+    {
+      "data": "2026-12-26",
+      "nome": "Santo Stefano"
+    },
+    {
+      "data": "2027-01-01",
+      "nome": "Capodanno"
+    },
+    {
+      "data": "2027-01-06",
+      "nome": "Epifania"
+    },
+    {
+      "data": "2027-03-29",
+      "nome": "Lunedì dell'Angelo"
+    },
+    {
+      "data": "2027-04-25",
+      "nome": "Festa della Liberazione"
+    },
+    {
+      "data": "2027-05-01",
+      "nome": "Festa del Lavoro"
+    },
+    {
+      "data": "2027-06-02",
+      "nome": "Festa della Repubblica"
+    },
+    {
+      "data": "2027-06-13",
+      "nome": "Sant'Antonio (Santo Patrono di Padova)"
+    }
+  ],
+  "sospensioni": [
+    {
+      "dal": "2026-12-07",
+      "al": "2026-12-07",
+      "nome": "Ponte dell'Immacolata"
+    },
+    {
+      "dal": "2026-12-24",
+      "al": "2027-01-05",
+      "nome": "Vacanze di Natale"
+    },
+    {
+      "dal": "2027-02-08",
+      "al": "2027-02-10",
+      "nome": "Carnevale e Ceneri"
+    },
+    {
+      "dal": "2027-03-25",
+      "al": "2027-03-30",
+      "nome": "Vacanze di Pasqua"
+    },
+    {
+      "dal": "2027-04-29",
+      "al": "2027-04-30",
+      "nome": "Ponte del 1° maggio"
+    }
+  ]
+}
