@@ -3,3 +3,6 @@ dist/
 .DS_Store
 *.log
 .env
+
+# Materiale promozionale locale (non pubblicato)
+promo/

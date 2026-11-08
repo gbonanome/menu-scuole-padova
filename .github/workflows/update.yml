@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths-ignore: ['README.md', 'BRIEF.md', 'test/**', 'fixtures/**', '.github/workflows/test.yml']
+    paths-ignore: ['README.md', 'BRIEF.md', 'CHANGELOG.md', '.github/workflows/release.yml', 'test/**', 'fixtures/**', '.github/workflows/test.yml']
 
 permissions:
   contents: write

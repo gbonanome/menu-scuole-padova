@@ -25,6 +25,9 @@ async function versionaRisorse(out) {
     if (!html.includes(prima)) throw new Error(`index.html: manca ${prima}`);
     html = html.replace(prima, `${attr}="${nome}?v=${v}"`);
   }
+  // Versione da package.json, mostrata nel piede con il link al changelog.
+  const { version } = JSON.parse(await readFile(path.join(RADICE, 'package.json'), 'utf8'));
+  html = html.replaceAll('__VERSIONE__', version);
   await writeFile(file, html);
 }
 const leggiJson = async (p, def) => {

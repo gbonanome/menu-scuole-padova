@@ -74,6 +74,15 @@ Arriva la PR "Nuovo menu da rivedere": controllala con il PDF e fai il merge. Se
 
 GitHub disattiva i workflow programmati dei repository pubblici dopo 60 giorni senza attività. Il workflow lo previene da solo (riattivazione via API a ogni esecuzione e, se serve, un commit vuoto ogni 50 giorni). Se comunque risultasse disattivato, riattivalo da *Actions → Aggiornamento menu → Enable workflow*.
 
+### Versioni e changelog
+
+Le modifiche al codice e alla pagina sono raccolte in [CHANGELOG.md](CHANGELOG.md); la versione in uso compare in fondo alla pagina. Gli aggiornamenti automatici di menu e variazioni sono dati e non cambiano versione.
+
+1. Mentre lavori, annota le modifiche nella sezione *Non ancora rilasciato* del CHANGELOG.
+2. Per rilasciare, rinomina la sezione con la nuova versione e la data, aggiorna i link in fondo al file e fai il commit.
+3. `npm version minor` (oppure `patch` per le sole correzioni, `major` se cambiano gli indirizzi dei feed o gli UID): aggiorna `package.json`, fa il commit e crea il tag.
+4. `git push --follow-tags`: il workflow [`release.yml`](.github/workflows/release.yml) crea la release su GitHub con le note del CHANGELOG.
+
 ## Licenza
 
 Codice sotto licenza [MIT](LICENSE). I font [Figtree](https://github.com/erikdkennedy/figtree) e [Bricolage Grotesque](https://github.com/ateliertriay/bricolage) sono distribuiti con licenza SIL Open Font License 1.1 e sono ospitati insieme alla pagina (nessuna richiesta a servizi esterni). I contenuti dei menu appartengono ai rispettivi autori; il progetto ne riporta una rielaborazione con link alla fonte.
