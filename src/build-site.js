@@ -1,5 +1,6 @@
 // Build completa in dist/: feed .ics, JSON per la pagina (indice feed, indice scuole, giorni per feed) e file statici.
 // Uso: node src/build-site.js [--ora 2026-11-08T12:00:00Z] [--out dist] [--anno 2026-27]
+import { createHash } from 'node:crypto';
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,6 +11,22 @@ import { FEED_INFO, FONTE, costruisciModello } from './model.js';
 import { BASE_URL, costruisciIcs } from './build-ics.js';
 
 const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+
+/**
+ * CSS e JS con l'impronta del contenuto nell'indirizzo (style.css?v=…): GitHub Pages li lascia in cache
+ * e Safari (soprattutto dalla schermata Home) altrimenti abbina la pagina nuova al foglio di stile vecchio.
+ */
+async function versionaRisorse(out) {
+  const file = path.join(out, 'index.html');
+  let html = await readFile(file, 'utf8');
+  for (const [attr, nome] of [['href', 'style.css'], ['src', 'app.js'], ['href', 'manifest.webmanifest']]) {
+    const v = createHash('sha256').update(await readFile(path.join(out, nome))).digest('hex').slice(0, 10);
+    const prima = `${attr}="${nome}"`;
+    if (!html.includes(prima)) throw new Error(`index.html: manca ${prima}`);
+    html = html.replace(prima, `${attr}="${nome}?v=${v}"`);
+  }
+  await writeFile(file, html);
+}
 const leggiJson = async (p, def) => {
   try {
     return JSON.parse(await readFile(p, 'utf8'));
@@ -36,6 +53,7 @@ export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), 
 
   await rm(out, { recursive: true, force: true });
   await cp(pubblico, out, { recursive: true, filter: (src) => !src.endsWith('.gitkeep') });
+  await versionaRisorse(out);
 
   const indice = [];
   for (const [feed, { giorni, copertura }] of feeds) {
