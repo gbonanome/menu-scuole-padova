@@ -16,7 +16,8 @@ const stato = {
   scelte: [],
   attiva: null,
   modo: 'aggiungi',
-  carica: 0
+  carica: 0,
+  dettagli: false
 };
 
 // ---------- utilità ----------
@@ -148,8 +149,11 @@ function mostraScuola() {
   if (s?.avviso) note.push(el('p', { class: 'avviso', role: 'note' }, s.avviso));
   $('#scuola-note').replaceChildren(...note);
   $('#link-segnala').href = linkSegnalazione();
-  $('#rimuovi').hidden = !stato.scelte.some((v) => v.id === stato.attiva?.id);
-  $('#scuola').hidden = false;
+  const salvata = stato.scelte.some((v) => v.id === stato.attiva?.id);
+  $('#rimuovi').hidden = !salvata;
+  // Il riquadro si apre toccando la pillola della scuola attiva; resta aperto se la scuola non è tra le salvate.
+  $('#scuola').hidden = salvata && !stato.dettagli;
+  document.querySelector('.chip[aria-controls="scuola"]')?.setAttribute('aria-expanded', String(!$('#scuola').hidden));
 }
 
 // ---------- scuole salvate (fino a 3) ----------
@@ -206,6 +210,14 @@ function salvaScelte() {
   history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${stato.attiva ? `#${stato.attiva.id}` : ''}`);
 }
 
+/** Matita accanto al nome della scuola attiva: fa capire che la pillola si può toccare. */
+function iconaModifica() {
+  const span = el('span', { class: 'matita', 'aria-hidden': 'true' });
+  span.innerHTML =
+    '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>';
+  return span;
+}
+
 function mostraSwitcher() {
   const nav = $('#scuole-salvate');
   if (!stato.scelte.length) {
@@ -216,7 +228,25 @@ function mostraSwitcher() {
   nav.replaceChildren(
     ...[
       ...stato.scelte.map((v) =>
-        el('button', { type: 'button', class: 'chip', 'aria-pressed': String(v.id === stato.attiva?.id), onclick: () => attiva(v) }, etichetta(v))
+        v.id === stato.attiva?.id
+          ? el(
+              'button',
+              {
+                type: 'button',
+                class: 'chip',
+                'aria-pressed': 'true',
+                'aria-controls': 'scuola',
+                'aria-expanded': String(stato.dettagli),
+                title: 'Dettagli, cambia o rimuovi',
+                onclick: () => {
+                  stato.dettagli = !stato.dettagli;
+                  mostraScuola();
+                }
+              },
+              etichetta(v),
+              iconaModifica()
+            )
+          : el('button', { type: 'button', class: 'chip', 'aria-pressed': 'false', onclick: () => attiva(v) }, etichetta(v))
       ),
       stato.scelte.length < MAX_SCUOLE
         ? el(
@@ -253,6 +283,7 @@ function rimuovi() {
 }
 
 async function attiva(voce) {
+  stato.dettagli = false;
   stato.attiva = voce;
   stato.feed = voce.feed;
   stato.scuola = voce.scuola;

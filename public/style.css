@@ -80,6 +80,7 @@ button { cursor: pointer; }
 .switcher { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 12px 0; }
 .chip { min-height: 40px; max-width: 100%; padding: 8px 14px; border: 0; border-radius: 999px; background: var(--b-surface); color: var(--b-ink); font-weight: 700; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chip[aria-pressed="true"] { background: var(--b-ink); color: var(--b-bg); }
+.chip .matita { display: inline-block; margin-left: 6px; vertical-align: -1px; opacity: 0.85; }
 .chip.aggiungi { background: transparent; border: 1.5px dashed var(--b-muted); color: var(--b-muted); }
 
 /* ---- scuola scelta ---- */
@@ -90,7 +91,7 @@ button { cursor: pointer; }
 .school .who { flex: 1 1 180px; min-width: 0; }
 .school .name { display: block; font-weight: 700; }
 .school .feed { display: block; font-size: 0.82rem; color: var(--b-muted); }
-.school-note { flex-basis: 100%; display: grid; gap: 6px; font-size: 0.85rem; }
+.school-note { margin: 12px 12px 0; display: grid; gap: 6px; font-size: 0.85rem; }
 .school-note:empty { display: none; }
 .school-note p { margin: 0; }
 .school-note .avviso { background: var(--b-alert-bg); border-left: 4px solid var(--b-alert); padding: 6px 10px; border-radius: 8px; }
