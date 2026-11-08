@@ -1109,27 +1109,27 @@ LAST-MODIFIED:20261108T120000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
-SUMMARY:⚠️ VARIATO · Mezze penne al burro · Halibut gratinato al forn
- o
-DESCRIPTION:• Mezze penne al burro\n• Halibut gratinato al forno\n• Z
- ucchine trifolate\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 · Menu
-  autunnale 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 21/10/2026): VARIAZ
- IONE MENU 28/10\nsi comunica che i filettini di merluzzo gratinati al limo
- ne previsti per tutti i veicolati per mercoledì 28/10 verranno somministr
- ati giovedì 12/11 e che viceversa l’halibut gratinato previsto per quel
-  giorno verrà somministrato il 28/10.\nFonte: https://www.scuoledussmann.
- it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/u
- pload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670
- .pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#prima
- ria-secondaria-veicolato
+SUMMARY:⚠️ VARIATO · Mezze penne al burro · Filettini di merluzzo gra
+ tinati al limone
+DESCRIPTION:• Mezze penne al burro\n• Filettini di merluzzo gratinati a
+ l limone (era: Halibut gratinato al forno)\n• Zucchine trifolate\n• Pa
+ ne\n• Frutta fresca\n\nSettimana 3 di 4 · Menu autunnale 2026-27\n\n⚠
+ ️ VARIAZIONE (pubblicata il 21/10/2026): VARIAZIONE MENU 28/10\nsi comun
+ ica che i filettini di merluzzo gratinati al limone previsti per tutti i v
+ eicolati per mercoledì 28/10 verranno somministrati giovedì 12/11 e che 
+ viceversa l’halibut gratinato previsto per quel giorno verrà somministr
+ ato il 28/10.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu
+  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/03-men
+ u-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚠️ VARIATO · Mezze penne al burro · Halibut gratinato al 
- forno
+DESCRIPTION:⚠️ VARIATO · Mezze penne al burro · Filettini di merluzzo
+  gratinati al limone
 TRIGGER;RELATED=START:PT7H
 END:VALARM
 END:VEVENT

@@ -10,6 +10,9 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Corretto
+- Le variazioni che scambiano due piatti tra due giorni ("…e viceversa…") ora cambiano davvero il menu di entrambi i giorni. Prima restava solo il testo dell'avviso: il 12/11 risultava ancora l'halibut invece dei filettini di merluzzo.
+
 ## [1.1.0] - 2026-11-08
 
 ### Aggiunto

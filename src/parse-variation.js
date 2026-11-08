@@ -22,7 +22,7 @@ function dataValida(iso) {
 }
 
 /** Tutte le date citate nel testo (anche "5 e 17 novembre", "05/10, 06/10 e 09/10", "domani"). */
-export function estraiDate(testo, pubblicata) {
+export function estraiDate(testo, pubblicata, { anchePassate = false } = {}) {
   const t = testo.toLowerCase();
   const trovate = new Set();
   const aggiungi = (g, m, a) => {
@@ -45,7 +45,7 @@ export function estraiDate(testo, pubblicata) {
   }
   if (/\boggi\b/.test(t)) trovate.add(pubblicata);
   // Le date precedenti alla pubblicazione sono richiami a fatti passati, non giorni da variare.
-  return [...trovate].filter((d) => d >= pubblicata).sort();
+  return [...trovate].filter((d) => anchePassate || d >= pubblicata).sort();
 }
 
 /** Feed citati in una riga di testo, o null se la riga non nomina nessun ordine di scuola. */
@@ -101,6 +101,37 @@ export function estraiSostituzioni(frase) {
   else if ((m = /(?:domani\s+)?al posto d\S*\s+(.+?)\s+previst\S*(?:\s+per\s+.+?)?\s+(?:verr[àa]|verranno|sar[àa])\s+(?:servit|somministrat)\S*\s+(.+)$/i.exec(f))) out.push({ da: pulisci(m[1]), a: pulisci(m[2]) });
   else if ((m = /(.+?)\s+previst\S*.*?\s+(?:verr[àa]|verranno|saranno)\s+sostituit\S*\s+(?:rispettivamente\s+)?con\s+(.+)$/i.exec(f))) out.push({ da: pulisci(m[1]), a: pulisci(m[2]) });
   return out.filter((s) => s.da && s.a && s.da.length < 90 && s.a.length < 90);
+}
+
+/**
+ * Scambio di piatti tra due giorni:
+ * "i filettini di merluzzo previsti per mercoledì 28/10 verranno somministrati giovedì 12/11
+ *  e che viceversa l’halibut gratinato previsto per quel giorno verrà somministrato il 28/10"
+ * -> il 12/11 il merluzzo prende il posto dell'halibut, il 28/10 il contrario. Ogni sostituzione ha la sua data.
+ */
+export function estraiScambio(frase, pubblicata) {
+  const f = frase.replace(/\s+/g, ' ').trim();
+  const DATA = '(\\d{1,2}[\\/.]\\d{1,2}(?:[\\/.]\\d{2,4})?)';
+  const re = new RegExp(
+    `^(.+?)\\s+previst[oaie]\\b.*?\\bper\\s+(?:\\p{L}+\\s+)?${DATA}\\s+(?:verr[àa]|verranno|sar[àa]|saranno)\\s+(?:servit|somministrat|propost)\\S*\\s+(?:(?:il|per)\\s+)?(?:\\p{L}+\\s+)?${DATA}\\s+e\\s+(?:che\\s+)?viceversa\\s+(.+?)\\s+previst[oaie]\\b`,
+    'iu'
+  );
+  const m = re.exec(f);
+  if (!m) return [];
+  const pulisci = (s) =>
+    s
+      .replace(/^(?:si comunica che|informiamo che|vi comunichiamo che)\s+/i, '')
+      .replace(/^(?:(?:il|lo|la|i|gli|le)\s+|l[’'])/i, '')
+      .trim();
+  const [d1] = estraiDate(m[2], pubblicata, { anchePassate: true });
+  const [d2] = estraiDate(m[3], pubblicata, { anchePassate: true });
+  const a = pulisci(m[1]);
+  const b = pulisci(m[4]);
+  if (!d1 || !d2 || !a || !b || a.length > 90 || b.length > 90) return [];
+  return [
+    { da: b, a, date: [d2] },
+    { da: a, a: b, date: [d1] }
+  ];
 }
 
 /**
@@ -182,6 +213,11 @@ export function parseVariazione({ id, titolo, pubblicata, testo }) {
   for (const riga of righe) {
     for (const frase of riga.split(/(?<=[.;])\s+/)) {
       const d = estraiDate(frase, pubblicata);
+      const scambio = estraiScambio(frase, pubblicata);
+      if (scambio.length) {
+        sostituzioni.push(...scambio.filter((s) => s.date[0] >= pubblicata));
+        continue;
+      }
       for (const s of estraiSostituzioni(frase)) sostituzioni.push({ ...s, date: d.length ? d : date.length === 1 ? date : [] });
     }
   }

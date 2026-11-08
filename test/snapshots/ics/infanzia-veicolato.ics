@@ -1194,26 +1194,26 @@ LAST-MODIFIED:20261108T120000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
-SUMMARY:⚠️ VARIATO · Mezze penne al ragù vegetale · Halibut gratinat
- o al forno
-DESCRIPTION:• Mezze penne al ragù vegetale\n• Halibut gratinato al for
- no\n• Zucchine trifolate\n• Pane\n• Frutta fresca\n\nSettimana 3 di 
- 4 · Menu autunnale 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 21/10/2026
- ): VARIAZIONE MENU 28/10\nsi comunica che i filettini di merluzzo gratinat
- i al limone previsti per tutti i veicolati per mercoledì 28/10 verranno s
- omministrati giovedì 12/11 e che viceversa l’halibut gratinato previsto
-  per quel giorno verrà somministrato il 28/10.\nFonte: https://www.scuole
- dussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoleduss
- mann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27
- -4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
- a/#infanzia-veicolato
+SUMMARY:⚠️ VARIATO · Mezze penne al ragù vegetale · Filettini di mer
+ luzzo gratinati al limone
+DESCRIPTION:• Mezze penne al ragù vegetale\n• Filettini di merluzzo gr
+ atinati al limone (era: Halibut gratinato al forno)\n• Zucchine trifolat
+ e\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 · Menu autunnale 2026-
+ 27\n\n⚠️ VARIAZIONE (pubblicata il 21/10/2026): VARIAZIONE MENU 28/10\
+ nsi comunica che i filettini di merluzzo gratinati al limone previsti per 
+ tutti i veicolati per mercoledì 28/10 verranno somministrati giovedì 12/
+ 11 e che viceversa l’halibut gratinato previsto per quel giorno verrà s
+ omministrato il 28/10.\nFonte: https://www.scuoledussmann.it/padova#notizi
+ e\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚠️ VARIATO · Mezze penne al ragù vegetale · Halibut grat
- inato al forno
+DESCRIPTION:⚠️ VARIATO · Mezze penne al ragù vegetale · Filettini di
+  merluzzo gratinati al limone
 TRIGGER;RELATED=START:PT7H
 END:VALARM
 END:VEVENT

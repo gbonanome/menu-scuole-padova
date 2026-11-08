@@ -5,7 +5,7 @@ import { parseMenuPdf, righeInPiatti, eccezioniDaNota, parseValidita } from '../
 import { validaMenu } from '../src/validate.js';
 import { caricaCalendario } from '../src/lib/calendario.js';
 import { giorniDaIntervalli, giorniDaRegola } from '../src/lib/expand.js';
-import { estraiDate, estraiSostituzioni, parseVariazione } from '../src/parse-variation.js';
+import { estraiDate, estraiScambio, estraiSostituzioni, parseVariazione } from '../src/parse-variation.js';
 import { estraiLinkPdf, estraiNotizie } from '../src/scrape.js';
 
 const pdf = (n) => readFile(new URL(`../fixtures/pdf/${n}`, import.meta.url));
@@ -82,6 +82,22 @@ test('estraiSostituzioni: solo pattern chiari', () => {
   assert.deepEqual(estraiSostituzioni('verrà servita crema di ceci bio al posto della crema di lenticchie rosse decorticate bio.'), [{ da: 'crema di lenticchie rosse decorticate bio', a: 'crema di ceci bio' }]);
   assert.deepEqual(estraiSostituzioni('verrà servito come contorno carote julienne e mais (invece di radicchio variegato bio e mais).'), [{ da: 'radicchio variegato bio e mais', a: 'carote julienne e mais' }]);
   assert.deepEqual(estraiSostituzioni('i pomodori verranno sostituiti rispettivamente con cappuccio e carote'), []);
+});
+
+test('scambio di piatti tra due giorni ("viceversa"): ogni sostituzione con la sua data', () => {
+  const testo =
+    'si comunica che i filettini di merluzzo gratinati al limone previsti per tutti i veicolati per mercoledì 28/10 verranno somministrati giovedì 12/11 e che viceversa l’halibut gratinato previsto per quel giorno verrà somministrato il 28/10.';
+  assert.deepEqual(estraiScambio(testo, '2026-10-21'), [
+    { da: 'halibut gratinato', a: 'filettini di merluzzo gratinati al limone', date: ['2026-11-12'] },
+    { da: 'filettini di merluzzo gratinati al limone', a: 'halibut gratinato', date: ['2026-10-28'] }
+  ]);
+  // pubblicata dopo il primo giorno: resta valida solo la parte futura
+  assert.deepEqual(
+    parseVariazione({ id: 'x', titolo: 'VARIAZIONE MENU', pubblicata: '2026-10-29', testo }).sostituzioni.map((s) => s.date[0]),
+    ['2026-11-12']
+  );
+  // spostamento senza "viceversa": non si sa cosa lo sostituisce, nessuna sostituzione strutturata
+  assert.deepEqual(estraiScambio('la pasta prevista per lunedì 3/11 verrà servita martedì 4/11.', '2026-10-21'), []);
 });
 
 test('variazione per ordine di scuola (sciopero 20/11)', async () => {
