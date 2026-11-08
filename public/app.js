@@ -251,8 +251,8 @@ function mostraSwitcher() {
       stato.scelte.length < MAX_SCUOLE
         ? el(
             'button',
-            { type: 'button', class: 'chip aggiungi', 'aria-controls': 'scelta', onclick: () => mostraPicker(true, 'aggiungi') },
-            '＋ Aggiungi scuola'
+            { type: 'button', class: 'chip aggiungi', 'aria-label': 'Aggiungi scuola', 'aria-controls': 'scelta', onclick: () => mostraPicker(true, 'aggiungi') },
+            '＋ Aggiungi'
           )
         : null
     ].filter(Boolean)

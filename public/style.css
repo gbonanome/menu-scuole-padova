@@ -78,9 +78,9 @@ button { cursor: pointer; }
 
 /* ---- scuole salvate ---- */
 .switcher { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 12px 0; }
-.chip { min-height: 40px; max-width: 100%; padding: 8px 14px; border: 0; border-radius: 999px; background: var(--b-surface); color: var(--b-ink); font-weight: 700; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip { min-height: 40px; max-width: 100%; padding: 8px 12px; border: 0; border-radius: 999px; background: var(--b-surface); color: var(--b-ink); font-weight: 700; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chip[aria-pressed="true"] { background: var(--b-ink); color: var(--b-bg); }
-.chip .matita { display: inline-block; margin-left: 6px; vertical-align: -1px; opacity: 0.85; }
+.chip .matita { display: inline-block; margin-left: 5px; vertical-align: -1px; opacity: 0.85; }
 .chip.aggiungi { background: transparent; border: 1.5px dashed var(--b-muted); color: var(--b-muted); }
 
 /* ---- scuola scelta ---- */
