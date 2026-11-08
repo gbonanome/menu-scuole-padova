@@ -50,6 +50,10 @@ html, body { margin: 0; }
 body { background: var(--b-bg); color: var(--b-ink); font: 400 15px/1.45 var(--f-body); -webkit-text-size-adjust: 100%; }
 a { color: inherit; text-underline-offset: 2px; }
 button, input, select { font: inherit; color: inherit; }
+/* iOS ingrandisce la pagina quando si tocca un campo con testo sotto i 16px: da lì lo scroll orizzontale */
+input, select, textarea { font-size: 16px; }
+html, body { overflow-wrap: break-word; }
+.days > *, .tray > *, .day > *, .school > *, .riga-copia > * { min-width: 0; }
 button { cursor: pointer; }
 :focus-visible { outline: 3px solid var(--b-focus); outline-offset: 2px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -80,7 +84,6 @@ button { cursor: pointer; }
 .school-note:empty { display: none; }
 .school-note p { margin: 0; }
 .school-note .avviso { background: var(--b-alert-bg); border-left: 4px solid var(--b-alert); padding: 6px 10px; border-radius: 8px; }
-.school-note .segnala { color: var(--b-muted); }
 
 /* ---- ricerca ---- */
 .picker { background: var(--b-surface); margin: 12px 12px 0; padding: 16px 14px; border-radius: 18px; }
@@ -161,7 +164,7 @@ button { cursor: pointer; }
 .cal-altro h3 { font: 800 0.95rem var(--f-display); margin: 14px 0 2px; }
 .cal-altro p { margin: 0 0 6px; font-size: 0.9rem; }
 .riga-copia { display: flex; gap: 6px; margin-top: 4px; }
-.riga-copia input { flex: 1; min-width: 0; min-height: 40px; padding: 6px 10px; border-radius: 10px; border: 2px solid var(--b-tray); background: var(--b-well); font-size: 0.85rem; }
+.riga-copia input { flex: 1; min-width: 0; min-height: 40px; padding: 6px 10px; border-radius: 10px; border: 2px solid var(--b-tray); background: var(--b-well); }
 
 /* ---- piede ---- */
 .foot { padding: 18px; font-size: 0.75rem; color: var(--b-muted); }
