@@ -64,9 +64,10 @@ button { cursor: pointer; }
 .pagina { max-width: 1120px; margin: 0 auto; padding-bottom: 8px; }
 
 /* ---- testata ---- */
-.top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 14px 18px 0; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 14px 18px 0; }
 .brand { font: 800 1rem var(--f-display); letter-spacing: -0.01em; margin: 0; }
-.tag { font-size: 0.72rem; font-weight: 700; background: var(--b-tray); padding: 2px 8px; border-radius: 999px; }
+.info { flex: none; display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--b-muted); color: var(--b-muted); font-weight: 800; font-size: 0.9rem; text-decoration: none; align-self: center; }
+.foot:focus { outline: none; }
 
 .prova { margin: 10px 12px 0; padding: 8px 12px; border-radius: 12px; background: var(--b-today); color: #18241b; font-size: 0.85rem; font-weight: 600; }
 .prova a { font-weight: 800; }
@@ -166,7 +167,6 @@ button { cursor: pointer; }
 /* ---- calendario ---- */
 .cal { margin: 22px 12px 0; display: grid; gap: 6px; }
 .cal .primary { display: block; text-align: center; text-decoration: none; background: var(--b-ink); color: var(--b-bg); border-radius: 14px; padding: 14px; font: 800 1rem var(--f-display); }
-.cal .cal-nota { margin: 0; color: var(--b-muted); font-size: 0.8rem; text-align: center; }
 .cal-altro { background: var(--b-surface); border-radius: 14px; padding: 4px 12px; margin-top: 8px; }
 .cal-altro summary { cursor: pointer; font-weight: 700; min-height: 40px; display: flex; align-items: center; }
 .cal-altro label { display: block; font-weight: 700; font-size: 0.85rem; margin-top: 4px; }

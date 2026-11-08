@@ -530,6 +530,12 @@ async function avvia() {
   $('#succ').addEventListener('click', () => sposta(1));
   $('#oggi').addEventListener('click', () => sposta(0));
   $('#copia').addEventListener('click', copia);
+  // "?" in testata: porta alla nota in fondo senza toccare l'indirizzo (dopo # c'è la scuola scelta).
+  $('#info').addEventListener('click', (e) => {
+    e.preventDefault();
+    $('#nota').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    $('#nota').focus({ preventScroll: true });
+  });
   window.addEventListener('hashchange', () => {
     const v = daHash();
     if (v && v.id !== stato.attiva?.id) attiva(v);
