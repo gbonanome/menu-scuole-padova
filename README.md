@@ -34,6 +34,14 @@ Il workflow [`update.yml`](.github/workflows/update.yml) gira ogni giorno alle 0
 
 Comandi utili in locale: `npm run update` (scraping), `npm run build` (genera `dist/`), `npm run serve` (anteprima su http://localhost:8080), `npm test`.
 
+### Test
+
+`npm test` esegue i test con `node:test`. Il cuore è [`test/pipeline.test.js`](test/pipeline.test.js): rifà tutto il percorso (scraping → parsing → validazione → build) sulle fixture reali in `fixtures/`, con data fissa, e confronta il risultato con gli snapshot in `test/snapshots/` (menu JSON, variazioni, feed `.ics`). Ogni `.ics` viene riletto con un parser indipendente ([ical.js](https://github.com/kewisch/ical.js)) per controllare UID univoci, eventi di giornata intera e nessun evento in festività o sospensioni. C'è anche una variazione simulata, dalla notizia all'evento: stesso UID, `SEQUENCE` aumentata, titolo e descrizione aggiornati, nessun altro evento toccato.
+
+Se cambi il parser o la build di proposito, rigenera gli snapshot con `UPDATE_SNAPSHOTS=1 npm test` e controlla il diff prima del commit. Per aggiungere un caso nuovo (un PDF o una notizia), salvalo in `fixtures/` e rigenera gli snapshot.
+
+Validatore online dei feed: <https://icalendar.org/validator.html?url=https://gbonanome.github.io/menu-scuole-padova/feed/primaria-secondaria-veicolato.ics>
+
 Impostazione richiesta nel repository: *Settings → Actions → General → Workflow permissions* → "Allow GitHub Actions to create and approve pull requests" (serve per aprire la PR dei menu).
 
 ### A ogni cambio di stagione
