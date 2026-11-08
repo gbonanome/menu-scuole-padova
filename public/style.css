@@ -110,6 +110,8 @@ button { cursor: pointer; }
 .tray li.oppure { grid-column: 1 / -1; min-height: 0; padding: 2px 12px; background: none; box-shadow: none; font-style: italic; color: var(--b-muted); }
 .tray .dish { font-weight: 500; }
 .today .vbox { margin: 0 0 10px; }
+.today .oggi-nota { margin: 0 0 10px; font-weight: 700; }
+.oggi-riga { margin: 16px 12px 0; padding: 10px 14px; border-radius: 14px; background: var(--b-surface); font-weight: 700; text-align: center; }
 
 /* ---- navigazione settimane ---- */
 .settimana:focus, main:focus { outline: none; }
@@ -166,8 +168,12 @@ button { cursor: pointer; }
 .foot p { margin: 0 0 6px; }
 
 /* ---- schermi larghi: settimana su 5 colonne, "oggi" già evidenziato nella griglia ---- */
+@media (max-width: 699.98px) {
+  .oggi-riga.solo-largo { display: none; }
+}
 @media (min-width: 700px) {
   .today { display: none; }
+  .oggi-riga { max-width: 640px; margin-inline: auto; }
   .days { grid-template-columns: repeat(5, 1fr); align-items: stretch; }
   .day { grid-template-columns: 1fr; }
   .day > :not(.dname) { grid-column: 1; }

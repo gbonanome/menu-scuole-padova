@@ -146,6 +146,7 @@ async function scegli(feed, scuola = null, { aggiornaHash = true } = {}) {
   }
   stato.lunedi = lunediDi(oggi());
   mostraOggi();
+  mostraRigaOggi();
   mostraSettimana();
 }
 
@@ -208,7 +209,7 @@ function mostraOggi() {
     box.hidden = false;
     return;
   }
-  // Oggi niente mensa: mostra il prossimo giorno con il menu (entro due settimane).
+  // Oggi niente mensa: lo dice con la data di oggi, poi mostra il prossimo giorno con il menu (entro due settimane).
   let prossimo = null;
   for (let i = 1; i <= 14 && !prossimo; i++) {
     const d = piuGiorni(t, i);
@@ -219,15 +220,45 @@ function mostraOggi() {
     return;
   }
   const gp = stato.giorni.get(prossimo);
-  const motivo = g?.stato === 'chiuso' ? `Oggi scuola chiusa (${g.motivo}).` : 'Oggi niente mensa.';
   box.replaceChildren(
-    el('p', { class: 'when' }, el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : nomeGiorno(prossimo).replace(/^./, (c) => c.toUpperCase())), ` ${numGiorno(prossimo)} ${mese(prossimo)}`),
-    el('p', { class: 'meta' }, `${motivo} ${STAGIONE[gp.stagione] ?? 'Menu'} · settimana ${gp.settimana} di ${gp.settimane}`),
+    el('p', { class: 'oggi-nota' }, testoOggi()),
+    el('p', { class: 'when' }, el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : maiuscola(nomeGiorno(prossimo))), ` ${numGiorno(prossimo)} ${mese(prossimo)}`),
+    el('p', { class: 'meta' }, `${STAGIONE[gp.stagione] ?? 'Menu'} · settimana ${gp.settimana} di ${gp.settimane}`),
     ...riquadriVariazione(gp),
     elencoPiatti(gp, 'tray', true)
   );
   box.setAttribute('aria-label', 'Prossimo menu');
   box.hidden = false;
+}
+
+const maiuscola = (s) => s.replace(/^./, (c) => c.toUpperCase());
+
+/** "Oggi, domenica 8 novembre: niente mensa." con il motivo quando c'è. */
+function testoOggi() {
+  const t = oggi();
+  const g = stato.giorni.get(t);
+  const nido = stato.feed?.startsWith('nido');
+  let motivo;
+  if (g?.stato === 'chiuso') motivo = `${nido ? 'nido chiuso' : 'scuola chiusa'} (${g.motivo})`;
+  else if (g?.stato === 'non-pubblicato') motivo = 'menu non ancora pubblicato';
+  else if (stato.copertura && t < stato.copertura.dal) motivo = 'la mensa non è ancora iniziata';
+  else motivo = 'niente mensa';
+  return `Oggi, ${dataLunga(t)}: ${motivo}.`;
+}
+
+/** Riga sopra la settimana quando oggi non c'è mensa (su telefono la dice già il vassoio). */
+function mostraRigaOggi() {
+  const riga = $('#oggi-riga');
+  const t = oggi();
+  if (stato.giorni.get(t)?.stato === 'menu') {
+    riga.hidden = true;
+    return;
+  }
+  const lun = lunediDi(t);
+  const extra = lun > t ? ` Ecco la prossima settimana.` : '';
+  riga.textContent = testoOggi() + extra;
+  riga.classList.toggle('solo-largo', !$('#oggi-box').hidden);
+  riga.hidden = false;
 }
 
 // ---------- settimana ----------
