@@ -42,7 +42,9 @@ function lunediDi(s) {
   if (g === 0) return piuGiorni(s, 1);
   return piuGiorni(s, 1 - g);
 }
-const oggi = () => iso(new Date());
+// ?oggi=AAAA-MM-GG mostra la pagina come se fosse quel giorno (utile per prove e screenshot).
+const OGGI_PROVA = /^\d{4}-\d{2}-\d{2}$/.test(new URLSearchParams(location.search).get('oggi') ?? '') ? new URLSearchParams(location.search).get('oggi') : null;
+const oggi = () => OGGI_PROVA ?? iso(new Date());
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’'.]/g, ' ').replace(/\s+/g, ' ').trim();
 const STAGIONE = { estivo: 'Menu estivo', autunnale: 'Menu autunnale', invernale: 'Menu invernale', primaverile: 'Menu primaverile' };
 
@@ -153,7 +155,10 @@ const eVariato = (g, i) => g.originali && !g.menuSostituito && g.originali[i] !=
 /** Riquadri "Variazione" di un giorno: cosa si serve, al posto di cosa, e il testo dell'avviso. */
 function riquadriVariazione(g) {
   if (!g.variazioni?.length) return [];
-  const cambi = g.piatti.map((p, i) => (eVariato(g, i) ? { nuovo: p, vecchio: g.originali[i] } : null)).filter(Boolean);
+  const cambi = [];
+  g.piatti.forEach((p, i) => {
+    if (eVariato(g, i) && !cambi.some((c) => c.nuovo === p && c.vecchio === g.originali[i])) cambi.push({ nuovo: p, vecchio: g.originali[i] });
+  });
   return g.variazioni.map((v, k) => {
     const strutturata = k === 0 && (cambi.length || g.menuSostituito);
     const pubblicata = `Avviso pubblicato da Dussmann il ${numGiorno(v.pubblicata)} ${mese(v.pubblicata)}`;
@@ -170,14 +175,20 @@ function riquadriVariazione(g) {
   });
 }
 
+// Il piatto "principale" (in evidenza) è il primo che non sia pane, frutta o verdura generica.
+const GENERICO = /^(pane|frutta|verdura (?:cruda|cotta)|bis di verdura|yogurt)/i;
+const indicePrincipale = (piatti) => Math.max(0, piatti.findIndex((p) => p !== 'oppure' && !GENERICO.test(p)));
+
 function elencoPiatti(g, classe, conScomparti) {
+  const principale = indicePrincipale(g.piatti);
   return el(
     'ul',
     { class: classe },
     g.piatti.map((p, i) => {
       if (p === 'oppure') return el('li', { class: 'oppure' }, 'oppure');
       const testo = conScomparti ? el('span', { class: 'dish' }, p) : p;
-      return el('li', { class: eVariato(g, i) || g.menuSostituito ? 'changed' : null }, testo);
+      const classi = [i === principale ? 'principale' : '', eVariato(g, i) ? 'changed' : ''].join(' ').trim();
+      return el('li', { class: classi || null }, testo);
     })
   );
 }
@@ -210,7 +221,7 @@ function mostraOggi() {
   const gp = stato.giorni.get(prossimo);
   const motivo = g?.stato === 'chiuso' ? `Oggi scuola chiusa (${g.motivo}).` : 'Oggi niente mensa.';
   box.replaceChildren(
-    el('p', { class: 'when' }, el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : nomeGiorno(prossimo)), ` ${numGiorno(prossimo)} ${mese(prossimo)}`),
+    el('p', { class: 'when' }, el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : nomeGiorno(prossimo).replace(/^./, (c) => c.toUpperCase())), ` ${numGiorno(prossimo)} ${mese(prossimo)}`),
     el('p', { class: 'meta' }, `${motivo} ${STAGIONE[gp.stagione] ?? 'Menu'} · settimana ${gp.settimana} di ${gp.settimane}`),
     ...riquadriVariazione(gp),
     elencoPiatti(gp, 'tray', true)
@@ -227,7 +238,7 @@ function cardGiorno(data, precedente) {
   const etichetta = `${dataLunga(data)}${eOggi ? ', oggi' : ''}`;
   if (!g || g.stato !== 'menu') {
     let testo;
-    if (g?.stato === 'chiuso') testo = `Scuola chiusa · ${g.motivo}`;
+    if (g?.stato === 'chiuso') testo = `${stato.feed.startsWith('nido') ? 'Nido chiuso' : 'Scuola chiusa'} · ${g.motivo}`;
     else if (g?.stato === 'non-pubblicato') testo = 'Menu non ancora pubblicato';
     else if (stato.copertura && data < stato.copertura.dal) testo = 'Mensa non ancora iniziata';
     else testo = 'Nessun menu';

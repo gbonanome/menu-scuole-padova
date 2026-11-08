@@ -14,14 +14,14 @@
   <script type="module" src="app.js"></script>
 </head>
 <body>
-  <a class="salta" href="#settimana">Vai al menu della settimana</a>
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
   <div class="pagina">
     <header class="top">
-      <span class="brand">Menu Scuole Padova</span>
+      <h1 class="brand">Menu Scuole Padova</h1>
       <span class="tag">non ufficiale</span>
     </header>
 
-    <main>
+    <main id="contenuto" tabindex="-1">
       <section id="scuola" class="school" aria-label="Scuola scelta" hidden>
         <div class="who">
           <span class="name" id="scuola-nome"></span>
@@ -32,7 +32,7 @@
       </section>
 
       <section id="scelta" class="picker" aria-labelledby="titolo-scelta">
-        <h1 id="titolo-scelta">Che cosa si mangia oggi a scuola?</h1>
+        <h2 id="titolo-scelta">Che cosa si mangia oggi a scuola?</h2>
         <p class="intro">Cerca la tua scuola o il tuo nido: vedi il menu della mensa giorno per giorno, con le variazioni comunicate da Dussmann, e puoi aggiungerlo al tuo calendario.</p>
         <label for="cerca-scuola">Nome della scuola o del nido</label>
         <input id="cerca-scuola" type="search" autocomplete="off" spellcheck="false"

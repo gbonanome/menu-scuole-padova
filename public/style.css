@@ -61,7 +61,7 @@ button { cursor: pointer; }
 
 /* ---- testata ---- */
 .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 14px 18px 0; }
-.brand { font: 800 1rem var(--f-display); letter-spacing: -0.01em; }
+.brand { font: 800 1rem var(--f-display); letter-spacing: -0.01em; margin: 0; }
 .tag { font-size: 0.72rem; font-weight: 700; background: var(--b-tray); padding: 2px 8px; border-radius: 999px; }
 
 /* ---- pulsanti ---- */
@@ -81,7 +81,7 @@ button { cursor: pointer; }
 
 /* ---- ricerca ---- */
 .picker { background: var(--b-surface); margin: 12px 12px 0; padding: 16px 14px; border-radius: 18px; }
-.picker h1 { font: 800 1.45rem/1.1 var(--f-display); letter-spacing: -0.02em; margin: 0 0 6px; text-wrap: balance; }
+.picker h2 { font: 800 1.45rem/1.1 var(--f-display); letter-spacing: -0.02em; margin: 0 0 6px; text-wrap: balance; }
 .picker .intro { margin: 0 0 14px; color: var(--b-muted); }
 .picker label { display: block; font-weight: 700; margin-bottom: 4px; }
 .picker label.secondaria { margin-top: 16px; font-weight: 500; color: var(--b-muted); font-size: 0.9rem; }
@@ -102,14 +102,14 @@ button { cursor: pointer; }
 .today .meta { color: var(--b-muted); font-size: 0.8rem; margin: 4px 0 10px; font-weight: 500; }
 .tray { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; list-style: none; margin: 0; padding: 0; }
 .tray li { background: var(--b-well); border-radius: 14px; padding: 10px 12px; min-height: 64px; display: flex; flex-direction: column; justify-content: center; gap: 4px; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06); }
-.tray li:first-child { grid-column: 1 / -1; min-height: 76px; }
-.tray li:first-child .dish { font: 800 1.2rem/1.15 var(--f-display); }
+.tray li.principale { grid-column: 1 / -1; min-height: 76px; }
+.tray li.principale .dish { font: 800 1.2rem/1.15 var(--f-display); }
 .tray li.oppure { grid-column: 1 / -1; min-height: 0; padding: 2px 12px; background: none; box-shadow: none; font-style: italic; color: var(--b-muted); }
 .tray .dish { font-weight: 500; }
 .today .vbox { margin: 0 0 10px; }
 
 /* ---- navigazione settimane ---- */
-.settimana:focus { outline: none; }
+.settimana:focus, main:focus { outline: none; }
 .nav { display: flex; align-items: center; gap: 6px; margin: 20px 12px 10px; }
 .nav .range { flex: 1; text-align: center; font: 800 1.05rem var(--f-display); margin: 0; }
 .nav .arrow { width: 42px; height: 42px; border-radius: 12px; border: 0; background: var(--b-surface); color: var(--b-ink); font-size: 1.1rem; font-weight: 700; }
@@ -122,7 +122,7 @@ button { cursor: pointer; }
 .day .dname { grid-row: span 4; display: grid; align-content: start; justify-items: center; text-align: center; font: 800 1.35rem/1 var(--f-display); margin: 0; }
 .day .dname small { font: 700 0.7rem var(--f-body); text-transform: uppercase; letter-spacing: 0.06em; color: var(--b-muted); order: -1; margin-bottom: 2px; }
 .day ul { display: grid; gap: 1px; }
-.day li:first-child { font-weight: 700; }
+.day li.principale { font-weight: 700; }
 .day li.oppure { font-style: italic; color: var(--b-muted); font-weight: 400; }
 .day.is-today { box-shadow: inset 0 0 0 3px var(--b-today); }
 .day.varied { background: var(--b-alert-bg); }
