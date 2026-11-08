@@ -127,7 +127,13 @@ async function scegli(feed, scuola = null, { aggiornaHash = true } = {}) {
   stato.feed = feed;
   stato.scuola = scuola;
   salva({ feed, scuola: scuola?.nome ?? null });
-  if (aggiornaHash && location.hash !== `#${feed}`) history.replaceState(null, '', `#${feed}`);
+  // La scuola va anche nell'indirizzo: chi mette la pagina sulla schermata Home ritrova la sua scuola
+  // (su iPhone l'icona non vede quanto salvato in Safari).
+  const url = new URL(location.href);
+  if (scuola) url.searchParams.set('scuola', scuola.nome);
+  else url.searchParams.delete('scuola');
+  if (aggiornaHash) url.hash = feed;
+  if (url.href !== location.href) history.replaceState(null, '', url);
   $('#scegli-feed').value = feed;
   $('#risultati').replaceChildren();
   $('#cerca-scuola').value = '';
@@ -336,7 +342,7 @@ async function avvia() {
   if (OGGI_PROVA) {
     $('.top').after(el('p', { class: 'prova', role: 'note' },
       `Data simulata: la pagina fa come se oggi fosse ${dataLunga(OGGI_PROVA)} ${OGGI_PROVA.slice(0, 4)}. `,
-      el('a', { href: location.pathname, onclick: (e) => { e.preventDefault(); location.href = location.pathname + location.hash; } }, 'Torna alla data reale')));
+      el('a', { href: location.pathname, onclick: (e) => { e.preventDefault(); const u = new URL(location.href); u.searchParams.delete('oggi'); location.href = u.href; } }, 'Torna alla data reale')));
   }
   try {
     const [indice, scuole] = await Promise.all([json('data/feeds.json'), json('data/scuole.json')]);
@@ -368,7 +374,10 @@ async function avvia() {
 
   const h = location.hash.slice(1);
   const salvato = leggi();
-  const trova = (feed) => (salvato?.feed === feed ? stato.scuole.find((s) => s.nome === salvato.scuola && s.feed === feed) ?? null : null);
+  const nomeUrl = new URLSearchParams(location.search).get('scuola');
+  const trova = (feed) =>
+    (nomeUrl && stato.scuole.find((s) => s.nome === nomeUrl && s.feed === feed)) ||
+    (salvato?.feed === feed ? stato.scuole.find((s) => s.nome === salvato.scuola && s.feed === feed) ?? null : null);
   if (h && stato.feeds.some((f) => f.slug === h)) scegli(h, trova(h), { aggiornaHash: false });
   else if (salvato?.feed && stato.feeds.some((f) => f.slug === salvato.feed)) scegli(salvato.feed, trova(salvato.feed));
 }
