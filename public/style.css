@@ -64,6 +64,9 @@ button { cursor: pointer; }
 .brand { font: 800 1rem var(--f-display); letter-spacing: -0.01em; margin: 0; }
 .tag { font-size: 0.72rem; font-weight: 700; background: var(--b-tray); padding: 2px 8px; border-radius: 999px; }
 
+.prova { margin: 10px 12px 0; padding: 8px 12px; border-radius: 12px; background: var(--b-today); color: #18241b; font-size: 0.85rem; font-weight: 600; }
+.prova a { font-weight: 800; }
+
 /* ---- pulsanti ---- */
 .btn { background: var(--b-tray); color: var(--b-ink); border: 0; border-radius: 999px; padding: 7px 14px; font-weight: 700; font-size: 0.85rem; min-height: 40px; }
 .btn:disabled { opacity: 0.5; cursor: default; }

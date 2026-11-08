@@ -303,6 +303,11 @@ async function copia() {
 
 // ---------- avvio ----------
 async function avvia() {
+  if (OGGI_PROVA) {
+    $('.top').after(el('p', { class: 'prova', role: 'note' },
+      `Data simulata: la pagina fa come se oggi fosse ${dataLunga(OGGI_PROVA)} ${OGGI_PROVA.slice(0, 4)}. `,
+      el('a', { href: location.pathname, onclick: (e) => { e.preventDefault(); location.href = location.pathname + location.hash; } }, 'Torna alla data reale')));
+  }
   try {
     const [indice, scuole] = await Promise.all([json('data/feeds.json'), json('data/scuole.json')]);
     stato.feeds = indice.feeds;
