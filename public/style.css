@@ -177,7 +177,7 @@ button { cursor: pointer; }
 .riga-copia input { flex: 1; min-width: 0; min-height: 40px; padding: 6px 10px; border-radius: 10px; border: 2px solid var(--b-tray); background: var(--b-well); }
 
 /* ---- piede ---- */
-.foot { padding: 18px; font-size: 0.75rem; color: var(--b-muted); }
+.foot { margin: 32px 12px 0; padding: 18px 6px 24px; border-top: 1px solid var(--b-tray); font-size: 0.75rem; color: var(--b-muted); }
 .foot p { margin: 0 0 6px; }
 
 /* ---- schermi larghi: settimana su 5 colonne, "oggi" già evidenziato nella griglia ---- */
