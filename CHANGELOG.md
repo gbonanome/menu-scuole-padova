@@ -10,6 +10,8 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+## [1.1.1] - 2026-11-08
+
 ### Modificato
 - In testata l'icona accanto al nome, che è leggermente più grande.
 - Il piatto variato non è più in grassetto: lo segnala il bollino "variato" (il grassetto resta solo sul primo piatto).
@@ -51,6 +53,7 @@ Prima versione pubblica.
 - Workflow GitHub: PR da rivedere per i nuovi menu stagionali, issue per errori e variazioni incerte, pubblicazione su GitHub Pages.
 - Test su fixture reali, snapshot dei feed e rilettura con un parser indipendente.
 
-[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.0...HEAD
+[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/gbonanome/menu-scuole-padova/releases/tag/v1.0.0
