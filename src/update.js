@@ -28,7 +28,7 @@ const confrontabile = (m) => JSON.stringify({ ...m, fonte: undefined });
 
 export async function aggiorna({ get, oggi, dry = false, dati = DATI }) {
   const anno = annoScolasticoDi(oggi);
-  const cal = caricaCalendario();
+  const cal = caricaCalendario(anno, dati);
   const statoPath = path.join(dati, 'state.json');
   const stato = await leggiJson(statoPath, { pdf: {}, notizie: {} });
   stato.pdf ??= {};
