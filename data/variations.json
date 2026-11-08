@@ -215,7 +215,22 @@
         "testo": "si comunica che i filettini di merluzzo gratinati al limone previsti per tutti i veicolati per mercoledì 28/10 verranno somministrati giovedì 12/11 e che viceversa l’halibut gratinato previsto per quel giorno verrà somministrato il 28/10."
       }
     ],
-    "sostituzioni": [],
+    "sostituzioni": [
+      {
+        "da": "halibut gratinato",
+        "a": "filettini di merluzzo gratinati al limone",
+        "date": [
+          "2026-11-12"
+        ]
+      },
+      {
+        "da": "filettini di merluzzo gratinati al limone",
+        "a": "halibut gratinato",
+        "date": [
+          "2026-10-28"
+        ]
+      }
+    ],
     "confidenza": "alta",
     "motivi": []
   },
