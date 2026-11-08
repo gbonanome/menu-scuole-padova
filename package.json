@@ -1,0 +1,13 @@
+{
+  "name": "menu-scuole-padova",
+  "version": "0.1.0",
+  "description": "Feed .ics e pagina web (non ufficiali) per i menu delle mense scolastiche del Comune di Padova",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/gbonanome/menu-scuole-padova.git" }
+}
