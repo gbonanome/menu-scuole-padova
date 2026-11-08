@@ -3,79 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Menu Scuole Padova · menu della mensa nel tuo calendario</title>
+  <title>Menu Scuole Padova · il menu della mensa nel tuo calendario</title>
   <meta name="description" content="Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#eef1e7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121813" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="fonts/Figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="app.js"></script>
 </head>
 <body>
-  <a class="salta" href="#contenuto">Vai al menu</a>
-  <header class="testata">
-    <h1>Menu Scuole Padova</h1>
-    <p class="sottotitolo">Il menu della mensa scolastica, giorno per giorno. <strong>Non ufficiale.</strong></p>
-  </header>
+  <a class="salta" href="#settimana">Vai al menu della settimana</a>
+  <div class="pagina">
+    <header class="top">
+      <span class="brand">Menu Scuole Padova</span>
+      <span class="tag">non ufficiale</span>
+    </header>
 
-  <main id="contenuto">
-    <section class="scelta" aria-labelledby="titolo-scelta">
-      <h2 id="titolo-scelta">La tua scuola</h2>
-      <div class="cerca">
-        <label for="cerca-scuola">Cerca il nome della scuola o del nido</label>
-        <input id="cerca-scuola" type="search" autocomplete="off" placeholder="es. Montegrappa, Il Trenino…"
-               aria-controls="risultati" aria-describedby="aiuto-cerca">
-        <p id="aiuto-cerca" class="aiuto">Scrivi almeno 2 lettere.</p>
-        <ul id="risultati" class="risultati" aria-label="Scuole trovate"></ul>
-      </div>
-      <div class="diretto">
-        <label for="scegli-feed">Oppure scegli direttamente il menu</label>
-        <select id="scegli-feed">
-          <option value="">— scegli —</option>
-        </select>
-      </div>
-      <div id="selezione" class="selezione" hidden></div>
-    </section>
-
-    <section id="settimana" class="settimana" aria-labelledby="titolo-settimana" hidden>
-      <div class="navigazione">
-        <button type="button" id="prec" aria-label="Settimana precedente">‹</button>
-        <h2 id="titolo-settimana" aria-live="polite"></h2>
-        <button type="button" id="succ" aria-label="Settimana successiva">›</button>
-        <button type="button" id="oggi" class="oggi-btn">Oggi</button>
-      </div>
-      <div id="giorni" class="giorni"></div>
-    </section>
-
-    <section id="iscriviti" class="iscriviti" aria-labelledby="titolo-iscriviti" hidden>
-      <h2 id="titolo-iscriviti">Aggiungi al calendario</h2>
-      <p>Il menu compare ogni giorno nel tuo calendario. Quando esce una variazione, l'evento si aggiorna da solo.</p>
-      <p><a id="link-webcal" class="bottone" href="#">Aggiungi al calendario</a></p>
-      <div class="copia">
-        <label for="url-feed">Indirizzo del calendario</label>
-        <div class="riga-copia">
-          <input id="url-feed" type="text" readonly>
-          <button type="button" id="copia">Copia</button>
+    <main>
+      <section id="scuola" class="school" aria-label="Scuola scelta" hidden>
+        <div class="who">
+          <span class="name" id="scuola-nome"></span>
+          <span class="feed" id="scuola-feed"></span>
         </div>
-        <p id="copiato" class="aiuto" role="status"></p>
-      </div>
-      <details>
-        <summary>iPhone e iPad</summary>
-        <p>Tocca <em>Aggiungi al calendario</em> e conferma con <em>Iscriviti</em>. In alternativa: Impostazioni → Calendario → Account → Aggiungi account → Altro → Aggiungi calendario sottoscritto, e incolla l'indirizzo.</p>
-      </details>
-      <details>
-        <summary>Android e Google Calendar</summary>
-        <p>Da computer apri Google Calendar → <em>Altri calendari</em> → <em>+</em> → <em>Da URL</em> e incolla l'indirizzo. Sul telefono, nell'app Google Calendar, attiva la sincronizzazione del nuovo calendario. Google aggiorna i calendari sottoscritti con calma: una variazione può comparire anche dopo 24 ore.</p>
-      </details>
-      <details>
-        <summary>Outlook</summary>
-        <p>In Outlook web: <em>Aggiungi calendario</em> → <em>Sottoscrivi dal Web</em>, incolla l'indirizzo e salva.</p>
-      </details>
-    </section>
-  </main>
+        <button type="button" class="btn" id="cambia" aria-controls="scelta" aria-expanded="false">Cambia scuola</button>
+        <div id="scuola-note" class="school-note"></div>
+      </section>
 
-  <footer class="piede">
-    <p><strong>Progetto non ufficiale</strong>, senza legami con Dussmann Service né con il Comune di Padova. Fa sempre fede il <a href="https://www.scuoledussmann.it/padova">menu ufficiale</a>. Diete speciali e allergeni non sono inclusi.</p>
-    <p id="aggiornato"></p>
-    <p><a href="https://github.com/gbonanome/menu-scuole-padova">Codice sorgente e segnalazioni</a></p>
-  </footer>
+      <section id="scelta" class="picker" aria-labelledby="titolo-scelta">
+        <h1 id="titolo-scelta">Che cosa si mangia oggi a scuola?</h1>
+        <p class="intro">Cerca la tua scuola o il tuo nido: vedi il menu della mensa giorno per giorno, con le variazioni comunicate da Dussmann, e puoi aggiungerlo al tuo calendario.</p>
+        <label for="cerca-scuola">Nome della scuola o del nido</label>
+        <input id="cerca-scuola" type="search" autocomplete="off" spellcheck="false"
+               placeholder="es. Montegrappa, Il Trenino…" aria-controls="risultati" aria-describedby="aiuto-cerca">
+        <p id="aiuto-cerca" class="aiuto">Scrivi almeno 2 lettere.</p>
+        <ul id="risultati" class="risultati" aria-label="Scuole trovate" aria-live="polite"></ul>
+        <label for="scegli-feed" class="secondaria">Non trovi la scuola? Scegli direttamente il menu</label>
+        <select id="scegli-feed">
+          <option value="">— scegli il menu —</option>
+        </select>
+      </section>
+
+      <section id="oggi-box" class="today" aria-label="Menu di oggi" hidden></section>
+
+      <section id="settimana" class="settimana" aria-label="Menu della settimana" tabindex="-1" hidden>
+        <div class="nav">
+          <button type="button" class="arrow" id="prec" aria-label="Settimana precedente">‹</button>
+          <h2 class="range" id="titolo-settimana" aria-live="polite"></h2>
+          <button type="button" class="arrow" id="succ" aria-label="Settimana successiva">›</button>
+          <button type="button" class="btn" id="oggi">Oggi</button>
+        </div>
+        <div id="giorni" class="days"></div>
+      </section>
+
+      <section id="iscriviti" class="cal" aria-labelledby="titolo-iscriviti" hidden>
+        <h2 id="titolo-iscriviti" class="visually-hidden">Aggiungi al calendario</h2>
+        <a id="link-webcal" class="primary" href="#">Aggiungi al calendario</a>
+        <p class="cal-nota">Il menu compare ogni giorno nel tuo calendario e si aggiorna da solo quando cambia.</p>
+        <details class="cal-altro">
+          <summary>Altri modi e istruzioni</summary>
+          <label for="url-feed">Indirizzo del calendario</label>
+          <div class="riga-copia">
+            <input id="url-feed" type="text" readonly>
+            <button type="button" class="btn" id="copia">Copia</button>
+          </div>
+          <p id="copiato" class="aiuto" role="status"></p>
+          <h3>iPhone e iPad</h3>
+          <p>Tocca <em>Aggiungi al calendario</em> e conferma con <em>Iscriviti</em>. In alternativa: Impostazioni → Calendario → Account → Aggiungi account → Altro → Aggiungi calendario sottoscritto, e incolla l'indirizzo.</p>
+          <h3>Android e Google Calendar</h3>
+          <p>Da computer apri Google Calendar → <em>Altri calendari</em> → <em>+</em> → <em>Da URL</em> e incolla l'indirizzo. Sul telefono, nell'app Google Calendar, attiva la sincronizzazione del nuovo calendario. Google aggiorna i calendari sottoscritti con calma: una variazione può comparire anche dopo 24 ore.</p>
+          <h3>Outlook</h3>
+          <p>In Outlook web: <em>Aggiungi calendario</em> → <em>Sottoscrivi dal Web</em>, incolla l'indirizzo e salva.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>Progetto non ufficiale, senza legami con Dussmann Service o con il Comune di Padova. Fa sempre fede il menu ufficiale su <a href="https://www.scuoledussmann.it/padova">scuoledussmann.it/padova</a>. Diete speciali e allergeni esclusi.</p>
+      <p><span id="aggiornato"></span> <a href="https://github.com/gbonanome/menu-scuole-padova">Codice e segnalazioni</a></p>
+    </footer>
+  </div>
 </body>
 </html>

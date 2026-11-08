@@ -1,9 +1,10 @@
-// Menu Scuole Padova — pagina statica, vanilla JS, nessuna dipendenza.
+// Menu Scuole Padova — pagina statica, vanilla JS, nessuna dipendenza. Direzione visiva B "Vassoio".
 const REPO = 'https://github.com/gbonanome/menu-scuole-padova';
+const FONTE_NOTIZIE = 'https://www.scuoledussmann.it/padova#notizie';
 const CHIAVE = 'menu-scuole-padova:scelta';
 
 const $ = (sel) => document.querySelector(sel);
-const stato = { feeds: [], scuole: [], meta: null, feed: null, scuola: null, giorni: new Map(), lunedi: null };
+const stato = { feeds: [], scuole: [], meta: null, feed: null, scuola: null, giorni: new Map(), copertura: null, lunedi: null };
 
 // ---------- utilità ----------
 function el(tag, attrs = {}, ...figli) {
@@ -14,10 +15,12 @@ function el(tag, attrs = {}, ...figli) {
     else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
     else e.setAttribute(k, v === true ? '' : v);
   }
-  for (const f of figli.flat()) if (f != null && f !== false) e.append(f instanceof Node ? f : document.createTextNode(String(f)));
+  for (const f of figli.flat(Infinity)) if (f != null && f !== false) e.append(f instanceof Node ? f : document.createTextNode(String(f)));
   return e;
 }
 
+const MESI = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+const GIORNI = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
 const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 const daIso = (s) => {
   const [y, m, d] = s.split('-').map(Number);
@@ -28,18 +31,20 @@ const piuGiorni = (s, n) => {
   d.setDate(d.getDate() + n);
   return iso(d);
 };
+const numGiorno = (s) => Number(s.slice(8, 10));
+const mese = (s) => MESI[Number(s.slice(5, 7)) - 1];
+const nomeGiorno = (s) => GIORNI[daIso(s).getDay()];
+const dataLunga = (s) => `${nomeGiorno(s)} ${numGiorno(s)} ${mese(s)}`;
+/** Lunedì della settimana; sabato e domenica portano alla settimana dopo. */
 function lunediDi(s) {
-  const d = daIso(s);
-  const g = d.getDay(); // 0 domenica
-  if (g === 6) d.setDate(d.getDate() + 2); // sabato -> lunedì dopo
-  else if (g === 0) d.setDate(d.getDate() + 1); // domenica -> lunedì dopo
-  else d.setDate(d.getDate() - (g - 1));
-  return iso(d);
+  const g = daIso(s).getDay();
+  if (g === 6) return piuGiorni(s, 2);
+  if (g === 0) return piuGiorni(s, 1);
+  return piuGiorni(s, 1 - g);
 }
 const oggi = () => iso(new Date());
-const fmtGiorno = new Intl.DateTimeFormat('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
-const fmtBreve = new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'long' });
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’'.]/g, ' ').replace(/\s+/g, ' ').trim();
+const STAGIONE = { estivo: 'Menu estivo', autunnale: 'Menu autunnale', invernale: 'Menu invernale', primaverile: 'Menu primaverile' };
 
 const salva = (v) => {
   try {
@@ -74,7 +79,16 @@ function mostraRisultati(q) {
   for (const s of trovate) {
     const f = stato.feeds.find((x) => x.slug === s.feed);
     ul.append(
-      el('li', {}, el('button', { type: 'button', onclick: () => scegli(s.feed, s) }, el('span', { class: 'nome' }, s.nome), el('span', { class: 'dettaglio' }, `${s.ordine}${s.ic ? ` · ${s.ic} IC` : ''} · ${f?.breve ?? s.feed}`)))
+      el(
+        'li',
+        {},
+        el(
+          'button',
+          { type: 'button', onclick: () => scegli(s.feed, s) },
+          el('span', { class: 'nome' }, s.nome),
+          el('span', { class: 'dettaglio' }, `${s.ordine}${s.ic ? ` · ${s.ic} IC` : ''} · ${f?.breve ?? s.feed}`)
+        )
+      )
     );
   }
 }
@@ -83,33 +97,28 @@ function linkSegnalazione() {
   const s = stato.scuola;
   const f = stato.feeds.find((x) => x.slug === stato.feed);
   const titolo = s ? `Scuola ${s.nome}: menu da verificare` : `Menu ${f?.breve}: segnalazione`;
-  const corpo = [
-    s ? `Scuola: ${s.nome} (${s.ordine})` : '',
-    `Menu mostrato: ${f?.breve} (${stato.feed})`,
-    '',
-    'Cosa non torna? (es. la scuola usa un altro menu, un giorno è sbagliato…)',
-    ''
-  ].join('\n');
+  const corpo = [s ? `Scuola: ${s.nome} (${s.ordine})` : '', `Menu mostrato: ${f?.breve} (${stato.feed})`, '', 'Cosa non torna? (es. la scuola usa un altro menu, un giorno è sbagliato…)', ''].join('\n');
   return `${REPO}/issues/new?title=${encodeURIComponent(titolo)}&body=${encodeURIComponent(corpo)}`;
 }
 
-function mostraSelezione() {
-  const box = $('#selezione');
+function mostraPicker(aperto) {
+  $('#scelta').hidden = !aperto;
+  $('#cambia').setAttribute('aria-expanded', String(aperto));
+  if (aperto && stato.feed) $('#cerca-scuola').focus();
+}
+
+function mostraScuola() {
   const f = stato.feeds.find((x) => x.slug === stato.feed);
-  if (!f) {
-    box.hidden = true;
-    return;
-  }
+  if (!f) return;
   const s = stato.scuola;
-  box.replaceChildren(
-    ...[
-    el('p', { class: 'scelto' }, s ? el('strong', {}, s.nome) : null, s ? ' · ' : null, `Menu: ${f.nome}`),
-    s?.avviso ? el('p', { class: 'avviso', role: 'note' }, s.avviso) : null,
-    s && !s.avviso && s.confidenza !== 'alta' ? el('p', { class: 'nota' }, 'L’abbinamento tra scuola e menu è ricavato dai documenti del Comune: se non corrisponde, segnalacelo.') : null,
-    el('p', { class: 'nota' }, el('a', { href: linkSegnalazione() }, 'Segnala un errore'))
-    ].filter(Boolean)
-  );
-  box.hidden = false;
+  $('#scuola-nome').textContent = s ? s.nome : f.nome;
+  $('#scuola-feed').textContent = s ? f.nome : 'Menu scelto dall’elenco';
+  const note = [];
+  if (s?.avviso) note.push(el('p', { class: 'avviso', role: 'note' }, s.avviso));
+  else if (s && s.confidenza !== 'alta') note.push(el('p', {}, 'L’abbinamento tra scuola e menu è ricavato dai documenti del Comune.'));
+  note.push(el('p', { class: 'segnala' }, el('a', { href: linkSegnalazione() }, 'Segnala un errore')));
+  $('#scuola-note').replaceChildren(...note);
+  $('#scuola').hidden = false;
 }
 
 async function scegli(feed, scuola = null, { aggiornaHash = true } = {}) {
@@ -120,8 +129,9 @@ async function scegli(feed, scuola = null, { aggiornaHash = true } = {}) {
   if (aggiornaHash && location.hash !== `#${feed}`) history.replaceState(null, '', `#${feed}`);
   $('#scegli-feed').value = feed;
   $('#risultati').replaceChildren();
-  $('#cerca-scuola').value = scuola?.nome ?? '';
-  mostraSelezione();
+  $('#cerca-scuola').value = '';
+  mostraPicker(false);
+  mostraScuola();
   mostraIscrizione();
   try {
     const dati = await json(`data/${feed}.json`);
@@ -129,68 +139,134 @@ async function scegli(feed, scuola = null, { aggiornaHash = true } = {}) {
     stato.copertura = dati.copertura;
   } catch (e) {
     stato.giorni = new Map();
+    stato.copertura = null;
     console.error(e);
   }
-  stato.lunedi ??= lunediDi(oggi());
-  mostraSettimane();
+  stato.lunedi = lunediDi(oggi());
+  mostraOggi();
+  mostraSettimana();
 }
 
-// ---------- settimane ----------
-const quanteSettimane = () => (matchMedia('(min-width: 60rem)').matches ? 2 : 1);
+// ---------- piatti e variazioni ----------
+const eVariato = (g, i) => g.originali && !g.menuSostituito && g.originali[i] !== g.piatti[i];
 
-function cardGiorno(data) {
-  const g = stato.giorni.get(data);
-  const eOggi = data === oggi();
-  const titolo = el('h3', {}, el('span', { class: 'data' }, fmtGiorno.format(daIso(data))), eOggi ? el('span', { class: 'etichetta-oggi' }, 'oggi') : null);
-  const attr = { class: 'giorno', 'aria-current': eOggi ? 'date' : null };
-  if (!g) {
-    const fuori = stato.copertura && data < stato.copertura.dal;
-    return el('article', { ...attr, class: 'giorno vuoto' }, titolo, el('p', {}, fuori ? 'Prima dell’inizio del servizio' : 'Nessun menu'));
-  }
-  if (g.stato === 'chiuso') return el('article', { ...attr, class: 'giorno chiuso' }, titolo, el('p', {}, g.motivo));
-  if (g.stato === 'non-pubblicato') return el('article', { ...attr, class: 'giorno vuoto' }, titolo, el('p', {}, 'Menu non ancora pubblicato'));
-  const variato = g.variazioni.length > 0;
-  const lista = el('ul', { class: 'piatti' });
-  g.piatti.forEach((p, i) => {
-    if (p === 'oppure') lista.append(el('li', { class: 'oppure' }, 'oppure'));
-    else {
-      const era = g.originali && !g.menuSostituito && g.originali[i] !== p ? g.originali[i] : null;
-      lista.append(el('li', {}, p, era ? el('span', { class: 'era' }, ' al posto di ', el('del', {}, era)) : null));
-    }
+/** Riquadri "Variazione" di un giorno: cosa si serve, al posto di cosa, e il testo dell'avviso. */
+function riquadriVariazione(g) {
+  if (!g.variazioni?.length) return [];
+  const cambi = g.piatti.map((p, i) => (eVariato(g, i) ? { nuovo: p, vecchio: g.originali[i] } : null)).filter(Boolean);
+  return g.variazioni.map((v, k) => {
+    const strutturata = k === 0 && (cambi.length || g.menuSostituito);
+    const pubblicata = `Avviso pubblicato da Dussmann il ${numGiorno(v.pubblicata)} ${mese(v.pubblicata)}`;
+    return el(
+      'div',
+      { class: 'vbox', role: 'note' },
+      el('span', { class: 'vt' }, 'Variazione'),
+      strutturata && g.menuSostituito ? [el('span', { class: 'vnew' }, 'Menu sostitutivo'), el('span', { class: 'vold' }, `al posto di: ${g.originali.filter((p) => p !== 'oppure').join(', ')}`)] : null,
+      strutturata && !g.menuSostituito ? cambi.map((c) => [el('span', { class: 'vnew' }, c.nuovo), el('span', { class: 'vold' }, `al posto di: ${c.vecchio}`)]) : null,
+      !strutturata ? el('span', { class: 'vnew' }, 'Il menu di questo giorno potrebbe essere diverso: leggi l’avviso.') : null,
+      el('span', { class: 'vsrc' }, pubblicata, ' · ', el('a', { href: FONTE_NOTIZIE }, 'fonte')),
+      el('details', { open: !strutturata }, el('summary', {}, 'Testo dell’avviso'), el('p', { class: 'vtesto' }, v.testo))
+    );
   });
+}
+
+function elencoPiatti(g, classe, conScomparti) {
   return el(
-    'article',
-    { ...attr, class: `giorno${variato ? ' variato' : ''}` },
-    titolo,
-    variato ? el('p', { class: 'badge' }, '⚠️ Menu variato') : null,
-    lista,
-    g.menuSostituito ? el('p', { class: 'era' }, 'Previsto prima: ', el('del', {}, g.originali.filter((p) => p !== 'oppure').join(', '))) : null,
-    ...g.variazioni.map((v) =>
-      el('details', { class: 'dettaglio-variazione' }, el('summary', {}, v.titolo), el('p', { class: 'testo-variazione' }, v.testo), el('p', { class: 'nota' }, `Pubblicata il ${fmtBreve.format(daIso(v.pubblicata))} · `, el('a', { href: 'https://www.scuoledussmann.it/padova#notizie' }, 'fonte')))
-    ),
-    el('p', { class: 'nota settimana-ciclo' }, `Settimana ${g.settimana} di ${g.settimane} · menu ${g.stagione}`)
+    'ul',
+    { class: classe },
+    g.piatti.map((p, i) => {
+      if (p === 'oppure') return el('li', { class: 'oppure' }, 'oppure');
+      const testo = conScomparti ? el('span', { class: 'dish' }, p) : p;
+      return el('li', { class: eVariato(g, i) || g.menuSostituito ? 'changed' : null }, testo);
+    })
   );
 }
 
-function mostraSettimane() {
+// ---------- oggi (vassoio, solo su telefono) ----------
+function mostraOggi() {
+  const box = $('#oggi-box');
+  const t = oggi();
+  const g = stato.giorni.get(t);
+  if (g?.stato === 'menu') {
+    box.replaceChildren(
+      el('p', { class: 'when' }, el('mark', {}, 'Oggi'), ` ${nomeGiorno(t)} ${numGiorno(t)}`),
+      el('p', { class: 'meta' }, `${STAGIONE[g.stagione] ?? 'Menu'} · settimana ${g.settimana} di ${g.settimane}`),
+      ...riquadriVariazione(g),
+      elencoPiatti(g, 'tray', true)
+    );
+    box.hidden = false;
+    return;
+  }
+  // Oggi niente mensa: mostra il prossimo giorno con il menu (entro due settimane).
+  let prossimo = null;
+  for (let i = 1; i <= 14 && !prossimo; i++) {
+    const d = piuGiorni(t, i);
+    if (stato.giorni.get(d)?.stato === 'menu') prossimo = d;
+  }
+  if (!prossimo) {
+    box.hidden = true;
+    return;
+  }
+  const gp = stato.giorni.get(prossimo);
+  const motivo = g?.stato === 'chiuso' ? `Oggi scuola chiusa (${g.motivo}).` : 'Oggi niente mensa.';
+  box.replaceChildren(
+    el('p', { class: 'when' }, el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : nomeGiorno(prossimo)), ` ${numGiorno(prossimo)} ${mese(prossimo)}`),
+    el('p', { class: 'meta' }, `${motivo} ${STAGIONE[gp.stagione] ?? 'Menu'} · settimana ${gp.settimana} di ${gp.settimane}`),
+    ...riquadriVariazione(gp),
+    elencoPiatti(gp, 'tray', true)
+  );
+  box.setAttribute('aria-label', 'Prossimo menu');
+  box.hidden = false;
+}
+
+// ---------- settimana ----------
+function cardGiorno(data, precedente) {
+  const g = stato.giorni.get(data);
+  const eOggi = data === oggi();
+  const intestazione = el('h3', { class: 'dname' }, String(numGiorno(data)), el('small', {}, eOggi ? 'oggi' : nomeGiorno(data).slice(0, 3)));
+  const etichetta = `${dataLunga(data)}${eOggi ? ', oggi' : ''}`;
+  if (!g || g.stato !== 'menu') {
+    let testo;
+    if (g?.stato === 'chiuso') testo = `Scuola chiusa · ${g.motivo}`;
+    else if (g?.stato === 'non-pubblicato') testo = 'Menu non ancora pubblicato';
+    else if (stato.copertura && data < stato.copertura.dal) testo = 'Mensa non ancora iniziata';
+    else testo = 'Nessun menu';
+    return el('article', { class: `day ${g?.stato === 'chiuso' ? 'closed' : 'empty'}${eOggi ? ' is-today' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null }, intestazione, el('p', { class: 'reason' }, testo));
+  }
+  const cambioStagione = precedente?.stato === 'menu' && precedente.stagione !== g.stagione;
+  return el(
+    'article',
+    { class: `day${eOggi ? ' is-today' : ''}${g.variazioni.length ? ' varied' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
+    intestazione,
+    cambioStagione ? el('p', { class: 'season' }, `Da qui: ${STAGIONE[g.stagione] ?? g.stagione}`) : null,
+    ...riquadriVariazione(g),
+    elencoPiatti(g, null, false),
+    el('p', { class: 'ciclo' }, `${STAGIONE[g.stagione] ?? 'Menu'} · settimana ${g.settimana} di ${g.settimane}`)
+  );
+}
+
+function etichettaSettimana(lun) {
+  const ven = piuGiorni(lun, 4);
+  return mese(lun) === mese(ven) ? `${numGiorno(lun)}–${numGiorno(ven)} ${mese(ven)}` : `${numGiorno(lun)} ${mese(lun)} – ${numGiorno(ven)} ${mese(ven)}`;
+}
+
+function mostraSettimana() {
   $('#settimana').hidden = false;
-  const n = quanteSettimane();
   const cont = $('#giorni');
   cont.replaceChildren();
-  for (let w = 0; w < n; w++) {
-    const lun = piuGiorni(stato.lunedi, 7 * w);
-    const sett = el('div', { class: 'blocco-settimana' });
-    for (let i = 0; i < 5; i++) sett.append(cardGiorno(piuGiorni(lun, i)));
-    cont.append(sett);
+  let prec = stato.giorni.get(piuGiorni(stato.lunedi, -3));
+  for (let i = 0; i < 5; i++) {
+    const d = piuGiorni(stato.lunedi, i);
+    cont.append(cardGiorno(d, prec));
+    prec = stato.giorni.get(d) ?? prec;
   }
-  const ven = piuGiorni(stato.lunedi, 7 * (n - 1) + 4);
-  $('#titolo-settimana').textContent = `Dal ${fmtBreve.format(daIso(stato.lunedi))} al ${fmtBreve.format(daIso(ven))}`;
+  $('#titolo-settimana').textContent = etichettaSettimana(stato.lunedi);
   $('#oggi').disabled = stato.lunedi === lunediDi(oggi());
 }
 
 function sposta(settimane) {
   stato.lunedi = settimane === 0 ? lunediDi(oggi()) : piuGiorni(stato.lunedi, 7 * settimane);
-  mostraSettimane();
+  mostraSettimana();
 }
 
 // ---------- iscrizione al calendario ----------
@@ -222,8 +298,7 @@ async function avvia() {
     stato.meta = indice;
     stato.scuole = scuole;
   } catch (e) {
-    $('#selezione').hidden = false;
-    $('#selezione').textContent = 'Impossibile caricare i dati. Riprova più tardi.';
+    $('#scelta').append(el('p', { class: 'avviso' }, 'Impossibile caricare i dati. Riprova più tardi.'));
     console.error(e);
     return;
   }
@@ -231,28 +306,25 @@ async function avvia() {
   for (const f of stato.feeds) sel.append(el('option', { value: f.slug }, f.nome));
   sel.addEventListener('change', () => sel.value && scegli(sel.value));
   $('#cerca-scuola').addEventListener('input', (e) => mostraRisultati(e.target.value));
-  $('#prec').addEventListener('click', () => sposta(-quanteSettimane()));
-  $('#succ').addEventListener('click', () => sposta(quanteSettimane()));
+  $('#cambia').addEventListener('click', () => mostraPicker($('#scelta').hidden));
+  $('#prec').addEventListener('click', () => sposta(-1));
+  $('#succ').addEventListener('click', () => sposta(1));
   $('#oggi').addEventListener('click', () => sposta(0));
   $('#copia').addEventListener('click', copia);
-  matchMedia('(min-width: 60rem)').addEventListener('change', () => stato.feed && mostraSettimane());
   window.addEventListener('hashchange', () => {
     const h = location.hash.slice(1);
     if (h && h !== stato.feed) scegli(h, null, { aggiornaHash: false });
   });
 
   const m = stato.meta;
-  const quando = m.ultimaVerificaFonte ? daIso(m.ultimaVerificaFonte) : new Date(m.generato);
-  $('#aggiornato').textContent = `Ultimo aggiornamento: ${fmtBreve.format(quando)} ${quando.getFullYear()}.`;
+  const quando = m.ultimaVerificaFonte ?? m.generato.slice(0, 10);
+  $('#aggiornato').textContent = `Aggiornato il ${numGiorno(quando)} ${mese(quando)} ${quando.slice(0, 4)}.`;
 
   const h = location.hash.slice(1);
   const salvato = leggi();
-  if (h && stato.feeds.some((f) => f.slug === h)) {
-    const scuola = salvato?.feed === h ? stato.scuole.find((s) => s.nome === salvato.scuola && s.feed === h) : null;
-    scegli(h, scuola ?? null, { aggiornaHash: false });
-  } else if (salvato?.feed) {
-    scegli(salvato.feed, stato.scuole.find((s) => s.nome === salvato.scuola && s.feed === salvato.feed) ?? null);
-  }
+  const trova = (feed) => (salvato?.feed === feed ? stato.scuole.find((s) => s.nome === salvato.scuola && s.feed === feed) ?? null : null);
+  if (h && stato.feeds.some((f) => f.slug === h)) scegli(h, trova(h), { aggiornaHash: false });
+  else if (salvato?.feed && stato.feeds.some((f) => f.slug === salvato.feed)) scegli(salvato.feed, trova(salvato.feed));
 }
 
 avvia();
