@@ -9,6 +9,9 @@
     "node": ">=22"
   },
   "scripts": {
+    "update": "node src/update.js",
+    "build": "node src/build-site.js",
+    "serve": "node src/serve.js",
     "test": "node --test \"test/**/*.test.js\""
   },
   "repository": {

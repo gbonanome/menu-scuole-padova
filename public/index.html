@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu Scuole Padova · menu della mensa nel tuo calendario</title>
+  <meta name="description" content="Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="salta" href="#contenuto">Vai al menu</a>
+  <header class="testata">
+    <h1>Menu Scuole Padova</h1>
+    <p class="sottotitolo">Il menu della mensa scolastica, giorno per giorno. <strong>Non ufficiale.</strong></p>
+  </header>
+
+  <main id="contenuto">
+    <section class="scelta" aria-labelledby="titolo-scelta">
+      <h2 id="titolo-scelta">La tua scuola</h2>
+      <div class="cerca">
+        <label for="cerca-scuola">Cerca il nome della scuola o del nido</label>
+        <input id="cerca-scuola" type="search" autocomplete="off" placeholder="es. Montegrappa, Il Trenino…"
+               aria-controls="risultati" aria-describedby="aiuto-cerca">
+        <p id="aiuto-cerca" class="aiuto">Scrivi almeno 2 lettere.</p>
+        <ul id="risultati" class="risultati" aria-label="Scuole trovate"></ul>
+      </div>
+      <div class="diretto">
+        <label for="scegli-feed">Oppure scegli direttamente il menu</label>
+        <select id="scegli-feed">
+          <option value="">— scegli —</option>
+        </select>
+      </div>
+      <div id="selezione" class="selezione" hidden></div>
+    </section>
+
+    <section id="settimana" class="settimana" aria-labelledby="titolo-settimana" hidden>
+      <div class="navigazione">
+        <button type="button" id="prec" aria-label="Settimana precedente">‹</button>
+        <h2 id="titolo-settimana" aria-live="polite"></h2>
+        <button type="button" id="succ" aria-label="Settimana successiva">›</button>
+        <button type="button" id="oggi" class="oggi-btn">Oggi</button>
+      </div>
+      <div id="giorni" class="giorni"></div>
+    </section>
+
+    <section id="iscriviti" class="iscriviti" aria-labelledby="titolo-iscriviti" hidden>
+      <h2 id="titolo-iscriviti">Aggiungi al calendario</h2>
+      <p>Il menu compare ogni giorno nel tuo calendario. Quando esce una variazione, l'evento si aggiorna da solo.</p>
+      <p><a id="link-webcal" class="bottone" href="#">Aggiungi al calendario</a></p>
+      <div class="copia">
+        <label for="url-feed">Indirizzo del calendario</label>
+        <div class="riga-copia">
+          <input id="url-feed" type="text" readonly>
+          <button type="button" id="copia">Copia</button>
+        </div>
+        <p id="copiato" class="aiuto" role="status"></p>
+      </div>
+      <details>
+        <summary>iPhone e iPad</summary>
+        <p>Tocca <em>Aggiungi al calendario</em> e conferma con <em>Iscriviti</em>. In alternativa: Impostazioni → Calendario → Account → Aggiungi account → Altro → Aggiungi calendario sottoscritto, e incolla l'indirizzo.</p>
+      </details>
+      <details>
+        <summary>Android e Google Calendar</summary>
+        <p>Da computer apri Google Calendar → <em>Altri calendari</em> → <em>+</em> → <em>Da URL</em> e incolla l'indirizzo. Sul telefono, nell'app Google Calendar, attiva la sincronizzazione del nuovo calendario. Google aggiorna i calendari sottoscritti con calma: una variazione può comparire anche dopo 24 ore.</p>
+      </details>
+      <details>
+        <summary>Outlook</summary>
+        <p>In Outlook web: <em>Aggiungi calendario</em> → <em>Sottoscrivi dal Web</em>, incolla l'indirizzo e salva.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="piede">
+    <p><strong>Progetto non ufficiale</strong>, senza legami con Dussmann Service né con il Comune di Padova. Fa sempre fede il <a href="https://www.scuoledussmann.it/padova">menu ufficiale</a>. Diete speciali e allergeni non sono inclusi.</p>
+    <p id="aggiornato"></p>
+    <p><a href="https://github.com/gbonanome/menu-scuole-padova">Codice sorgente e segnalazioni</a></p>
+  </footer>
+</body>
+</html>

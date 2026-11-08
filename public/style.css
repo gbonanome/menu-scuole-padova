@@ -1,0 +1,102 @@
+/* Stile di base, volutamente neutro: la direzione visiva definitiva si applica cambiando le variabili qui sotto. */
+:root {
+  --sfondo: #fbfaf7;
+  --superficie: #ffffff;
+  --testo: #1f1d1a;
+  --testo-tenue: #5c5750;
+  --bordo: #ddd8cf;
+  --accento: #9a3412;
+  --accento-testo: #ffffff;
+  --variato: #fff4d6;
+  --variato-bordo: #b45309;
+  --chiuso: #f1efea;
+  --oggi: #9a3412;
+  --raggio: 0.6rem;
+  --spazio: 1rem;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfondo: #171614;
+    --superficie: #22201d;
+    --testo: #f2efe9;
+    --testo-tenue: #bdb6ab;
+    --bordo: #3b3833;
+    --accento: #fb923c;
+    --accento-testo: #1b1206;
+    --variato: #3a2c10;
+    --variato-bordo: #f59e0b;
+    --chiuso: #1d1c1a;
+    --oggi: #fb923c;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font); background: var(--sfondo); color: var(--testo); line-height: 1.5; }
+a { color: var(--accento); }
+:focus-visible { outline: 3px solid var(--accento); outline-offset: 2px; }
+.salta { position: absolute; left: -999px; }
+.salta:focus { left: var(--spazio); top: var(--spazio); background: var(--superficie); padding: 0.5rem; z-index: 10; }
+
+.testata, main, .piede { max-width: 72rem; margin: 0 auto; padding: var(--spazio); }
+.testata h1 { margin: 0.5rem 0 0; font-size: 1.6rem; }
+.sottotitolo { margin: 0.25rem 0 0; color: var(--testo-tenue); }
+h2 { font-size: 1.2rem; margin: 0 0 0.75rem; }
+
+section { margin-bottom: 1.5rem; }
+label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+input, select, button { font: inherit; }
+input[type="search"], input[type="text"], select {
+  width: 100%; padding: 0.6rem 0.7rem; border: 1px solid var(--bordo); border-radius: var(--raggio);
+  background: var(--superficie); color: var(--testo); min-height: 44px;
+}
+button, .bottone {
+  min-height: 44px; padding: 0.5rem 0.9rem; border-radius: var(--raggio); border: 1px solid var(--bordo);
+  background: var(--superficie); color: var(--testo); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center;
+}
+.bottone { background: var(--accento); color: var(--accento-testo); border-color: var(--accento); font-weight: 600; }
+button:disabled { opacity: 0.5; cursor: default; }
+.aiuto, .nota { color: var(--testo-tenue); font-size: 0.9rem; margin: 0.25rem 0; }
+
+.diretto { margin-top: 1rem; }
+.risultati { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.risultati button { width: 100%; text-align: left; flex-direction: column; align-items: flex-start; margin-bottom: 0.4rem; }
+.risultati .dettaglio { color: var(--testo-tenue); font-size: 0.9rem; }
+.selezione { margin-top: 1rem; padding: 0.75rem var(--spazio); background: var(--superficie); border: 1px solid var(--bordo); border-radius: var(--raggio); }
+.selezione p { margin: 0.25rem 0; }
+.avviso { background: var(--variato); border-left: 4px solid var(--variato-bordo); padding: 0.5rem 0.75rem; border-radius: 0.3rem; }
+
+.navigazione { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+.navigazione h2 { margin: 0; flex: 1; text-align: center; font-size: 1.05rem; }
+
+.giorni { display: grid; gap: 1rem; }
+.blocco-settimana { display: grid; gap: 0.6rem; }
+@media (min-width: 60rem) {
+  .giorni { grid-template-columns: 1fr; }
+  .blocco-settimana { grid-template-columns: repeat(5, 1fr); }
+}
+
+.giorno { background: var(--superficie); border: 1px solid var(--bordo); border-radius: var(--raggio); padding: 0.75rem; }
+.giorno h3 { margin: 0 0 0.4rem; font-size: 1rem; display: flex; gap: 0.5rem; align-items: center; }
+h3 .data { display: inline-block; }
+h3 .data::first-letter { text-transform: uppercase; }
+.giorno[aria-current="date"] { border: 2px solid var(--oggi); }
+.etichetta-oggi { font-size: 0.75rem; text-transform: uppercase; background: var(--oggi); color: var(--accento-testo); padding: 0 0.4rem; border-radius: 1rem; }
+.giorno.chiuso, .giorno.vuoto { background: var(--chiuso); color: var(--testo-tenue); }
+.giorno.variato { background: var(--variato); border-color: var(--variato-bordo); }
+.badge { font-weight: 700; margin: 0 0 0.4rem; }
+.piatti { margin: 0; padding-left: 1.1rem; }
+.piatti li { margin: 0.1rem 0; }
+.piatti .oppure { list-style: none; margin-left: -1.1rem; font-style: italic; color: var(--testo-tenue); }
+.era { color: var(--testo-tenue); font-size: 0.9rem; }
+.dettaglio-variazione summary { cursor: pointer; font-weight: 600; margin-top: 0.5rem; }
+.testo-variazione { white-space: pre-line; }
+.settimana-ciclo { margin-top: 0.5rem; }
+
+.riga-copia { display: flex; gap: 0.5rem; }
+.iscriviti details { margin-top: 0.5rem; }
+.iscriviti summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+
+.piede { color: var(--testo-tenue); font-size: 0.9rem; border-top: 1px solid var(--bordo); }
