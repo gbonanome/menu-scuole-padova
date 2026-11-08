@@ -45,7 +45,7 @@ Fonte unica dei menu: https://www.scuoledussmann.it/padova
   - le 3 scuole dell'infanzia con cuochi comunali (Munari/Miró, Sant'Osvaldo, San Lorenzo): usano il menu Dussmann "infanzia cucina interna"?
   - la Lambruschini;
   - il nido Girotondo (veicolato).
-- La pagina web usa questo file per far cercare **il nome della propria scuola** invece di chiedere "veicolato o cucina interna?", che le famiglie spesso non sanno. Il risultato porta al feed giusto, con una nota quando la confidenza non è alta e un modo per segnalare errori (link a una issue precompilata).
+- La pagina web usa questo file per far cercare **il nome della propria scuola** invece di chiedere "veicolato o cucina interna?", che le famiglie spesso non sanno. Il risultato porta al feed giusto. Se la scuola ha il campo `avviso` (oggi Munari/Miró, Sant'Osvaldo, San Lorenzo da Brindisi, Lambruschini, Girotondo nido e infanzia), il testo va mostrato nella pagina accanto alla scuola, quando la si seleziona. Serve anche un modo per segnalare errori (link a una issue precompilata). Non serve risolvere ora queste incertezze: l'avviso basta.
 
 ### Calendario scolastico (bozza già pronta)
 - Il file **`data/calendario-scolastico-2026-27.json`** contiene inizio e fine dell'anno (fine diversa per primo ciclo e infanzia), festività e sospensioni secondo la delibera della Regione Veneto (DGR 239/2026 modificata dalla DGR 712/2026).
