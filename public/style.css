@@ -65,7 +65,8 @@ button { cursor: pointer; }
 
 /* ---- testata ---- */
 .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 14px 18px 0; }
-.brand { font: 800 1rem var(--f-display); letter-spacing: -0.01em; margin: 0; }
+.brand { display: flex; align-items: center; gap: 9px; font: 800 1.12rem var(--f-display); letter-spacing: -0.01em; margin: 0; }
+.brand img { flex: none; border-radius: 8px; }
 .info { flex: none; display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--b-muted); color: var(--b-muted); font-weight: 800; font-size: 0.9rem; text-decoration: none; align-self: center; }
 .top { position: relative; }
 .info[aria-expanded="true"] { background: var(--b-ink); border-color: var(--b-ink); color: var(--b-bg); }

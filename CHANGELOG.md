@@ -11,6 +11,7 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 ## [Non ancora rilasciato]
 
 ### Modificato
+- In testata l'icona accanto al nome, che è leggermente più grande.
 - Il piatto variato non è più in grassetto: lo segnala il bollino "variato" (il grassetto resta solo sul primo piatto).
 
 ### Corretto

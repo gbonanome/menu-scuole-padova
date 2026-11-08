@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const DIST = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../dist');
-const TIPI = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.ics': 'text/calendar; charset=utf-8' };
+const TIPI = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.ics': 'text/calendar; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.webmanifest': 'application/manifest+json' };
 const porta = Number(process.argv[2] ?? 8080);
 
 createServer(async (req, res) => {
