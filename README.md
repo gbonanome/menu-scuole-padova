@@ -8,7 +8,7 @@ Il menu delle mense scolastiche del Comune di Padova nel tuo calendario, con le 
 
 - Un **feed `.ics`** per ogni tipo di menu (nido, nido integrato, infanzia, primaria e secondaria, primaria Lambruschini; veicolato o cucina interna), da sottoscrivere in Google Calendar, Apple Calendar o Outlook.
 - Quando esce una variazione, l'evento di quel giorno viene **modificato** nel feed.
-- Una **pagina web** dove cerchi la tua scuola e vedi il menu a calendario.
+- Una **pagina web** dove cerchi la tua scuola e vedi il menu a calendario. Puoi salvare fino a **3 scuole** (per chi ha più figli) e passare dall'una all'altra con un tocco; l'indirizzo le ricorda tutte, per esempio `?scuola=montegrappa|la-coccinella#montegrappa`, così funziona anche come icona sulla schermata Home.
 
 ## Come iscriversi
 

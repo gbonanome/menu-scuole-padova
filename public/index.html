@@ -11,7 +11,7 @@
   <link rel="icon" href="icona.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <meta name="apple-mobile-web-app-title" content="Menu scuola">
+  <meta name="apple-mobile-web-app-title" content="Menu scuole">
   <link rel="preload" href="fonts/Figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
@@ -26,12 +26,17 @@
     </header>
 
     <main id="contenuto" tabindex="-1">
+      <nav id="scuole-salvate" class="switcher" aria-label="Le tue scuole" hidden></nav>
+
       <section id="scuola" class="school" aria-label="Scuola scelta" hidden>
         <div class="who">
           <span class="name" id="scuola-nome"></span>
           <span class="feed" id="scuola-feed"></span>
         </div>
-        <button type="button" class="btn" id="cambia" aria-controls="scelta" aria-expanded="false">Cambia scuola</button>
+        <div class="azioni">
+          <button type="button" class="btn" id="cambia" aria-controls="scelta" aria-expanded="false">Cambia scuola</button>
+          <button type="button" class="btn leggero" id="rimuovi" hidden>Rimuovi</button>
+        </div>
         <div id="scuola-note" class="school-note"></div>
       </section>
 
@@ -47,6 +52,7 @@
         <select id="scegli-feed">
           <option value="">— scegli il menu —</option>
         </select>
+        <button type="button" class="btn annulla" id="annulla" hidden>Annulla</button>
       </section>
 
       <section id="oggi-box" class="today" aria-label="Menu di oggi" hidden></section>

@@ -75,7 +75,16 @@ button { cursor: pointer; }
 .btn { background: var(--b-tray); color: var(--b-ink); border: 0; border-radius: 999px; padding: 7px 14px; font-weight: 700; font-size: 0.85rem; min-height: 40px; }
 .btn:disabled { opacity: 0.5; cursor: default; }
 
+/* ---- scuole salvate ---- */
+.switcher { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 12px 0; }
+.chip { min-height: 40px; max-width: 100%; padding: 8px 14px; border: 0; border-radius: 999px; background: var(--b-surface); color: var(--b-ink); font-weight: 700; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip[aria-pressed="true"] { background: var(--b-ink); color: var(--b-bg); }
+.chip.aggiungi { background: transparent; border: 1.5px dashed var(--b-muted); color: var(--b-muted); }
+
 /* ---- scuola scelta ---- */
+.school .azioni { display: flex; gap: 6px; }
+.btn.leggero { background: transparent; border: 1.5px solid var(--b-tray); }
+.picker .annulla { margin-top: 14px; }
 .school { background: var(--b-surface); margin: 12px 12px 0; padding: 10px 12px; border-radius: 14px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .school .who { flex: 1 1 180px; min-width: 0; }
 .school .name { display: block; font-weight: 700; }

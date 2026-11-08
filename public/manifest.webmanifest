@@ -1,14 +1,23 @@
 {
   "name": "Menu Scuole Padova",
-  "short_name": "Menu scuola",
+  "short_name": "Menu scuole",
   "description": "Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.",
   "lang": "it",
   "display": "standalone",
   "background_color": "#eef1e7",
   "theme_color": "#eef1e7",
   "icons": [
-    { "src": "icona-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "icona-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
-    { "src": "icona.svg", "sizes": "any", "type": "image/svg+xml" }
+    {
+      "src": "icona-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icona-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }

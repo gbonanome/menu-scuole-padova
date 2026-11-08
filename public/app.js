@@ -4,7 +4,20 @@ const FONTE_NOTIZIE = 'https://www.scuoledussmann.it/padova#notizie';
 const CHIAVE = 'menu-scuole-padova:scelta';
 
 const $ = (sel) => document.querySelector(sel);
-const stato = { feeds: [], scuole: [], meta: null, feed: null, scuola: null, giorni: new Map(), copertura: null, lunedi: null };
+const stato = {
+  feeds: [],
+  scuole: [],
+  meta: null,
+  feed: null,
+  scuola: null,
+  giorni: new Map(),
+  copertura: null,
+  lunedi: null,
+  scelte: [],
+  attiva: null,
+  modo: 'aggiungi',
+  carica: 0
+};
 
 // ---------- utilità ----------
 function el(tag, attrs = {}, ...figli) {
@@ -86,7 +99,7 @@ function mostraRisultati(q) {
         {},
         el(
           'button',
-          { type: 'button', onclick: () => scegli(s.feed, s) },
+          { type: 'button', onclick: () => scegliVoce(voceDiScuola(s)) },
           el('span', { class: 'nome' }, s.nome),
           el('span', { class: 'dettaglio' }, `${s.ordine}${s.ic ? ` · ${s.ic} IC` : ''} · ${f?.breve ?? s.feed}`)
         )
@@ -99,14 +112,30 @@ function linkSegnalazione() {
   const s = stato.scuola;
   const f = stato.feeds.find((x) => x.slug === stato.feed);
   const titolo = s ? `Scuola ${s.nome}: menu da verificare` : `Menu ${f?.breve}: segnalazione`;
-  const corpo = [s ? `Scuola: ${s.nome} (${s.ordine})` : '', `Menu mostrato: ${f?.breve} (${stato.feed})`, '', 'Cosa non torna? (es. la scuola usa un altro menu, un giorno è sbagliato…)', ''].join('\n');
+  const corpo = [
+    s ? `Scuola: ${s.nome} (${s.ordine})` : '',
+    `Menu mostrato: ${f?.breve} (${stato.feed})`,
+    '',
+    'Cosa non torna? (es. la scuola usa un altro menu, un giorno è sbagliato…)',
+    ''
+  ].join('\n');
   return `${REPO}/issues/new?title=${encodeURIComponent(titolo)}&body=${encodeURIComponent(corpo)}`;
 }
 
-function mostraPicker(aperto) {
+function mostraPicker(aperto, modo = stato.modo) {
+  stato.modo = modo;
   $('#scelta').hidden = !aperto;
-  $('#cambia').setAttribute('aria-expanded', String(aperto));
-  if (aperto && stato.feed) $('#cerca-scuola').focus();
+  $('#cambia').setAttribute('aria-expanded', String(aperto && modo === 'cambia'));
+  $('#titolo-scelta').textContent = !stato.attiva
+    ? 'Che cosa si mangia oggi a scuola?'
+    : modo === 'cambia'
+      ? `Cambia ${etichetta(stato.attiva)} con…`
+      : 'Aggiungi una scuola';
+  $('#annulla').hidden = !stato.attiva;
+  $('#risultati').replaceChildren();
+  $('#cerca-scuola').value = '';
+  $('#scegli-feed').value = '';
+  if (aperto && stato.attiva) $('#cerca-scuola').focus();
 }
 
 function mostraScuola() {
@@ -119,36 +148,132 @@ function mostraScuola() {
   if (s?.avviso) note.push(el('p', { class: 'avviso', role: 'note' }, s.avviso));
   $('#scuola-note').replaceChildren(...note);
   $('#link-segnala').href = linkSegnalazione();
+  $('#rimuovi').hidden = !stato.scelte.some((v) => v.id === stato.attiva?.id);
   $('#scuola').hidden = false;
 }
 
-async function scegli(feed, scuola = null, { aggiornaHash = true } = {}) {
-  if (!stato.feeds.some((f) => f.slug === feed)) return;
-  stato.feed = feed;
-  stato.scuola = scuola;
-  salva({ feed, scuola: scuola?.nome ?? null });
-  // La scuola va anche nell'indirizzo: chi mette la pagina sulla schermata Home ritrova la sua scuola
-  // (su iPhone l'icona non vede quanto salvato in Safari).
-  const url = new URL(location.href);
-  if (scuola) url.searchParams.set('scuola', scuola.nome);
-  else url.searchParams.delete('scuola');
-  if (aggiornaHash) url.hash = feed;
-  if (url.href !== location.href) history.replaceState(null, '', url);
-  $('#scegli-feed').value = feed;
-  $('#risultati').replaceChildren();
-  $('#cerca-scuola').value = '';
+// ---------- scuole salvate (fino a 3) ----------
+// Ogni scelta ha un id breve e leggibile: lo slug del nome della scuola, oppure lo slug del menu
+// se è stato scelto dall'elenco. L'indirizzo le contiene tutte: ?scuola=montegrappa|la-coccinella#montegrappa
+const MAX_SCUOLE = 3;
+const slug = (t) =>
+  norm(t)
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+const nomeBreve = (nome) => nome.replace(/\s*\(.*\)\s*$/, '');
+
+function assegnaId() {
+  const base = (s) => slug(nomeBreve(s.nome));
+  const conta = {};
+  for (const s of stato.scuole) conta[base(s)] = (conta[base(s)] ?? 0) + 1;
+  const usati = new Set(stato.feeds.map((f) => f.slug));
+  for (const s of stato.scuole) {
+    let id = base(s);
+    if (conta[id] > 1 || usati.has(id)) id = `${id}-${slug(s.ordine)}`;
+    if (usati.has(id)) id = `${id}-${s.feed}`;
+    const radice = id;
+    for (let n = 2; usati.has(id); n++) id = `${radice}-${n}`;
+    usati.add(id);
+    s.id = id;
+  }
+}
+
+const voceDiScuola = (s) => ({ id: s.id, feed: s.feed, scuola: s });
+const voceDiFeed = (feed) => ({ id: feed, feed, scuola: null });
+
+/** Da un id (o da un vecchio nome completo) alla scelta corrispondente. */
+function risolvi(testo) {
+  const k = slug(testo ?? '');
+  if (!k) return null;
+  const s = stato.scuole.find((x) => x.id === k) ?? stato.scuole.find((x) => slug(x.nome) === k);
+  if (s) return voceDiScuola(s);
+  return stato.feeds.some((f) => f.slug === k) ? voceDiFeed(k) : null;
+}
+
+function etichetta(v) {
+  const base = v.scuola ? nomeBreve(v.scuola.nome) : (stato.feeds.find((f) => f.slug === v.feed)?.breve ?? v.feed);
+  const doppia = stato.scelte.some((x) => x.id !== v.id && (x.scuola ? nomeBreve(x.scuola.nome) : null) === base);
+  return doppia && v.scuola ? `${base} · ${v.scuola.ordine}` : base;
+}
+
+function salvaScelte() {
+  salva({ scelte: stato.scelte.map((v) => v.id), attiva: stato.attiva?.id ?? null });
+  // Le scuole vanno anche nell'indirizzo: l'icona sulla schermata Home di iPhone non vede quanto salvato in Safari.
+  const p = new URLSearchParams(location.search);
+  p.delete('scuola');
+  const ids = stato.scelte.map((v) => v.id).join('|');
+  const query = [ids ? `scuola=${ids}` : '', p.toString()].filter(Boolean).join('&');
+  history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${stato.attiva ? `#${stato.attiva.id}` : ''}`);
+}
+
+function mostraSwitcher() {
+  const nav = $('#scuole-salvate');
+  if (!stato.scelte.length) {
+    nav.replaceChildren();
+    nav.hidden = true;
+    return;
+  }
+  nav.replaceChildren(
+    ...[
+      ...stato.scelte.map((v) =>
+        el('button', { type: 'button', class: 'chip', 'aria-pressed': String(v.id === stato.attiva?.id), onclick: () => attiva(v) }, etichetta(v))
+      ),
+      stato.scelte.length < MAX_SCUOLE
+        ? el(
+            'button',
+            { type: 'button', class: 'chip aggiungi', 'aria-controls': 'scelta', onclick: () => mostraPicker(true, 'aggiungi') },
+            '＋ Aggiungi scuola'
+          )
+        : null
+    ].filter(Boolean)
+  );
+  nav.hidden = false;
+}
+
+/** Una scuola scelta dalla ricerca o dall'elenco dei menu. */
+function scegliVoce(voce) {
+  if (!voce) return;
+  const gia = stato.scelte.find((v) => v.id === voce.id);
+  if (gia) return attiva(gia);
+  const i = stato.scelte.findIndex((v) => v.id === stato.attiva?.id);
+  if (stato.modo === 'cambia' && i >= 0) stato.scelte[i] = voce;
+  else if (stato.scelte.length < MAX_SCUOLE) stato.scelte.push(voce);
+  else stato.scelte[i >= 0 ? i : stato.scelte.length - 1] = voce;
+  attiva(voce);
+}
+
+function rimuovi() {
+  stato.scelte = stato.scelte.filter((v) => v.id !== stato.attiva?.id);
+  if (stato.scelte.length) return attiva(stato.scelte[0]);
+  stato.attiva = stato.feed = stato.scuola = null;
+  for (const id of ['#scuola', '#oggi-box', '#oggi-riga', '#settimana', '#iscriviti']) $(id).hidden = true;
+  salvaScelte();
+  mostraSwitcher();
+  mostraPicker(true, 'aggiungi');
+}
+
+async function attiva(voce) {
+  stato.attiva = voce;
+  stato.feed = voce.feed;
+  stato.scuola = voce.scuola;
+  salvaScelte();
+  mostraSwitcher();
   mostraPicker(false);
   mostraScuola();
   mostraIscrizione();
+  const n = ++stato.carica;
+  let giorni = new Map();
+  let copertura = null;
   try {
-    const dati = await json(`data/${feed}.json`);
-    stato.giorni = new Map(dati.giorni.map((g) => [g.data, g]));
-    stato.copertura = dati.copertura;
+    const dati = await json(`data/${voce.feed}.json`);
+    giorni = new Map(dati.giorni.map((g) => [g.data, g]));
+    copertura = dati.copertura;
   } catch (e) {
-    stato.giorni = new Map();
-    stato.copertura = null;
     console.error(e);
   }
+  if (n !== stato.carica) return; // nel frattempo è stata scelta un'altra scuola
+  stato.giorni = giorni;
+  stato.copertura = copertura;
   stato.lunedi = lunediDi(oggi());
   mostraOggi();
   mostraRigaOggi();
@@ -172,8 +297,15 @@ function riquadriVariazione(g) {
       'div',
       { class: 'vbox', role: 'note' },
       el('span', { class: 'vt' }, 'Variazione'),
-      strutturata && g.menuSostituito ? [el('span', { class: 'vnew' }, 'Menu sostitutivo'), el('span', { class: 'vold' }, `al posto di: ${g.originali.filter((p) => p !== 'oppure').join(', ')}`)] : null,
-      strutturata && !g.menuSostituito ? cambi.map((c) => [el('span', { class: 'vnew' }, c.nuovo), el('span', { class: 'vold' }, `al posto di: ${c.vecchio}`)]) : null,
+      strutturata && g.menuSostituito
+        ? [
+            el('span', { class: 'vnew' }, 'Menu sostitutivo'),
+            el('span', { class: 'vold' }, `al posto di: ${g.originali.filter((p) => p !== 'oppure').join(', ')}`)
+          ]
+        : null,
+      strutturata && !g.menuSostituito
+        ? cambi.map((c) => [el('span', { class: 'vnew' }, c.nuovo), el('span', { class: 'vold' }, `al posto di: ${c.vecchio}`)])
+        : null,
       !strutturata ? el('span', { class: 'vnew' }, 'Il menu di questo giorno potrebbe essere diverso: leggi l’avviso.') : null,
       el('span', { class: 'vsrc' }, pubblicata, ' · ', el('a', { href: FONTE_NOTIZIE }, 'fonte')),
       el('details', { open: !strutturata }, el('summary', {}, 'Testo dell’avviso'), el('p', { class: 'vtesto' }, v.testo))
@@ -183,7 +315,11 @@ function riquadriVariazione(g) {
 
 // Il piatto "principale" (in evidenza) è il primo che non sia pane, frutta o verdura generica.
 const GENERICO = /^(pane|frutta|verdura (?:cruda|cotta)|bis di verdura|yogurt)/i;
-const indicePrincipale = (piatti) => Math.max(0, piatti.findIndex((p) => p !== 'oppure' && !GENERICO.test(p)));
+const indicePrincipale = (piatti) =>
+  Math.max(
+    0,
+    piatti.findIndex((p) => p !== 'oppure' && !GENERICO.test(p))
+  );
 
 function elencoPiatti(g, classe, conScomparti) {
   const principale = indicePrincipale(g.piatti);
@@ -227,7 +363,12 @@ function mostraOggi() {
   const gp = stato.giorni.get(prossimo);
   box.replaceChildren(
     el('p', { class: 'oggi-nota' }, testoOggi()),
-    el('p', { class: 'when' }, el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : maiuscola(nomeGiorno(prossimo))), ` ${numGiorno(prossimo)} ${mese(prossimo)}`),
+    el(
+      'p',
+      { class: 'when' },
+      el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : maiuscola(nomeGiorno(prossimo))),
+      ` ${numGiorno(prossimo)} ${mese(prossimo)}`
+    ),
     el('p', { class: 'meta' }, `${STAGIONE[gp.stagione] ?? 'Menu'} · settimana ${gp.settimana} di ${gp.settimane}`),
     ...riquadriVariazione(gp),
     elencoPiatti(gp, 'tray', true)
@@ -278,7 +419,12 @@ function cardGiorno(data, precedente) {
     else if (g?.stato === 'non-pubblicato') testo = 'Menu non ancora pubblicato';
     else if (stato.copertura && data < stato.copertura.dal) testo = 'Mensa non ancora iniziata';
     else testo = 'Nessun menu';
-    return el('article', { class: `day ${g?.stato === 'chiuso' ? 'closed' : 'empty'}${eOggi ? ' is-today' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null }, intestazione, el('p', { class: 'reason' }, testo));
+    return el(
+      'article',
+      { class: `day ${g?.stato === 'chiuso' ? 'closed' : 'empty'}${eOggi ? ' is-today' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
+      intestazione,
+      el('p', { class: 'reason' }, testo)
+    );
   }
   const cambioStagione = precedente?.stato === 'menu' && precedente.stagione !== g.stagione;
   return el(
@@ -323,6 +469,7 @@ function mostraIscrizione() {
   const https = new URL(f.ics, location.href).href;
   $('#url-feed').value = https;
   $('#link-webcal').href = https.replace(/^https?:/, 'webcal:');
+  $('#link-webcal').textContent = stato.scelte.length > 1 ? `Aggiungi al calendario: ${etichetta(stato.attiva)}` : 'Aggiungi al calendario';
   $('#iscriviti').hidden = false;
 }
 
@@ -340,15 +487,33 @@ async function copia() {
 // ---------- avvio ----------
 async function avvia() {
   if (OGGI_PROVA) {
-    $('.top').after(el('p', { class: 'prova', role: 'note' },
-      `Data simulata: la pagina fa come se oggi fosse ${dataLunga(OGGI_PROVA)} ${OGGI_PROVA.slice(0, 4)}. `,
-      el('a', { href: location.pathname, onclick: (e) => { e.preventDefault(); const u = new URL(location.href); u.searchParams.delete('oggi'); location.href = u.href; } }, 'Torna alla data reale')));
+    $('.top').after(
+      el(
+        'p',
+        { class: 'prova', role: 'note' },
+        `Data simulata: la pagina fa come se oggi fosse ${dataLunga(OGGI_PROVA)} ${OGGI_PROVA.slice(0, 4)}. `,
+        el(
+          'a',
+          {
+            href: location.pathname,
+            onclick: (e) => {
+              e.preventDefault();
+              const u = new URL(location.href);
+              u.searchParams.delete('oggi');
+              location.href = u.href;
+            }
+          },
+          'Torna alla data reale'
+        )
+      )
+    );
   }
   try {
     const [indice, scuole] = await Promise.all([json('data/feeds.json'), json('data/scuole.json')]);
     stato.feeds = indice.feeds;
     stato.meta = indice;
     stato.scuole = scuole;
+    assegnaId();
   } catch (e) {
     $('#scelta').append(el('p', { class: 'avviso' }, 'Impossibile caricare i dati. Riprova più tardi.'));
     console.error(e);
@@ -356,30 +521,50 @@ async function avvia() {
   }
   const sel = $('#scegli-feed');
   for (const f of stato.feeds) sel.append(el('option', { value: f.slug }, f.nome));
-  sel.addEventListener('change', () => sel.value && scegli(sel.value));
+  sel.addEventListener('change', () => sel.value && scegliVoce(voceDiFeed(sel.value)));
   $('#cerca-scuola').addEventListener('input', (e) => mostraRisultati(e.target.value));
-  $('#cambia').addEventListener('click', () => mostraPicker($('#scelta').hidden));
+  $('#cambia').addEventListener('click', () => mostraPicker($('#scelta').hidden || stato.modo !== 'cambia', 'cambia'));
+  $('#annulla').addEventListener('click', () => mostraPicker(false));
+  $('#rimuovi').addEventListener('click', rimuovi);
   $('#prec').addEventListener('click', () => sposta(-1));
   $('#succ').addEventListener('click', () => sposta(1));
   $('#oggi').addEventListener('click', () => sposta(0));
   $('#copia').addEventListener('click', copia);
   window.addEventListener('hashchange', () => {
-    const h = location.hash.slice(1);
-    if (h && h !== stato.feed) scegli(h, null, { aggiornaHash: false });
+    const v = daHash();
+    if (v && v.id !== stato.attiva?.id) attiva(v);
   });
 
   const m = stato.meta;
   const quando = iso(new Date(m.generato));
   $('#aggiornato').textContent = `Ultimo controllo della fonte: ${numGiorno(quando)} ${mese(quando)} ${quando.slice(0, 4)}.`;
 
-  const h = location.hash.slice(1);
+  // Scuole salvate: prima quelle di questo dispositivo, poi quelle dell'indirizzo (icona sulla Home, link condiviso).
   const salvato = leggi();
-  const nomeUrl = new URLSearchParams(location.search).get('scuola');
-  const trova = (feed) =>
-    (nomeUrl && stato.scuole.find((s) => s.nome === nomeUrl && s.feed === feed)) ||
-    (salvato?.feed === feed ? stato.scuole.find((s) => s.nome === salvato.scuola && s.feed === feed) ?? null : null);
-  if (h && stato.feeds.some((f) => f.slug === h)) scegli(h, trova(h), { aggiornaHash: false });
-  else if (salvato?.feed && stato.feeds.some((f) => f.slug === salvato.feed)) scegli(salvato.feed, trova(salvato.feed));
+  // Vecchio formato salvato: { feed, scuola: nome completo }.
+  const vecchia = salvato?.feed ? (stato.scuole.find((x) => x.nome === salvato.scuola && x.feed === salvato.feed)?.id ?? salvato.feed) : null;
+  const daStorage = salvato?.scelte ?? (vecchia ? [vecchia] : []);
+  const daUrl = (new URLSearchParams(location.search).get('scuola') ?? '').split('|');
+  const viste = new Set();
+  for (const id of [...daStorage, ...daUrl]) {
+    const v = risolvi(id);
+    if (v && !viste.has(v.id) && stato.scelte.length < MAX_SCUOLE) {
+      viste.add(v.id);
+      stato.scelte.push(v);
+    }
+  }
+  const h = daHash();
+  if (h && !stato.scelte.some((v) => v.id === h.id) && stato.scelte.length < MAX_SCUOLE) stato.scelte.push(h);
+  const att = h ?? stato.scelte.find((v) => v.id === salvato?.attiva) ?? stato.scelte[0];
+  if (att) attiva(att);
+  else mostraPicker(true, 'aggiungi');
+}
+
+/** La scuola indicata dopo # (id di una scuola, oppure un menu: in quel caso preferisce una scuola salvata con quel menu). */
+function daHash() {
+  const v = risolvi(decodeURIComponent(location.hash.slice(1)));
+  if (!v) return null;
+  return stato.scelte.find((x) => x.id === v.id) ?? (v.scuola ? v : (stato.scelte.find((x) => x.feed === v.feed) ?? v));
 }
 
 avvia();
