@@ -12,7 +12,23 @@ Il menu delle mense scolastiche del Comune di Padova nel tuo calendario, con le 
 
 ## Come iscriversi
 
-> Gli indirizzi dei feed e della pagina saranno qui dopo la pubblicazione (Fase 6).
+**Pagina web:** <https://gbonanome.github.io/menu-scuole-padova/>: cerca la scuola, vedi il menu e trovi il pulsante *Aggiungi al calendario*.
+
+| Menu | Feed (.ics) | Google Calendar | iPhone / Mac (apri in Safari) |
+|---|---|---|---|
+| Nido veicolato | [nido-veicolato.ics](https://gbonanome.github.io/menu-scuole-padova/feed/nido-veicolato.ics) | [Aggiungi](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fgbonanome.github.io%2Fmenu-scuole-padova%2Ffeed%2Fnido-veicolato.ics) | `webcal://gbonanome.github.io/menu-scuole-padova/feed/nido-veicolato.ics` |
+| Nido cucina interna | [nido-cucina-interna.ics](https://gbonanome.github.io/menu-scuole-padova/feed/nido-cucina-interna.ics) | [Aggiungi](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fgbonanome.github.io%2Fmenu-scuole-padova%2Ffeed%2Fnido-cucina-interna.ics) | `webcal://gbonanome.github.io/menu-scuole-padova/feed/nido-cucina-interna.ics` |
+| Nido integrato | [nido-integrato-cucina-interna.ics](https://gbonanome.github.io/menu-scuole-padova/feed/nido-integrato-cucina-interna.ics) | [Aggiungi](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fgbonanome.github.io%2Fmenu-scuole-padova%2Ffeed%2Fnido-integrato-cucina-interna.ics) | `webcal://gbonanome.github.io/menu-scuole-padova/feed/nido-integrato-cucina-interna.ics` |
+| Infanzia veicolato | [infanzia-veicolato.ics](https://gbonanome.github.io/menu-scuole-padova/feed/infanzia-veicolato.ics) | [Aggiungi](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fgbonanome.github.io%2Fmenu-scuole-padova%2Ffeed%2Finfanzia-veicolato.ics) | `webcal://gbonanome.github.io/menu-scuole-padova/feed/infanzia-veicolato.ics` |
+| Infanzia cucina interna | [infanzia-cucina-interna.ics](https://gbonanome.github.io/menu-scuole-padova/feed/infanzia-cucina-interna.ics) | [Aggiungi](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fgbonanome.github.io%2Fmenu-scuole-padova%2Ffeed%2Finfanzia-cucina-interna.ics) | `webcal://gbonanome.github.io/menu-scuole-padova/feed/infanzia-cucina-interna.ics` |
+| Primaria e secondaria veicolato | [primaria-secondaria-veicolato.ics](https://gbonanome.github.io/menu-scuole-padova/feed/primaria-secondaria-veicolato.ics) | [Aggiungi](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fgbonanome.github.io%2Fmenu-scuole-padova%2Ffeed%2Fprimaria-secondaria-veicolato.ics) | `webcal://gbonanome.github.io/menu-scuole-padova/feed/primaria-secondaria-veicolato.ics` |
+| Primaria Lambruschini | [primaria-lambruschini.ics](https://gbonanome.github.io/menu-scuole-padova/feed/primaria-lambruschini.ics) | [Aggiungi](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fgbonanome.github.io%2Fmenu-scuole-padova%2Ffeed%2Fprimaria-lambruschini.ics) | `webcal://gbonanome.github.io/menu-scuole-padova/feed/primaria-lambruschini.ics` |
+
+- **iPhone e Mac:** copia l'indirizzo `webcal://…` e aprilo in Safari, poi conferma con *Iscriviti*. GitHub non rende cliccabili i link `webcal`, ma il pulsante sulla pagina web fa la stessa cosa. Per ricevere l'avviso delle 7:00 nei giorni variati, nelle impostazioni del calendario disattiva *Rimuovi avvisi*.
+- **Google Calendar:** apri il link *Aggiungi* da computer, con l'account Google giusto, e conferma. In alternativa: *Altri calendari → + → Da URL* e incolla l'indirizzo del feed.
+- **Outlook:** *Aggiungi calendario → Sottoscrivi dal Web* e incolla l'indirizzo del feed.
+
+Non sai quale menu usa la tua scuola? Cercala sulla [pagina web](https://gbonanome.github.io/menu-scuole-padova/).
 
 Sul tempo di aggiornamento: i feed vengono rigenerati più volte al giorno, ma **sono i client a decidere quando rileggerli**. Apple Calendar di solito entro poche ore; Google Calendar può impiegare 24 ore o più; Outlook alcune ore.
 
