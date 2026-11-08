@@ -23,9 +23,7 @@ DESCRIPTION:• Pipe alla crema di zucchine\n• Asiago\n• Carote julienn
  n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
  /ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pdf\n
  Tutto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-se
- condaria-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o c
- on il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e
-  allergeni non inclusi.
+ condaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -44,9 +42,7 @@ DESCRIPTION:• Riso allo zafferano\n• Straccetti di manzo\n• Cappuccio
   · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
  n.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-o
  tt-2026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io/menu-sc
- uole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza
-  legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uff
- iciale. Diete speciali e allergeni non inclusi.
+ uole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -65,9 +61,7 @@ DESCRIPTION:• Fusilli pomodoro e basilico\n• Affettato di tacchino\n•
  di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledus
  smann.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-se
  tt-ott-2026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io/men
- u-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, s
- enza legami con Dussmann o con il Comune di Padova: fa sempre fede il menu
-  ufficiale. Diete speciali e allergeni non inclusi.
+ u-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -93,13 +87,17 @@ DESCRIPTION:• Sugo alla "Mamma Rosa" (era: Mezze penne con sugo alla crem
  dussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoleduss
  mann.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-set
  t-ott-2026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io/menu
- -scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, se
- nza legami con Dussmann o con il Comune di Padova: fa sempre fede il menu 
- ufficiale. Diete speciali e allergeni non inclusi.
+ -scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Sugo alla "Mamma Rosa" · Bocconcini di pollo
+  panati
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20260918@gbonanome.github.io
@@ -114,9 +112,7 @@ DESCRIPTION:• Farfalle al pesto alla genovese\n• Polpette di pesce\n•
  enu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/
  upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-20
  26-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-
- padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza lega
- mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
- e. Diete speciali e allergeni non inclusi.
+ padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -135,9 +131,7 @@ DESCRIPTION:• Mezze penne al ragù vegetale\n• Mozzarella\n• Cappucci
   2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edi
  torpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-6904
  432.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#pr
- imaria-secondaria-veicolato\nProgetto non ufficiale\, senza legami con Dus
- smann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete s
- peciali e allergeni non inclusi.
+ imaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -156,9 +150,7 @@ DESCRIPTION:• Bigoli al ragù di manzo\n• Insalata\n• Zucchine trifol
  -27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
  gine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-6904432.p
  df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#primari
- a-secondaria-veicolato\nProgetto non ufficiale\, senza legami con Dussmann
-  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
- li e allergeni non inclusi.
+ a-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -183,13 +175,17 @@ DESCRIPTION:• Riso agli spinaci\n• Uova sode/Frittata al formaggio\n•
  le (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok4-primaria-e
  -secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pdf\nTutto il menu: 
  https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veicol
- ato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di
-  Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non 
- inclusi.
+ ato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso agli spinaci · Uova sode/Frittata al fo
+ rmaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20260924@gbonanome.github.io
@@ -204,9 +200,7 @@ DESCRIPTION:• Caserecce alla pizzaiola\n• Lonza di maiale tonnata\n•
  Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
  /upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2
  026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole
- -padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza leg
- ami con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficia
- le. Diete speciali e allergeni non inclusi.
+ -padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -225,9 +219,7 @@ DESCRIPTION:• Crema di ceci con ditalini\n• Halibut gratinato\n• Pata
  o 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
  itorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-690
  4432.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#p
- rimaria-secondaria-veicolato\nProgetto non ufficiale\, senza legami con Du
- ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
- speciali e allergeni non inclusi.
+ rimaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -246,9 +238,7 @@ DESCRIPTION:• Riso alle zucchine\n• Caciotta\n• Insalata\n• Pane\n
  iale (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok4-primaria
  -e-secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pdf\nTutto il menu
  : https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veic
- olato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
- di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
- n inclusi.
+ olato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -267,9 +257,7 @@ DESCRIPTION:• Lasagne al pesto alla genovese\n• Tonno all’olio\n• C
  estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uplo
  ad/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-2
  7-6904432.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pado
- va/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza legami c
- on Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. D
- iete speciali e allergeni non inclusi.
+ va/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -304,13 +292,17 @@ DESCRIPTION:• Passato di verdure con orzo\n• Hamburger di pollo con aro
  te: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): 
  https://www.scuoledussmann.it/upload/editorpagine/ok4-primaria-e-secondari
  a-veicolata-estivo-sett-ott-2026-27-6904432.pdf\nTutto il menu: https://gb
- onanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato\nProge
- tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
- a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ onanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Passato di verdure con orzo · Hamburger di p
+ ollo con aromi
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261001@gbonanome.github.io
@@ -346,13 +338,17 @@ DESCRIPTION:• 50% Pizza margherita al trancio*\n• Pomodori e mais\n•
  cuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuol
  edussmann.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estiv
  o-sett-ott-2026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io
- /menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale
- \, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il 
- menu ufficiale. Diete speciali e allergeni non inclusi.
+ /menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · 50% Pizza margherita al trancio* · Pomodori 
+ e mais
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261002@gbonanome.github.io
@@ -384,13 +380,17 @@ DESCRIPTION:• 50% Spaghetti pomodoro e basilico\n• Prosciutto cotto Alt
  ie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpag
  ine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pd
  f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria
- -secondaria-veicolato\nProgetto non ufficiale\, senza legami con Dussmann 
- o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
- i e allergeni non inclusi.
+ -secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · 50% Spaghetti pomodoro e basilico · Prosciut
+ to cotto Alta Qualità
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261005@gbonanome.github.io
@@ -412,13 +412,17 @@ DESCRIPTION:• Ravioli ricotta e spinaci alla mammarosa*\n• Piselli in t
  e (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok4-primaria-e-
  secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pdf\nTutto il menu: h
  ttps://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veicola
- to\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
- Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
- nclusi.
+ to
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Ravioli ricotta e spinaci alla mammarosa* · 
+ Piselli in tegame e pomodori
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261006@gbonanome.github.io
@@ -440,13 +444,17 @@ DESCRIPTION:• Fusilli tonno e olive (senza pomodoro)\n• Uova sode/Fritt
  smann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussman
  n.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-o
  tt-2026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io/menu-sc
- uole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza
-  legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uff
- iciale. Diete speciali e allergeni non inclusi.
+ uole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Fusilli tonno e olive (senza pomodoro) · Uov
+ a sode/Frittata al formaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261007@gbonanome.github.io
@@ -466,13 +474,16 @@ DESCRIPTION:• Riso alla zucca\n• Coscette di pollo al forno\n• Carote
   ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok4-pr
  imaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pdf\nTutto i
  l menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondari
- a-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il C
- omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
- eni non inclusi.
+ a-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso alla zucca · Coscette di pollo al forno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261008@gbonanome.github.io
@@ -487,9 +498,7 @@ DESCRIPTION:• Pipe al pomodoro\n• Hamburger di manzo\n• Zucchine trif
  i 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoleduss
  mann.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-set
  t-ott-2026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io/menu
- -scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, se
- nza legami con Dussmann o con il Comune di Padova: fa sempre fede il menu 
- ufficiale. Diete speciali e allergeni non inclusi.
+ -scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -515,13 +524,17 @@ DESCRIPTION:• Gnocchetti sardi al pesto alla genovese\n• Filetto di mer
  cuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuol
  edussmann.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estiv
  o-sett-ott-2026-27-6904432.pdf\nTutto il menu: https://gbonanome.github.io
- /menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale
- \, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il 
- menu ufficiale. Diete speciali e allergeni non inclusi.
+ /menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Gnocchetti sardi al pesto alla genovese · Fi
+ letto di merluzzo gratinato con fettina di limone
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261012@gbonanome.github.io
@@ -536,9 +549,7 @@ DESCRIPTION:• Tortellini di prosciutto crudo al pomodoro\n• Asiago\n•
   3 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scu
  oledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicolato
  -2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuo
- le-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza l
- egami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffic
- iale. Diete speciali e allergeni non inclusi.
+ le-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -569,13 +580,17 @@ DESCRIPTION:• Crema di lenticchie rosse decorticate con midolline\n• To
  /padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
  oad/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670.p
  df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#primari
- a-secondaria-veicolato\nProgetto non ufficiale\, senza legami con Dussmann
-  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
- li e allergeni non inclusi.
+ a-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di lenticchie rosse decorticate con mid
+ olline · Tortino di uova\, patate e formaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261014@gbonanome.github.io
@@ -590,9 +605,7 @@ DESCRIPTION:• Bigoli al ragù di manzo\n• Cappuccio julienne\n• Pisel
  -27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
  gine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il
   menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria
- -veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Co
- mune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerge
- ni non inclusi.
+ -veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -622,13 +635,17 @@ DESCRIPTION:• Mezze penne al burro\n• Halibut gratinato al forno\n• Z
  https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): http
  s://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-secon
  d-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.i
- o/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficial
- e\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il
-  menu ufficiale. Diete speciali e allergeni non inclusi.
+ o/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Mezze penne al burro · Halibut gratinato al 
+ forno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261016@gbonanome.github.io
@@ -655,13 +672,17 @@ DESCRIPTION:• Crema di porri e cavolfiori con orzo\n• Bocconcini di tac
  \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
  e/03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il me
  nu: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-ve
- icolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comun
- e di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni 
- non inclusi.
+ icolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di porri e cavolfiori con orzo · Bocco
+ ncini di tacchino agli aromi
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261019@gbonanome.github.io
@@ -677,9 +698,7 @@ DESCRIPTION:• Mezze penne alla crema di zucchine\n• Uova strapazzate o
  n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): htt
  ps://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-seco
  nd-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.
- io/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficia
- le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
- l menu ufficiale. Diete speciali e allergeni non inclusi.
+ io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -699,9 +718,7 @@ DESCRIPTION:• Pizza margherita al trancio\n• Insalata e carote julienne
  ettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https:/
  /www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-v
  eicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/m
- enu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\,
-  senza legami con Dussmann o con il Comune di Padova: fa sempre fede il me
- nu ufficiale. Diete speciali e allergeni non inclusi.
+ enu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -720,9 +737,7 @@ DESCRIPTION:• Riso alla crema di zucca\n• Bocconcini di pollo gratinati
  · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
  ann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27
  -4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
- a/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza legami co
- n Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Di
- ete speciali e allergeni non inclusi.
+ a/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -741,9 +756,7 @@ DESCRIPTION:• Minestra in brodo vegetale con risoni\n• Spezzatino di ma
   vasetto\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (
  PDF): https://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-
  prim-second-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanom
- e.github.io/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto no
- n ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa semp
- re fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ e.github.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -762,9 +775,7 @@ DESCRIPTION:• Fusilli al ragù di verdure\n• Sformato di platessa e hal
  na 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.s
  cuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicola
  to-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-sc
- uole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza
-  legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uff
- iciale. Diete speciali e allergeni non inclusi.
+ uole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -783,9 +794,7 @@ DESCRIPTION:• Spaghetti al pomodoro\n• Caciotta\n• Bieta all’olio\n
  n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
  /03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il men
  u: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
- colato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune
-  di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni n
- on inclusi.
+ colato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -805,9 +814,7 @@ DESCRIPTION:• Lasagne al forno con ragù di manzo*\n• Insalata e cappuc
  na 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.s
  cuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicola
  to-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-sc
- uole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza
-  legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uff
- iciale. Diete speciali e allergeni non inclusi.
+ uole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -832,14 +839,17 @@ DESCRIPTION:• Riso agli spinaci o delicato al sedano rapa\n• Filettini
  ato il 28/10.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu
   ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/03-men
  u-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il menu: http
- s://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato\
- nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pad
- ova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non incl
- usi.
+ s://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso agli spinaci o delicato al sedano rapa 
+ · Filettini di merluzzo panati con fettina di limone
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261029@gbonanome.github.io
@@ -864,13 +874,16 @@ DESCRIPTION:• Crema di verdura con risoni\n• Polpettone\n• Patate gra
  : https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): ht
  tps://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-sec
  ond-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github
- .io/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non uffici
- ale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede 
- il menu ufficiale. Diete speciali e allergeni non inclusi.
+ .io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di verdura con risoni · Polpettone
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261030@gbonanome.github.io
@@ -890,13 +903,17 @@ DESCRIPTION:• Mezze penne all’ortolana\n• Prosciutto cotto Alta Quali
  tizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editor
  pagine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto 
  il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondar
- ia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il 
- Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e aller
- geni non inclusi.
+ ia-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Mezze penne all’ortolana · Prosciutto cott
+ o Alta Qualità
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261102@gbonanome.github.io
@@ -911,9 +928,7 @@ DESCRIPTION:• Noccioline ai formaggi\n• Finocchi julienne/Piselli al te
  26-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editor
  pagine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto 
  il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondar
- ia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il 
- Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e aller
- geni non inclusi.
+ ia-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -932,9 +947,7 @@ DESCRIPTION:• Minestra in brodo vegetale con stelline\n• Hamburger di m
   · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoleduss
  mann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-2
  7-4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pado
- va/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza legami c
- on Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. D
- iete speciali e allergeni non inclusi.
+ va/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -956,13 +969,17 @@ DESCRIPTION:• Riso allo zafferano\n• Coscette di pollo al forno\n• Fa
  https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): http
  s://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-secon
  d-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.i
- o/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficial
- e\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il
-  menu ufficiale. Diete speciali e allergeni non inclusi.
+ o/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso allo zafferano · Coscette di pollo al f
+ orno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261105@gbonanome.github.io
@@ -985,13 +1002,17 @@ DESCRIPTION:• Pasta (ditalini) e fagioli\n• Frittata al prosciutto cott
  nn.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.i
  t/upload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27-4204
  670.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#pr
- imaria-secondaria-veicolato\nProgetto non ufficiale\, senza legami con Dus
- smann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete s
- peciali e allergeni non inclusi.
+ imaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Pasta (ditalini) e fagioli · Frittata al pro
+ sciutto cotto
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261106@gbonanome.github.io
@@ -1007,9 +1028,7 @@ DESCRIPTION:• Pipette al pomodoro\n• Hamburger di trota (o altra tipolo
  Settimana 2 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https:
  //www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-
  veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/
- menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\
- , senza legami con Dussmann o con il Comune di Padova: fa sempre fede il m
- enu ufficiale. Diete speciali e allergeni non inclusi.
+ menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1028,9 +1047,7 @@ DESCRIPTION:• Tortellini di prosciutto crudo al pomodoro\n• Asiago\n•
   3 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scu
  oledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicolato
  -2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuo
- le-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza l
- egami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffic
- iale. Diete speciali e allergeni non inclusi.
+ le-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1054,13 +1071,17 @@ DESCRIPTION:• Crema di ceci bio (era: Crema di lenticchie rosse decortica
  te: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): 
  https://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-s
  econd-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.gith
- ub.io/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non uffi
- ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
- e il menu ufficiale. Diete speciali e allergeni non inclusi.
+ ub.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di ceci bio · Tortino di uova\, patate
+  e formaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261111@gbonanome.github.io
@@ -1075,9 +1096,7 @@ DESCRIPTION:• Bigoli al ragù di manzo\n• Cappuccio julienne\n• Pisel
  -27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
  gine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il
   menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria
- -veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Co
- mune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerge
- ni non inclusi.
+ -veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1102,13 +1121,17 @@ DESCRIPTION:• Mezze penne al burro\n• Halibut gratinato al forno\n• Z
  it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/u
  pload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670
  .pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#prima
- ria-secondaria-veicolato\nProgetto non ufficiale\, senza legami con Dussma
- nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
- iali e allergeni non inclusi.
+ ria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Mezze penne al burro · Halibut gratinato al 
+ forno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261113@gbonanome.github.io
@@ -1124,9 +1147,7 @@ DESCRIPTION:• Crema di porri e cavolfiori con orzo\n• Bocconcini di tac
  0%\n\nSettimana 3 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): 
  https://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-s
  econd-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.gith
- ub.io/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non uffi
- ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
- e il menu ufficiale. Diete speciali e allergeni non inclusi.
+ ub.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1146,9 +1167,7 @@ DESCRIPTION:• Mezze penne alla crema di zucchine\n• Uova strapazzate o
  n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): htt
  ps://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-seco
  nd-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.
- io/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficia
- le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
- l menu ufficiale. Diete speciali e allergeni non inclusi.
+ io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1176,13 +1195,17 @@ DESCRIPTION:• Pizza margherita al trancio\n• Radicchio variegato e insa
  ienne).\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu uffic
  iale (PDF): https://www.scuoledussmann.it/upload/editorpagine/03-menu-autu
  nnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gb
- onanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato\nProge
- tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
- a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ onanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Pizza margherita al trancio · Radicchio vari
+ egato e insalata
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261118@gbonanome.github.io
@@ -1197,9 +1220,7 @@ DESCRIPTION:• Riso alla crema di zucca\n• Bocconcini di pollo gratinati
  · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
  ann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27
  -4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
- a/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza legami co
- n Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Di
- ete speciali e allergeni non inclusi.
+ a/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1218,9 +1239,7 @@ DESCRIPTION:• Minestra in brodo vegetale con risoni\n• Spezzatino di ma
   vasetto\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (
  PDF): https://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-
  prim-second-veicolato-2026-27-4204670.pdf\nTutto il menu: https://gbonanom
- e.github.io/menu-scuole-padova/#primaria-secondaria-veicolato\nProgetto no
- n ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa semp
- re fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ e.github.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1247,13 +1266,16 @@ DESCRIPTION:• Pasta al pomodoro\n• Tonno all’olio\n• Fagiolini all
  nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/0
  3-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il menu:
   https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veico
- lato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune d
- i Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non
-  inclusi.
+ lato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Pasta al pomodoro · Tonno all’olio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-secondaria-veicolato-20261123@gbonanome.github.io
@@ -1268,9 +1290,7 @@ DESCRIPTION:• Spaghetti al pomodoro\n• Caciotta\n• Bieta all’olio\n
  n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
  /03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il men
  u: https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
- colato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune
-  di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni n
- on inclusi.
+ colato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1290,9 +1310,7 @@ DESCRIPTION:• Lasagne al forno con ragù di manzo*\n• Insalata e cappuc
  na 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.s
  cuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicola
  to-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu-sc
- uole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, senza
-  legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uff
- iciale. Diete speciali e allergeni non inclusi.
+ uole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1312,10 +1330,7 @@ DESCRIPTION:• Riso agli spinaci o delicato al sedano rapa\n• Filettini
  \n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 2026-27\n\nMenu 
  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/03-menu
  -autunnale-prim-second-veicolato-2026-27-4204670.pdf\nTutto il menu: https
- ://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato\n
- Progetto non ufficiale\, senza legami con Dussmann o con il Comune di Pado
- va: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclu
- si.
+ ://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1334,9 +1349,7 @@ DESCRIPTION:• Crema di verdura con risoni\n• Polpette\n• Patate grati
   autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/
  upload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27-420467
  0.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#prim
- aria-secondaria-veicolato\nProgetto non ufficiale\, senza legami con Dussm
- ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
- ciali e allergeni non inclusi.
+ aria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT
@@ -1355,9 +1368,7 @@ DESCRIPTION:• Mezze penne all’ortolana\n• Prosciutto cotto Alta Quali
  imana 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://ww
  w.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-veic
  olato-2026-27-4204670.pdf\nTutto il menu: https://gbonanome.github.io/menu
- -scuole-padova/#primaria-secondaria-veicolato\nProgetto non ufficiale\, se
- nza legami con Dussmann o con il Comune di Padova: fa sempre fede il menu 
- ufficiale. Diete speciali e allergeni non inclusi.
+ -scuole-padova/#primaria-secondaria-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-secondaria-vei
  colato
 TRANSP:TRANSPARENT

@@ -22,10 +22,7 @@ DESCRIPTION:• Pipe alla crema di zucchine\n• Asiago\n• Carote julienn
  e\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 · Menu estivo 2026-27\
  n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
  /1-primaria-lambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il men
- u: https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\n
- Progetto non ufficiale\, senza legami con Dussmann o con il Comune di Pado
- va: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclu
- si.
+ u: https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -43,9 +40,7 @@ DESCRIPTION:• Riso allo zafferano\n• Straccetti di manzo\n• Cappuccio
   · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
  n.it/upload/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-27-3
  618192.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
- #primaria-lambruschini\nProgetto non ufficiale\, senza legami con Dussmann
-  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
- li e allergeni non inclusi.
+ #primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -63,9 +58,7 @@ DESCRIPTION:• Fusilli pomodoro e basilico\n• Affettato di tacchino\n•
  di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledus
  smann.it/upload/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-
  27-3618192.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
- ova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Duss
- mann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete sp
- eciali e allergeni non inclusi.
+ ova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -90,12 +83,16 @@ DESCRIPTION:• Sugo alla "Mamma Rosa" (era: Mezze penne con sugo alla crem
  dussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoleduss
  mann.it/upload/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-2
  7-3618192.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pado
- va/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Dussm
- ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
- ciali e allergeni non inclusi.
+ va/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Sugo alla "Mamma Rosa" · Bocconcini di pollo
+  panati
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20260918@gbonanome.github.io
@@ -111,9 +108,7 @@ DESCRIPTION:• Farfalle al pesto alla genovese\n• Polpette di pesce o fi
  • Frutta fresca\n\nSettimana 3 di 4 · Menu estivo 2026-27\n\nMenu uffic
  iale (PDF): https://www.scuoledussmann.it/upload/editorpagine/1-primaria-l
  ambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il menu: https://gb
- onanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non 
- ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa sempre
-  fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ onanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -131,9 +126,7 @@ DESCRIPTION:• Mezze penne al ragù vegetale\n• Mozzarella\n• Cappucci
   2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edi
  torpagine/1-primaria-lambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTut
  to il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-lambr
- uschini\nProgetto non ufficiale\, senza legami con Dussmann o con il Comun
- e di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni 
- non inclusi.
+ uschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -151,9 +144,7 @@ DESCRIPTION:• Bigoli al ragù di manzo\n• Insalata\n• Zucchine trifol
  -27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
  gine/1-primaria-lambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il
   menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschi
- ni\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
- Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
- nclusi.
+ ni
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -176,12 +167,16 @@ DESCRIPTION:• Riso agli spinaci\n• Uova sode/Frittata al formaggio\n•
  ate.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficial
  e (PDF): https://www.scuoledussmann.it/upload/editorpagine/1-primaria-lamb
  ruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il menu: https://gbona
- nome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non uff
- iciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fe
- de il menu ufficiale. Diete speciali e allergeni non inclusi.
+ nome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso agli spinaci · Uova sode/Frittata al fo
+ rmaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20260924@gbonanome.github.io
@@ -196,9 +191,7 @@ DESCRIPTION:• Caserecce alla pizzaiola\n• Lonza di maiale tonnata\n•
  Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
  /upload/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-27-36181
  92.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#pri
- maria-lambruschini\nProgetto non ufficiale\, senza legami con Dussmann o c
- on il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e
-  allergeni non inclusi.
+ maria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -216,9 +209,7 @@ DESCRIPTION:• Crema di ceci con ditalini\n• Halibut gratinato\n• Pata
  o 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
  itorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTu
  tto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-lamb
- ruschini\nProgetto non ufficiale\, senza legami con Dussmann o con il Comu
- ne di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni
-  non inclusi.
+ ruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -235,9 +226,7 @@ DESCRIPTION:• Riso alle zucchine\n• Caciotta\n• Insalata\n• Pane\n
  • Frutta fresca\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu uffic
  iale (PDF): https://www.scuoledussmann.it/upload/editorpagine/1-primaria-l
  ambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il menu: https://gb
- onanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non 
- ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa sempre
-  fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ onanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -255,9 +244,7 @@ DESCRIPTION:• Lasagne al pesto alla genovese\n• Tonno all’olio\n• C
  estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uplo
  ad/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-27-3618192.pd
  f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria
- -lambruschini\nProgetto non ufficiale\, senza legami con Dussmann o con il
-  Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e alle
- rgeni non inclusi.
+ -lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -291,12 +278,16 @@ DESCRIPTION:• Passato di verdure con orzo\n• Hamburger di pollo con aro
  te: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): 
  https://www.scuoledussmann.it/upload/editorpagine/1-primaria-lambruschini-
  estivo-sett-ott-2026-27-3618192.pdf\nTutto il menu: https://gbonanome.gith
- ub.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, 
- senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
- u ufficiale. Diete speciali e allergeni non inclusi.
+ ub.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Passato di verdure con orzo · Hamburger di p
+ ollo con aromi
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261001@gbonanome.github.io
@@ -330,13 +321,16 @@ DESCRIPTION:• Pizza margherita al trancio*\n• Pomodori e mais\n• Zucc
  i frutta\, crackers\nFonte: https://www.scuoledussmann.it/padova#notizie\n
  \nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/
  1-primaria-lambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il menu
- : https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nP
- rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
- a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
- i.
+ : https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Pizza margherita al trancio* · Pomodori e ma
+ is
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261002@gbonanome.github.io
@@ -367,12 +361,16 @@ DESCRIPTION:• Spaghetti pomodoro e basilico\n• Prosciutto cotto Alta Qu
  https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): http
  s://www.scuoledussmann.it/upload/editorpagine/1-primaria-lambruschini-esti
  vo-sett-ott-2026-27-3618192.pdf\nTutto il menu: https://gbonanome.github.i
- o/menu-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senz
- a legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uf
- ficiale. Diete speciali e allergeni non inclusi.
+ o/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Spaghetti pomodoro e basilico · Prosciutto c
+ otto Alta Qualità
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261005@gbonanome.github.io
@@ -393,12 +391,16 @@ DESCRIPTION:• Ravioli ricotta e spinaci alla mammarosa*\n• Piselli in t
  bio.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficial
  e (PDF): https://www.scuoledussmann.it/upload/editorpagine/1-primaria-lamb
  ruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il menu: https://gbona
- nome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non uff
- iciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fe
- de il menu ufficiale. Diete speciali e allergeni non inclusi.
+ nome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Ravioli ricotta e spinaci alla mammarosa* · 
+ Piselli in tegame e pomodori
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261006@gbonanome.github.io
@@ -420,12 +422,16 @@ DESCRIPTION:• Fusilli tonno e olive (senza pomodoro)\n• Uova sode/Fritt
  smann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussman
  n.it/upload/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-27-3
  618192.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
- #primaria-lambruschini\nProgetto non ufficiale\, senza legami con Dussmann
-  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
- li e allergeni non inclusi.
+ #primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Fusilli tonno e olive (senza pomodoro) · Uov
+ a sode/Frittata al formaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261007@gbonanome.github.io
@@ -444,12 +450,15 @@ DESCRIPTION:• Riso alla zucca\n• Coscette di pollo al forno\n• Carote
   quel giorno.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu
   ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/1-prim
  aria-lambruschini-estivo-sett-ott-2026-27-3618192.pdf\nTutto il menu: http
- s://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgett
- o non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa 
- sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ s://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso alla zucca · Coscette di pollo al forno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261008@gbonanome.github.io
@@ -464,9 +473,7 @@ DESCRIPTION:• Pipe al pomodoro\n• Hamburger di manzo\n• Zucchine trif
  i 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoleduss
  mann.it/upload/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-2
  7-3618192.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pado
- va/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Dussm
- ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
- ciali e allergeni non inclusi.
+ va/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -491,12 +498,16 @@ DESCRIPTION:• Gnocchetti sardi al pesto alla genovese\n• Filetto di mer
  www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.
  scuoledussmann.it/upload/editorpagine/1-primaria-lambruschini-estivo-sett-
  ott-2026-27-3618192.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
- cuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami
-  con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale.
-  Diete speciali e allergeni non inclusi.
+ cuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Gnocchetti sardi al pesto alla genovese · Fi
+ letto di merluzzo gratinato con fettina di limone
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261012@gbonanome.github.io
@@ -511,9 +522,7 @@ DESCRIPTION:• Tortellini di prosciutto crudo al pomodoro\n• Asiago\n•
   3 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scu
  oledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-
  27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
- ova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Duss
- mann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete sp
- eciali e allergeni non inclusi.
+ ova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -543,12 +552,16 @@ DESCRIPTION:• Crema di lenticchie rosse decorticate con midolline\n• To
  /padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
  oad/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTu
  tto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-lamb
- ruschini\nProgetto non ufficiale\, senza legami con Dussmann o con il Comu
- ne di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni
-  non inclusi.
+ ruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di lenticchie rosse decorticate con mid
+ olline · Tortino di uova\, patate e formaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261014@gbonanome.github.io
@@ -562,10 +575,7 @@ DESCRIPTION:• Bigoli al ragù di manzo\n• Cappuccio julienne\n• Pisel
  li\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 · Menu autunnale 2026
  -27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
  gine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu:
-  https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nPr
- ogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padova
- : fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi
- .
+  https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -594,12 +604,16 @@ DESCRIPTION:• Mezze penne al burro\n• Halibut gratinato al forno\n• Z
  https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): http
  s://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autu
  nnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu
- -scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza lega
- mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
- e. Diete speciali e allergeni non inclusi.
+ -scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Mezze penne al burro · Halibut gratinato al 
+ forno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261016@gbonanome.github.io
@@ -625,12 +639,16 @@ DESCRIPTION:• Crema di porri e cavolfiori con orzo\n• Bocconcini di tac
  trata giovedì 29/10.\nFonte: https://www.scuoledussmann.it/padova#notizie
  \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
  e/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: ht
- tps://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProge
- tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
- a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ tps://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di porri e cavolfiori con orzo · Bocco
+ ncini di tacchino agli aromi
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261019@gbonanome.github.io
@@ -646,9 +664,7 @@ DESCRIPTION:• Mezze penne alla crema di zucchine\n• Uova strapazzate o
  n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): htt
  ps://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-aut
  unnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/men
- u-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza leg
- ami con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficia
- le. Diete speciali e allergeni non inclusi.
+ u-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -667,9 +683,7 @@ DESCRIPTION:• Pizza margherita al trancio\n• Insalata e carote julienne
  ettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https:/
  /www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunna
  le-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-sc
- uole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami 
- con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. 
- Diete speciali e allergeni non inclusi.
+ uole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -687,9 +701,7 @@ DESCRIPTION:• Riso alla zucca\n• Bocconcini di pollo gratinati\n• Zuc
  utunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
  load/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nT
  utto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-lam
- bruschini\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
- une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
- i non inclusi.
+ bruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -707,9 +719,7 @@ DESCRIPTION:• Minestra in brodo vegetale con risoni\n• Spezzatino di ma
   vasetto\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (
  PDF): https://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambrus
  chini-autunnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.gith
- ub.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, 
- senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
- u ufficiale. Diete speciali e allergeni non inclusi.
+ ub.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -727,9 +737,7 @@ DESCRIPTION:• Fusilli al ragù di verdure\n• Sformato di platessa e hal
  na 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.s
  cuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-202
  6-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-p
- adova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Du
- ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
- speciali e allergeni non inclusi.
+ adova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -746,9 +754,7 @@ DESCRIPTION:• Spaghetti al pomodoro\n• Caciotta\n• Bieta all’olio\n
  • Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 2026-27\
  n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
  /2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: htt
- ps://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProget
- to non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa
-  sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ ps://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -767,9 +773,7 @@ DESCRIPTION:• Lasagne al forno con ragù di manzo*\n• Insalata e cappuc
  na 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.s
  cuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-202
  6-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-p
- adova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Du
- ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
- speciali e allergeni non inclusi.
+ adova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -793,12 +797,16 @@ DESCRIPTION:• Riso agli spinaci o delicato al sedano rapa\n• Filettini
  ato il 28/10.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu
   ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/2-prim
  aria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: https://gb
- onanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non 
- ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa sempre
-  fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ onanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso agli spinaci o delicato al sedano rapa 
+ · Filettini di merluzzo panati con fettina di limone
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261029@gbonanome.github.io
@@ -823,12 +831,15 @@ DESCRIPTION:• Crema di verdura con risoni\n• Polpettone\n• Patate gra
  29/10.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu uffici
  ale (PDF): https://www.scuoledussmann.it/upload/editorpagine/2-primaria-la
  mbruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome
- .github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non ufficia
- le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
- l menu ufficiale. Diete speciali e allergeni non inclusi.
+ .github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di verdura con risoni · Polpettone
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261030@gbonanome.github.io
@@ -847,12 +858,16 @@ DESCRIPTION:• Mezze penne all’ortolana\n• Prosciutto cotto A.Q.\n•
  el pane previsto.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\n
  Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/2-
  primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: https:
- //gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto 
- non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa se
- mpre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ //gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Mezze penne all’ortolana · Prosciutto cott
+ o A.Q.
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261102@gbonanome.github.io
@@ -866,10 +881,7 @@ DESCRIPTION:• Noccioline ai formaggi\n• Finocchi julienne/Piselli al te
  game\n• Pane\n• Frutta fresca\n\nSettimana 2 di 4 · Menu autunnale 20
  26-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editor
  pagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il men
- u: https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\n
- Progetto non ufficiale\, senza legami con Dussmann o con il Comune di Pado
- va: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclu
- si.
+ u: https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -887,9 +899,7 @@ DESCRIPTION:• Minestra in brodo vegetale con stelline\n• Hamburger di m
   · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoleduss
  mann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671
  555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#pr
- imaria-lambruschini\nProgetto non ufficiale\, senza legami con Dussmann o 
- con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali 
- e allergeni non inclusi.
+ imaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -910,12 +920,16 @@ DESCRIPTION:• Riso allo zafferano\n• Coscette di pollo al forno\n• Fa
  https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): http
  s://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autu
  nnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu
- -scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza lega
- mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
- e. Diete speciali e allergeni non inclusi.
+ -scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Riso allo zafferano · Coscette di pollo al f
+ orno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261105@gbonanome.github.io
@@ -938,12 +952,16 @@ DESCRIPTION:• Pasta (ditalini) e fagioli\n• Frittata al prosciutto cott
  nn.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.i
  t/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pd
  f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria
- -lambruschini\nProgetto non ufficiale\, senza legami con Dussmann o con il
-  Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e alle
- rgeni non inclusi.
+ -lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Pasta (ditalini) e fagioli · Frittata al pro
+ sciutto cotto
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261106@gbonanome.github.io
@@ -959,9 +977,7 @@ DESCRIPTION:• Pipette al pomodoro\n• Hamburger di trota (o altra tipolo
  Settimana 2 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https:
  //www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunn
  ale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
- cuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami
-  con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale.
-  Diete speciali e allergeni non inclusi.
+ cuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -979,9 +995,7 @@ DESCRIPTION:• Tortellini di prosciutto crudo al pomodoro\n• Asiago\n•
   3 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scu
  oledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-
  27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
- ova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Duss
- mann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete sp
- eciali e allergeni non inclusi.
+ ova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1004,12 +1018,16 @@ DESCRIPTION:• Crema di ceci bio (era: Crema di lenticchie rosse decortica
  te: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): 
  https://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-
  autunnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/
- menu-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza 
- legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffi
- ciale. Diete speciali e allergeni non inclusi.
+ menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Crema di ceci bio · Tortino di uova\, patate
+  e formaggio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261111@gbonanome.github.io
@@ -1023,10 +1041,7 @@ DESCRIPTION:• Bigoli al ragù di manzo\n• Cappuccio julienne\n• Pisel
  li\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 · Menu autunnale 2026
  -27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
  gine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu:
-  https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nPr
- ogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padova
- : fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi
- .
+  https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1050,12 +1065,16 @@ DESCRIPTION:• Mezze penne al burro\n• Halibut gratinato al forno\n• Z
  it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/u
  pload/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\n
  Tutto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-la
- mbruschini\nProgetto non ufficiale\, senza legami con Dussmann o con il Co
- mune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerge
- ni non inclusi.
+ mbruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Mezze penne al burro · Halibut gratinato al 
+ forno
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261113@gbonanome.github.io
@@ -1071,9 +1090,7 @@ DESCRIPTION:• Crema di porri e cavolfiori con orzo\n• Bocconcini di tac
  0%\n\nSettimana 3 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): 
  https://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-
  autunnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/
- menu-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza 
- legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffi
- ciale. Diete speciali e allergeni non inclusi.
+ menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1092,9 +1109,7 @@ DESCRIPTION:• Mezze penne alla crema di zucchine\n• Uova strapazzate o
  n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): htt
  ps://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-aut
  unnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/men
- u-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, senza leg
- ami con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficia
- le. Diete speciali e allergeni non inclusi.
+ u-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1121,12 +1136,16 @@ DESCRIPTION:• Pizza margherita al trancio\n• Radicchio variegato e insa
  ienne).\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu uffic
  iale (PDF): https://www.scuoledussmann.it/upload/editorpagine/2-primaria-l
  ambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanom
- e.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non uffici
- ale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede 
- il menu ufficiale. Diete speciali e allergeni non inclusi.
+ e.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Pizza margherita al trancio · Radicchio vari
+ egato e insalata
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261118@gbonanome.github.io
@@ -1141,9 +1160,7 @@ DESCRIPTION:• Riso alla zucca\n• Bocconcini di pollo gratinati\n• Zuc
  utunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
  load/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nT
  utto il menu: https://gbonanome.github.io/menu-scuole-padova/#primaria-lam
- bruschini\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
- une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
- i non inclusi.
+ bruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1161,9 +1178,7 @@ DESCRIPTION:• Minestra in brodo vegetale con risoni\n• Spezzatino di ma
   vasetto\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (
  PDF): https://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambrus
  chini-autunnale-2026-27-8671555.pdf\nTutto il menu: https://gbonanome.gith
- ub.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non ufficiale\, 
- senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
- u ufficiale. Diete speciali e allergeni non inclusi.
+ ub.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1188,12 +1203,15 @@ DESCRIPTION:• Pasta al pomodoro\n• Tonno all’olio\n• Fagiolini all
   da frutta fresca)\nFonte: https://www.scuoledussmann.it/padova#notizie\n\
  nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/2
  -primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: https
- ://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto
-  non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa s
- empre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ ://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Pasta al pomodoro · Tonno all’olio
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:primaria-lambruschini-20261123@gbonanome.github.io
@@ -1207,9 +1225,7 @@ DESCRIPTION:• Spaghetti al pomodoro\n• Caciotta\n• Bieta all’olio\n
  • Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 2026-27\
  n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
  /2-primaria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: htt
- ps://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProget
- to non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa
-  sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ ps://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1228,9 +1244,7 @@ DESCRIPTION:• Lasagne al forno con ragù di manzo*\n• Insalata e cappuc
  na 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.s
  cuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-202
  6-27-8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-p
- adova/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Du
- ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
- speciali e allergeni non inclusi.
+ adova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1249,9 +1263,7 @@ DESCRIPTION:• Riso agli spinaci o delicato al sedano rapa\n• Filettini
  \n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 2026-27\n\nMenu 
  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/2-prima
  ria-lambruschini-autunnale-2026-27-8671555.pdf\nTutto il menu: https://gbo
- nanome.github.io/menu-scuole-padova/#primaria-lambruschini\nProgetto non u
- fficiale\, senza legami con Dussmann o con il Comune di Padova: fa sempre 
- fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+ nanome.github.io/menu-scuole-padova/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1269,9 +1281,7 @@ DESCRIPTION:• Crema di verdura con risoni\n• Polpette\n• Patate grati
   di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuol
  edussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-27
  -8671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
- a/#primaria-lambruschini\nProgetto non ufficiale\, senza legami con Dussma
- nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
- iali e allergeni non inclusi.
+ a/#primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
@@ -1289,9 +1299,7 @@ DESCRIPTION:• Mezze penne all’ortolana\n• Prosciutto cotto A.Q.\n•
  i 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoled
  ussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8
  671555.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
- #primaria-lambruschini\nProgetto non ufficiale\, senza legami con Dussmann
-  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
- li e allergeni non inclusi.
+ #primaria-lambruschini
 URL:https://gbonanome.github.io/menu-scuole-padova/#primaria-lambruschini
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

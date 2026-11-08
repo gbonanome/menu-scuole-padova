@@ -57,10 +57,7 @@ export function descrizioneEvento(g, feed, { baseUrl = BASE_URL } = {}) {
   }
   righe.push('');
   if (g.pdf) righe.push(`Menu ufficiale (PDF): ${g.pdf}`);
-  righe.push(
-    `Tutto il menu: ${baseUrl}#${feed}`,
-    'Progetto non ufficiale, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.'
-  );
+  righe.push(`Tutto il menu: ${baseUrl}#${feed}`);
   return righe.join('\n');
 }
 
@@ -107,6 +104,10 @@ export function costruisciIcs(feed, giorni, stato, { ora, host = HOST, baseUrl =
       `URL:${baseUrl}#${feed}`,
       'TRANSP:TRANSPARENT',
       'STATUS:CONFIRMED',
+      // Promemoria solo nei giorni variati: alle 7:00 del giorno stesso (gli altri giorni nessun avviso).
+      ...(g.variazioni.length
+        ? ['BEGIN:VALARM', 'ACTION:DISPLAY', `DESCRIPTION:${escapeTesto(summary)}`, 'TRIGGER;RELATED=START:PT7H', 'END:VALARM']
+        : []),
       'END:VEVENT'
     );
   }

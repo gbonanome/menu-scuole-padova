@@ -91,7 +91,10 @@ for (const feed of Object.keys(FEED_INFO)) {
       assert.ok(st.scuola, `${d}: evento in un giorno non scolastico (${st.motivo})`);
       assert.ok(d <= fineAnno(cal, feed));
       assert.ok(ev.summary.startsWith('🍽 ') || ev.summary.startsWith('⚠️ VARIATO · '), ev.summary);
-      assert.ok(ev.description.includes('fa sempre fede il menu ufficiale'));
+      assert.ok(!ev.description.includes('non ufficiale'));
+      const allarmi = ev.component.getAllSubcomponents('valarm');
+      assert.equal(allarmi.length, ev.summary.startsWith('⚠️') ? 1 : 0, `${d}: promemoria solo nei giorni variati`);
+      if (allarmi.length) assert.equal(allarmi[0].getFirstPropertyValue('trigger').toString(), 'PT7H');
       assert.equal(ev.sequence, 0);
       assert.equal(ev.component.getFirstPropertyValue('transp'), 'TRANSPARENT');
     }
