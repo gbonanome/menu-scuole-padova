@@ -1,0 +1,128 @@
+name: Aggiornamento menu
+
+on:
+  schedule:
+    # Orari in UTC. Ora italiana: +1 d'inverno, +2 d'estate.
+    - cron: '15 5 * * *'     # ogni giorno, mattina presto
+    - cron: '15 10 * * 1-5'  # giorni feriali, metà giornata
+    - cron: '15 14 * * 1-5'  # giorni feriali, pomeriggio (le variazioni escono spesso nel pomeriggio)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ['README.md', 'BRIEF.md', 'test/**', 'fixtures/**', '.github/workflows/test.yml']
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  pages: write
+  id-token: write
+  actions: write
+
+concurrency:
+  group: aggiornamento-menu
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Identità git del bot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Scraping e parsing
+        run: |
+          set +e
+          node src/update.js --report "$RUNNER_TEMP/report.json"
+          code=$?
+          # 2 = errori di validazione/scraping già nel report (diventano una issue), altro = crash
+          if [ $code -ne 0 ] && [ $code -ne 2 ]; then exit $code; fi
+
+      - name: Metti da parte i menu nuovi (vanno in Pull Request, non su main)
+        id: menu
+        run: |
+          if [ -n "$(git status --porcelain data/menus)" ]; then
+            mkdir -p "$RUNNER_TEMP/menus"
+            cp -R data/menus/. "$RUNNER_TEMP/menus/"
+            git checkout -- data/menus
+            git clean -fdq data/menus
+            echo "nuovi=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build di feed e pagina
+        run: node src/build-site.js --problemi "$RUNNER_TEMP/problemi.json"
+
+      - name: Commit su main di variazioni e stato
+        run: |
+          git add data/notizie data/variations.json data/state.json data/ics-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Aggiornamento automatico: variazioni e stato ($(date -u +%F))"
+            git push origin HEAD:main
+          fi
+
+      - name: Keepalive dei workflow programmati
+        if: github.event_name == 'schedule'
+        run: |
+          # GitHub disattiva i workflow programmati dei repo pubblici dopo 60 giorni senza attività (es. in estate).
+          gh api -X PUT "repos/$GITHUB_REPOSITORY/actions/workflows/update.yml/enable" || true
+          if [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -gt $(( 50 * 86400 )) ]; then
+            git commit --allow-empty -m "Keepalive: nessuna attività da 50 giorni"
+            git push origin HEAD:main
+          fi
+
+      - name: Pull Request per i menu nuovi o modificati
+        if: steps.menu.outputs.nuovi == 'true'
+        run: |
+          gh label create nuovo-menu --color 0e8a16 --description "Nuovo menu stagionale da rivedere" --force
+          git fetch origin
+          if [ "$(gh pr view aggiornamento-menu --json state -q .state 2>/dev/null)" = "OPEN" ]; then
+            git checkout -B aggiornamento-menu origin/aggiornamento-menu
+            git merge --no-edit origin/main
+          else
+            git checkout -B aggiornamento-menu origin/main
+          fi
+          cp -R "$RUNNER_TEMP/menus/." data/menus/
+          git add data/menus
+          git commit -m "Menu da rivedere ($(date -u +%F))" || true
+          git push --force-with-lease origin aggiornamento-menu
+          node src/ci.js corpo-pr --report "$RUNNER_TEMP/report.json" > "$RUNNER_TEMP/corpo.md"
+          if [ "$(gh pr view aggiornamento-menu --json state -q .state 2>/dev/null)" = "OPEN" ]; then
+            gh pr edit aggiornamento-menu --body-file "$RUNNER_TEMP/corpo.md"
+          else
+            gh pr create --head aggiornamento-menu --base main --title "Nuovo menu da rivedere" --body-file "$RUNNER_TEMP/corpo.md" --label nuovo-menu
+          fi
+          git checkout -q main
+
+      - name: Issue per errori e variazioni da verificare
+        if: always()
+        run: node src/ci.js segnala --report "$RUNNER_TEMP/report.json" --problemi "$RUNNER_TEMP/problemi.json" --esito "${{ job.status }}"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: aggiorna
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -22,9 +22,33 @@ Apri una issue: <https://github.com/gbonanome/menu-scuole-padova/issues>. Se una
 
 ## Per chi mantiene il progetto
 
-- A ogni **cambio di stagione** il workflow apre una Pull Request con il menu estratto dal nuovo PDF: va rivista e approvata.
-- A ogni **inizio d'anno** vanno aggiornati `data/calendario-scolastico-*.json` e, se serve, `data/scuole-padova.json`.
-- Le date di inizio e fine di ogni menu sono quelle scritte nei PDF di Dussmann (l'inizio della mensa non coincide con l'inizio della scuola).
+### Come funziona l'aggiornamento automatico
+
+Il workflow [`update.yml`](.github/workflows/update.yml) gira ogni giorno alle 05:15 UTC e, nei giorni feriali, anche alle 10:15 e alle 14:15 UTC (in Italia +1 ora d'inverno, +2 d'estate). Si può lanciare a mano da *Actions → Aggiornamento menu → Run workflow*.
+
+1. Legge la pagina di Dussmann, scarica i PDF dei menu nuovi o cambiati (gli URL cambiano a ogni pubblicazione) e le notizie.
+2. **Variazioni**: vengono pubblicate subito. Se il testo è ambiguo (confidenza non alta) il giorno mostra comunque l'avviso, e si apre una issue `variazione-da-verificare`.
+3. **Menu nuovi o modificati**: non vanno direttamente online. Il workflow apre (o aggiorna) la Pull Request **"Nuovo menu da rivedere"** con la griglia settimana per settimana e le celle cambiate. Va confrontata con il PDF e poi unita: al merge feed e pagina si aggiornano.
+4. Costruisce feed `.ics` e pagina e li pubblica su GitHub Pages.
+5. Se lo scraping o il parsing falliscono (sito cambiato, PDF in un formato nuovo) si apre la issue **"Aggiornamento automatico non riuscito"**, che si chiude da sola quando tutto torna a posto. I dati già pubblicati restano invariati.
+
+Comandi utili in locale: `npm run update` (scraping), `npm run build` (genera `dist/`), `npm run serve` (anteprima su http://localhost:8080), `npm test`.
+
+Impostazione richiesta nel repository: *Settings → Actions → General → Workflow permissions* → "Allow GitHub Actions to create and approve pull requests" (serve per aprire la PR dei menu).
+
+### A ogni cambio di stagione
+
+Arriva la PR "Nuovo menu da rivedere": controllala con il PDF e fai il merge. Se chiudi la PR senza merge il menu non viene pubblicato; per riproporlo, togli il suo PDF da `data/state.json`.
+
+### A ogni inizio d'anno scolastico
+
+- Aggiungi `data/calendario-scolastico-AAAA-AA.json` (Regione) e `data/calendario-nidi-AAAA-AA.json` (Comune).
+- Controlla `data/scuole-padova.json` (scuole e tipo di menu).
+- I PDF dell'anno precedente vengono ignorati automaticamente: le date di inizio e fine di ogni menu sono quelle scritte nei PDF (l'inizio della mensa non coincide con l'inizio della scuola).
+
+### Estate e workflow programmati
+
+GitHub disattiva i workflow programmati dei repository pubblici dopo 60 giorni senza attività. Il workflow lo previene da solo (riattivazione via API a ogni esecuzione e, se serve, un commit vuoto ogni 50 giorni). Se comunque risultasse disattivato, riattivalo da *Actions → Aggiornamento menu → Enable workflow*.
 
 ## Licenza
 
