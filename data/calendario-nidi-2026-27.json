@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "anno": "2026-27",
+    "fonte": "Comune di Padova, news 'Calendario scolastico 2026/2027' (ultima modifica 15/07/2026): 'Il Calendario scolastico asili nido comunali e scuole dell'infanzia comunali prevede le stesse chiusure' delle scuole statali di Padova, https://padovaper.comune.padova.it/news/calendario-scolastico-20262027 — Regione Veneto, DGR 239 del 14/04/2026 modificata da DGR 712 del 07/07/2026. Regola generale: 'Orario e calendario annuale degli asili nido comunali' (Settore Servizi Scolastici), https://www.comune.padova.it/sites/default/files/attachment/ORARIO%20E%20CALENDARIO%20ANNUALE%20DEGLI%20ASILI%20NIDO%20COMUNALI.pdf — Struttura dell'atto annuale: disposizione del Capo Settore Servizi Scolastici 'Calendario scolastico asili nido e scuole dell'infanzia comunali 2025/2026' (firmata 03/06/2025), https://www.comune.padova.it/sites/default/files/2025-08/CalendarioAnnoScolastico2025-2026_signed.pdf",
+    "si_applica_a": ["nido-cucina-interna", "nido-integrato-cucina-interna", "nido-veicolato"],
+    "attenzione": [
+      "Non ho trovato l'atto comunale specifico per il 2026-27 (per il 2025-26 era una disposizione del Capo Settore Servizi Scolastici, pubblicata come PDF firmato). Le chiusure sono confermate dalla news del Comune; inizio e fine sono ricavati dalla regola generale. Quando esce il PDF 2026-27, sostituire la fonte e ricontrollare le date.",
+      "Fine anno educativo: la regola generale dice 'chiudono il 30 giugno', ma negli ultimi anni l'atto annuale ha fissato l'ultimo venerdì prima del centro estivo: venerdì 27/06/2025 (citato nel capitolato dei centri estivi) e venerdì 26/06/2026 (atto 2025-26). Nel 2027 il 30 giugno cade di mercoledì: la fine reale potrebbe essere venerdì 25/06/2027. Ho lasciato il 30/06 perché è l'unica data scritta in una fonte.",
+      "Inizio: lunedì 1 settembre negli atti, qui martedì 01/09/2026. Nelle prime settimane di settembre e ottobre si fanno gli inserimenti graduali: i nuovi iscritti possono non pranzare al nido nei primi giorni.",
+      "Servizio estivo di luglio (nido_estivo) omesso: le date di luglio 2027 non sono pubblicate. È un centro estivo a pagamento, riservato ai bambini che hanno frequentato un nido comunale e con genitori che lavorano, attivo solo in alcune sedi (6 nel 2026: Balena Blu, Il Mago di Oz, La Trottola, Sacra Famiglia, Lo Scarabocchio, Chiara Lubich). Il pasto è compreso: il Comune garantisce la refezione (capitolato 2025, art. 5.1 d; volantino 2023). Date degli anni scorsi: 03/07–28/07/2023, 01/07–26/07/2024, 30/06–25/07/2025, 29/06–24/07/2026. L'appalto 2025 era prorogabile solo al 2026: per il 2027 serve una nuova gara.",
+      "Nidi integrati: la news e l'atto 2025-26 coprono 'asili nido e scuole dell'infanzia comunali' senza distinguere i nidi integrati, che sono a gestione comunale. Li ho inclusi con certezza media. La Coccinella (c/o La Giraffa) e Il Colibrì (c/o Peter Pan) stanno in infanzie statali: se l'istituto statale adotta i suoi 3 giorni di adattamento, il nido integrato non dovrebbe seguirli, ma non ho trovato una fonte esplicita.",
+      "Girotondo (pasto veicolato): le 'Norme di funzionamento' lo indicano come asilo nido comunale che si distingue dagli altri solo per i pasti veicolati. Segue quindi lo stesso calendario (certezza alta).",
+      "Adattamenti locali: il calendario comunale 2025-26 cita una delibera del Consiglio di Circolo. Eventuali ponti o adattamenti decisi dal Consiglio di Circolo per il 2026-27 non sono pubblicati.",
+      "Ponte di Ognissanti (30/10 e 02/11/2026): non compare nella news del Comune, aggiornata dopo la DGR 712. Non l'ho incluso (è comunque già passato).",
+      "San Francesco (04/10/2026), Ognissanti (01/11/2026), Liberazione (25/04/2027) e Sant'Antonio (13/06/2027) cadono di domenica; il 1° maggio 2027 cade di sabato. Nessun effetto sui feed."
+    ],
+    "aggiornato": "2026-11-08"
+  },
+  "periodi": {
+    "nido": { "inizio": "2026-09-01", "fine": "2027-06-30" }
+  },
+  "festivita": [
+    { "data": "2026-10-04", "nome": "San Francesco d'Assisi" },
+    { "data": "2026-11-01", "nome": "Ognissanti" },
+    { "data": "2026-12-08", "nome": "Immacolata Concezione" },
+    { "data": "2026-12-25", "nome": "Natale" },
+    { "data": "2026-12-26", "nome": "Santo Stefano" },
+    { "data": "2027-01-01", "nome": "Capodanno" },
+    { "data": "2027-01-06", "nome": "Epifania" },
+    { "data": "2027-03-29", "nome": "Lunedì dell'Angelo" },
+    { "data": "2027-04-25", "nome": "Festa della Liberazione" },
+    { "data": "2027-05-01", "nome": "Festa del Lavoro" },
+    { "data": "2027-06-02", "nome": "Festa della Repubblica" },
+    { "data": "2027-06-13", "nome": "Sant'Antonio (Santo Patrono di Padova)" }
+  ],
+  "sospensioni": [
+    { "dal": "2026-12-07", "al": "2026-12-07", "nome": "Ponte dell'Immacolata" },
+    { "dal": "2026-12-24", "al": "2027-01-05", "nome": "Vacanze di Natale" },
+    { "dal": "2027-02-08", "al": "2027-02-10", "nome": "Carnevale e Ceneri" },
+    { "dal": "2027-03-25", "al": "2027-03-30", "nome": "Vacanze di Pasqua" },
+    { "dal": "2027-04-29", "al": "2027-04-30", "nome": "Ponte del 1° maggio" }
+  ]
+}
