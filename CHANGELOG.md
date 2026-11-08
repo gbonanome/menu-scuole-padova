@@ -10,6 +10,9 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Modificato
+- Il piatto variato non è più in grassetto: lo segnala il bollino "variato" (il grassetto resta solo sul primo piatto).
+
 ### Corretto
 - Le variazioni che scambiano due piatti tra due giorni ("…e viceversa…") ora cambiano il menu dei giorni coinvolti, ciascuno con la sua data. Prima restava solo il testo dell'avviso: il 12/11 risultava ancora l'halibut invece dei filettini di merluzzo.
 

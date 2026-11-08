@@ -149,7 +149,6 @@ button { cursor: pointer; }
 .day li.oppure { font-style: italic; color: var(--b-muted); font-weight: 400; }
 .day.is-today { box-shadow: inset 0 0 0 3px var(--b-today); }
 .day.varied { background: var(--b-alert-bg); }
-.day li.changed { font-weight: 700; }
 .day li.changed::after, .tray li.changed .dish::after {
   content: "variato"; margin-left: 6px; font: 800 0.68rem var(--f-body); letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--b-surface); background: var(--b-alert); padding: 1px 6px; border-radius: 999px; vertical-align: 1px; white-space: nowrap;
