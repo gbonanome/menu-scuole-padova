@@ -20,5 +20,8 @@
   },
   "dependencies": {
     "pdfjs-dist": "^6.5.438"
+  },
+  "devDependencies": {
+    "ical.js": "^2.2.1"
   }
 }

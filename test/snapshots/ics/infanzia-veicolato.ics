@@ -1,0 +1,1464 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Menu Scuole Padova//menu-scuole-padova//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Menu Scuole Padova · Infanzia veicolato
+X-WR-CALDESC:Menu della mensa scolastica (Infanzia veicolato)\, Comune di P
+ adova. Progetto non ufficiale: fa fede il menu pubblicato su https://www.s
+ cuoledussmann.it/padova
+X-WR-TIMEZONE:Europe/Rome
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260901@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🍽 Lasagne al pesto alla genovese · Sformato di platessa e merlu
+ zzo
+DESCRIPTION:• Lasagne al pesto alla genovese\n• Sformato di platessa e 
+ merluzzo\n• Carote julienne\n• Pane\n• Torta margherita\n\nSettimana
+  1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuole
+ dussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-202
+ 6-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-p
+ adova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260902@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+SUMMARY:🍽 Passato di verdure con orzo · Hamburger di pollo con aromi
+DESCRIPTION:• Passato di verdure con orzo\n• Hamburger di pollo con aro
+ mi\n• Patate al forno\n• Pane semintegrale\n• Frutta fresca\n\nSetti
+ mana 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.sc
+ uoledussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott
+ -2026-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuo
+ le-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con D
+ ussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete
+  speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260903@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:🍽 Mezze penne alla mammarosa (ricotta e pomodoro) · Polpette di
+  legumi (lenticchie o cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (ricotta e pomodoro)\n• Polpet
+ te di legumi (lenticchie o cannellini)\n• Pomodori\n• Pane\n• Yogurt
+  alla frutta in vasetto\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu
+  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok3-in
+ fanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTutto il menu: https
+ ://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato\nProgetto no
+ n ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa semp
+ re fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260904@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:🍽 Chifferi pomodoro e basilico · Prosciutto cotto Alta Qualità
+DESCRIPTION:• Chifferi pomodoro e basilico\n• Prosciutto cotto Alta Qua
+ lità\n• Fagiolini all’olio\n• Pane\n• Frutta fresca\n\nSettimana 
+ 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoled
+ ussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026
+ -27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pa
+ dova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260907@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:🍽 Ravioli ricotta e spinaci al burro e salvia* · Robiola
+DESCRIPTION:• Ravioli ricotta e spinaci al burro e salvia*\n• Robiola\n
+ • Piselli\n• Pane\n• Frutta fresca\n\nSettimana 2 di 4 · Menu estiv
+ o 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
+ itorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veico
+ lato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune d
+ i Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non
+  inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260908@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:🍽 Fusilli al pomodoro · Uova sode/Frittata al formaggio
+DESCRIPTION:• Fusilli al pomodoro\n• Uova sode/Frittata al formaggio\n
+ • Insalata\n• Pane\n• Gelato\n\nSettimana 2 di 4 · Menu estivo 2026
+ -27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
+ gine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTutto il 
+ menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato\n
+ Progetto non ufficiale\, senza legami con Dussmann o con il Comune di Pado
+ va: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclu
+ si.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260909@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:🍽 Riso allo zafferano o alla zucca · Coscette di pollo al forno
+  disossate
+DESCRIPTION:• Riso allo zafferano o alla zucca\n• Coscette di pollo al 
+ forno disossate\n• Carote julienne\n• Pane\n• Frutta fresca\n\nSetti
+ mana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.sc
+ uoledussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott
+ -2026-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuo
+ le-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con D
+ ussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete
+  speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260910@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:🍽 Stortini alla parmigiana · Hamburger di manzo
+DESCRIPTION:• Stortini alla parmigiana\n• Hamburger di manzo\n• Zucch
+ ine trifolate\n• Pane semintegrale\n• Frutta fresca\n\nSettimana 2 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4
+ 421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o 
+ con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali 
+ e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260911@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:🍽 Gnocchetti sardi al pesto alla genovese · Filetto di merluzzo
+  gratinato con fettina di limone
+DESCRIPTION:• Gnocchetti sardi al pesto alla genovese\n• Filetto di mer
+ luzzo gratinato con fettina di limone\n• Pomodori\n• Pane\n• Yogurt 
+ da bere alla frutta\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu uff
+ iciale (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok3-infanz
+ ia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTutto il menu: https://g
+ bonanome.github.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non uf
+ ficiale\, senza legami con Dussmann o con il Comune di Padova: fa sempre f
+ ede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260914@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:🍽 Pipe alla crema di zucchine · Asiago
+DESCRIPTION:• Pipe alla crema di zucchine\n• Asiago\n• Carote julienn
+ e\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 · Menu estivo 2026-27\
+ n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
+ /ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTutto il menu
+ : https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato\nProg
+ etto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: 
+ fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260915@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:🍽 Riso alla parmigiana · Straccetti di manzo
+DESCRIPTION:• Riso alla parmigiana\n• Straccetti di manzo\n• Cappucci
+ o julienne\n• Pane\n• Yogurt in vasetto alla frutta\n\nSettimana 3 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4
+ 421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o 
+ con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali 
+ e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260916@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:🍽 Fusilli pomodoro e basilico · Affettato di tacchino
+DESCRIPTION:• Fusilli pomodoro e basilico\n• Affettato di tacchino\n•
+  Insalata e mais\n• Pane semintegrale\n• Torta al cioccolato\n\nSettim
+ ana 3 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scu
+ oledussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-
+ 2026-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuol
+ e-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260917@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:🍽 Crema di peperoni gialli con stelline · Bocconcini di pollo p
+ anati
+DESCRIPTION:• Crema di peperoni gialli con stelline\n• Bocconcini di po
+ llo panati\n• Patate e zucchine gratinate agli aromi\n• Pane\n• Frut
+ ta fresca\n\nSettimana 3 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PD
+ F): https://www.scuoledussmann.it/upload/editorpagine/ok3-infanzia-veicola
+ ta-estivo-sett-ott-2026-27-4421972.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260918@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:🍽 Stortini al pesto alla genovese · Polpette di pesce
+DESCRIPTION:• Stortini al pesto alla genovese\n• Polpette di pesce\n•
+  Pomodori e cetrioli\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 · M
+ enu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/
+ upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972
+ .pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infan
+ zia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il
+  Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e alle
+ rgeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260921@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:🍽 Mezze penne al ragù vegetale · Bocconcini di mozzarella
+DESCRIPTION:• Mezze penne al ragù vegetale\n• Bocconcini di mozzarella
+ \n• Cappuccio julienne\n• Pane\n• Frutta fresca\n\nSettimana 4 di 4 
+ · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann
+ .it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-442
+ 1972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#i
+ nfanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o co
+ n il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e 
+ allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260922@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:🍽 Chifferi alla norma · Hamburger di manzo
+DESCRIPTION:• Chifferi alla norma\n• Hamburger di manzo\n• Zucchine t
+ rifolate\n• Pane\n• Gelato coppetta\n\nSettimana 4 di 4 · Menu estivo
+  2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edi
+ torpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTutt
+ o il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicol
+ ato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di
+  Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non 
+ inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260923@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:⚠️ VARIATO · Riso morbido alla crema di spinaci · Uova sode/F
+ rittata al formaggio
+DESCRIPTION:• Riso morbido alla crema di spinaci\n• Uova sode/Frittata 
+ al formaggio\n• Carote a bastoncino\n• Pane\n• Yogurt da bere alla f
+ rutta\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\n⚠️ VARIAZIONE (pub
+ blicata il 10/09/2026): VARIAZIONE MENU 23 SETTEMBRE 2026\nla presente per
+  informarvi che vi sarà un'inversione di somministrazione dello yogurt da
+  bere del 23/09 con lo yogurt in vasetto del 01/10 per infanzie\, primarie
+  e secondarie veicolate.\nFonte: https://www.scuoledussmann.it/padova#noti
+ zie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpa
+ gine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTutto il 
+ menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato\n
+ Progetto non ufficiale\, senza legami con Dussmann o con il Comune di Pado
+ va: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclu
+ si.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260924@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:🍽 Pipe alla pizzaiola · Lonza di maiale al latte
+DESCRIPTION:• Pipe alla pizzaiola\n• Lonza di maiale al latte\n• Insa
+ lata\n• Pane semintegrale\n• Frutta fresca\n\nSettimana 4 di 4 · Menu
+  estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Co
+ mune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerge
+ ni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260925@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:🍽 Crema di ceci con ditalini · Halibut gratinato
+DESCRIPTION:• Crema di ceci con ditalini\n• Halibut gratinato\n• Pata
+ te al forno\n• Pane\n• Frutta fresca\n\nSettimana 4 di 4 · Menu estiv
+ o 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
+ itorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veico
+ lato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune d
+ i Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non
+  inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260928@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:🍽 Riso alle zucchine · Caciotta
+DESCRIPTION:• Riso alle zucchine\n• Caciotta\n• Insalata e mais\n• 
+ Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu
+  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok3-in
+ fanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf\nTutto il menu: https
+ ://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato\nProgetto no
+ n ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa semp
+ re fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260929@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:🍽 Lasagne al pesto alla genovese · Sformato di platessa e merlu
+ zzo
+DESCRIPTION:• Lasagne al pesto alla genovese\n• Sformato di platessa e 
+ merluzzo\n• Carote julienne\n• Pane\n• Torta margherita\n\nSettimana
+  1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuole
+ dussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-202
+ 6-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-p
+ adova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20260930@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:⚠️ VARIATO · Passato di verdure con orzo · Hamburger di pollo
+  con aromi
+DESCRIPTION:• Passato di verdure con orzo\n• Hamburger di pollo con aro
+ mi\n• Patate al forno\n• Pane semintegrale\n• Frutta fresca\n\nSetti
+ mana 1 di 4 · Menu estivo 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 28/
+ 09/2026): Variazione Menù\nA causa dello sciopero previsto per venerdì 2
+  ottobre il menù della settimana prossima sarà così articolato:\nVEICOL
+ ATI\n- Lunedì e martedì à invariati\n- Mercoledì:\na) Nido e infanzie 
+ veicolate: noccioline alla parmigiana\, uova strapazzate\, cappuccio julie
+ nne (+ carote all’olio per nido)\nb) 50% servizio primarie e secondarie 
+ veicolate: pizza\, pomodori e mais\, zucchine gratinate\nc) 50% servizio p
+ rimarie e secondarie veicolate: noccioline alla parmigiana\, uova strapazz
+ ate\, cappuccio julienne\n- Giovedì:\na) Nido e infanzie veicolate: invar
+ iato\nb) 50% servizio primarie e secondarie veicolate: pizza\, pomodori e 
+ mais\, zucchine gratinate\nc) 50% servizio primarie e secondarie veicolate
+ : mezze penne alla parmigiana\, uova strapazzate\, cappuccio julienne\n- V
+ enerdì:\na) Nido e infanzie veicolate: invariato + fine pasto à frullato
+  di frutta\nb) Primarie e secondarie veicolate: spaghetti al pomodoro\, pr
+ osciutto cotto\, fagiolini all’olio\, frullato di frutta\, crackers\nFon
+ te: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): 
+ https://www.scuoledussmann.it/upload/editorpagine/ok3-infanzia-veicolata-e
+ stivo-sett-ott-2026-27-4421972.pdf\nTutto il menu: https://gbonanome.githu
+ b.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senz
+ a legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uf
+ ficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261001@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:⚠️ VARIATO · Mezze penne alla mammarosa (ricotta e pomodoro) 
+ · Polpette di legumi (lenticchie o cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (ricotta e pomodoro)\n• Polpet
+ te di legumi (lenticchie o cannellini)\n• Pomodori\n• Pane\n• Yogurt
+  alla frutta in vasetto\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\n⚠
+ ️ VARIAZIONE (pubblicata il 10/09/2026): VARIAZIONE MENU 23 SETTEMBRE 20
+ 26\nla presente per informarvi che vi sarà un'inversione di somministrazi
+ one dello yogurt da bere del 23/09 con lo yogurt in vasetto del 01/10 per 
+ infanzie\, primarie e secondarie veicolate.\nFonte: https://www.scuoleduss
+ mann.it/padova#notizie\n\n⚠️ VARIAZIONE (pubblicata il 28/09/2026): Va
+ riazione Menù\nA causa dello sciopero previsto per venerdì 2 ottobre il 
+ menù della settimana prossima sarà così articolato:\nVEICOLATI\n- Luned
+ ì e martedì à invariati\n- Mercoledì:\na) Nido e infanzie veicolate: n
+ occioline alla parmigiana\, uova strapazzate\, cappuccio julienne (+ carot
+ e all’olio per nido)\nb) 50% servizio primarie e secondarie veicolate: p
+ izza\, pomodori e mais\, zucchine gratinate\nc) 50% servizio primarie e se
+ condarie veicolate: noccioline alla parmigiana\, uova strapazzate\, cappuc
+ cio julienne\n- Giovedì:\na) Nido e infanzie veicolate: invariato\nb) 50%
+  servizio primarie e secondarie veicolate: pizza\, pomodori e mais\, zucch
+ ine gratinate\nc) 50% servizio primarie e secondarie veicolate: mezze penn
+ e alla parmigiana\, uova strapazzate\, cappuccio julienne\n- Venerdì:\na)
+  Nido e infanzie veicolate: invariato + fine pasto à frullato di frutta\n
+ b) Primarie e secondarie veicolate: spaghetti al pomodoro\, prosciutto cot
+ to\, fagiolini all’olio\, frullato di frutta\, crackers\nFonte: https://
+ www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.
+ scuoledussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-o
+ tt-2026-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-sc
+ uole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con
+  Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Die
+ te speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261002@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:⚠️ VARIATO · Chifferi pomodoro e basilico · Prosciutto cotto 
+ Alta Qualità
+DESCRIPTION:• Chifferi pomodoro e basilico\n• Prosciutto cotto Alta Qua
+ lità\n• Fagiolini all’olio\n• Pane\n• Frutta fresca\n\nSettimana 
+ 1 di 4 · Menu estivo 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 28/09/20
+ 26): Variazione Menù\nA causa dello sciopero previsto per venerdì 2 otto
+ bre il menù della settimana prossima sarà così articolato:\nVEICOLATI\n
+ - Lunedì e martedì à invariati\n- Mercoledì:\na) Nido e infanzie veico
+ late: noccioline alla parmigiana\, uova strapazzate\, cappuccio julienne (
+ + carote all’olio per nido)\nb) 50% servizio primarie e secondarie veico
+ late: pizza\, pomodori e mais\, zucchine gratinate\nc) 50% servizio primar
+ ie e secondarie veicolate: noccioline alla parmigiana\, uova strapazzate\,
+  cappuccio julienne\n- Giovedì:\na) Nido e infanzie veicolate: invariato\
+ nb) 50% servizio primarie e secondarie veicolate: pizza\, pomodori e mais\
+ , zucchine gratinate\nc) 50% servizio primarie e secondarie veicolate: mez
+ ze penne alla parmigiana\, uova strapazzate\, cappuccio julienne\n- Venerd
+ ì:\na) Nido e infanzie veicolate: invariato + fine pasto à frullato di f
+ rutta\nb) Primarie e secondarie veicolate: spaghetti al pomodoro\, prosciu
+ tto cotto\, fagiolini all’olio\, frullato di frutta\, crackers\nFonte: h
+ ttps://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https
+ ://www.scuoledussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo
+ -sett-ott-2026-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/
+ menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza leg
+ ami con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficia
+ le. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261005@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:⚠️ VARIATO · Ravioli ricotta e spinaci al burro e salvia* · R
+ obiola
+DESCRIPTION:• Ravioli ricotta e spinaci al burro e salvia*\n• Robiola\n
+ • Piselli\n• Pane\n• Frutta fresca\n\nSettimana 2 di 4 · Menu estiv
+ o 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 29/09/2026): VARIAZIONE MENU
+  05/10\, 06/10 e 09/10\nsi comunica che i pomodori previsti per i veicolat
+ i per lunedì 5 ottobre e per venerdì 9 ottobre verranno sostituiti rispe
+ ttivamente con cappuccio julienne e carote all’olio.\nInoltre la macedon
+ ia plurifrutto di martedì 6 ottobre sarà composta da mela e melone bio.\
+ nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PD
+ F): https://www.scuoledussmann.it/upload/editorpagine/ok3-infanzia-veicola
+ ta-estivo-sett-ott-2026-27-4421972.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261006@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:⚠️ VARIATO · Fusilli al pomodoro · Uova sode/Frittata al form
+ aggio
+DESCRIPTION:• Fusilli al pomodoro\n• Uova sode/Frittata al formaggio\n
+ • Insalata\n• Pane\n• Focaccia morbida\n\nSettimana 2 di 4 · Menu e
+ stivo 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 29/09/2026): VARIAZIONE 
+ MENU 05/10\, 06/10 e 09/10\nsi comunica che i pomodori previsti per i veic
+ olati per lunedì 5 ottobre e per venerdì 9 ottobre verranno sostituiti r
+ ispettivamente con cappuccio julienne e carote all’olio.\nInoltre la mac
+ edonia plurifrutto di martedì 6 ottobre sarà composta da mela e melone b
+ io.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale
+  (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok3-infanzia-vei
+ colata-estivo-sett-ott-2026-27-4421972.pdf\nTutto il menu: https://gbonano
+ me.github.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficial
+ e\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il
+  menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261007@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:⚠️ VARIATO · Riso allo zafferano o alla zucca · Coscette di p
+ ollo al forno disossate
+DESCRIPTION:• Riso allo zafferano o alla zucca\n• Coscette di pollo al 
+ forno disossate\n• Carote julienne\n• Pane\n• Frutta fresca\n\nSetti
+ mana 2 di 4 · Menu estivo 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 28/
+ 09/2026): Variazione Menù 07 Ottobre 2026\nSi comunica che mercoledì 7 o
+ ttobre verranno somministrati cracker in aggiunta al pane già previsto in
+  recupero del pane non somministrato mercoledì 16/09/2026 a causa della n
+ on conformità del prodotto quel giorno.\nFonte: https://www.scuoledussman
+ n.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
+ /upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-442197
+ 2.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infa
+ nzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con i
+ l Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e all
+ ergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261008@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:🍽 Stortini alla parmigiana · Hamburger di manzo
+DESCRIPTION:• Stortini alla parmigiana\n• Hamburger di manzo\n• Zucch
+ ine trifolate\n• Pane semintegrale\n• Frutta fresca\n\nSettimana 2 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4
+ 421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o 
+ con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali 
+ e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261009@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:⚠️ VARIATO · Gnocchetti sardi al pesto alla genovese · Filett
+ o di merluzzo gratinato con fettina di limone
+DESCRIPTION:• Gnocchetti sardi al pesto alla genovese\n• Filetto di mer
+ luzzo gratinato con fettina di limone\n• Pomodori\n• Pane\n• Yogurt 
+ da bere alla frutta\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\n⚠️ V
+ ARIAZIONE (pubblicata il 29/09/2026): VARIAZIONE MENU 05/10\, 06/10 e 09/1
+ 0\nsi comunica che i pomodori previsti per i veicolati per lunedì 5 ottob
+ re e per venerdì 9 ottobre verranno sostituiti rispettivamente con cappuc
+ cio julienne e carote all’olio.\nInoltre la macedonia plurifrutto di mar
+ tedì 6 ottobre sarà composta da mela e melone bio.\nFonte: https://www.s
+ cuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuol
+ edussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-20
+ 26-27-4421972.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-
+ padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Duss
+ mann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete sp
+ eciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261012@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:🍽 Tortellini di prosciutto crudo con burro e salvia · Asiago
+DESCRIPTION:• Tortellini di prosciutto crudo con burro e salvia\n• Asia
+ go\n• Carote julienne\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 
+ · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-
+ 4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o
+  con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali
+  e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261013@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:⚠️ VARIATO · Crema di lenticchie rosse decorticate con midolli
+ ne · Tortino di uova\, patate e formaggio
+DESCRIPTION:• Crema di lenticchie rosse decorticate con midolline\n• To
+ rtino di uova\, patate e formaggio\n• Fagiolini all’olio\n• Pane\n
+ • Frullato di frutta 100%\n\nSettimana 3 di 4 · Menu autunnale 2026-27\
+ n\n⚠️ VARIAZIONE (pubblicata il 29/09/2026): VARIAZIONE MENU 15 e 16 O
+ TTOBRE\na causa dello sciopero di venerdì 16/10/2026 il menù di quella s
+ ettimana per i veicolati subirà le seguenti variazioni:\nInversione tra g
+ iovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:
+ \nInfanzie veicolate: giovedì 15/10: crema di verdure con orzo\, bocconci
+ ni di tacchino alla pizzaiola\, patate al forno\, merenda invariata\;\nven
+ erdì 16/10: mezze penne al burro\, tonno all’olio\, fagiolini all’oli
+ o (le zucchine trifolate previste vengono spostate a martedì 13/10)\, fru
+ llato di frutta\, pane (la frutta prevista viene spostata al martedì al p
+ osto del frullato)\nN.B. La crema di porri e cavolfiori prevista verrà so
+ mministrata giovedì 29/10.\nFonte: https://www.scuoledussmann.it/padova#n
+ otizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edito
+ rpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto 
+ il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolat
+ o\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261014@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:🍽 Bigoli al pomodoro · Polpette di manzo
+DESCRIPTION:• Bigoli al pomodoro\n• Polpette di manzo\n• Cappuccio ju
+ lienne\n• Pane\n• Torta di riso\n\nSettimana 3 di 4 · Menu autunnale 
+ 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edit
+ orpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto
+  il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicola
+ to\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
+ Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
+ nclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261015@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:⚠️ VARIATO · Mezze penne al ragù vegetale · Halibut gratinat
+ o al forno
+DESCRIPTION:• Mezze penne al ragù vegetale\n• Halibut gratinato al for
+ no\n• Zucchine trifolate\n• Pane\n• Frutta fresca\n\nSettimana 3 di 
+ 4 · Menu autunnale 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 29/09/2026
+ ): VARIAZIONE MENU 15 e 16 OTTOBRE\na causa dello sciopero di venerdì 16/
+ 10/2026 il menù di quella settimana per i veicolati subirà le seguenti v
+ ariazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale
+  con le seguenti specifiche:\nInfanzie veicolate: giovedì 15/10: crema di
+  verdure con orzo\, bocconcini di tacchino alla pizzaiola\, patate al forn
+ o\, merenda invariata\;\nvenerdì 16/10: mezze penne al burro\, tonno all
+ ’olio\, fagiolini all’olio (le zucchine trifolate previste vengono spo
+ state a martedì 13/10)\, frullato di frutta\, pane (la frutta prevista vi
+ ene spostata al martedì al posto del frullato)\nN.B. La crema di porri e 
+ cavolfiori prevista verrà somministrata giovedì 29/10.\nFonte: https://w
+ ww.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.s
+ cuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolat
+ e-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scu
+ ole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con 
+ Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diet
+ e speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261016@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:⚠️ VARIATO · Crema di porri e cavolfiori con orzo · Bocconcin
+ i di tacchino alla pizzaiola
+DESCRIPTION:• Crema di porri e cavolfiori con orzo\n• Bocconcini di tac
+ chino alla pizzaiola\n• Patate al forno\n• Pane\n• Frutta fresca\n\n
+ Settimana 3 di 4 · Menu autunnale 2026-27\n\n⚠️ VARIAZIONE (pubblicat
+ a il 29/09/2026): VARIAZIONE MENU 15 e 16 OTTOBRE\na causa dello sciopero 
+ di venerdì 16/10/2026 il menù di quella settimana per i veicolati subir
+ à le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana
+  menù autunnale con le seguenti specifiche:\nInfanzie veicolate: giovedì
+  15/10: crema di verdure con orzo\, bocconcini di tacchino alla pizzaiola\
+ , patate al forno\, merenda invariata\;\nvenerdì 16/10: mezze penne al bu
+ rro\, tonno all’olio\, fagiolini all’olio (le zucchine trifolate previ
+ ste vengono spostate a martedì 13/10)\, frullato di frutta\, pane (la fru
+ tta prevista viene spostata al martedì al posto del frullato)\nN.B. La cr
+ ema di porri e cavolfiori prevista verrà somministrata giovedì 29/10.\nF
+ onte: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF)
+ : https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-in
+ fanzie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.git
+ hub.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, se
+ nza legami con Dussmann o con il Comune di Padova: fa sempre fede il menu 
+ ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261019@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:🍽 Mezze penne alla crema di zucchine · Frittata al formaggio
+DESCRIPTION:• Mezze penne alla crema di zucchine\n• Frittata al formagg
+ io\n• Finocchi julienne\n• Pane\n• Frutta fresca\n\nSettimana 4 di 4
+  · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoleduss
+ mann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27
+ -4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
+ a/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261020@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:🍽 Passato di verdure con ridotto contenuto di pastina (20 gr) ·
+  Pizza margherita*
+DESCRIPTION:• Passato di verdure con ridotto contenuto di pastina (20 gr)
+ \n• Pizza margherita*\n• Carote julienne\n• Pane\n• Torta bicolore
+ \n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): ht
+ tps://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanz
+ ie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.github.
+ io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza 
+ legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffi
+ ciale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261021@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:🍽 Riso morbido alla crema di zucca · Bocconcini di pollo gratin
+ ati
+DESCRIPTION:• Riso morbido alla crema di zucca\n• Bocconcini di pollo g
+ ratinati\n• Zucchine trifolate\n• Pane\n• Frutta fresca\n\nSettimana
+  4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scu
+ oledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-
+ 2026-27-4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuol
+ e-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261022@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:⚠️ VARIATO · Minestra in brodo vegetale con risoni · Spezzati
+ no di manzo
+DESCRIPTION:• Minestra in brodo vegetale con risoni\n• Spezzatino di ma
+ nzo\n• Patate al forno\n• Pane semintegrale\n• Yogurt da bere (era: 
+ Frullato di frutta 100%)\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\n
+ ⚠️ VARIAZIONE (pubblicata il 21/10/2026): VARIAZIONE MENU 22/10/2026 -
+  INFANZIA VEICOLATE\nDomani al posto del frullato di frutta previsto per l
+ e infanzie veicolate verrà servito yogurt da bere\nFonte: https://www.scu
+ oledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoled
+ ussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026
+ -27-4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pa
+ dova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261023@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:🍽 Chifferi al ragù di verdure · Sformato di platessa e halibut
+DESCRIPTION:• Chifferi al ragù di verdure\n• Sformato di platessa e ha
+ libut\n• Zucca al forno agli aromi\n• Pane\n• Frutta fresca\n\nSetti
+ mana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicol
+ ate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami co
+ n Dussmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Di
+ ete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261026@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:🍽 Spaghetti o chifferi al pomodoro · Caciotta
+DESCRIPTION:• Spaghetti o chifferi al pomodoro\n• Caciotta\n• Bieta a
+ ll’olio\n• Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunna
+ le 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/e
+ ditorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTu
+ tto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veic
+ olato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261027@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:🍽 Sedanini al ragù di manzo · Polpette di verdure e patate
+DESCRIPTION:• Sedanini al ragù di manzo\n• Polpette di verdure e patat
+ e\n• Insalata\n• Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu a
+ utunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
+ load/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.p
+ df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzi
+ a-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il C
+ omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
+ eni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261028@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:⚠️ VARIATO · Riso agli spinaci o delicato al sedano rapa · Fi
+ lettini di merluzzo panati con fettina di limone
+DESCRIPTION:• Riso agli spinaci o delicato al sedano rapa\n• Filettini 
+ di merluzzo panati con fettina di limone\n• Zucchine trifolate\n• Pane
+ \n• Plum-cake allo yogurt\n\nSettimana 1 di 4 · Menu autunnale 2026-27\
+ n\n⚠️ VARIAZIONE (pubblicata il 21/10/2026): VARIAZIONE MENU 28/10\nsi
+  comunica che i filettini di merluzzo gratinati al limone previsti per tut
+ ti i veicolati per mercoledì 28/10 verranno somministrati giovedì 12/11 
+ e che viceversa l’halibut gratinato previsto per quel giorno verrà somm
+ inistrato il 28/10.\nFonte: https://www.scuoledussmann.it/padova#notizie\n
+ \nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/
+ ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto il menu:
+  https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261029@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:⚠️ VARIATO · Crema di verdura con risoni · Polpettone
+DESCRIPTION:• Crema di verdura con risoni\n• Polpettone\n• Patate gra
+ tinate\n• Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 
+ 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 29/09/2026): VARIAZIONE MENU 1
+ 5 e 16 OTTOBRE\na causa dello sciopero di venerdì 16/10/2026 il menù di 
+ quella settimana per i veicolati subirà le seguenti variazioni:\nInversio
+ ne tra giovedì e venerdì 3 settimana menù autunnale con le seguenti spe
+ cifiche:\nInfanzie veicolate: giovedì 15/10: crema di verdure con orzo\, 
+ bocconcini di tacchino alla pizzaiola\, patate al forno\, merenda invariat
+ a\;\nvenerdì 16/10: mezze penne al burro\, tonno all’olio\, fagiolini a
+ ll’olio (le zucchine trifolate previste vengono spostate a martedì 13/1
+ 0)\, frullato di frutta\, pane (la frutta prevista viene spostata al marte
+ dì al posto del frullato)\nN.B. La crema di porri e cavolfiori prevista v
+ errà somministrata giovedì 29/10.\nFonte: https://www.scuoledussmann.it/
+ padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uplo
+ ad/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf
+ \nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-
+ veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261030@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:🍽 Mezze penne all’ortolana · Prosciutto cotto Alta Qualità
+DESCRIPTION:• Mezze penne all’ortolana\n• Prosciutto cotto Alta Quali
+ tà\n• Carote al burro prezzemolato\n• Pane\n• Frullato di frutta 10
+ 0%\n\nSettimana 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): 
+ https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infa
+ nzie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.githu
+ b.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senz
+ a legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uf
+ ficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261102@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:🍽 Crema di verdura con conchigliette · Stracchino
+DESCRIPTION:• Crema di verdura con conchigliette\n• Stracchino\n• Pis
+ elli al tegame\n• Pane\n• Frutta fresca\n\nSettimana 2 di 4 · Menu au
+ tunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Co
+ mune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerge
+ ni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261103@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:🍽 Minestra in brodo vegetale con stelline · Hamburger di manzo
+DESCRIPTION:• Minestra in brodo vegetale con stelline\n• Hamburger di m
+ anzo\n• Purè di patate\n• Pane\n• Frutta fresca\n\nSettimana 2 di 4
+  · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoleduss
+ mann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27
+ -4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
+ a/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261104@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🍽 Riso alla parmigiana · Coscette di pollo disossate al forno
+DESCRIPTION:• Riso alla parmigiana\n• Coscette di pollo disossate al fo
+ rno\n• Fagiolini all’olio\n• Pane\n• Crostata con confettura di ci
+ liegie\n\nSettimana 2 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PD
+ F): https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-
+ infanzie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261105@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:🍽 Pasta (ditalini) e fagioli · Uova sode
+DESCRIPTION:• Pasta (ditalini) e fagioli\n• Uova sode\n• Finocchi jul
+ ienne e mais\n• Pane\n• Frutta fresca\n\nSettimana 2 di 4 · Menu autu
+ nnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uploa
+ d/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\
+ nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-v
+ eicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comu
+ ne di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni
+  non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261106@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:🍽 Pipe al pomodoro · Polpettine di pesce
+DESCRIPTION:• Pipe al pomodoro\n• Polpettine di pesce\n• Insalata\n
+ • Pane\n• Yogurt alla frutta in vasetto\n\nSettimana 2 di 4 · Menu au
+ tunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il Co
+ mune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerge
+ ni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261109@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:🍽 Tortellini di prosciutto crudo con burro e salvia · Asiago
+DESCRIPTION:• Tortellini di prosciutto crudo con burro e salvia\n• Asia
+ go\n• Carote julienne\n• Pane\n• Frutta fresca\n\nSettimana 3 di 4 
+ · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-
+ 4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o
+  con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali
+  e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261110@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:⚠️ VARIATO · Crema di ceci bio · Tortino di uova\, patate e f
+ ormaggio
+DESCRIPTION:• Crema di ceci bio (era: Crema di lenticchie rosse decortica
+ te con midolline)\n• Tortino di uova\, patate e formaggio\n• Fagiolini
+  all’olio\n• Pane\n• Frullato di frutta 100%\n\nSettimana 3 di 4 · 
+ Menu autunnale 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 06/11/2026): VA
+ RIAZIONE MENU' 10 NOVEMBRE\ninformiamo che martedì 10/11/2026 verrà serv
+ ita crema di ceci bio al posto della crema di lenticchie rosse decorticate
+  bio.\nFonte: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficia
+ le (PDF): https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autu
+ nnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbona
+ nome.github.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non uffici
+ ale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede 
+ il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261111@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:🍽 Bigoli al pomodoro · Polpette di manzo
+DESCRIPTION:• Bigoli al pomodoro\n• Polpette di manzo\n• Cappuccio ju
+ lienne\n• Pane\n• Torta di riso\n\nSettimana 3 di 4 · Menu autunnale 
+ 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edit
+ orpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto
+  il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicola
+ to\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
+ Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
+ nclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261112@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:⚠️ VARIATO · Mezze penne al ragù vegetale · Halibut gratinat
+ o al forno
+DESCRIPTION:• Mezze penne al ragù vegetale\n• Halibut gratinato al for
+ no\n• Zucchine trifolate\n• Pane\n• Frutta fresca\n\nSettimana 3 di 
+ 4 · Menu autunnale 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 21/10/2026
+ ): VARIAZIONE MENU 28/10\nsi comunica che i filettini di merluzzo gratinat
+ i al limone previsti per tutti i veicolati per mercoledì 28/10 verranno s
+ omministrati giovedì 12/11 e che viceversa l’halibut gratinato previsto
+  per quel giorno verrà somministrato il 28/10.\nFonte: https://www.scuole
+ dussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoleduss
+ mann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27
+ -4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
+ a/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261113@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:🍽 Crema di porri e cavolfiori con orzo · Bocconcini di tacchino
+  alla pizzaiola
+DESCRIPTION:• Crema di porri e cavolfiori con orzo\n• Bocconcini di tac
+ chino alla pizzaiola\n• Patate al forno\n• Pane\n• Frutta fresca\n\n
+ Settimana 3 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https:
+ //www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-v
+ eicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.github.io/m
+ enu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261116@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:🍽 Mezze penne alla crema di zucchine · Frittata al formaggio
+DESCRIPTION:• Mezze penne alla crema di zucchine\n• Frittata al formagg
+ io\n• Finocchi julienne\n• Pane\n• Frutta fresca\n\nSettimana 4 di 4
+  · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoleduss
+ mann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27
+ -4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padov
+ a/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261117@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:🍽 Passato di verdure con ridotto contenuto di pastina (20 gr) ·
+  Pizza margherita*
+DESCRIPTION:• Passato di verdure con ridotto contenuto di pastina (20 gr)
+ \n• Pizza margherita*\n• Carote julienne\n• Pane\n• Torta bicolore
+ \n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): ht
+ tps://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanz
+ ie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.github.
+ io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza 
+ legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffi
+ ciale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261118@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:🍽 Riso morbido alla crema di zucca · Bocconcini di pollo gratin
+ ati
+DESCRIPTION:• Riso morbido alla crema di zucca\n• Bocconcini di pollo g
+ ratinati\n• Zucchine trifolate\n• Pane\n• Frutta fresca\n\nSettimana
+  4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scu
+ oledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-
+ 2026-27-4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuol
+ e-padova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261119@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:🍽 Minestra in brodo vegetale con risoni · Spezzatino di manzo
+DESCRIPTION:• Minestra in brodo vegetale con risoni\n• Spezzatino di ma
+ nzo\n• Patate al forno\n• Pane semintegrale\n• Frullato di frutta 10
+ 0%\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): 
+ https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infa
+ nzie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.githu
+ b.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senz
+ a legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uf
+ ficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261120@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:⚠️ VARIATO · Pasta al pomodoro · Tonno all’olio
+DESCRIPTION:• Pasta al pomodoro\n• Tonno all’olio\n• Fagiolini all
+ ’olio\n• Pane\n• Frullato\n\nMenu previsto prima della variazione: C
+ hifferi al ragù di verdure\, Sformato di platessa e halibut\, Zucca al fo
+ rno agli aromi\, Pane\, Frutta fresca\n\nSettimana 4 di 4 · Menu autunnal
+ e 2026-27\n\n⚠️ VARIAZIONE (pubblicata il 06/11/2026): VARIAZIONE MENU
+ ' 20/11\ninformiamo che a causa dello sciopero previsto per venerdì 20/11
+ /2026 i menù saranno così articolati:\nInfanzie veicolate: pasta al pomo
+ doro\, tonno all’olio\, fagiolini all’olio\, pane\, frullato (il frull
+ ato di giovedì verrà sostituito da frutta fresca)\nFonte: https://www.sc
+ uoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuole
+ dussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-202
+ 6-27-4876134.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-p
+ adova/#infanzia-veicolato\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261123@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:🍽 Spaghetti o chifferi al pomodoro · Caciotta
+DESCRIPTION:• Spaghetti o chifferi al pomodoro\n• Caciotta\n• Bieta a
+ ll’olio\n• Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunna
+ le 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/e
+ ditorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTu
+ tto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veic
+ olato\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261124@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:🍽 Sedanini al ragù di manzo · Polpette di verdure e patate
+DESCRIPTION:• Sedanini al ragù di manzo\n• Polpette di verdure e patat
+ e\n• Insalata\n• Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu a
+ utunnale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
+ load/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.p
+ df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzi
+ a-veicolato\nProgetto non ufficiale\, senza legami con Dussmann o con il C
+ omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
+ eni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261125@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:🍽 Riso agli spinaci o delicato al sedano rapa · Filettini di me
+ rluzzo panati con fettina di limone
+DESCRIPTION:• Riso agli spinaci o delicato al sedano rapa\n• Filettini 
+ di merluzzo panati con fettina di limone\n• Zucchine trifolate\n• Pane
+ \n• Plum-cake allo yogurt\n\nSettimana 1 di 4 · Menu autunnale 2026-27\
+ n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
+ /ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto il menu
+ : https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato\nProg
+ etto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: 
+ fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261126@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:🍽 Crema di verdura con risoni · Polpette
+DESCRIPTION:• Crema di verdura con risoni\n• Polpette\n• Patate grati
+ nate\n• Pane\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 20
+ 26-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editor
+ pagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+ \nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pa
+ dova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inc
+ lusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-veicolato-20261127@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:🍽 Mezze penne all’ortolana · Prosciutto cotto Alta Qualità
+DESCRIPTION:• Mezze penne all’ortolana\n• Prosciutto cotto Alta Quali
+ tà\n• Carote al burro prezzemolato\n• Pane\n• Frullato di frutta 10
+ 0%\n\nSettimana 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): 
+ https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infa
+ nzie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.githu
+ b.io/menu-scuole-padova/#infanzia-veicolato\nProgetto non ufficiale\, senz
+ a legami con Dussmann o con il Comune di Padova: fa sempre fede il menu uf
+ ficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

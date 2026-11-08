@@ -1,0 +1,171 @@
+{
+  "feed": "nido-cucina-interna",
+  "stagione": "invernale",
+  "annoScolastico": "2026-27",
+  "titolo": "Menù asilo nido con cucina interna · Invernale 2026-27 Bambini e adulti",
+  "validita": [
+    {
+      "dal": "2026-10-12",
+      "al": "2027-03-12",
+      "giorno": "lun",
+      "settimana": 3
+    }
+  ],
+  "riavvii": [
+    {
+      "data": "2027-01-07",
+      "giorno": "gio",
+      "settimana": 1
+    }
+  ],
+  "intervalli": [],
+  "settimane": {
+    "1": {
+      "lun": [
+        "Mezze penne al pomodoro o alla pizzaiola",
+        "Tacchino",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "mar": [
+        "Crema di ceci con risoni o crostini",
+        "Formaggio (Ricotta o Crescenza)",
+        "Bis di verdura cotta",
+        "Pane"
+      ],
+      "mer": [
+        "Verdura cruda",
+        "Noccioline pasticciate o noccioline al ragù di manzo",
+        "Spinaci al parmigiano",
+        "Pane"
+      ],
+      "gio": [
+        "Crema di verdura di stagione (porri, zucca, cavolfiore, broccolo o carote) con farro",
+        "Pesce (Halibut)",
+        "Purè di patate",
+        "Pane"
+      ],
+      "ven": [
+        "Risotto di stagione (spinaci o carciofi)",
+        "Uova strapazzate o sode",
+        "Verdura cruda",
+        "Pane"
+      ]
+    },
+    "2": {
+      "lun": [
+        "Orzotto di stagione (zucca, porri o sedano rapa)",
+        "Pollo",
+        "Bis di verdura cruda",
+        "Pane"
+      ],
+      "mar": [
+        "Stortini al pomodoro e prosciutto cotto",
+        "Polpette di legumi (lenticchie rosse o fagiolini cannellini)",
+        "Verdura cotta",
+        "Pane"
+      ],
+      "mer": [
+        "Minestra in brodo vegetale con stelline",
+        "Spezzatino di manzo",
+        "Bis di piselli e carote",
+        "Pane"
+      ],
+      "gio": [
+        "Passato di verdura con cous cous o crostini",
+        "Filetti di platessa o di sogliola",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "ven": [
+        "Noccioline alle verdure di stagione",
+        "Formaggio (Grana Padano o Caciotta)",
+        "Verdura cotta",
+        "Pane"
+      ]
+    },
+    "3": {
+      "lun": [
+        "Risotto di stagione (radicchio bianco o finocchi o carciofi)",
+        "Uova (frittata o strapazzate)",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "mar": [
+        "Minestra in brodo vegetale con midolline",
+        "A rotazione: polpettine di puledro o spezzatino di puledro",
+        "Polenta e verdura cruda",
+        "Pane"
+      ],
+      "mer": [
+        "Verdura cruda",
+        "Mezze penne al ragù di carni bianche",
+        "Verdura cotta",
+        "oppure",
+        "Crema verdure con risoni",
+        "Pizza margherita",
+        "Pane"
+      ],
+      "gio": [
+        "Farfalle al pomodoro",
+        "Pesce (halibut)",
+        "Bis di verdura cotta",
+        "Pane"
+      ],
+      "ven": [
+        "Crema di lenticchie rosse con tempestina o cous cous",
+        "Formaggio (Robiola o Crescenza)",
+        "Patate",
+        "Pane"
+      ]
+    },
+    "4": {
+      "lun": [
+        "Risotto di stagione (broccoli o piselli o patate)",
+        "Prosciutto cotto",
+        "Bieta ripassata",
+        "Pane"
+      ],
+      "mar": [
+        "Crema di verdure di stagione (porri, zucca, cavolfiore, spinaci e bieta, o carote) con farro o orzo",
+        "Coniglio",
+        "Patate",
+        "Pane"
+      ],
+      "mer": [
+        "Pasta e fagioli cannellini o crema di cannellini con corallini",
+        "Asiago o Montasio",
+        "Verdura cruda",
+        "oppure",
+        "Verdura cruda",
+        "Pasta ai formaggi",
+        "Piselli",
+        "Pane"
+      ],
+      "gio": [
+        "Minestra in brodo vegetale con midolline",
+        "Arrosto di vitellone",
+        "Verdura cotta",
+        "oppure",
+        "Minestra in brodo di carne con midolline",
+        "Bollito di manzo",
+        "Verdura cotta",
+        "Pane"
+      ],
+      "ven": [
+        "Conchigliette alla parmigiana",
+        "Polpette di pesce",
+        "Bis di verdura cruda",
+        "Pane"
+      ]
+    }
+  },
+  "note": {},
+  "eccezioni": [],
+  "avvertenze": [],
+  "fonte": {
+    "url": "https://www.scuoledussmann.it/upload/editorpagine/menu-asilo-nido-cucina-interna-2026-27-invernale-8012642.pdf",
+    "sha256": "39be2cb4df374a02c09d3c5e49ee7ed2f5fc6acec65dee53f8c1da11dd450181",
+    "scaricatoIl": "2026-11-08"
+  }
+}

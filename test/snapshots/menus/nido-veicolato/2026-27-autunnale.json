@@ -1,0 +1,244 @@
+{
+  "feed": "nido-veicolato",
+  "stagione": "autunnale",
+  "annoScolastico": "2026-27",
+  "titolo": "Menù autunnale · Asilo nido veicolato · A.s. 2026-27",
+  "validita": [
+    {
+      "dal": "2026-10-12",
+      "al": "2026-11-27",
+      "giorno": "lun",
+      "settimana": 3
+    }
+  ],
+  "riavvii": [],
+  "intervalli": [
+    {
+      "settimana": 1,
+      "dal": "2026-10-26",
+      "al": "2026-10-30"
+    },
+    {
+      "settimana": 1,
+      "dal": "2026-11-23",
+      "al": "2026-11-27"
+    },
+    {
+      "settimana": 2,
+      "dal": "2026-11-02",
+      "al": "2026-11-06"
+    },
+    {
+      "settimana": 3,
+      "dal": "2026-10-12",
+      "al": "2026-10-16"
+    },
+    {
+      "settimana": 3,
+      "dal": "2026-11-09",
+      "al": "2026-11-13"
+    },
+    {
+      "settimana": 4,
+      "dal": "2026-10-19",
+      "al": "2026-10-23"
+    },
+    {
+      "settimana": 4,
+      "dal": "2026-11-16",
+      "al": "2026-11-20"
+    }
+  ],
+  "settimane": {
+    "1": {
+      "lun": [
+        "Crema di lenticchie rosse con midolline",
+        "Caciotta",
+        "Bieta all’olio/Broccoli saltati agli aromi",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e tè deteinato caldo"
+      ],
+      "mar": [
+        "Noccioline al ragù di manzo",
+        "Polpette di verdure e patate",
+        "Insalata/Piselli all’olio",
+        "Pane",
+        "Frutta fresca",
+        "Biscotti e latte caldo"
+      ],
+      "mer": [
+        "Riso morbido agli spinaci o delicato al sedano rapa",
+        "Filetto di merluzzo gratinato al limone",
+        "Zucchine trifolate/Finocchi julienne",
+        "Pane",
+        "Plum-cake allo yogurt",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Crema di verdura con risoni",
+        "Polpettone/Polpette di pollo e tacchino¹ in umido",
+        "Patate gratinate",
+        "Pane",
+        "Yogurt da bere alla frutta",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Crema di porri e finocchi con orzo",
+        "Uova strapazzate al formaggio",
+        "Carote al burro prezzemolate",
+        "Cappuccio julienne",
+        "Pane",
+        "Frutta fresca",
+        "Crackers e succo di frutta senza zuccheri aggiunti"
+      ]
+    },
+    "2": {
+      "lun": [
+        "Crema di verdure con conchigliette",
+        "Stracchino",
+        "Cappuccio julienne/Piselli al tegame",
+        "Pane",
+        "Frutta fresca",
+        "Crackers e tè deteinato caldo"
+      ],
+      "mar": [
+        "Minestra in brodo vegetale con stelline",
+        "Hamburger di manzo",
+        "Bis di purè di patate e purè di zucca",
+        "Pane",
+        "Frutta fresca",
+        "Biscotti e succo di frutta senza zuccheri aggiunti"
+      ],
+      "mer": [
+        "Riso alla parmigiana",
+        "Coscette di pollo al forno (disossate)",
+        "Fagiolini all’olio/Carote julienne",
+        "Pane",
+        "Crostata con confettura di ciliegia",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Passato di fagioli con ditalini",
+        "Uova sode",
+        "Finocchi julienne e mais",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e latte caldo"
+      ],
+      "ven": [
+        "Pipe baby al pomodoro",
+        "Platessa alla mugnaia",
+        "Insalata/Spinaci alla parmigiana",
+        "Pane",
+        "Frutta fresca",
+        "Frullato di frutta"
+      ]
+    },
+    "3": {
+      "lun": [
+        "Riso morbido alle erbette",
+        "Asiago",
+        "Cavolfiore gratinato/Carote julienne",
+        "Pane",
+        "Frutta fresca",
+        "Biscotti e latte caldo con orzo"
+      ],
+      "mar": [
+        "Crema di lenticchie rosse decorticate con midolline",
+        "Tortino di uova, patate e formaggio",
+        "Bieta saltata/Fagiolini all’olio",
+        "Pane",
+        "Panino al latte con barretta di cioccolato al latte equosolidale",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Stortini al pomodoro",
+        "Polpette di manzo",
+        "Piselli/Insalata",
+        "Pane",
+        "Yogurt alla frutta in vasetto",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Mezze penne al ragù vegetale",
+        "Halibut gratinato al forno",
+        "Zucchine trifolate/Zucca al forno",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e tè deteinato caldo"
+      ],
+      "ven": [
+        "Crema di porri e cavolfiori con orzo",
+        "Bocconcini di tacchino alla pizzaiola",
+        "Patate al forno/Carote vichy",
+        "Pane",
+        "Frullato di frutta 100%",
+        "Crackers e succo di frutta senza zuccheri aggiunti"
+      ]
+    },
+    "4": {
+      "lun": [
+        "Mezze penne alla crema di zucchine",
+        "Uova sode",
+        "Finocchi julienne/Piselli al tegame",
+        "Pane",
+        "Frutta fresca",
+        "Biscotti e tè deteinato caldo"
+      ],
+      "mar": [
+        "Crema di cannellini con tempestina",
+        "Stracchino",
+        "Insalata mista/Zucca al forno",
+        "Pane",
+        "Torta bicolore",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Riso morbido alla crema di zucca",
+        "Bocconcini di pollo in umido",
+        "Zucchine trifolate/Patate all’olio",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e latte caldo"
+      ],
+      "gio": [
+        "Minestra in brodo vegetale con risoni",
+        "Spezzatino di manzo",
+        "Carote vichy/Purè di patate",
+        "Pane",
+        "Frutta fresca",
+        "Cracker e infuso di frutta caldo"
+      ],
+      "ven": [
+        "Crema di verdure con couscous",
+        "Sformato di platessa e halibut",
+        "Zucca al forno agli aromi",
+        "Pane",
+        "Yogurt alla frutta in vasetto",
+        "Frutta fresca"
+      ]
+    }
+  },
+  "note": {
+    "1": "Polpettone: 29.10.26 – Polpette: 26.11.2026"
+  },
+  "eccezioni": [
+    {
+      "nota": 1,
+      "data": "2026-10-29",
+      "piatto": "Polpettone"
+    },
+    {
+      "nota": 1,
+      "data": "2026-11-26",
+      "piatto": "Polpette"
+    }
+  ],
+  "avvertenze": [],
+  "fonte": {
+    "url": "https://www.scuoledussmann.it/upload/editorpagine/01-menu-autunnale-nido-veicolato-2026-27-5745094.pdf",
+    "sha256": "b185a357f38909c53da4379fcc0e0a0cef2ab2d9d7c3d81a896ba593ff9fad83",
+    "scaricatoIl": "2026-11-08"
+  }
+}

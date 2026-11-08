@@ -1,17 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import { escapeTesto, piegaRiga, costruisciIcs, titoloEvento } from '../src/build-ics.js';
-import { costruisciModello, piattiPerTitolo } from '../src/model.js';
+import { piattiPerTitolo } from '../src/model.js';
 import { caricaCalendario, statoGiorno } from '../src/lib/calendario.js';
-import { caricaMenus } from '../src/lib/applica.js';
 
 const cal = caricaCalendario('2026-27');
-const modello = async () => {
-  const menus = await caricaMenus(new URL('../data/menus', import.meta.url).pathname, '2026-27');
-  const variazioni = JSON.parse(await readFile(new URL('../data/variations.json', import.meta.url), 'utf8'));
-  return costruisciModello({ menus, variazioni, cal }).feeds;
-};
+import { pipeline } from './helpers.js';
+
+// Modello costruito dalle fixture (non dai dati vivi in data/, che cambiano nel tempo).
+let cache;
+const modello = async () => (cache ??= (await pipeline()).feeds);
 
 test('escape dei valori TEXT', () => {
   assert.equal(escapeTesto('a,b;c\\d\ne'), 'a\\,b\\;c\\\\d\\ne');

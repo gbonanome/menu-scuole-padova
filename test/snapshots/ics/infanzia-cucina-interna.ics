@@ -1,0 +1,4033 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Menu Scuole Padova//menu-scuole-padova//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Menu Scuole Padova · Infanzia cucina interna
+X-WR-CALDESC:Menu della mensa scolastica (Infanzia cucina interna)\, Comune
+  di Padova. Progetto non ufficiale: fa fede il menu pubblicato su https://
+ www.scuoledussmann.it/padova
+X-WR-TIMEZONE:Europe/Rome
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260901@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🍽 Minestra in brodo vegetale con tempestina · Polpette di pesce
+DESCRIPTION:• Minestra in brodo vegetale con tempestina\n• Polpette di 
+ pesce\n• Patate\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260902@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+SUMMARY:🍽 Mezze penne alla mammarosa (con pomodoro e ricotta) · Polpett
+ e di legumi (lenticchie rosse o fagioli cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (con pomodoro e ricotta)\n• Po
+ lpette di legumi (lenticchie rosse o fagioli cannellini)\n• Verdura crud
+ a\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-
+ cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanom
+ e.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffi
+ ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
+ e il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260903@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:🍽 Stortini con verdure + Asiago
+DESCRIPTION:• Stortini con verdure + Asiago\n• Verdura cotta\n— oppur
+ e —\n• Verdura cruda\n• Stortini ai formaggi/Gnocchi alla romana\n
+ • Verdura cotta e cruda\n• Pane\n\nSettimana 1 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260904@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:🍽 Crema di carote o zucchine con cous cous o crostini · Prosciu
+ tto cotto
+DESCRIPTION:• Crema di carote o zucchine con cous cous o crostini\n• Pr
+ osciutto cotto\n• Bis di verdura cruda\n• Pane\n\nSettimana 1 di 4 · 
+ Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
+ /upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-12686
+ 45.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#inf
+ anzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o
+  con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali
+  e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260907@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:🍽 Noccioline con ragù vegetale · Frittata o tortino di uova
+DESCRIPTION:• Noccioline con ragù vegetale\n• Frittata o tortino di uo
+ va\n• Verdura cotta\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27
+ \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
+ e/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260908@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:🍽 Gramigna al pomodoro · Polpette di ricotta
+DESCRIPTION:• Gramigna al pomodoro\n• Polpette di ricotta\n• Verdura 
+ cotta o cruda\n— oppure —\n• Crema di verdure con stelline\n• Tort
+ ino di patate e formaggio\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4
+  · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
+ n.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1
+ 268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260909@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:🍽 Risotto agli asparagi o alla parmigiana · Tacchino
+DESCRIPTION:• Risotto agli asparagi o alla parmigiana\n• Tacchino\n• 
+ Verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu
+  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-i
+ nfanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260910@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:🍽 Pasta al pesto · Manzo
+DESCRIPTION:• Pasta al pesto\n• Manzo\n• Verdura cotta\n• Pane\n\nS
+ ettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://ww
+ w.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2
+ 026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu
+ -scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza le
+ gami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffici
+ ale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260911@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:🍽 Pipette con piselli o crema di piselli con midolline o crostin
+ i · Platessa alla mugnaia o merluzzo al forno
+DESCRIPTION:• Pipette con piselli o crema di piselli con midolline o cros
+ tini\n• Platessa alla mugnaia o merluzzo al forno\n• Verdura cruda\n
+ • Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF
+ ): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cuc
+ ina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficia
+ le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
+ l menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260914@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:🍽 Ravioli/Tortellini · Formaggio (Caciotta o Montasio)
+DESCRIPTION:• Ravioli/Tortellini\n• Formaggio (Caciotta o Montasio)\n
+ • Verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260915@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:🍽 Passato di verdure con orzo o orzotto morbido alle verdure · 
+ Polpettine di manzo
+DESCRIPTION:• Passato di verdure con orzo o orzotto morbido alle verdure\
+ n• Polpettine di manzo\n• Purè di patate\n• Pane\n\nSettimana 3 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-
+ 1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260916@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:🍽 Corallini al burro e parmigiano · Polpette di orata e/o branz
+ ino
+DESCRIPTION:• Corallini al burro e parmigiano\n• Polpette di orata e/o 
+ branzino\n• Bis di verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu e
+ stivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uploa
+ d/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf
+ \nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-
+ cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con i
+ l Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e all
+ ergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260917@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:🍽 Stortini al ragù di carni bianche o lasagna al ragù di carni
+  bianche
+DESCRIPTION:• Stortini al ragù di carni bianche o lasagna al ragù di ca
+ rni bianche\n• Verdura cotta e cruda\n— oppure —\n• Passato di ver
+ dure da solo o con ridotta grammatura di risoni oppure pinzimonio misto\n
+ • Pizza margherita\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\
+ n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
+ /menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il men
+ u: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+ \nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pa
+ dova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inc
+ lusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260918@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:🍽 Risotto primavera (con zucchine\, carote e piselli) · Pollo
+DESCRIPTION:• Risotto primavera (con zucchine\, carote e piselli)\n• Po
+ llo\n• Verdura cotta\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il m
+ enu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-inter
+ na\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
+ Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
+ nclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260921@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:🍽 Farfalle al pesto di zucchine · Uovo sode o strapazzate
+DESCRIPTION:• Farfalle al pesto di zucchine\n• Uovo sode o strapazzate\
+ n• Bis di verdura cotta\n• Pane\n\nSettimana 4 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260922@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:🍽 Pipette al ragù di manzo · Spinaci agli aromi
+DESCRIPTION:• Verdura cruda\n• Pipette al ragù di manzo\n• Spinaci a
+ gli aromi\n• Pane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu uff
+ iciale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infan
+ zia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://
+ gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto 
+ non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa se
+ mpre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260923@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:🍽 Crema di lenticchie rosse o cannellini con ditalini · Formagg
+ io (Crescenza o Robiola)
+DESCRIPTION:• Crema di lenticchie rosse o cannellini con ditalini\n• Fo
+ rmaggio (Crescenza o Robiola)\n• Verdura cotta\n• Pane\n\nSettimana 4 
+ di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledus
+ smann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-esti
+ vo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
+ ova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260924@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:🍽 Risotto di stagione · Coniglio
+DESCRIPTION:• Risotto di stagione\n• Coniglio\n• Verdura cruda\n• P
+ ane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): ht
+ tps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-i
+ nterna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260925@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:🍽 Passato di verdura con conchigliette o farro · Halibut gratin
+ ato al forno
+DESCRIPTION:• Passato di verdura con conchigliette o farro\n• Halibut g
+ ratinato al forno\n• Patate\n• Pane\n\nSettimana 4 di 4 · Menu estivo
+  2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edi
+ torpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260928@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:🍽 Risotto al pomodoro o alle verdure di stagione · Pollo
+DESCRIPTION:• Risotto al pomodoro o alle verdure di stagione\n• Pollo\n
+ • Bieta ripassata\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n
+ \nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/
+ menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu
+ : https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\
+ nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pad
+ ova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non incl
+ usi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260929@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:🍽 Minestra in brodo vegetale con tempestina · Polpette di pesce
+DESCRIPTION:• Minestra in brodo vegetale con tempestina\n• Polpette di 
+ pesce\n• Patate\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20260930@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:🍽 Mezze penne alla mammarosa (con pomodoro e ricotta) · Polpett
+ e di legumi (lenticchie rosse o fagioli cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (con pomodoro e ricotta)\n• Po
+ lpette di legumi (lenticchie rosse o fagioli cannellini)\n• Verdura crud
+ a\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-
+ cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanom
+ e.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffi
+ ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
+ e il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261001@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:🍽 Stortini con verdure + Asiago
+DESCRIPTION:• Stortini con verdure + Asiago\n• Verdura cotta\n— oppur
+ e —\n• Verdura cruda\n• Stortini ai formaggi/Gnocchi alla romana\n
+ • Verdura cotta e cruda\n• Pane\n\nSettimana 1 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261002@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:🍽 Crema di carote o zucchine con cous cous o crostini · Prosciu
+ tto cotto
+DESCRIPTION:• Crema di carote o zucchine con cous cous o crostini\n• Pr
+ osciutto cotto\n• Bis di verdura cruda\n• Pane\n\nSettimana 1 di 4 · 
+ Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
+ /upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-12686
+ 45.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#inf
+ anzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o
+  con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali
+  e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261005@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:🍽 Noccioline con ragù vegetale · Frittata o tortino di uova
+DESCRIPTION:• Noccioline con ragù vegetale\n• Frittata o tortino di uo
+ va\n• Verdura cotta\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27
+ \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
+ e/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261006@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:🍽 Gramigna al pomodoro · Polpette di ricotta
+DESCRIPTION:• Gramigna al pomodoro\n• Polpette di ricotta\n• Verdura 
+ cotta o cruda\n— oppure —\n• Crema di verdure con stelline\n• Tort
+ ino di patate e formaggio\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4
+  · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
+ n.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1
+ 268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261007@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:🍽 Risotto agli asparagi o alla parmigiana · Tacchino
+DESCRIPTION:• Risotto agli asparagi o alla parmigiana\n• Tacchino\n• 
+ Verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu
+  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-i
+ nfanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261008@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:🍽 Pasta al pesto · Manzo
+DESCRIPTION:• Pasta al pesto\n• Manzo\n• Verdura cotta\n• Pane\n\nS
+ ettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://ww
+ w.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2
+ 026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu
+ -scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza le
+ gami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffici
+ ale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261009@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:🍽 Pipette con piselli o crema di piselli con midolline o crostin
+ i · Platessa alla mugnaia o merluzzo al forno
+DESCRIPTION:• Pipette con piselli o crema di piselli con midolline o cros
+ tini\n• Platessa alla mugnaia o merluzzo al forno\n• Verdura cruda\n
+ • Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF
+ ): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cuc
+ ina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficia
+ le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
+ l menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261012@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:🍽 Risotto di stagione (radicchio bianco o finocchi o carciofi) 
+ · Uova (frittata o strapazzate)
+DESCRIPTION:• Risotto di stagione (radicchio bianco o finocchi o carciofi
+ )\n• Uova (frittata o strapazzate)\n• Verdura cruda\n• Pane\n\nSetti
+ mana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261013@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · A rotazione: polpe
+ ttine di puledro o spezzatino di puledro
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• A rotazione: 
+ polpettine di puledro o spezzatino di puledro\n• Polenta e verdura cruda
+ \n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale
+  (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cu
+ cina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonano
+ me.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uff
+ iciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fe
+ de il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261014@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:🍽 Mezze penne al ragù di carni bianche
+DESCRIPTION:• Verdura cruda\n• Mezze penne al ragù di carni bianche\n
+ • Verdura cotta\n— oppure —\n• Crema verdure con risoni\n• Pizza
+  margherita\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMen
+ u ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-
+ infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261015@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:🍽 Farfalle al pomodoro · Pesce (halibut)
+DESCRIPTION:• Farfalle al pomodoro\n• Pesce (halibut)\n• Bis di verdu
+ ra cotta\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu u
+ fficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-inf
+ anzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https:/
+ /gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto
+  non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa s
+ empre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261016@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:🍽 Crema di lenticchie rosse con tempestina o cous cous · Formag
+ gio (Robiola o Crescenza)
+DESCRIPTION:• Crema di lenticchie rosse con tempestina o cous cous\n• F
+ ormaggio (Robiola o Crescenza)\n• Patate\n• Pane\n\nSettimana 3 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261019@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:🍽 Risotto di stagione (broccoli o piselli o patate) · Prosciutt
+ o cotto
+DESCRIPTION:• Risotto di stagione (broccoli o piselli o patate)\n• Pros
+ ciutto cotto\n• Bieta ripassata\n• Pane\n\nSettimana 4 di 4 · Menu in
+ vernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con 
+ il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e al
+ lergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261020@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:🍽 Crema di verdure di stagione (porri\, zucca\, cavolfiore\, spi
+ naci e bieta o carote) con farro o orzo · Coniglio
+DESCRIPTION:• Crema di verdure di stagione (porri\, zucca\, cavolfiore\, 
+ spinaci e bieta o carote) con farro o orzo\n• Coniglio\n• Patate\n• 
+ Pane\n\nSettimana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF)
+ : https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-i
+ nterna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.git
+ hub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale
+ \, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il 
+ menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261021@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:🍽 Pasta e fagioli cannellini o crema di cannellini con corallini
+  · Asiago o Montasio
+DESCRIPTION:• Pasta e fagioli cannellini o crema di cannellini con corall
+ ini\n• Asiago o Montasio\n• Verdura cruda\n— oppure —\n• Verdura
+  cruda\n• Pasta ai formaggi\n• Piselli\n• Pane\n\nSettimana 4 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261022@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · Arrosto di vitello
+ ne
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• Arrosto di vi
+ tellone\n• Verdura cotta\n— oppure —\n• Minestra in brodo di carne
+  con midolline\n• Bollito di manzo\n• Verdura cotta\n• Pane\n\nSetti
+ mana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261023@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:🍽 Conchigliette alla parmigiana · Polpette di pesce
+DESCRIPTION:• Conchigliette alla parmigiana\n• Polpette di pesce\n• B
+ is di verdura cruda\n• Pane\n\nSettimana 4 di 4 · Menu invernale 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261026@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:🍽 Mezze penne al pomodoro o alla pizzaiola · Tacchino
+DESCRIPTION:• Mezze penne al pomodoro o alla pizzaiola\n• Tacchino\n•
+  Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: h
+ ttps://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nPr
+ ogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padova
+ : fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi
+ .
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261027@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:🍽 Crema di ceci con risoni o crostini · Formaggio (Ricotta o Cr
+ escenza)
+DESCRIPTION:• Crema di ceci con risoni o crostini\n• Formaggio (Ricotta
+  o Crescenza)\n• Bis di verdura cotta\n• Pane\n\nSettimana 1 di 4 · M
+ enu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.
+ it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397
+ 257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#in
+ fanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261028@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:🍽 Noccioline pasticciate o noccioline al ragù di manzo · Spina
+ ci al parmigiano
+DESCRIPTION:• Verdura cruda\n• Noccioline pasticciate o noccioline al r
+ agù di manzo\n• Spinaci al parmigiano\n• Pane\n\nSettimana 1 di 4 · 
+ Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann
+ .it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-239
+ 7257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#i
+ nfanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann
+  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
+ li e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261029@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:🍽 Crema di verdura di stagione (porri\, zucca\, cavolfiore\, bro
+ ccolo o carote) con farro · Pesce (Halibut)
+DESCRIPTION:• Crema di verdura di stagione (porri\, zucca\, cavolfiore\, 
+ broccolo o carote) con farro\n• Pesce (Halibut)\n• Purè di patate\n
+ • Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cuci
+ na-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome
+ .github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffic
+ iale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede
+  il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261030@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:🍽 Risotto di stagione (spinaci o carciofi) · Uova strapazzate o
+  sode
+DESCRIPTION:• Risotto di stagione (spinaci o carciofi)\n• Uova strapazz
+ ate o sode\n• Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invern
+ ale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/
+ editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nT
+ utto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cuc
+ ina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il C
+ omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
+ eni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261102@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:🍽 Orzotto di stagione (zucca\, porri o sedano rapa) · Pollo
+DESCRIPTION:• Orzotto di stagione (zucca\, porri o sedano rapa)\n• Poll
+ o\n• Bis di verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu invernal
+ e 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
+ itorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261103@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:🍽 Stortini al pomodoro e prosciutto cotto · Polpette di legumi 
+ (lenticchie rosse o fagiolini cannellini)
+DESCRIPTION:• Stortini al pomodoro e prosciutto cotto\n• Polpette di le
+ gumi (lenticchie rosse o fagiolini cannellini)\n• Verdura cotta\n• Pan
+ e\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): h
+ ttps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-inte
+ rna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261104@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🍽 Minestra in brodo vegetale con stelline · Spezzatino di manzo
+DESCRIPTION:• Minestra in brodo vegetale con stelline\n• Spezzatino di 
+ manzo\n• Bis di piselli e carote\n• Pane\n\nSettimana 2 di 4 · Menu i
+ nvernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
+ load/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.p
+ df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzi
+ a-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con
+  il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e a
+ llergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261105@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:🍽 Passato di verdura con cous cous o crostini · Filetti di plat
+ essa o di sogliola
+DESCRIPTION:• Passato di verdura con cous cous o crostini\n• Filetti di
+  platessa o di sogliola\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261106@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:🍽 Noccioline alle verdure di stagione alternate a ravioli/tortel
+ lini · Formaggio (Grana Padano o Caciotta)
+DESCRIPTION:• Noccioline alle verdure di stagione alternate a ravioli/tor
+ tellini\n• Formaggio (Grana Padano o Caciotta)\n• Verdura cotta\n• P
+ ane\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF):
+  https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-in
+ terna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.gith
+ ub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\
+ , senza legami con Dussmann o con il Comune di Padova: fa sempre fede il m
+ enu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261109@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:🍽 Risotto di stagione (radicchio bianco o finocchi o carciofi) 
+ · Uova (frittata o strapazzate)
+DESCRIPTION:• Risotto di stagione (radicchio bianco o finocchi o carciofi
+ )\n• Uova (frittata o strapazzate)\n• Verdura cruda\n• Pane\n\nSetti
+ mana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261110@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · A rotazione: polpe
+ ttine di puledro o spezzatino di puledro
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• A rotazione: 
+ polpettine di puledro o spezzatino di puledro\n• Polenta e verdura cruda
+ \n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale
+  (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cu
+ cina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonano
+ me.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uff
+ iciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fe
+ de il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261111@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:🍽 Mezze penne al ragù di carni bianche
+DESCRIPTION:• Verdura cruda\n• Mezze penne al ragù di carni bianche\n
+ • Verdura cotta\n— oppure —\n• Crema verdure con risoni\n• Pizza
+  margherita\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMen
+ u ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-
+ infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261112@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:🍽 Farfalle al pomodoro · Pesce (halibut)
+DESCRIPTION:• Farfalle al pomodoro\n• Pesce (halibut)\n• Bis di verdu
+ ra cotta\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu u
+ fficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-inf
+ anzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https:/
+ /gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto
+  non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa s
+ empre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261113@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:🍽 Crema di lenticchie rosse con tempestina o cous cous · Formag
+ gio (Robiola o Crescenza)
+DESCRIPTION:• Crema di lenticchie rosse con tempestina o cous cous\n• F
+ ormaggio (Robiola o Crescenza)\n• Patate\n• Pane\n\nSettimana 3 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261116@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:🍽 Risotto di stagione (broccoli o piselli o patate) · Prosciutt
+ o cotto
+DESCRIPTION:• Risotto di stagione (broccoli o piselli o patate)\n• Pros
+ ciutto cotto\n• Bieta ripassata\n• Pane\n\nSettimana 4 di 4 · Menu in
+ vernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con 
+ il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e al
+ lergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261117@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:🍽 Crema di verdure di stagione (porri\, zucca\, cavolfiore\, spi
+ naci e bieta o carote) con farro o orzo · Coniglio
+DESCRIPTION:• Crema di verdure di stagione (porri\, zucca\, cavolfiore\, 
+ spinaci e bieta o carote) con farro o orzo\n• Coniglio\n• Patate\n• 
+ Pane\n\nSettimana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF)
+ : https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-i
+ nterna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.git
+ hub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale
+ \, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il 
+ menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261118@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:🍽 Pasta e fagioli cannellini o crema di cannellini con corallini
+  · Asiago o Montasio
+DESCRIPTION:• Pasta e fagioli cannellini o crema di cannellini con corall
+ ini\n• Asiago o Montasio\n• Verdura cruda\n— oppure —\n• Verdura
+  cruda\n• Pasta ai formaggi\n• Piselli\n• Pane\n\nSettimana 4 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261119@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · Arrosto di vitello
+ ne
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• Arrosto di vi
+ tellone\n• Verdura cotta\n— oppure —\n• Minestra in brodo di carne
+  con midolline\n• Bollito di manzo\n• Verdura cotta\n• Pane\n\nSetti
+ mana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261120@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:🍽 Conchigliette alla parmigiana · Polpette di pesce
+DESCRIPTION:• Conchigliette alla parmigiana\n• Polpette di pesce\n• B
+ is di verdura cruda\n• Pane\n\nSettimana 4 di 4 · Menu invernale 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261123@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:🍽 Mezze penne al pomodoro o alla pizzaiola · Tacchino
+DESCRIPTION:• Mezze penne al pomodoro o alla pizzaiola\n• Tacchino\n•
+  Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: h
+ ttps://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nPr
+ ogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padova
+ : fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi
+ .
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261124@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:🍽 Crema di ceci con risoni o crostini · Formaggio (Ricotta o Cr
+ escenza)
+DESCRIPTION:• Crema di ceci con risoni o crostini\n• Formaggio (Ricotta
+  o Crescenza)\n• Bis di verdura cotta\n• Pane\n\nSettimana 1 di 4 · M
+ enu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.
+ it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397
+ 257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#in
+ fanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261125@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:🍽 Noccioline pasticciate o noccioline al ragù di manzo · Spina
+ ci al parmigiano
+DESCRIPTION:• Verdura cruda\n• Noccioline pasticciate o noccioline al r
+ agù di manzo\n• Spinaci al parmigiano\n• Pane\n\nSettimana 1 di 4 · 
+ Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann
+ .it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-239
+ 7257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#i
+ nfanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann
+  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
+ li e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261126@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:🍽 Crema di verdura di stagione (porri\, zucca\, cavolfiore\, bro
+ ccolo o carote) con farro · Pesce (Halibut)
+DESCRIPTION:• Crema di verdura di stagione (porri\, zucca\, cavolfiore\, 
+ broccolo o carote) con farro\n• Pesce (Halibut)\n• Purè di patate\n
+ • Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cuci
+ na-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome
+ .github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffic
+ iale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede
+  il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261127@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:🍽 Risotto di stagione (spinaci o carciofi) · Uova strapazzate o
+  sode
+DESCRIPTION:• Risotto di stagione (spinaci o carciofi)\n• Uova strapazz
+ ate o sode\n• Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invern
+ ale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/
+ editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nT
+ utto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cuc
+ ina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il C
+ omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
+ eni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261130@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:🍽 Orzotto di stagione (zucca\, porri o sedano rapa) · Pollo
+DESCRIPTION:• Orzotto di stagione (zucca\, porri o sedano rapa)\n• Poll
+ o\n• Bis di verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu invernal
+ e 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
+ itorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261201@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:🍽 Stortini al pomodoro e prosciutto cotto · Polpette di legumi 
+ (lenticchie rosse o fagiolini cannellini)
+DESCRIPTION:• Stortini al pomodoro e prosciutto cotto\n• Polpette di le
+ gumi (lenticchie rosse o fagiolini cannellini)\n• Verdura cotta\n• Pan
+ e\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): h
+ ttps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-inte
+ rna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261202@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:🍽 Minestra in brodo vegetale con stelline · Spezzatino di manzo
+DESCRIPTION:• Minestra in brodo vegetale con stelline\n• Spezzatino di 
+ manzo\n• Bis di piselli e carote\n• Pane\n\nSettimana 2 di 4 · Menu i
+ nvernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
+ load/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.p
+ df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzi
+ a-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con
+  il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e a
+ llergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261203@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:🍽 Passato di verdura con cous cous o crostini · Filetti di plat
+ essa o di sogliola
+DESCRIPTION:• Passato di verdura con cous cous o crostini\n• Filetti di
+  platessa o di sogliola\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261204@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:🍽 Noccioline alle verdure di stagione alternate a ravioli/tortel
+ lini · Formaggio (Grana Padano o Caciotta)
+DESCRIPTION:• Noccioline alle verdure di stagione alternate a ravioli/tor
+ tellini\n• Formaggio (Grana Padano o Caciotta)\n• Verdura cotta\n• P
+ ane\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF):
+  https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-in
+ terna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.gith
+ ub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\
+ , senza legami con Dussmann o con il Comune di Padova: fa sempre fede il m
+ enu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261209@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:🍽 Mezze penne al ragù di carni bianche
+DESCRIPTION:• Verdura cruda\n• Mezze penne al ragù di carni bianche\n
+ • Verdura cotta\n— oppure —\n• Crema verdure con risoni\n• Pizza
+  margherita\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMen
+ u ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-
+ infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261210@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:🍽 Farfalle al pomodoro · Pesce (halibut)
+DESCRIPTION:• Farfalle al pomodoro\n• Pesce (halibut)\n• Bis di verdu
+ ra cotta\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu u
+ fficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-inf
+ anzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https:/
+ /gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto
+  non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa s
+ empre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261211@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:🍽 Crema di lenticchie rosse con tempestina o cous cous · Formag
+ gio (Robiola o Crescenza)
+DESCRIPTION:• Crema di lenticchie rosse con tempestina o cous cous\n• F
+ ormaggio (Robiola o Crescenza)\n• Patate\n• Pane\n\nSettimana 3 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261214@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:🍽 Risotto di stagione (broccoli o piselli o patate) · Prosciutt
+ o cotto
+DESCRIPTION:• Risotto di stagione (broccoli o piselli o patate)\n• Pros
+ ciutto cotto\n• Bieta ripassata\n• Pane\n\nSettimana 4 di 4 · Menu in
+ vernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con 
+ il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e al
+ lergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261215@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:🍽 Crema di verdure di stagione (porri\, zucca\, cavolfiore\, spi
+ naci e bieta o carote) con farro o orzo · Coniglio
+DESCRIPTION:• Crema di verdure di stagione (porri\, zucca\, cavolfiore\, 
+ spinaci e bieta o carote) con farro o orzo\n• Coniglio\n• Patate\n• 
+ Pane\n\nSettimana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF)
+ : https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-i
+ nterna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.git
+ hub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale
+ \, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il 
+ menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261216@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:🍽 Pasta e fagioli cannellini o crema di cannellini con corallini
+  · Asiago o Montasio
+DESCRIPTION:• Pasta e fagioli cannellini o crema di cannellini con corall
+ ini\n• Asiago o Montasio\n• Verdura cruda\n— oppure —\n• Verdura
+  cruda\n• Pasta ai formaggi\n• Piselli\n• Pane\n\nSettimana 4 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261217@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · Arrosto di vitello
+ ne
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• Arrosto di vi
+ tellone\n• Verdura cotta\n— oppure —\n• Minestra in brodo di carne
+  con midolline\n• Bollito di manzo\n• Verdura cotta\n• Pane\n\nSetti
+ mana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261218@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:🍽 Conchigliette alla parmigiana · Polpette di pesce
+DESCRIPTION:• Conchigliette alla parmigiana\n• Polpette di pesce\n• B
+ is di verdura cruda\n• Pane\n\nSettimana 4 di 4 · Menu invernale 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261221@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:🍽 Mezze penne al pomodoro o alla pizzaiola · Tacchino
+DESCRIPTION:• Mezze penne al pomodoro o alla pizzaiola\n• Tacchino\n•
+  Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: h
+ ttps://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nPr
+ ogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padova
+ : fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi
+ .
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261222@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:🍽 Crema di ceci con risoni o crostini · Formaggio (Ricotta o Cr
+ escenza)
+DESCRIPTION:• Crema di ceci con risoni o crostini\n• Formaggio (Ricotta
+  o Crescenza)\n• Bis di verdura cotta\n• Pane\n\nSettimana 1 di 4 · M
+ enu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.
+ it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397
+ 257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#in
+ fanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20261223@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:🍽 Noccioline pasticciate o noccioline al ragù di manzo · Spina
+ ci al parmigiano
+DESCRIPTION:• Verdura cruda\n• Noccioline pasticciate o noccioline al r
+ agù di manzo\n• Spinaci al parmigiano\n• Pane\n\nSettimana 1 di 4 · 
+ Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann
+ .it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-239
+ 7257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#i
+ nfanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann
+  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
+ li e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270107@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:🍽 Crema di verdura di stagione (porri\, zucca\, cavolfiore\, bro
+ ccolo o carote) con farro · Pesce (Halibut)
+DESCRIPTION:• Crema di verdura di stagione (porri\, zucca\, cavolfiore\, 
+ broccolo o carote) con farro\n• Pesce (Halibut)\n• Purè di patate\n
+ • Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cuci
+ na-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome
+ .github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffic
+ iale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede
+  il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270108@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:🍽 Risotto di stagione (spinaci o carciofi) · Uova strapazzate o
+  sode
+DESCRIPTION:• Risotto di stagione (spinaci o carciofi)\n• Uova strapazz
+ ate o sode\n• Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invern
+ ale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/
+ editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nT
+ utto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cuc
+ ina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il C
+ omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
+ eni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270111@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:🍽 Orzotto di stagione (zucca\, porri o sedano rapa) · Pollo
+DESCRIPTION:• Orzotto di stagione (zucca\, porri o sedano rapa)\n• Poll
+ o\n• Bis di verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu invernal
+ e 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
+ itorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270112@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:🍽 Stortini al pomodoro e prosciutto cotto · Polpette di legumi 
+ (lenticchie rosse o fagiolini cannellini)
+DESCRIPTION:• Stortini al pomodoro e prosciutto cotto\n• Polpette di le
+ gumi (lenticchie rosse o fagiolini cannellini)\n• Verdura cotta\n• Pan
+ e\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): h
+ ttps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-inte
+ rna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270113@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:🍽 Minestra in brodo vegetale con stelline · Spezzatino di manzo
+DESCRIPTION:• Minestra in brodo vegetale con stelline\n• Spezzatino di 
+ manzo\n• Bis di piselli e carote\n• Pane\n\nSettimana 2 di 4 · Menu i
+ nvernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
+ load/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.p
+ df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzi
+ a-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con
+  il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e a
+ llergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270114@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:🍽 Passato di verdura con cous cous o crostini · Filetti di plat
+ essa o di sogliola
+DESCRIPTION:• Passato di verdura con cous cous o crostini\n• Filetti di
+  platessa o di sogliola\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270115@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:🍽 Noccioline alle verdure di stagione alternate a ravioli/tortel
+ lini · Formaggio (Grana Padano o Caciotta)
+DESCRIPTION:• Noccioline alle verdure di stagione alternate a ravioli/tor
+ tellini\n• Formaggio (Grana Padano o Caciotta)\n• Verdura cotta\n• P
+ ane\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF):
+  https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-in
+ terna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.gith
+ ub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\
+ , senza legami con Dussmann o con il Comune di Padova: fa sempre fede il m
+ enu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270118@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:🍽 Risotto di stagione (radicchio bianco o finocchi o carciofi) 
+ · Uova (frittata o strapazzate)
+DESCRIPTION:• Risotto di stagione (radicchio bianco o finocchi o carciofi
+ )\n• Uova (frittata o strapazzate)\n• Verdura cruda\n• Pane\n\nSetti
+ mana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270119@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · A rotazione: polpe
+ ttine di puledro o spezzatino di puledro
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• A rotazione: 
+ polpettine di puledro o spezzatino di puledro\n• Polenta e verdura cruda
+ \n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale
+  (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cu
+ cina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonano
+ me.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uff
+ iciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fe
+ de il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270120@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:🍽 Mezze penne al ragù di carni bianche
+DESCRIPTION:• Verdura cruda\n• Mezze penne al ragù di carni bianche\n
+ • Verdura cotta\n— oppure —\n• Crema verdure con risoni\n• Pizza
+  margherita\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMen
+ u ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-
+ infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270121@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:🍽 Farfalle al pomodoro · Pesce (halibut)
+DESCRIPTION:• Farfalle al pomodoro\n• Pesce (halibut)\n• Bis di verdu
+ ra cotta\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu u
+ fficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-inf
+ anzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https:/
+ /gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto
+  non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa s
+ empre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270122@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:🍽 Crema di lenticchie rosse con tempestina o cous cous · Formag
+ gio (Robiola o Crescenza)
+DESCRIPTION:• Crema di lenticchie rosse con tempestina o cous cous\n• F
+ ormaggio (Robiola o Crescenza)\n• Patate\n• Pane\n\nSettimana 3 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270125@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:🍽 Risotto di stagione (broccoli o piselli o patate) · Prosciutt
+ o cotto
+DESCRIPTION:• Risotto di stagione (broccoli o piselli o patate)\n• Pros
+ ciutto cotto\n• Bieta ripassata\n• Pane\n\nSettimana 4 di 4 · Menu in
+ vernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con 
+ il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e al
+ lergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270126@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:🍽 Crema di verdure di stagione (porri\, zucca\, cavolfiore\, spi
+ naci e bieta o carote) con farro o orzo · Coniglio
+DESCRIPTION:• Crema di verdure di stagione (porri\, zucca\, cavolfiore\, 
+ spinaci e bieta o carote) con farro o orzo\n• Coniglio\n• Patate\n• 
+ Pane\n\nSettimana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF)
+ : https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-i
+ nterna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.git
+ hub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale
+ \, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il 
+ menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270127@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270128
+SUMMARY:🍽 Pasta e fagioli cannellini o crema di cannellini con corallini
+  · Asiago o Montasio
+DESCRIPTION:• Pasta e fagioli cannellini o crema di cannellini con corall
+ ini\n• Asiago o Montasio\n• Verdura cruda\n— oppure —\n• Verdura
+  cruda\n• Pasta ai formaggi\n• Piselli\n• Pane\n\nSettimana 4 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270128@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · Arrosto di vitello
+ ne
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• Arrosto di vi
+ tellone\n• Verdura cotta\n— oppure —\n• Minestra in brodo di carne
+  con midolline\n• Bollito di manzo\n• Verdura cotta\n• Pane\n\nSetti
+ mana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270129@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:🍽 Conchigliette alla parmigiana · Polpette di pesce
+DESCRIPTION:• Conchigliette alla parmigiana\n• Polpette di pesce\n• B
+ is di verdura cruda\n• Pane\n\nSettimana 4 di 4 · Menu invernale 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270201@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:🍽 Mezze penne al pomodoro o alla pizzaiola · Tacchino
+DESCRIPTION:• Mezze penne al pomodoro o alla pizzaiola\n• Tacchino\n•
+  Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: h
+ ttps://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nPr
+ ogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padova
+ : fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi
+ .
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270202@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:🍽 Crema di ceci con risoni o crostini · Formaggio (Ricotta o Cr
+ escenza)
+DESCRIPTION:• Crema di ceci con risoni o crostini\n• Formaggio (Ricotta
+  o Crescenza)\n• Bis di verdura cotta\n• Pane\n\nSettimana 1 di 4 · M
+ enu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.
+ it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397
+ 257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#in
+ fanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270203@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+SUMMARY:🍽 Noccioline pasticciate o noccioline al ragù di manzo · Spina
+ ci al parmigiano
+DESCRIPTION:• Verdura cruda\n• Noccioline pasticciate o noccioline al r
+ agù di manzo\n• Spinaci al parmigiano\n• Pane\n\nSettimana 1 di 4 · 
+ Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann
+ .it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-239
+ 7257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#i
+ nfanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann
+  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
+ li e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270204@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:🍽 Crema di verdura di stagione (porri\, zucca\, cavolfiore\, bro
+ ccolo o carote) con farro · Pesce (Halibut)
+DESCRIPTION:• Crema di verdura di stagione (porri\, zucca\, cavolfiore\, 
+ broccolo o carote) con farro\n• Pesce (Halibut)\n• Purè di patate\n
+ • Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cuci
+ na-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome
+ .github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffic
+ iale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede
+  il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270205@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:🍽 Risotto di stagione (spinaci o carciofi) · Uova strapazzate o
+  sode
+DESCRIPTION:• Risotto di stagione (spinaci o carciofi)\n• Uova strapazz
+ ate o sode\n• Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invern
+ ale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/
+ editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nT
+ utto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cuc
+ ina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il C
+ omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
+ eni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270211@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:🍽 Passato di verdura con cous cous o crostini · Filetti di plat
+ essa o di sogliola
+DESCRIPTION:• Passato di verdura con cous cous o crostini\n• Filetti di
+  platessa o di sogliola\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270212@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:🍽 Noccioline alle verdure di stagione alternate a ravioli/tortel
+ lini · Formaggio (Grana Padano o Caciotta)
+DESCRIPTION:• Noccioline alle verdure di stagione alternate a ravioli/tor
+ tellini\n• Formaggio (Grana Padano o Caciotta)\n• Verdura cotta\n• P
+ ane\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF):
+  https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-in
+ terna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.gith
+ ub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\
+ , senza legami con Dussmann o con il Comune di Padova: fa sempre fede il m
+ enu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270215@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:🍽 Risotto di stagione (radicchio bianco o finocchi o carciofi) 
+ · Uova (frittata o strapazzate)
+DESCRIPTION:• Risotto di stagione (radicchio bianco o finocchi o carciofi
+ )\n• Uova (frittata o strapazzate)\n• Verdura cruda\n• Pane\n\nSetti
+ mana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270216@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · A rotazione: polpe
+ ttine di puledro o spezzatino di puledro
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• A rotazione: 
+ polpettine di puledro o spezzatino di puledro\n• Polenta e verdura cruda
+ \n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu ufficiale
+  (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cu
+ cina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonano
+ me.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uff
+ iciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fe
+ de il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270217@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:🍽 Mezze penne al ragù di carni bianche
+DESCRIPTION:• Verdura cruda\n• Mezze penne al ragù di carni bianche\n
+ • Verdura cotta\n— oppure —\n• Crema verdure con risoni\n• Pizza
+  margherita\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMen
+ u ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-
+ infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270218@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:🍽 Farfalle al pomodoro · Pesce (halibut)
+DESCRIPTION:• Farfalle al pomodoro\n• Pesce (halibut)\n• Bis di verdu
+ ra cotta\n• Pane\n\nSettimana 3 di 4 · Menu invernale 2026-27\n\nMenu u
+ fficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-inf
+ anzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https:/
+ /gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto
+  non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa s
+ empre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270219@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:🍽 Crema di lenticchie rosse con tempestina o cous cous · Formag
+ gio (Robiola o Crescenza)
+DESCRIPTION:• Crema di lenticchie rosse con tempestina o cous cous\n• F
+ ormaggio (Robiola o Crescenza)\n• Patate\n• Pane\n\nSettimana 3 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270222@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:🍽 Risotto di stagione (broccoli o piselli o patate) · Prosciutt
+ o cotto
+DESCRIPTION:• Risotto di stagione (broccoli o piselli o patate)\n• Pros
+ ciutto cotto\n• Bieta ripassata\n• Pane\n\nSettimana 4 di 4 · Menu in
+ vernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
+ oad/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pd
+ f\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia
+ -cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con 
+ il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e al
+ lergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270223@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+SUMMARY:🍽 Crema di verdure di stagione (porri\, zucca\, cavolfiore\, spi
+ naci e bieta o carote) con farro o orzo · Coniglio
+DESCRIPTION:• Crema di verdure di stagione (porri\, zucca\, cavolfiore\, 
+ spinaci e bieta o carote) con farro o orzo\n• Coniglio\n• Patate\n• 
+ Pane\n\nSettimana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF)
+ : https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-i
+ nterna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.git
+ hub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale
+ \, senza legami con Dussmann o con il Comune di Padova: fa sempre fede il 
+ menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270224@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:🍽 Pasta e fagioli cannellini o crema di cannellini con corallini
+  · Asiago o Montasio
+DESCRIPTION:• Pasta e fagioli cannellini o crema di cannellini con corall
+ ini\n• Asiago o Montasio\n• Verdura cruda\n— oppure —\n• Verdura
+  cruda\n• Pasta ai formaggi\n• Piselli\n• Pane\n\nSettimana 4 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270225@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:🍽 Minestra in brodo vegetale con midolline · Arrosto di vitello
+ ne
+DESCRIPTION:• Minestra in brodo vegetale con midolline\n• Arrosto di vi
+ tellone\n• Verdura cotta\n— oppure —\n• Minestra in brodo di carne
+  con midolline\n• Bollito di manzo\n• Verdura cotta\n• Pane\n\nSetti
+ mana 4 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-2
+ 7-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-s
+ cuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza lega
+ mi con Dussmann o con il Comune di Padova: fa sempre fede il menu ufficial
+ e. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270226@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:🍽 Conchigliette alla parmigiana · Polpette di pesce
+DESCRIPTION:• Conchigliette alla parmigiana\n• Polpette di pesce\n• B
+ is di verdura cruda\n• Pane\n\nSettimana 4 di 4 · Menu invernale 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270301@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:🍽 Mezze penne al pomodoro o alla pizzaiola · Tacchino
+DESCRIPTION:• Mezze penne al pomodoro o alla pizzaiola\n• Tacchino\n•
+  Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTutto il menu: h
+ ttps://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nPr
+ ogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padova
+ : fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi
+ .
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270302@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:🍽 Crema di ceci con risoni o crostini · Formaggio (Ricotta o Cr
+ escenza)
+DESCRIPTION:• Crema di ceci con risoni o crostini\n• Formaggio (Ricotta
+  o Crescenza)\n• Bis di verdura cotta\n• Pane\n\nSettimana 1 di 4 · M
+ enu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.
+ it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397
+ 257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#in
+ fanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann 
+ o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete special
+ i e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270303@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:🍽 Noccioline pasticciate o noccioline al ragù di manzo · Spina
+ ci al parmigiano
+DESCRIPTION:• Verdura cruda\n• Noccioline pasticciate o noccioline al r
+ agù di manzo\n• Spinaci al parmigiano\n• Pane\n\nSettimana 1 di 4 · 
+ Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann
+ .it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-239
+ 7257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#i
+ nfanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann
+  o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete specia
+ li e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270304@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:🍽 Crema di verdura di stagione (porri\, zucca\, cavolfiore\, bro
+ ccolo o carote) con farro · Pesce (Halibut)
+DESCRIPTION:• Crema di verdura di stagione (porri\, zucca\, cavolfiore\, 
+ broccolo o carote) con farro\n• Pesce (Halibut)\n• Purè di patate\n
+ • Pane\n\nSettimana 1 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cuci
+ na-interna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome
+ .github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffic
+ iale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede
+  il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270305@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:🍽 Risotto di stagione (spinaci o carciofi) · Uova strapazzate o
+  sode
+DESCRIPTION:• Risotto di stagione (spinaci o carciofi)\n• Uova strapazz
+ ate o sode\n• Verdura cruda\n• Pane\n\nSettimana 1 di 4 · Menu invern
+ ale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/
+ editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nT
+ utto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cuc
+ ina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il C
+ omune di Padova: fa sempre fede il menu ufficiale. Diete speciali e allerg
+ eni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270308@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:🍽 Orzotto di stagione (zucca\, porri o sedano rapa) · Pollo
+DESCRIPTION:• Orzotto di stagione (zucca\, porri o sedano rapa)\n• Poll
+ o\n• Bis di verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu invernal
+ e 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/ed
+ itorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270309@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:🍽 Stortini al pomodoro e prosciutto cotto · Polpette di legumi 
+ (lenticchie rosse o fagiolini cannellini)
+DESCRIPTION:• Stortini al pomodoro e prosciutto cotto\n• Polpette di le
+ gumi (lenticchie rosse o fagiolini cannellini)\n• Verdura cotta\n• Pan
+ e\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF): h
+ ttps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-inte
+ rna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270310@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:🍽 Minestra in brodo vegetale con stelline · Spezzatino di manzo
+DESCRIPTION:• Minestra in brodo vegetale con stelline\n• Spezzatino di 
+ manzo\n• Bis di piselli e carote\n• Pane\n\nSettimana 2 di 4 · Menu i
+ nvernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/up
+ load/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.p
+ df\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzi
+ a-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con
+  il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e a
+ llergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270311@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:🍽 Passato di verdura con cous cous o crostini · Filetti di plat
+ essa o di sogliola
+DESCRIPTION:• Passato di verdura con cous cous o crostini\n• Filetti di
+  platessa o di sogliola\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4 
+ · Menu invernale 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussm
+ ann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-
+ 2397257.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270312@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:🍽 Noccioline alle verdure di stagione alternate a ravioli/tortel
+ lini · Formaggio (Grana Padano o Caciotta)
+DESCRIPTION:• Noccioline alle verdure di stagione alternate a ravioli/tor
+ tellini\n• Formaggio (Grana Padano o Caciotta)\n• Verdura cotta\n• P
+ ane\n\nSettimana 2 di 4 · Menu invernale 2026-27\n\nMenu ufficiale (PDF):
+  https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-in
+ terna-2026-27-invernale-2397257.pdf\nTutto il menu: https://gbonanome.gith
+ ub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\
+ , senza legami con Dussmann o con il Comune di Padova: fa sempre fede il m
+ enu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270315@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:🍽 Ravioli/Tortellini · Formaggio (Caciotta o Montasio)
+DESCRIPTION:• Ravioli/Tortellini\n• Formaggio (Caciotta o Montasio)\n
+ • Verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270316@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270316
+DTEND;VALUE=DATE:20270317
+SUMMARY:🍽 Passato di verdure con orzo o orzotto morbido alle verdure · 
+ Polpettine di manzo
+DESCRIPTION:• Passato di verdure con orzo o orzotto morbido alle verdure\
+ n• Polpettine di manzo\n• Purè di patate\n• Pane\n\nSettimana 3 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-
+ 1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270317@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:🍽 Corallini al burro e parmigiano · Polpette di orata e/o branz
+ ino
+DESCRIPTION:• Corallini al burro e parmigiano\n• Polpette di orata e/o 
+ branzino\n• Bis di verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu e
+ stivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uploa
+ d/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf
+ \nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-
+ cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con i
+ l Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e all
+ ergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270318@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:🍽 Stortini al ragù di carni bianche o lasagna al ragù di carni
+  bianche
+DESCRIPTION:• Stortini al ragù di carni bianche o lasagna al ragù di ca
+ rni bianche\n• Verdura cotta e cruda\n— oppure —\n• Passato di ver
+ dure da solo o con ridotta grammatura di risoni oppure pinzimonio misto\n
+ • Pizza margherita\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\
+ n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
+ /menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il men
+ u: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+ \nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pa
+ dova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inc
+ lusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270319@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:🍽 Risotto primavera (con zucchine\, carote e piselli) · Pollo
+DESCRIPTION:• Risotto primavera (con zucchine\, carote e piselli)\n• Po
+ llo\n• Verdura cotta\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il m
+ enu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-inter
+ na\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
+ Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
+ nclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270322@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:🍽 Farfalle al pesto di zucchine · Uovo sode o strapazzate
+DESCRIPTION:• Farfalle al pesto di zucchine\n• Uovo sode o strapazzate\
+ n• Bis di verdura cotta\n• Pane\n\nSettimana 4 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270323@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:🍽 Pipette al ragù di manzo · Spinaci agli aromi
+DESCRIPTION:• Verdura cruda\n• Pipette al ragù di manzo\n• Spinaci a
+ gli aromi\n• Pane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu uff
+ iciale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infan
+ zia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://
+ gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto 
+ non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa se
+ mpre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270324@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:🍽 Crema di lenticchie rosse o cannellini con ditalini · Formagg
+ io (Crescenza o Robiola)
+DESCRIPTION:• Crema di lenticchie rosse o cannellini con ditalini\n• Fo
+ rmaggio (Crescenza o Robiola)\n• Verdura cotta\n• Pane\n\nSettimana 4 
+ di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledus
+ smann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-esti
+ vo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
+ ova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270331@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:🍽 Mezze penne alla mammarosa (con pomodoro e ricotta) · Polpett
+ e di legumi (lenticchie rosse o fagioli cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (con pomodoro e ricotta)\n• Po
+ lpette di legumi (lenticchie rosse o fagioli cannellini)\n• Verdura crud
+ a\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-
+ cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanom
+ e.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffi
+ ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
+ e il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270401@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:🍽 Stortini con verdure + Asiago
+DESCRIPTION:• Stortini con verdure + Asiago\n• Verdura cotta\n— oppur
+ e —\n• Verdura cruda\n• Stortini ai formaggi/Gnocchi alla romana\n
+ • Verdura cotta e cruda\n• Pane\n\nSettimana 1 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270402@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:🍽 Crema di carote o zucchine con cous cous o crostini · Prosciu
+ tto cotto
+DESCRIPTION:• Crema di carote o zucchine con cous cous o crostini\n• Pr
+ osciutto cotto\n• Bis di verdura cruda\n• Pane\n\nSettimana 1 di 4 · 
+ Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
+ /upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-12686
+ 45.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#inf
+ anzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o
+  con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali
+  e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270405@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270406
+SUMMARY:🍽 Noccioline con ragù vegetale · Frittata o tortino di uova
+DESCRIPTION:• Noccioline con ragù vegetale\n• Frittata o tortino di uo
+ va\n• Verdura cotta\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27
+ \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
+ e/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270406@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:🍽 Gramigna al pomodoro · Polpette di ricotta
+DESCRIPTION:• Gramigna al pomodoro\n• Polpette di ricotta\n• Verdura 
+ cotta o cruda\n— oppure —\n• Crema di verdure con stelline\n• Tort
+ ino di patate e formaggio\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4
+  · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
+ n.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1
+ 268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270407@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:🍽 Risotto agli asparagi verdi e bianchi alternativamente · Tacc
+ hino
+DESCRIPTION:• Risotto agli asparagi verdi e bianchi alternativamente\n•
+  Tacchino\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu estivo 
+ 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edit
+ orpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutt
+ o il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina
+ -interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comu
+ ne di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni
+  non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270408@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:🍽 Spaghetti spezzati o gnocchetti sardi al pesto di basilico o a
+ lle verdure · Manzo
+DESCRIPTION:• Spaghetti spezzati o gnocchetti sardi al pesto di basilico 
+ o alle verdure\n• Manzo\n• Verdura cotta\n• Pane\n\nSettimana 2 di 4
+  · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
+ n.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1
+ 268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270409@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:🍽 Pipette con piselli o crema di piselli con midolline o crostin
+ i · Platessa alla mugnaia o merluzzo al forno
+DESCRIPTION:• Pipette con piselli o crema di piselli con midolline o cros
+ tini\n• Platessa alla mugnaia o merluzzo al forno\n• Verdura cruda\n
+ • Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF
+ ): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cuc
+ ina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficia
+ le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
+ l menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270412@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:🍽 Ravioli/Tortellini · Formaggio (Caciotta o Montasio)
+DESCRIPTION:• Ravioli/Tortellini\n• Formaggio (Caciotta o Montasio)\n
+ • Verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270413@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:🍽 Passato di verdure con orzo o orzotto morbido alle verdure · 
+ Polpettine di manzo
+DESCRIPTION:• Passato di verdure con orzo o orzotto morbido alle verdure\
+ n• Polpettine di manzo\n• Purè di patate\n• Pane\n\nSettimana 3 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-
+ 1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270414@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:🍽 Corallini al burro e parmigiano · Polpette di orata e/o branz
+ ino
+DESCRIPTION:• Corallini al burro e parmigiano\n• Polpette di orata e/o 
+ branzino\n• Bis di verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu e
+ stivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uploa
+ d/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf
+ \nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-
+ cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con i
+ l Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e all
+ ergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270415@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:🍽 Stortini al ragù di carni bianche o lasagna al ragù di carni
+  bianche
+DESCRIPTION:• Stortini al ragù di carni bianche o lasagna al ragù di ca
+ rni bianche\n• Verdura cotta e cruda\n— oppure —\n• Passato di ver
+ dure da solo o con ridotta grammatura di risoni oppure pinzimonio misto\n
+ • Pizza margherita\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\
+ n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
+ /menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il men
+ u: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+ \nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pa
+ dova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inc
+ lusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270416@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:🍽 Risotto primavera (con zucchine\, carote e piselli) · Pollo
+DESCRIPTION:• Risotto primavera (con zucchine\, carote e piselli)\n• Po
+ llo\n• Verdura cotta\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il m
+ enu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-inter
+ na\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
+ Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
+ nclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270419@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270420
+SUMMARY:🍽 Farfalle al pesto di zucchine · Uovo sode o strapazzate
+DESCRIPTION:• Farfalle al pesto di zucchine\n• Uovo sode o strapazzate\
+ n• Bis di verdura cotta\n• Pane\n\nSettimana 4 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270420@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:🍽 Pipette al ragù di manzo · Spinaci agli aromi
+DESCRIPTION:• Verdura cruda\n• Pipette al ragù di manzo\n• Spinaci a
+ gli aromi\n• Pane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu uff
+ iciale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infan
+ zia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://
+ gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto 
+ non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa se
+ mpre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270421@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:🍽 Crema di lenticchie rosse o cannellini con ditalini · Formagg
+ io (Crescenza o Robiola)
+DESCRIPTION:• Crema di lenticchie rosse o cannellini con ditalini\n• Fo
+ rmaggio (Crescenza o Robiola)\n• Verdura cotta\n• Pane\n\nSettimana 4 
+ di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledus
+ smann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-esti
+ vo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
+ ova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270422@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:🍽 Risotto di stagione · Coniglio
+DESCRIPTION:• Risotto di stagione\n• Coniglio\n• Verdura cruda\n• P
+ ane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): ht
+ tps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-i
+ nterna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270423@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:🍽 Passato di verdura con conchigliette o farro · Halibut gratin
+ ato al forno
+DESCRIPTION:• Passato di verdura con conchigliette o farro\n• Halibut g
+ ratinato al forno\n• Patate\n• Pane\n\nSettimana 4 di 4 · Menu estivo
+  2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edi
+ torpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270426@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:🍽 Risotto al pomodoro o alle verdure di stagione · Pollo
+DESCRIPTION:• Risotto al pomodoro o alle verdure di stagione\n• Pollo\n
+ • Bieta ripassata\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n
+ \nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/
+ menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu
+ : https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\
+ nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pad
+ ova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non incl
+ usi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270427@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+SUMMARY:🍽 Minestra in brodo vegetale con tempestina · Polpette di pesce
+DESCRIPTION:• Minestra in brodo vegetale con tempestina\n• Polpette di 
+ pesce\n• Patate\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270428@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:🍽 Mezze penne alla mammarosa (con pomodoro e ricotta) · Polpett
+ e di legumi (lenticchie rosse o fagioli cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (con pomodoro e ricotta)\n• Po
+ lpette di legumi (lenticchie rosse o fagioli cannellini)\n• Verdura crud
+ a\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-
+ cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanom
+ e.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffi
+ ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
+ e il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270503@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:🍽 Noccioline con ragù vegetale · Frittata o tortino di uova
+DESCRIPTION:• Noccioline con ragù vegetale\n• Frittata o tortino di uo
+ va\n• Verdura cotta\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27
+ \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
+ e/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270504@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:🍽 Gramigna al pomodoro · Polpette di ricotta
+DESCRIPTION:• Gramigna al pomodoro\n• Polpette di ricotta\n• Verdura 
+ cotta o cruda\n— oppure —\n• Crema di verdure con stelline\n• Tort
+ ino di patate e formaggio\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4
+  · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
+ n.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1
+ 268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270505@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:🍽 Risotto agli asparagi verdi e bianchi alternativamente · Tacc
+ hino
+DESCRIPTION:• Risotto agli asparagi verdi e bianchi alternativamente\n•
+  Tacchino\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu estivo 
+ 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edit
+ orpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutt
+ o il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina
+ -interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comu
+ ne di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni
+  non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270506@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+SUMMARY:🍽 Pasta al pesto · Manzo
+DESCRIPTION:• Pasta al pesto\n• Manzo\n• Verdura cotta\n• Pane\n\nS
+ ettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://ww
+ w.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2
+ 026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu
+ -scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza le
+ gami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffici
+ ale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270507@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:🍽 Pipette con piselli o crema di piselli con midolline o crostin
+ i · Platessa alla mugnaia o merluzzo al forno
+DESCRIPTION:• Pipette con piselli o crema di piselli con midolline o cros
+ tini\n• Platessa alla mugnaia o merluzzo al forno\n• Verdura cruda\n
+ • Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF
+ ): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cuc
+ ina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficia
+ le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
+ l menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270510@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:🍽 Ravioli/Tortellini · Formaggio (Caciotta o Montasio)
+DESCRIPTION:• Ravioli/Tortellini\n• Formaggio (Caciotta o Montasio)\n
+ • Verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270511@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:🍽 Passato di verdure con orzo o orzotto morbido alle verdure · 
+ Polpettine di manzo
+DESCRIPTION:• Passato di verdure con orzo o orzotto morbido alle verdure\
+ n• Polpettine di manzo\n• Purè di patate\n• Pane\n\nSettimana 3 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-
+ 1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270512@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:🍽 Corallini al burro e parmigiano · Polpette di orata e/o branz
+ ino
+DESCRIPTION:• Corallini al burro e parmigiano\n• Polpette di orata e/o 
+ branzino\n• Bis di verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu e
+ stivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uploa
+ d/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf
+ \nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-
+ cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con i
+ l Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e all
+ ergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270513@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+SUMMARY:🍽 Stortini al ragù di carni bianche o lasagna al ragù di carni
+  bianche
+DESCRIPTION:• Stortini al ragù di carni bianche o lasagna al ragù di ca
+ rni bianche\n• Verdura cotta e cruda\n— oppure —\n• Passato di ver
+ dure da solo o con ridotta grammatura di risoni oppure pinzimonio misto\n
+ • Pizza margherita\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\
+ n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
+ /menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il men
+ u: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+ \nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pa
+ dova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inc
+ lusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270514@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+SUMMARY:🍽 Risotto primavera (con zucchine\, carote e piselli) · Pollo
+DESCRIPTION:• Risotto primavera (con zucchine\, carote e piselli)\n• Po
+ llo\n• Verdura cotta\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il m
+ enu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-inter
+ na\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
+ Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
+ nclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270517@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+SUMMARY:🍽 Farfalle al pesto di zucchine · Uovo sode o strapazzate
+DESCRIPTION:• Farfalle al pesto di zucchine\n• Uovo sode o strapazzate\
+ n• Bis di verdura cotta\n• Pane\n\nSettimana 4 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270518@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+SUMMARY:🍽 Pipette al ragù di manzo · Spinaci agli aromi
+DESCRIPTION:• Verdura cruda\n• Pipette al ragù di manzo\n• Spinaci a
+ gli aromi\n• Pane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu uff
+ iciale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infan
+ zia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://
+ gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto 
+ non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa se
+ mpre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270519@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:🍽 Crema di lenticchie rosse o cannellini con ditalini · Formagg
+ io (Crescenza o Robiola)
+DESCRIPTION:• Crema di lenticchie rosse o cannellini con ditalini\n• Fo
+ rmaggio (Crescenza o Robiola)\n• Verdura cotta\n• Pane\n\nSettimana 4 
+ di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledus
+ smann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-esti
+ vo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
+ ova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270520@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:🍽 Risotto di stagione · Coniglio
+DESCRIPTION:• Risotto di stagione\n• Coniglio\n• Verdura cruda\n• P
+ ane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): ht
+ tps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-i
+ nterna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270521@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:🍽 Passato di verdura con conchigliette o farro · Halibut gratin
+ ato al forno
+DESCRIPTION:• Passato di verdura con conchigliette o farro\n• Halibut g
+ ratinato al forno\n• Patate\n• Pane\n\nSettimana 4 di 4 · Menu estivo
+  2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edi
+ torpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270524@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270524
+DTEND;VALUE=DATE:20270525
+SUMMARY:🍽 Risotto al pomodoro o alle verdure di stagione · Pollo
+DESCRIPTION:• Risotto al pomodoro o alle verdure di stagione\n• Pollo\n
+ • Bieta ripassata\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n
+ \nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/
+ menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu
+ : https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\
+ nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pad
+ ova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non incl
+ usi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270525@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:🍽 Minestra in brodo vegetale con tempestina · Polpette di pesce
+DESCRIPTION:• Minestra in brodo vegetale con tempestina\n• Polpette di 
+ pesce\n• Patate\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270526@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:🍽 Mezze penne alla mammarosa (con pomodoro e ricotta) · Polpett
+ e di legumi (lenticchie rosse o fagioli cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (con pomodoro e ricotta)\n• Po
+ lpette di legumi (lenticchie rosse o fagioli cannellini)\n• Verdura crud
+ a\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-
+ cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanom
+ e.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffi
+ ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
+ e il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270527@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:🍽 Stortini con verdure + Asiago
+DESCRIPTION:• Stortini con verdure + Asiago\n• Verdura cotta\n— oppur
+ e —\n• Verdura cruda\n• Stortini ai formaggi/Gnocchi alla romana\n
+ • Verdura cotta e cruda\n• Pane\n\nSettimana 1 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270528@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:🍽 Crema di carote o zucchine con cous cous o crostini · Prosciu
+ tto cotto
+DESCRIPTION:• Crema di carote o zucchine con cous cous o crostini\n• Pr
+ osciutto cotto\n• Bis di verdura cruda\n• Pane\n\nSettimana 1 di 4 · 
+ Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
+ /upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-12686
+ 45.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#inf
+ anzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o
+  con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali
+  e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270531@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:🍽 Noccioline con ragù vegetale · Frittata o tortino di uova
+DESCRIPTION:• Noccioline con ragù vegetale\n• Frittata o tortino di uo
+ va\n• Verdura cotta\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27
+ \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
+ e/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270601@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:🍽 Gramigna al pomodoro · Polpette di ricotta
+DESCRIPTION:• Gramigna al pomodoro\n• Polpette di ricotta\n• Verdura 
+ cotta o cruda\n— oppure —\n• Crema di verdure con stelline\n• Tort
+ ino di patate e formaggio\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4
+  · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
+ n.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1
+ 268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270603@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:🍽 Pasta al pesto · Manzo
+DESCRIPTION:• Pasta al pesto\n• Manzo\n• Verdura cotta\n• Pane\n\nS
+ ettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://ww
+ w.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2
+ 026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu
+ -scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza le
+ gami con Dussmann o con il Comune di Padova: fa sempre fede il menu uffici
+ ale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270604@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:🍽 Pipette con piselli o crema di piselli con midolline o crostin
+ i · Platessa alla mugnaia o merluzzo al forno
+DESCRIPTION:• Pipette con piselli o crema di piselli con midolline o cros
+ tini\n• Platessa alla mugnaia o merluzzo al forno\n• Verdura cruda\n
+ • Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF
+ ): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cuc
+ ina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.g
+ ithub.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficia
+ le\, senza legami con Dussmann o con il Comune di Padova: fa sempre fede i
+ l menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270607@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:🍽 Ravioli/Tortellini · Formaggio (Caciotta o Montasio)
+DESCRIPTION:• Ravioli/Tortellini\n• Formaggio (Caciotta o Montasio)\n
+ • Verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270608@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270608
+DTEND;VALUE=DATE:20270609
+SUMMARY:🍽 Passato di verdure con orzo o orzotto morbido alle verdure · 
+ Polpettine di manzo
+DESCRIPTION:• Passato di verdure con orzo o orzotto morbido alle verdure\
+ n• Polpettine di manzo\n• Purè di patate\n• Pane\n\nSettimana 3 di 
+ 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussma
+ nn.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-
+ 1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova
+ /#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussm
+ ann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spe
+ ciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270609@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270609
+DTEND;VALUE=DATE:20270610
+SUMMARY:🍽 Corallini al burro e parmigiano · Polpette di orata e/o branz
+ ino
+DESCRIPTION:• Corallini al burro e parmigiano\n• Polpette di orata e/o 
+ branzino\n• Bis di verdura cruda\n• Pane\n\nSettimana 3 di 4 · Menu e
+ stivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/uploa
+ d/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf
+ \nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-
+ cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o con i
+ l Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali e all
+ ergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270610@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270610
+DTEND;VALUE=DATE:20270611
+SUMMARY:🍽 Stortini al ragù di carni bianche o lasagna al ragù di carni
+  bianche
+DESCRIPTION:• Stortini al ragù di carni bianche o lasagna al ragù di ca
+ rni bianche\n• Verdura cotta e cruda\n— oppure —\n• Passato di ver
+ dure da solo o con ridotta grammatura di risoni oppure pinzimonio misto\n
+ • Pizza margherita\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-27\
+ n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine
+ /menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il men
+ u: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+ \nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pa
+ dova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inc
+ lusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270611@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:🍽 Risotto primavera (con zucchine\, carote e piselli) · Pollo
+DESCRIPTION:• Risotto primavera (con zucchine\, carote e piselli)\n• Po
+ llo\n• Verdura cotta\n• Pane\n\nSettimana 3 di 4 · Menu estivo 2026-2
+ 7\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagi
+ ne/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il m
+ enu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-inter
+ na\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di 
+ Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non i
+ nclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270614@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270615
+SUMMARY:🍽 Farfalle al pesto di zucchine · Uovo sode o strapazzate
+DESCRIPTION:• Farfalle al pesto di zucchine\n• Uovo sode o strapazzate\
+ n• Bis di verdura cotta\n• Pane\n\nSettimana 4 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270615@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:🍽 Pipette al ragù di manzo · Spinaci agli aromi
+DESCRIPTION:• Verdura cruda\n• Pipette al ragù di manzo\n• Spinaci a
+ gli aromi\n• Pane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu uff
+ iciale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infan
+ zia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://
+ gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto 
+ non ufficiale\, senza legami con Dussmann o con il Comune di Padova: fa se
+ mpre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270616@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+SUMMARY:🍽 Crema di lenticchie rosse o cannellini con ditalini · Formagg
+ io (Crescenza o Robiola)
+DESCRIPTION:• Crema di lenticchie rosse o cannellini con ditalini\n• Fo
+ rmaggio (Crescenza o Robiola)\n• Verdura cotta\n• Pane\n\nSettimana 4 
+ di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledus
+ smann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-esti
+ vo-1268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-pad
+ ova/#infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Du
+ ssmann o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete 
+ speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270617@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:🍽 Risotto di stagione · Coniglio
+DESCRIPTION:• Risotto di stagione\n• Coniglio\n• Verdura cruda\n• P
+ ane\n\nSettimana 4 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (PDF): ht
+ tps://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-i
+ nterna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanome.github
+ .io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non ufficiale\, 
+ senza legami con Dussmann o con il Comune di Padova: fa sempre fede il men
+ u ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270618@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+SUMMARY:🍽 Passato di verdura con conchigliette o farro · Halibut gratin
+ ato al forno
+DESCRIPTION:• Passato di verdura con conchigliette o farro\n• Halibut g
+ ratinato al forno\n• Patate\n• Pane\n\nSettimana 4 di 4 · Menu estivo
+  2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/edi
+ torpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTut
+ to il menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucin
+ a-interna\nProgetto non ufficiale\, senza legami con Dussmann o con il Com
+ une di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergen
+ i non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270621@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+SUMMARY:🍽 Risotto al pomodoro o alle verdure di stagione · Pollo
+DESCRIPTION:• Risotto al pomodoro o alle verdure di stagione\n• Pollo\n
+ • Bieta ripassata\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n
+ \nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/
+ menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu
+ : https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\
+ nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di Pad
+ ova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non incl
+ usi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270622@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270622
+DTEND;VALUE=DATE:20270623
+SUMMARY:🍽 Minestra in brodo vegetale con tempestina · Polpette di pesce
+DESCRIPTION:• Minestra in brodo vegetale con tempestina\n• Polpette di 
+ pesce\n• Patate\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\n
+ Menu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/me
+ nu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: 
+ https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nP
+ rogetto non ufficiale\, senza legami con Dussmann o con il Comune di Padov
+ a: fa sempre fede il menu ufficiale. Diete speciali e allergeni non inclus
+ i.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270623@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270624
+SUMMARY:🍽 Mezze penne alla mammarosa (con pomodoro e ricotta) · Polpett
+ e di legumi (lenticchie rosse o fagioli cannellini)
+DESCRIPTION:• Mezze penne alla mammarosa (con pomodoro e ricotta)\n• Po
+ lpette di legumi (lenticchie rosse o fagioli cannellini)\n• Verdura crud
+ a\n• Pane\n\nSettimana 1 di 4 · Menu estivo 2026-27\n\nMenu ufficiale (
+ PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-
+ cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: https://gbonanom
+ e.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProgetto non uffi
+ ciale\, senza legami con Dussmann o con il Comune di Padova: fa sempre fed
+ e il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270624@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+SUMMARY:🍽 Stortini con verdure + Asiago
+DESCRIPTION:• Stortini con verdure + Asiago\n• Verdura cotta\n— oppur
+ e —\n• Verdura cruda\n• Stortini ai formaggi/Gnocchi alla romana\n
+ • Verdura cotta e cruda\n• Pane\n\nSettimana 1 di 4 · Menu estivo 202
+ 6-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorp
+ agine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto i
+ l menu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-in
+ terna\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune 
+ di Padova: fa sempre fede il menu ufficiale. Diete speciali e allergeni no
+ n inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270625@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:🍽 Crema di carote o zucchine con cous cous o crostini · Prosciu
+ tto cotto
+DESCRIPTION:• Crema di carote o zucchine con cous cous o crostini\n• Pr
+ osciutto cotto\n• Bis di verdura cruda\n• Pane\n\nSettimana 1 di 4 · 
+ Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it
+ /upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-12686
+ 45.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#inf
+ anzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussmann o
+  con il Comune di Padova: fa sempre fede il menu ufficiale. Diete speciali
+  e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270628@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270628
+DTEND;VALUE=DATE:20270629
+SUMMARY:🍽 Noccioline con ragù vegetale · Frittata o tortino di uova
+DESCRIPTION:• Noccioline con ragù vegetale\n• Frittata o tortino di uo
+ va\n• Verdura cotta\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27
+ \n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagin
+ e/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il me
+ nu: https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-intern
+ a\nProgetto non ufficiale\, senza legami con Dussmann o con il Comune di P
+ adova: fa sempre fede il menu ufficiale. Diete speciali e allergeni non in
+ clusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270629@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+SUMMARY:🍽 Gramigna al pomodoro · Polpette di ricotta
+DESCRIPTION:• Gramigna al pomodoro\n• Polpette di ricotta\n• Verdura 
+ cotta o cruda\n— oppure —\n• Crema di verdure con stelline\n• Tort
+ ino di patate e formaggio\n• Verdura cruda\n• Pane\n\nSettimana 2 di 4
+  · Menu estivo 2026-27\n\nMenu ufficiale (PDF): https://www.scuoledussman
+ n.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1
+ 268645.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/
+ #infanzia-cucina-interna\nProgetto non ufficiale\, senza legami con Dussma
+ nn o con il Comune di Padova: fa sempre fede il menu ufficiale. Diete spec
+ iali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:infanzia-cucina-interna-20270630@gbonanome.github.io
+DTSTAMP:20261108T120000Z
+LAST-MODIFIED:20261108T120000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270630
+DTEND;VALUE=DATE:20270701
+SUMMARY:🍽 Risotto agli asparagi o alla parmigiana · Tacchino
+DESCRIPTION:• Risotto agli asparagi o alla parmigiana\n• Tacchino\n• 
+ Verdura cruda\n• Pane\n\nSettimana 2 di 4 · Menu estivo 2026-27\n\nMenu
+  ufficiale (PDF): https://www.scuoledussmann.it/upload/editorpagine/menu-i
+ nfanzia-con-cucina-interna-2026-27-estivo-1268645.pdf\nTutto il menu: http
+ s://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna\nProge
+ tto non ufficiale\, senza legami con Dussmann o con il Comune di Padova: f
+ a sempre fede il menu ufficiale. Diete speciali e allergeni non inclusi.
+URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-cucina-interna
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

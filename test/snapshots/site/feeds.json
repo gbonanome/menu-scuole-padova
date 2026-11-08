@@ -1,0 +1,92 @@
+{
+  "generato": "2026-11-08T12:00:00Z",
+  "annoScolastico": "2026-27",
+  "fonte": "https://www.scuoledussmann.it/padova",
+  "baseUrl": "https://gbonanome.github.io/menu-scuole-padova/",
+  "feeds": [
+    {
+      "slug": "nido-veicolato",
+      "nome": "Asilo nido, pasto veicolato",
+      "breve": "Nido veicolato",
+      "ordine": "nido",
+      "ics": "feed/nido-veicolato.ics",
+      "copertura": {
+        "dal": "2026-09-01",
+        "al": "2026-11-27"
+      },
+      "variati": 14
+    },
+    {
+      "slug": "nido-cucina-interna",
+      "nome": "Asilo nido con cucina interna e cuoco",
+      "breve": "Nido cucina interna",
+      "ordine": "nido",
+      "ics": "feed/nido-cucina-interna.ics",
+      "copertura": {
+        "dal": "2026-09-01",
+        "al": "2027-06-30"
+      },
+      "variati": 0
+    },
+    {
+      "slug": "nido-integrato-cucina-interna",
+      "nome": "Asilo nido integrato con cucina interna",
+      "breve": "Nido integrato",
+      "ordine": "nido",
+      "ics": "feed/nido-integrato-cucina-interna.ics",
+      "copertura": {
+        "dal": "2026-09-01",
+        "al": "2027-06-30"
+      },
+      "variati": 0
+    },
+    {
+      "slug": "infanzia-veicolato",
+      "nome": "Scuola dell'infanzia, pasto veicolato",
+      "breve": "Infanzia veicolato",
+      "ordine": "infanzia",
+      "ics": "feed/infanzia-veicolato.ics",
+      "copertura": {
+        "dal": "2026-09-01",
+        "al": "2026-11-27"
+      },
+      "variati": 17
+    },
+    {
+      "slug": "infanzia-cucina-interna",
+      "nome": "Scuola dell'infanzia con cucina interna",
+      "breve": "Infanzia cucina interna",
+      "ordine": "infanzia",
+      "ics": "feed/infanzia-cucina-interna.ics",
+      "copertura": {
+        "dal": "2026-09-01",
+        "al": "2027-06-30"
+      },
+      "variati": 0
+    },
+    {
+      "slug": "primaria-secondaria-veicolato",
+      "nome": "Primaria e secondaria di I grado, pasto veicolato",
+      "breve": "Primaria e secondaria veicolato",
+      "ordine": "primaria",
+      "ics": "feed/primaria-secondaria-veicolato.ics",
+      "copertura": {
+        "dal": "2026-09-14",
+        "al": "2026-11-27"
+      },
+      "variati": 21
+    },
+    {
+      "slug": "primaria-lambruschini",
+      "nome": "Primaria Lambruschini (menu dedicato)",
+      "breve": "Primaria Lambruschini",
+      "ordine": "primaria",
+      "ics": "feed/primaria-lambruschini.ics",
+      "copertura": {
+        "dal": "2026-09-14",
+        "al": "2026-11-27"
+      },
+      "variati": 21
+    }
+  ]
+}

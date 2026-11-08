@@ -1,0 +1,407 @@
+[
+  {
+    "id": "post_54200",
+    "titolo": "VARIAZIONE MENU 23 SETTEMBRE 2026",
+    "pubblicata": "2026-09-10",
+    "testo": "Gentili Genitori,\n\r\nla presente per informarvi che vi sarà un'inversione di somministrazione dello yogurt da bere del 23/09 con lo yogurt in vasetto del 01/10 per infanzie, primarie e secondarie veicolate.\n\r\n\r\nCi scusiamo del disguido\n\r\n\r\nSaluti",
+    "date": [
+      "2026-09-23",
+      "2026-10-01"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili Genitori,\nla presente per informarvi che vi sarà un'inversione di somministrazione dello yogurt da bere del 23/09 con lo yogurt in vasetto del 01/10 per infanzie, primarie e secondarie veicolate.\nCi scusiamo del disguido\nSaluti"
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "alta",
+    "motivi": []
+  },
+  {
+    "id": "post_55296",
+    "titolo": "VARIAZIONE MENU 17 SETTEMBRE 2026",
+    "pubblicata": "2026-09-15",
+    "testo": "Gentili Genitori,\n\r\nla presente per informarvi che nella giornata di giovedì 17 settembre 2026 per le primarie e secondarie veicolate verrà servito il sugo alla \"Mamma Rosa\" al posto del sugo ai peperoni gialli previsto per la giornata.\n\r\n\r\nCi scusiamo del disguido\n\r\n\r\nSaluti",
+    "date": [
+      "2026-09-17"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili Genitori,\nla presente per informarvi che nella giornata di giovedì 17 settembre 2026 per le primarie e secondarie veicolate verrà servito il sugo alla \"Mamma Rosa\" al posto del sugo ai peperoni gialli previsto per la giornata.\nCi scusiamo del disguido\nSaluti"
+      }
+    ],
+    "sostituzioni": [
+      {
+        "da": "sugo ai peperoni gialli",
+        "a": "sugo alla \"Mamma Rosa\"",
+        "date": [
+          "2026-09-17"
+        ]
+      }
+    ],
+    "confidenza": "alta",
+    "motivi": []
+  },
+  {
+    "id": "post_17671",
+    "titolo": "Variazione Menù",
+    "pubblicata": "2026-09-28",
+    "testo": "Gentili genitori,\n\r\nA causa dello sciopero previsto per venerdì 2 ottobre il menù della settimana prossima sarà così articolato:\n\r\n\r\nVEICOLATI\n\r\n- Lunedì e martedì à invariati\n\r\n- Mercoledì:\n\r\na) Nido e infanzie veicolate: noccioline alla parmigiana, uova strapazzate, cappuccio julienne (+ carote all’olio per nido)\n\r\nb) 50% servizio primarie e secondarie veicolate: pizza, pomodori e mais, zucchine gratinate\n\r\nc) 50% servizio primarie e secondarie veicolate: noccioline alla parmigiana, uova strapazzate, cappuccio julienne\n\r\n- Giovedì:\n\r\na) Nido e infanzie veicolate: invariato\n\r\nb) 50% servizio primarie e secondarie veicolate: pizza, pomodori e mais, zucchine gratinate\n\r\nc) 50% servizio primarie e secondarie veicolate: mezze penne alla parmigiana, uova strapazzate, cappuccio julienne\n\r\n- Venerdì:\n\r\na) Nido e infanzie veicolate: invariato + fine pasto à frullato di frutta\n\r\nb) Primarie e secondarie veicolate: spaghetti al pomodoro, prosciutto cotto, fagiolini all’olio, frullato di frutta, crackers",
+    "date": [
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili genitori,\nA causa dello sciopero previsto per venerdì 2 ottobre il menù della settimana prossima sarà così articolato:\nVEICOLATI\n- Lunedì e martedì à invariati\n- Mercoledì:\na) Nido e infanzie veicolate: noccioline alla parmigiana, uova strapazzate, cappuccio julienne (+ carote all’olio per nido)\nb) 50% servizio primarie e secondarie veicolate: pizza, pomodori e mais, zucchine gratinate\nc) 50% servizio primarie e secondarie veicolate: noccioline alla parmigiana, uova strapazzate, cappuccio julienne\n- Giovedì:\na) Nido e infanzie veicolate: invariato\nb) 50% servizio primarie e secondarie veicolate: pizza, pomodori e mais, zucchine gratinate\nc) 50% servizio primarie e secondarie veicolate: mezze penne alla parmigiana, uova strapazzate, cappuccio julienne\n- Venerdì:\na) Nido e infanzie veicolate: invariato + fine pasto à frullato di frutta\nb) Primarie e secondarie veicolate: spaghetti al pomodoro, prosciutto cotto, fagiolini all’olio, frullato di frutta, crackers"
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "media",
+    "motivi": [
+      "giorni indicati solo col nome, riferiti alla settimana del 2026-09-28"
+    ]
+  },
+  {
+    "id": "post_88641",
+    "titolo": "Variazione Menù 07 Ottobre 2026",
+    "pubblicata": "2026-09-28",
+    "testo": "Gentili Genitori,\n\r\nSi comunica che mercoledì 7 ottobre verranno somministrati cracker in aggiunta al pane già previsto in recupero del pane non somministrato mercoledì 16/09/2026 a causa della non conformità del prodotto quel giorno.",
+    "date": [
+      "2026-10-07"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili Genitori,\nSi comunica che mercoledì 7 ottobre verranno somministrati cracker in aggiunta al pane già previsto in recupero del pane non somministrato mercoledì 16/09/2026 a causa della non conformità del prodotto quel giorno."
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "bassa",
+    "motivi": [
+      "nessun ordine di scuola nominato: applicata a tutti i veicolati"
+    ]
+  },
+  {
+    "id": "post_49719",
+    "titolo": "VARIAZIONE MENU 05/10, 06/10 e 09/10",
+    "pubblicata": "2026-09-29",
+    "testo": "si comunica che i pomodori previsti per i veicolati per lunedì 5 ottobre e per venerdì 9 ottobre verranno sostituiti rispettivamente con cappuccio julienne e carote all’olio.\n\r\nInoltre la macedonia plurifrutto di martedì 6 ottobre sarà composta da mela e melone bio.",
+    "date": [
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-09"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "si comunica che i pomodori previsti per i veicolati per lunedì 5 ottobre e per venerdì 9 ottobre verranno sostituiti rispettivamente con cappuccio julienne e carote all’olio.\nInoltre la macedonia plurifrutto di martedì 6 ottobre sarà composta da mela e melone bio."
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "alta",
+    "motivi": []
+  },
+  {
+    "id": "post_58151",
+    "titolo": "VARIAZIONE MENU 15 e 16 OTTOBRE",
+    "pubblicata": "2026-09-29",
+    "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\n\r\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\n\r\n\r\n- Nido veicolato: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, carote vichy/patate al forno, merende invariate;\n\r\n\r\nvenerdì 16/10: mezze penne al burro, halibut gratinato, zucca al forno, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10)\n\r\n\r\n- Infanzie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, patate al forno, merenda invariata;\n\r\n\r\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, pane (la frutta prevista viene spostata al martedì al posto del frullato)\n\r\n\r\n- Primarie e secondarie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino agli aromi, patate al forno, fine pasto invariato;\n\r\n\r\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, cracker\n\r\n\r\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10.",
+    "date": [
+      "2026-10-13",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-29"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato"
+        ],
+        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nNido veicolato: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, carote vichy/patate al forno, merende invariate;\nvenerdì 16/10: mezze penne al burro, halibut gratinato, zucca al forno, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10)\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10."
+      },
+      {
+        "feed": [
+          "infanzia-veicolato"
+        ],
+        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nInfanzie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, patate al forno, merenda invariata;\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, pane (la frutta prevista viene spostata al martedì al posto del frullato)\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10."
+      },
+      {
+        "feed": [
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nPrimarie e secondarie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino agli aromi, patate al forno, fine pasto invariato;\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, cracker\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10."
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "alta",
+    "motivi": [
+      "testo diviso per ordine di scuola"
+    ]
+  },
+  {
+    "id": "post_27151",
+    "titolo": "VARIAZIONE 30/10/26",
+    "pubblicata": "2026-10-19",
+    "testo": "Gentili genitori,\n\r\na causa dello sciopero previsto a primarie e secondarie veicolate verranno somministrati cracker al posto del pane previsto.",
+    "date": [
+      "2026-10-30"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili genitori,\na causa dello sciopero previsto a primarie e secondarie veicolate verranno somministrati cracker al posto del pane previsto."
+      }
+    ],
+    "sostituzioni": [
+      {
+        "da": "pane",
+        "a": "cracker",
+        "date": [
+          "2026-10-30"
+        ]
+      }
+    ],
+    "confidenza": "alta",
+    "motivi": []
+  },
+  {
+    "id": "post_64182",
+    "titolo": "VARIAZIONE MENU 28/10",
+    "pubblicata": "2026-10-21",
+    "testo": "si comunica che i filettini di merluzzo gratinati al limone previsti per tutti i veicolati per mercoledì 28/10 verranno somministrati giovedì 12/11 e che viceversa l’halibut gratinato previsto per quel giorno verrà somministrato il 28/10.",
+    "date": [
+      "2026-10-28",
+      "2026-11-12"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "si comunica che i filettini di merluzzo gratinati al limone previsti per tutti i veicolati per mercoledì 28/10 verranno somministrati giovedì 12/11 e che viceversa l’halibut gratinato previsto per quel giorno verrà somministrato il 28/10."
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "alta",
+    "motivi": []
+  },
+  {
+    "id": "post_72521",
+    "titolo": "VARIAZIONE MENU 22/10/2026 - INFANZIA VEICOLATE",
+    "pubblicata": "2026-10-21",
+    "testo": "Domani al posto del frullato di frutta previsto per le infanzie veicolate verrà servito yogurt da bere",
+    "date": [
+      "2026-10-22"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "infanzia-veicolato"
+        ],
+        "testo": "Domani al posto del frullato di frutta previsto per le infanzie veicolate verrà servito yogurt da bere"
+      }
+    ],
+    "sostituzioni": [
+      {
+        "da": "frullato di frutta",
+        "a": "yogurt da bere",
+        "date": [
+          "2026-10-22"
+        ]
+      }
+    ],
+    "confidenza": "alta",
+    "motivi": []
+  },
+  {
+    "id": "post_98193",
+    "titolo": "VARIAZIONE MENU' 5 e 17 NOVEMBRE",
+    "pubblicata": "2026-10-30",
+    "testo": "Gentili Genitori,\n\r\nvi comunichiamo le seguenti variazioni al menu della mensa scolastica per il mese di novembre:\n\r\n\r\n- Giovedì 05/11/2026: verrà servito come contorno carote julienne e mais (invece di radicchio variegato bio e mais).\n\r\n- Martedì 17/11/2026: verrà servito radicchio variegato e insalata (invece di insalata e carote julienne).\n\r\n\r\n\r\nCordiali saluti,\n\r\nDussmann Service",
+    "date": [
+      "2026-11-05",
+      "2026-11-17"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili Genitori,\nvi comunichiamo le seguenti variazioni al menu della mensa scolastica per il mese di novembre:\n- Giovedì 05/11/2026: verrà servito come contorno carote julienne e mais (invece di radicchio variegato bio e mais).\n- Martedì 17/11/2026: verrà servito radicchio variegato e insalata (invece di insalata e carote julienne).\nCordiali saluti,\nDussmann Service"
+      }
+    ],
+    "sostituzioni": [
+      {
+        "da": "radicchio variegato bio e mais",
+        "a": "carote julienne e mais",
+        "date": [
+          "2026-11-05"
+        ]
+      },
+      {
+        "da": "insalata e carote julienne",
+        "a": "radicchio variegato e insalata",
+        "date": [
+          "2026-11-17"
+        ]
+      }
+    ],
+    "confidenza": "media",
+    "motivi": [
+      "nessun ordine di scuola nominato: applicata a tutti i veicolati"
+    ]
+  },
+  {
+    "id": "post_27615",
+    "titolo": "VARIAZIONE MENU 04/11/2026",
+    "pubblicata": "2026-11-03",
+    "testo": "Gentili Genitori,\n\r\ninformiamo domani 04/11/2026 verrà servito frullato al posto dello yogurt previsto.\n\r\n\r\nCordiali saluti,",
+    "date": [
+      "2026-11-04"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili Genitori,\ninformiamo domani 04/11/2026 verrà servito frullato al posto dello yogurt previsto.\nCordiali saluti,"
+      }
+    ],
+    "sostituzioni": [
+      {
+        "da": "yogurt",
+        "a": "frullato",
+        "date": [
+          "2026-11-04"
+        ]
+      }
+    ],
+    "confidenza": "media",
+    "motivi": [
+      "nessun ordine di scuola nominato: applicata a tutti i veicolati"
+    ]
+  },
+  {
+    "id": "post_52042",
+    "titolo": "VARIAZIONE MENU' 10 NOVEMBRE",
+    "pubblicata": "2026-11-06",
+    "testo": "Gentili genitori,\n\r\ninformiamo che martedì 10/11/2026 verrà servita crema di ceci bio al posto della crema di lenticchie rosse decorticate bio.",
+    "date": [
+      "2026-11-10"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili genitori,\ninformiamo che martedì 10/11/2026 verrà servita crema di ceci bio al posto della crema di lenticchie rosse decorticate bio."
+      }
+    ],
+    "sostituzioni": [
+      {
+        "da": "crema di lenticchie rosse decorticate bio",
+        "a": "crema di ceci bio",
+        "date": [
+          "2026-11-10"
+        ]
+      }
+    ],
+    "confidenza": "media",
+    "motivi": [
+      "nessun ordine di scuola nominato: applicata a tutti i veicolati"
+    ]
+  },
+  {
+    "id": "post_78825",
+    "titolo": "VARIAZIONE MENU' 20/11",
+    "pubblicata": "2026-11-06",
+    "testo": "Gentili genitori,\n\r\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\n\r\n\r\n\r\n- Nido veicolato: invariato\n\r\n- Infanzie veicolate: pasta al pomodoro, tonno all’olio, fagiolini all’olio, pane, frullato (il frullato di giovedì verrà sostituito da frutta fresca)\n\r\n- Primarie e secondarie veicolate + primaria Lambruschini: pasta al pomodoro, tonno all’olio, fagiolini all’olio, cracker, frullato (il frullato di martedì verrà sostituito da frutta fresca)",
+    "date": [
+      "2026-11-20"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato"
+        ],
+        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nNido veicolato: invariato",
+        "invariato": true
+      },
+      {
+        "feed": [
+          "infanzia-veicolato"
+        ],
+        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nInfanzie veicolate: pasta al pomodoro, tonno all’olio, fagiolini all’olio, pane, frullato (il frullato di giovedì verrà sostituito da frutta fresca)",
+        "menu": [
+          "Pasta al pomodoro",
+          "Tonno all’olio",
+          "Fagiolini all’olio",
+          "Pane",
+          "Frullato"
+        ]
+      },
+      {
+        "feed": [
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nPrimarie e secondarie veicolate + primaria Lambruschini: pasta al pomodoro, tonno all’olio, fagiolini all’olio, cracker, frullato (il frullato di martedì verrà sostituito da frutta fresca)",
+        "menu": [
+          "Pasta al pomodoro",
+          "Tonno all’olio",
+          "Fagiolini all’olio",
+          "Cracker",
+          "Frullato"
+        ]
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "alta",
+    "motivi": [
+      "testo diviso per ordine di scuola"
+    ]
+  }
+]
