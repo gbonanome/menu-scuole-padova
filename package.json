@@ -5,9 +5,17 @@
   "type": "module",
   "license": "MIT",
   "private": true,
-  "engines": { "node": ">=22" },
-  "scripts": {
-    "test": "node --test test/"
+  "engines": {
+    "node": ">=22"
   },
-  "repository": { "type": "git", "url": "git+https://github.com/gbonanome/menu-scuole-padova.git" }
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbonanome/menu-scuole-padova.git"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^6.5.438"
+  }
 }
