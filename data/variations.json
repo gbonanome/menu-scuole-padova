@@ -144,20 +144,20 @@
         "feed": [
           "nido-veicolato"
         ],
-        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nvenerdì 16/10: mezze penne al burro, halibut gratinato, zucca al forno, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10)\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, pane (la frutta prevista viene spostata al martedì al posto del frullato)\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, cracker\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10.\nNido veicolato: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, carote vichy/patate al forno, merende invariate;"
+        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nNido veicolato: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, carote vichy/patate al forno, merende invariate;\nvenerdì 16/10: mezze penne al burro, halibut gratinato, zucca al forno, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10)\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10."
       },
       {
         "feed": [
           "infanzia-veicolato"
         ],
-        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nvenerdì 16/10: mezze penne al burro, halibut gratinato, zucca al forno, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10)\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, pane (la frutta prevista viene spostata al martedì al posto del frullato)\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, cracker\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10.\nInfanzie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, patate al forno, merenda invariata;"
+        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nInfanzie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino alla pizzaiola, patate al forno, merenda invariata;\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, pane (la frutta prevista viene spostata al martedì al posto del frullato)\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10."
       },
       {
         "feed": [
           "primaria-secondaria-veicolato",
           "primaria-lambruschini"
         ],
-        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nvenerdì 16/10: mezze penne al burro, halibut gratinato, zucca al forno, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10)\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, pane (la frutta prevista viene spostata al martedì al posto del frullato)\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, cracker\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10.\nPrimarie e secondarie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino agli aromi, patate al forno, fine pasto invariato;"
+        "testo": "a causa dello sciopero di venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà le seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana menù autunnale con le seguenti specifiche:\nPrimarie e secondarie veicolate: giovedì 15/10: crema di verdure con orzo, bocconcini di tacchino agli aromi, patate al forno, fine pasto invariato;\nvenerdì 16/10: mezze penne al burro, tonno all’olio, fagiolini all’olio (le zucchine trifolate previste vengono spostate a martedì 13/10), frullato di frutta, cracker\nN.B. La crema di porri e cavolfiori prevista verrà somministrata giovedì 29/10."
       }
     ],
     "sostituzioni": [],
@@ -367,20 +367,35 @@
         "feed": [
           "nido-veicolato"
         ],
-        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nNido veicolato: invariato"
+        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nNido veicolato: invariato",
+        "invariato": true
       },
       {
         "feed": [
           "infanzia-veicolato"
         ],
-        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nInfanzie veicolate: pasta al pomodoro, tonno all’olio, fagiolini all’olio, pane, frullato (il frullato di giovedì verrà sostituito da frutta fresca)"
+        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nInfanzie veicolate: pasta al pomodoro, tonno all’olio, fagiolini all’olio, pane, frullato (il frullato di giovedì verrà sostituito da frutta fresca)",
+        "menu": [
+          "Pasta al pomodoro",
+          "Tonno all’olio",
+          "Fagiolini all’olio",
+          "Pane",
+          "Frullato"
+        ]
       },
       {
         "feed": [
           "primaria-secondaria-veicolato",
           "primaria-lambruschini"
         ],
-        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nPrimarie e secondarie veicolate + primaria Lambruschini: pasta al pomodoro, tonno all’olio, fagiolini all’olio, cracker, frullato (il frullato di martedì verrà sostituito da frutta fresca)"
+        "testo": "Gentili genitori,\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\nPrimarie e secondarie veicolate + primaria Lambruschini: pasta al pomodoro, tonno all’olio, fagiolini all’olio, cracker, frullato (il frullato di martedì verrà sostituito da frutta fresca)",
+        "menu": [
+          "Pasta al pomodoro",
+          "Tonno all’olio",
+          "Fagiolini all’olio",
+          "Cracker",
+          "Frullato"
+        ]
       }
     ],
     "sostituzioni": [],

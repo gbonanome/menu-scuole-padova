@@ -8,6 +8,7 @@ import { statoGiorno } from './calendario.js';
 export async function caricaMenus(dirMenus, anno) {
   const out = [];
   for (const feed of await readdir(dirMenus).catch(() => [])) {
+    if (feed.startsWith('.')) continue;
     for (const f of await readdir(path.join(dirMenus, feed))) {
       if (!f.endsWith('.json') || (anno && !f.startsWith(anno))) continue;
       out.push(JSON.parse(await readFile(path.join(dirMenus, feed, f), 'utf8')));
@@ -60,7 +61,7 @@ export function risolviVariazioni(variazioni, menus, cal) {
       for (const parte of v.parti) {
         for (const feed of parte.feed) {
           const g = giorni.get(feed)?.get(data);
-          if (g) candidati.push({ feed, g, parte });
+          if (g && !parte.invariato) candidati.push({ feed, g, parte });
         }
       }
       if (!candidati.length) {
@@ -77,7 +78,8 @@ export function risolviVariazioni(variazioni, menus, cal) {
           id: v.id,
           titolo: v.titolo,
           testo: c.parte.testo,
-          ambito: conferma.length ? 'confermato' : 'ipotizzato',
+          ambito: conferma.length || c.parte.menu ? 'confermato' : 'ipotizzato',
+          ...(c.parte.menu ? { menu: c.parte.menu } : {}),
           sostituzioni: conferma.length ? sostData.filter((s) => piattoPresente(s.da, c.g.piatti)).map(({ da, a }) => ({ da, a })) : []
         });
       }

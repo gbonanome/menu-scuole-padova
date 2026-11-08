@@ -103,6 +103,21 @@ export function estraiSostituzioni(frase) {
   return out.filter((s) => s.da && s.a && s.da.length < 90 && s.a.length < 90);
 }
 
+/**
+ * "pasta al pomodoro, tonno all’olio, fagiolini all’olio, pane, frutta" -> elenco di piatti
+ * (menu sostitutivo completo, tipico degli scioperi). Null se non sembra un elenco di piatti.
+ */
+export function menuCompleto(s) {
+  if (!s || /\d{1,2}[\/.]\d{1,2}|invariat|lunedì|martedì|mercoledì|giovedì|venerdì/i.test(s.replace(/\([^)]*\)/g, ''))) return null;
+  const voci = s
+    .replace(/\([^)]*\)/g, '')
+    .split(/,|\s+e\s+(?=[^,]*$)/)
+    .map((v) => v.trim().replace(/[.;]$/, ''))
+    .filter(Boolean);
+  if (voci.length < 3 || voci.some((v) => v.length > 60)) return null;
+  return voci.map((v) => v.charAt(0).toUpperCase() + v.slice(1));
+}
+
 const NOMI_GIORNI = { lunedì: 1, martedì: 2, mercoledì: 3, giovedì: 4, venerdì: 5 };
 
 /** Giorni scritti solo come nome ("- Mercoledì:") nella settimana di una data già citata. */
@@ -133,8 +148,24 @@ export function parseVariazione({ id, titolo, pubblicata, testo }) {
   const motivi = [];
   let parti;
   if (specifiche.length >= 2) {
-    const comuni = perRiga.filter((x) => !specifiche.includes(x)).map((x) => x.r);
-    parti = specifiche.map((x) => ({ feed: x.feed, testo: [...comuni, x.r.replace(/^[-•]\s*/, '')].join('\n') }));
+    // Preambolo e "N.B." valgono per tutti; le righe dopo un ordine di scuola appartengono a quell'ordine.
+    const comuni = [];
+    const proprie = new Map(specifiche.map((x) => [x, []]));
+    let corrente = null;
+    for (const x of perRiga) {
+      if (specifiche.includes(x)) corrente = x;
+      else if (!corrente || /^(n\.?\s?b\.?|nota)\b/i.test(x.r)) comuni.push(x.r);
+      else proprie.get(corrente).push(x.r);
+    }
+    parti = specifiche.map((x) => {
+      const riga = x.r.replace(/^[-•]\s*/, '');
+      const parte = { feed: x.feed, testo: [...comuni.filter((c) => !/^(n\.?\s?b\.?|nota)\b/i.test(c)), riga, ...proprie.get(x), ...comuni.filter((c) => /^(n\.?\s?b\.?|nota)\b/i.test(c))].join('\n') };
+      const dopo = riga.slice(riga.indexOf(':') + 1).trim();
+      if (/^invariat[oaie]\b/i.test(dopo) && !proprie.get(x).length) parte.invariato = true;
+      const menu = menuCompleto(dopo);
+      if (menu && !proprie.get(x).length && date.length === 1) parte.menu = menu;
+      return parte;
+    });
     motivi.push('testo diviso per ordine di scuola');
   } else {
     const feed = feedCitati(`${titolo}\n${testo}`);
