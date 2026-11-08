@@ -117,7 +117,6 @@ function mostraScuola() {
   $('#scuola-feed').textContent = s ? f.nome : 'Menu scelto dall’elenco';
   const note = [];
   if (s?.avviso) note.push(el('p', { class: 'avviso', role: 'note' }, s.avviso));
-  else if (s && s.confidenza !== 'alta') note.push(el('p', {}, 'L’abbinamento tra scuola e menu è ricavato dai documenti del Comune.'));
   $('#scuola-note').replaceChildren(...note);
   $('#link-segnala').href = linkSegnalazione();
   $('#scuola').hidden = false;
