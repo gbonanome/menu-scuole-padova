@@ -1,4 +1,7 @@
 {
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
   "name": "Menu Scuole Padova",
   "short_name": "Menu scuole",
   "description": "Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.",

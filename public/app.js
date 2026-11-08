@@ -208,6 +208,33 @@ function salvaScelte() {
   const ids = stato.scelte.map((v) => v.id).join('|');
   const query = [ids ? `scuola=${ids}` : '', p.toString()].filter(Boolean).join('&');
   history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${stato.attiva ? `#${stato.attiva.id}` : ''}`);
+  aggiornaManifest();
+}
+
+// L'icona sulla schermata Home parte da start_url del manifest: lo teniamo uguale all'indirizzo attuale
+// (scuole salvate e scuola aperta), altrimenti iPhone userebbe l'indirizzo con cui la pagina era stata caricata.
+let manifestBase = null;
+async function caricaManifest() {
+  const link = document.querySelector('link[rel="manifest"]');
+  if (!link) return;
+  try {
+    manifestBase = { url: link.href, dati: await json(link.href) };
+  } catch (e) {
+    console.error(e);
+  }
+}
+function aggiornaManifest() {
+  const link = document.querySelector('link[rel="manifest"]');
+  if (!link || !manifestBase) return;
+  const abs = (u) => new URL(u, manifestBase.url).href;
+  const m = {
+    ...manifestBase.dati,
+    id: abs(manifestBase.dati.id ?? './'),
+    scope: abs(manifestBase.dati.scope ?? './'),
+    start_url: location.href,
+    icons: (manifestBase.dati.icons ?? []).map((i) => ({ ...i, src: abs(i.src) }))
+  };
+  link.href = `data:application/manifest+json;charset=utf-8,${encodeURIComponent(JSON.stringify(m))}`;
 }
 
 /** Matita accanto al nome della scuola attiva: fa capire che la pillola si può toccare. */
@@ -251,7 +278,13 @@ function mostraSwitcher() {
       stato.scelte.length < MAX_SCUOLE
         ? el(
             'button',
-            { type: 'button', class: 'chip aggiungi', 'aria-label': 'Aggiungi scuola', 'aria-controls': 'scelta', onclick: () => mostraPicker(true, 'aggiungi') },
+            {
+              type: 'button',
+              class: 'chip aggiungi',
+              'aria-label': 'Aggiungi scuola',
+              'aria-controls': 'scelta',
+              onclick: () => mostraPicker(true, 'aggiungi')
+            },
             '＋ Aggiungi'
           )
         : null
@@ -540,7 +573,7 @@ async function avvia() {
     );
   }
   try {
-    const [indice, scuole] = await Promise.all([json('data/feeds.json'), json('data/scuole.json')]);
+    const [indice, scuole] = await Promise.all([json('data/feeds.json'), json('data/scuole.json'), caricaManifest()]);
     stato.feeds = indice.feeds;
     stato.meta = indice;
     stato.scuole = scuole;
@@ -592,7 +625,11 @@ async function avvia() {
   }
   const h = daHash();
   if (h && !stato.scelte.some((v) => v.id === h.id) && stato.scelte.length < MAX_SCUOLE) stato.scelte.push(h);
-  const att = h ?? stato.scelte.find((v) => v.id === salvato?.attiva) ?? stato.scelte[0];
+  // Aperta dall'icona sulla schermata Home: l'indirizzo è sempre quello dell'installazione, quindi conta
+  // l'ultima scuola vista nell'app (se c'è). Nel browser invece vince l'indirizzo (link condivisi, eventi).
+  const app = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  const ultima = stato.scelte.find((v) => v.id === salvato?.attiva);
+  const att = (app && ultima) || h || ultima || stato.scelte[0];
   if (att) attiva(att);
   else mostraPicker(true, 'aggiungi');
 }
