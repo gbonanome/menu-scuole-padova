@@ -1,0 +1,201 @@
+{
+  "feed": "primaria-secondaria-veicolato",
+  "stagione": "estivo",
+  "annoScolastico": "2026-27",
+  "titolo": "Menù estivo Settembre-Ottobre · Scuola primaria e secondaria veicolato · A.s. 2026-27",
+  "validita": [
+    {
+      "dal": "2026-09-14",
+      "al": "2026-10-09",
+      "giorno": "lun",
+      "settimana": 3
+    }
+  ],
+  "riavvii": [],
+  "intervalli": [
+    {
+      "settimana": 1,
+      "dal": "2026-09-28",
+      "al": "2026-10-02"
+    },
+    {
+      "settimana": 2,
+      "dal": "2026-10-05",
+      "al": "2026-10-09"
+    },
+    {
+      "settimana": 3,
+      "dal": "2026-09-14",
+      "al": "2026-09-18"
+    },
+    {
+      "settimana": 4,
+      "dal": "2026-09-21",
+      "al": "2026-09-25"
+    }
+  ],
+  "settimane": {
+    "1": {
+      "lun": [
+        "Riso alle zucchine",
+        "Caciotta",
+        "Insalata",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Lasagne al pesto alla genovese",
+        "Tonno all’olio",
+        "Carote julienne",
+        "Pane",
+        "Gelato biscotto"
+      ],
+      "mer": [
+        "Passato di verdure con orzo",
+        "Hamburger di pollo con aromi",
+        "Patate al forno",
+        "Pane semintegrale",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "50% Pizza margherita al trancio*",
+        "Pomodori e mais",
+        "Zucchine gratinate",
+        "Pane",
+        "50% Menù del venerdì",
+        "Yogurt alla frutta in vasetto"
+      ],
+      "ven": [
+        "50% Spaghetti pomodoro e basilico",
+        "Prosciutto cotto Alta Qualità",
+        "Fagiolini all’olio",
+        "Pane",
+        "50% Menù del giovedì",
+        "Frutta fresca"
+      ]
+    },
+    "2": {
+      "lun": [
+        "Ravioli ricotta e spinaci alla mammarosa*",
+        "Piselli in tegame e pomodori",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Fusilli tonno e olive (senza pomodoro)",
+        "Uova sode/Frittata al formaggio¹",
+        "Insalata",
+        "Pane",
+        "Macedonia plurifrutto (melone, ananas)"
+      ],
+      "mer": [
+        "Riso alla zucca",
+        "Coscette di pollo al forno",
+        "Carote julienne",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Pipe al pomodoro",
+        "Hamburger di manzo",
+        "Zucchine trifolate",
+        "Pane semintegrale",
+        "Frullato di frutta 100%"
+      ],
+      "ven": [
+        "Gnocchetti sardi al pesto alla genovese",
+        "Filetto di merluzzo gratinato con fettina di limone",
+        "Pomodori",
+        "Pane",
+        "Yogurt da bere alla frutta"
+      ]
+    },
+    "3": {
+      "lun": [
+        "Pipe alla crema di zucchine",
+        "Asiago",
+        "Carote julienne",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Riso allo zafferano",
+        "Straccetti di manzo",
+        "Cappuccio julienne",
+        "Pane",
+        "Yogurt in vasetto alla frutta"
+      ],
+      "mer": [
+        "Fusilli pomodoro e basilico",
+        "Affettato di tacchino",
+        "Insalata e mais",
+        "Pane semintegrale",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Mezze penne con sugo alla crema di peperoni gialli",
+        "Bocconcini di pollo panati²",
+        "Patate e zucchine gratinate agli aromi",
+        "Pane",
+        "Frullato di frutta 100% o gelato"
+      ],
+      "ven": [
+        "Farfalle al pesto alla genovese",
+        "Polpette di pesce",
+        "Pomodori e cetrioli",
+        "Pane",
+        "Frutta fresca"
+      ]
+    },
+    "4": {
+      "lun": [
+        "Mezze penne al ragù vegetale",
+        "Mozzarella",
+        "Cappuccio julienne",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Bigoli al ragù di manzo",
+        "Insalata",
+        "Zucchine trifolate",
+        "Pane",
+        "Gelato coppetta"
+      ],
+      "mer": [
+        "Riso agli spinaci",
+        "Uova sode/Frittata al formaggio¹",
+        "Carote bastoncino",
+        "Pane",
+        "Yogurt da bere alla frutta"
+      ],
+      "gio": [
+        "Caserecce alla pizzaiola",
+        "Lonza di maiale tonnata",
+        "Insalata",
+        "Pane semintegrale",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Crema di ceci con ditalini",
+        "Halibut gratinato",
+        "Patate al forno",
+        "Pane",
+        "Frutta fresca"
+      ]
+    }
+  },
+  "note": {
+    "1": "50% del servizio uova sode e 50% frittata.",
+    "2": "Solo per la scuola secondaria i bocconcini di pollo panati al forno sono sostituiti da cotoletta di pollo panata al forno."
+  },
+  "eccezioni": [],
+  "avvertenze": [
+    "*15% di pasta in bianco in aggiunta al menù."
+  ],
+  "fonte": {
+    "url": "https://www.scuoledussmann.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pdf",
+    "sha256": "2a3194b9fb9c92704f637b5452e62052a7529bbb5598b4a6f339535eb7a42e02",
+    "scaricatoIl": "2026-11-08"
+  }
+}

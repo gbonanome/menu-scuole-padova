@@ -1,0 +1,226 @@
+{
+  "feed": "primaria-lambruschini",
+  "stagione": "autunnale",
+  "annoScolastico": "2026-27",
+  "titolo": "Menù autunnale · Scuola primaria Lambruschini · A.s. 2026-27",
+  "validita": [
+    {
+      "dal": "2026-10-12",
+      "al": "2026-11-27",
+      "giorno": "lun",
+      "settimana": 3
+    }
+  ],
+  "riavvii": [],
+  "intervalli": [
+    {
+      "settimana": 1,
+      "dal": "2026-10-26",
+      "al": "2026-10-30"
+    },
+    {
+      "settimana": 1,
+      "dal": "2026-11-23",
+      "al": "2026-11-27"
+    },
+    {
+      "settimana": 2,
+      "dal": "2026-11-02",
+      "al": "2026-11-06"
+    },
+    {
+      "settimana": 3,
+      "dal": "2026-10-12",
+      "al": "2026-10-16"
+    },
+    {
+      "settimana": 3,
+      "dal": "2026-11-09",
+      "al": "2026-11-13"
+    },
+    {
+      "settimana": 4,
+      "dal": "2026-10-19",
+      "al": "2026-10-23"
+    },
+    {
+      "settimana": 4,
+      "dal": "2026-11-16",
+      "al": "2026-11-20"
+    }
+  ],
+  "settimane": {
+    "1": {
+      "lun": [
+        "Spaghetti al pomodoro",
+        "Caciotta",
+        "Bieta all’olio",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Lasagne al forno con ragù di manzo*",
+        "Insalata e cappuccio julienne",
+        "Pane",
+        "Macedonia plurifrutto (kiwi e mela)"
+      ],
+      "mer": [
+        "Riso agli spinaci o delicato al sedano rapa",
+        "Filettini di merluzzo panati con fettina di limone",
+        "Zucchine trifolate",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Crema di verdura con risoni",
+        "Polpettone/polpette di pollo e tacchino in umido¹",
+        "Patate gratinate",
+        "Pane",
+        "Yogurt alla frutta da bere o in vasetto"
+      ],
+      "ven": [
+        "Mezze penne all’ortolana",
+        "Prosciutto cotto A.Q.",
+        "Carote al burro prezzemolate",
+        "Pane",
+        "Frutta fresca"
+      ]
+    },
+    "2": {
+      "lun": [
+        "Noccioline ai formaggi",
+        "Finocchi julienne/Piselli al tegame",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Minestra in brodo vegetale con stelline",
+        "Hamburger di manzo",
+        "Purè di patate",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Riso allo zafferano",
+        "Coscette di pollo al forno",
+        "Fagiolini all’olio",
+        "Pane",
+        "Yogurt alla frutta in vasetto"
+      ],
+      "gio": [
+        "Pasta (ditalini) e fagioli",
+        "Frittata al prosciutto cotto",
+        "Radicchio variegato e mais",
+        "Pane semintegrale",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Pipette al pomodoro",
+        "Hamburger di trota (o altra tipologia di pesce) bio",
+        "Insalata",
+        "Pane",
+        "Frullato di frutta 100%"
+      ]
+    },
+    "3": {
+      "lun": [
+        "Tortellini di prosciutto crudo al pomodoro",
+        "Asiago",
+        "Carote julienne",
+        "Pane",
+        "Yogurt alla frutta in vasetto"
+      ],
+      "mar": [
+        "Crema di lenticchie rosse decorticate con midolline",
+        "Tortino di uova, patate e formaggio",
+        "Fagiolini all’olio",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Bigoli al ragù di manzo",
+        "Cappuccio julienne",
+        "Piselli",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Mezze penne al burro",
+        "Halibut gratinato al forno",
+        "Zucchine trifolate",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Crema di porri e cavolfiori con orzo",
+        "Bocconcini di tacchino agli aromi",
+        "Patate al forno",
+        "Pane",
+        "Frullato di frutta 100%"
+      ]
+    },
+    "4": {
+      "lun": [
+        "Mezze penne alla crema di zucchine",
+        "Uova strapazzate o frittata al formaggio",
+        "Finocchi julienne",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Pizza margherita al trancio",
+        "Insalata e carote julienne",
+        "oppure",
+        "Crema di cannellini con tempestina",
+        "Stracchino",
+        "Insalata e carote julienne",
+        "Pane",
+        "Frullato di frutta 100%"
+      ],
+      "mer": [
+        "Riso alla zucca",
+        "Bocconcini di pollo gratinati",
+        "Zucchine trifolate",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Minestra in brodo vegetale con risoni",
+        "Spezzatino di manzo",
+        "Patate al forno",
+        "Pane semintegrale",
+        "Yogurt alla frutta in vasetto"
+      ],
+      "ven": [
+        "Fusilli al ragù di verdure",
+        "Sformato di platessa e halibut",
+        "Zucca al forno con aromi",
+        "Pane",
+        "Frutta fresca"
+      ]
+    }
+  },
+  "note": {
+    "1": "Polpettone: 29.10.2026 – polpette 26.11.2026"
+  },
+  "eccezioni": [
+    {
+      "nota": 1,
+      "data": "2026-10-29",
+      "piatto": "Polpettone"
+    },
+    {
+      "nota": 1,
+      "data": "2026-11-26",
+      "piatto": "Polpette"
+    }
+  ],
+  "avvertenze": [
+    "*Prevista 15% di pasta in bianco in aggiunta al menù"
+  ],
+  "fonte": {
+    "url": "https://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf",
+    "sha256": "25d2696d640985510d5b97f697fee567079d321507e0289a15c9c5869f768030",
+    "scaricatoIl": "2026-11-08"
+  }
+}

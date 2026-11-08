@@ -1,0 +1,204 @@
+{
+  "feed": "nido-integrato-cucina-interna",
+  "stagione": "estivo",
+  "annoScolastico": "2026-27",
+  "titolo": "Menù asilo nido integrato con cucina interna · Estivo 2026-27 Bambini e adulti",
+  "validita": [
+    {
+      "dal": "2026-09-01",
+      "al": "2026-10-09",
+      "giorno": "mar",
+      "settimana": 1
+    },
+    {
+      "dal": "2027-03-15",
+      "al": "2027-06-30",
+      "giorno": "lun",
+      "settimana": 3
+    }
+  ],
+  "riavvii": [],
+  "intervalli": [],
+  "settimane": {
+    "1": {
+      "lun": [
+        "Risotto al pomodoro o alle verdure di stagione",
+        "Pollo",
+        "Bieta ripassata",
+        "Pane"
+      ],
+      "mar": [
+        "Minestra in brodo vegetale con tempestina",
+        "Polpette di pesce",
+        "Patate",
+        "Pane"
+      ],
+      "mer": [
+        "Mezze penne alla mammarosa (con pomodoro e ricotta)",
+        "Polpette di legumi (lenticchie rosse o fagioli cannellini)",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "gio": [
+        "Stortini con verdure + Asiago",
+        "Verdura cotta",
+        "oppure",
+        "Verdura cruda",
+        "Stortini ai formaggi/Gnocchi alla romana",
+        "Verdura cotta",
+        "Pane"
+      ],
+      "ven": [
+        "Crema di carote o zucchine con cous cous o crostini",
+        "Prosciutto cotto",
+        "Bis di verdura cruda",
+        "Pane"
+      ]
+    },
+    "2": {
+      "lun": [
+        "Noccioline con ragù vegetale",
+        "Frittata o tortino di uova",
+        "Verdura cotta",
+        "Pane"
+      ],
+      "mar": [
+        "Gramigna al pomodoro",
+        "Polpette di ricotta",
+        "Verdura cotta o cruda",
+        "oppure",
+        "Crema di verdure con stelline",
+        "Tortino di patate e formaggio",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "mer": [
+        "Risotto agli asparagi o alla parmigiana¹",
+        "Tacchino",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "gio": [
+        "Spaghetti spezzati o gnocchetti sardi al pesto di basilico o alle verdure²",
+        "Manzo",
+        "Verdura cotta",
+        "Pane"
+      ],
+      "ven": [
+        "Pipette con piselli o crema di piselli con midolline o crostini",
+        "Platessa alla mugnaia o merluzzo al forno",
+        "Verdura cruda",
+        "Pane"
+      ]
+    },
+    "3": {
+      "lun": [
+        "Nido: mezze penne alla pizzaiola",
+        "Infanzia: ravioli/tortellini",
+        "Formaggio (Caciotta o Montasio)",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "mar": [
+        "Passato di verdure con orzo o orzotto morbido alle verdure",
+        "Polpettine di manzo",
+        "Purè di patate",
+        "Pane"
+      ],
+      "mer": [
+        "Corallini al burro e parmigiano",
+        "Polpette di orata e/o branzino",
+        "Bis di verdura cruda",
+        "Pane"
+      ],
+      "gio": [
+        "Nido: stortini al ragù di carni bianche",
+        "Infanzia: lasagna al ragù di carni bianche",
+        "Verdura cotta e cruda oppure per entrambi",
+        "Passato di verdure con ridotta grammatura di risoni",
+        "Pizza margherita",
+        "Pane"
+      ],
+      "ven": [
+        "Risotto primavera (con zucchine, carote e piselli)",
+        "Pollo",
+        "Verdura cotta",
+        "Pane"
+      ]
+    },
+    "4": {
+      "lun": [
+        "Noccioline al pesto di zucchine",
+        "Uovo sode o strapazzate",
+        "Bis di verdura cotta",
+        "Pane"
+      ],
+      "mar": [
+        "Verdura cruda",
+        "Pipette al ragù di manzo",
+        "Spinaci agli aromi",
+        "Pane"
+      ],
+      "mer": [
+        "Crema di lenticchie rosse o cannellini con ditalini",
+        "Formaggio (Crescenza o Robiola)",
+        "Verdura cotta",
+        "Pane"
+      ],
+      "gio": [
+        "Risotto di stagione",
+        "Coniglio",
+        "Verdura cruda",
+        "Pane"
+      ],
+      "ven": [
+        "Passato di verdura con conchigliette o farro",
+        "Halibut gratinato al forno",
+        "Patate",
+        "Pane"
+      ]
+    }
+  },
+  "note": {
+    "1": "Risotto agli asparagi verdi e bianchi alternativamente: 07.04.2027 e 05.05.2027. Risotto alla parmigiana le altre volte di rotazione.",
+    "2": "Pasta al pesto: 10.09.2026-08.10.2026-06.05.2027-03.06.2027. Pasta alle verdure le altre volte di rotazione."
+  },
+  "eccezioni": [
+    {
+      "nota": 1,
+      "data": "2027-04-07",
+      "piatto": "Risotto agli asparagi verdi e bianchi alternativamente"
+    },
+    {
+      "nota": 1,
+      "data": "2027-05-05",
+      "piatto": "Risotto agli asparagi verdi e bianchi alternativamente"
+    },
+    {
+      "nota": 2,
+      "data": "2026-09-10",
+      "piatto": "Pasta al pesto"
+    },
+    {
+      "nota": 2,
+      "data": "2026-10-08",
+      "piatto": "Pasta al pesto"
+    },
+    {
+      "nota": 2,
+      "data": "2027-05-06",
+      "piatto": "Pasta al pesto"
+    },
+    {
+      "nota": 2,
+      "data": "2027-06-03",
+      "piatto": "Pasta al pesto"
+    }
+  ],
+  "avvertenze": [],
+  "fonte": {
+    "url": "https://www.scuoledussmann.it/upload/editorpagine/menu-asilo-nido-integrato-con-cucina-interna-2026-27-estivo-6264278.pdf",
+    "sha256": "3c443fe0d8e1e8a6fb7b853d650609abe79a8b237d6d9e5c344feb053d812f9e",
+    "scaricatoIl": "2026-11-08"
+  }
+}

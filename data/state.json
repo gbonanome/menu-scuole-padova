@@ -1,0 +1,278 @@
+{
+  "pdf": {
+    "https://www.scuoledussmann.it/upload/editorpagine/ok4-primaria-e-secondaria-veicolata-estivo-sett-ott-2026-27-6904432.pdf": {
+      "sha256": "2a3194b9fb9c92704f637b5452e62052a7529bbb5598b4a6f339535eb7a42e02",
+      "etag": "\"6494a-659dbc830bb05-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:32:31 GMT",
+      "feed": "primaria-secondaria-veicolato",
+      "stagione": "estivo",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/ok3-infanzia-veicolata-estivo-sett-ott-2026-27-4421972.pdf": {
+      "sha256": "72d1a6885602cb18401878e06eafbd069a4ace11ee018702e3eb4a37b25c707c",
+      "etag": "\"65087-659dbc92c7a88-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:32:48 GMT",
+      "feed": "infanzia-veicolato",
+      "stagione": "estivo",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/ok1-asilo-nido-veicolato-estivo-sett-ott--2026-27-2929534.pdf": {
+      "sha256": "93d13af638d36c76c628c215b335cefc8d6e72aba11787bc61d4b4617b23b420",
+      "etag": "\"65d67-659dbca04d724-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:33:02 GMT",
+      "feed": "nido-veicolato",
+      "stagione": "estivo",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/4-asilo-nido-veicolata-primaverile-8954182.pdf": {
+      "sha256": "0d8dfa8639edc626aacc957ac99fc7878dcc6a80ced60f0eef215296ce32e3e4",
+      "etag": "\"64ea2-650ae25faf800-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:12 GMT",
+      "feed": "nido-veicolato",
+      "stagione": "primaverile",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/4-infanzia-veicolata-primaverile-4782313.pdf": {
+      "sha256": "1627b376469acb83f7cef4ab46a857284a5cf42a55cf0e7a49525274116b08d4",
+      "etag": "\"6449d-650ae25faf800-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:12 GMT",
+      "feed": "infanzia-veicolato",
+      "stagione": "primaverile",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/4-primaria-e-secondaria-veicolata-primaverile-2741826.pdf": {
+      "sha256": "75c184c76117b17ed0839f19705d54181d63f0b70bf38abce741b3f330912efd",
+      "etag": "\"64b99-650ae25faf800-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:12 GMT",
+      "feed": "primaria-secondaria-veicolato",
+      "stagione": "primaverile",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/3-asilo-nido-veicolata-invernale-8425583.pdf": {
+      "sha256": "6c34efe429c659621fc0e8dd53139fc623d604e245d1526e3a8e456fe8794901",
+      "etag": "\"663b3-650ae25faf800-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:12 GMT",
+      "feed": "nido-veicolato",
+      "stagione": "invernale",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/3-infanzia-veicolata-invernale-817822.pdf": {
+      "sha256": "3e4c98584ab383de49d9d838cce50cdad363f76987f8084c989c5096feb815bc",
+      "etag": "\"657ca-650ae25ebb5c0-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:11 GMT",
+      "feed": "infanzia-veicolato",
+      "stagione": "invernale",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/3-primaria-e-secondaria-invernale-7686472.pdf": {
+      "sha256": "06283cb09c7f02699c1cc6deb65264615845902289e561126114cd8e83dcd873",
+      "etag": "\"6586b-650ae25ebb5c0-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:11 GMT",
+      "feed": "primaria-secondaria-veicolato",
+      "stagione": "invernale",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/01-menu-autunnale-nido-veicolato-2026-27-5745094.pdf": {
+      "sha256": "b185a357f38909c53da4379fcc0e0a0cef2ab2d9d7c3d81a896ba593ff9fad83",
+      "etag": "\"65578-659dbcd906b1a-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:34:01 GMT",
+      "feed": "nido-veicolato",
+      "stagione": "autunnale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.pdf": {
+      "sha256": "043e8af795d6b3c1c03ba009ed8edcfd191009083936abe824baf737dabb87ef",
+      "etag": "\"6c2a2-659dbd3b8b868-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:35:45 GMT",
+      "feed": "infanzia-veicolato",
+      "stagione": "autunnale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/03-menu-autunnale-prim-second-veicolato-2026-27-4204670.pdf": {
+      "sha256": "6f0a7abf1b84b3586ff18a4ae308d8c4f3c2437178acd352ce3fc8db9b1f3e78",
+      "etag": "\"64d15-659dbd49bee74-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:35:59 GMT",
+      "feed": "primaria-secondaria-veicolato",
+      "stagione": "autunnale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/3-primaria-lambruschini-invernale-2025-26-4676237.pdf": {
+      "sha256": "919a3c1261639a7eb697b2a0e524a3fa0f66026c0ab49e1f5f4fdf9360d7d9c5",
+      "etag": "\"6588c-650ae25faf800-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:12 GMT",
+      "feed": "primaria-lambruschini",
+      "stagione": "invernale",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/menu-asilo-nido-integrato-cucina-interna-2026-27-invernale-4650576.pdf": {
+      "sha256": "934fd1e5441b3679a5f9981acad2c65f3989f624a0e269a5af3490d5f7b2d5fe",
+      "etag": "\"638ff-659dbe6b62f04-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:41:03 GMT",
+      "feed": "nido-integrato-cucina-interna",
+      "stagione": "invernale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/menu-asilo-nido-cucina-interna-2026-27-invernale-8012642.pdf": {
+      "sha256": "39be2cb4df374a02c09d3c5e49ee7ed2f5fc6acec65dee53f8c1da11dd450181",
+      "etag": "\"6383c-659dbe83986a5-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:41:29 GMT",
+      "feed": "nido-cucina-interna",
+      "stagione": "invernale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-cucina-interna-2026-27-invernale-2397257.pdf": {
+      "sha256": "36b36bda37875e487e71d27954011280ddc79f66d60b94aa79d540d025078c89",
+      "etag": "\"63872-659dbeb7075e4-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:42:22 GMT",
+      "feed": "infanzia-cucina-interna",
+      "stagione": "invernale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/2-primaria-lambruschini-autunnale-2026-27-8671555.pdf": {
+      "sha256": "25d2696d640985510d5b97f697fee567079d321507e0289a15c9c5869f768030",
+      "etag": "\"64e45-659dbe28f191d-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:39:54 GMT",
+      "feed": "primaria-lambruschini",
+      "stagione": "autunnale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/1-primaria-lambruschini-estivo-sett-ott-2026-27-3618192.pdf": {
+      "sha256": "a9c7adfc1818df11703ac91f0fa7d20b160853a958f8c2ae98203e254415fe28",
+      "etag": "\"64791-659dbe0bb1858-gzip\"",
+      "lastModified": "Tue, 25 Aug 2026 09:39:23 GMT",
+      "feed": "primaria-lambruschini",
+      "stagione": "estivo",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/menu-asilo-nido-integrato-con-cucina-interna-2026-27-estivo-6264278.pdf": {
+      "sha256": "3c443fe0d8e1e8a6fb7b853d650609abe79a8b237d6d9e5c344feb053d812f9e",
+      "etag": "\"63f6b-65aa9b0e718f3-gzip\"",
+      "lastModified": "Fri, 04 Sep 2026 15:12:04 GMT",
+      "feed": "nido-integrato-cucina-interna",
+      "stagione": "estivo",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/menu-asilo-nido-con-cucina-interna-2026-27-estivo-5338638.pdf": {
+      "sha256": "d82e05fb9c7dae2cd6f64d8b3fc6370be47fbab36d586fc3f95a869a873f2228",
+      "etag": "\"63e15-65aa9ae7511a3-gzip\"",
+      "lastModified": "Fri, 04 Sep 2026 15:11:23 GMT",
+      "feed": "nido-cucina-interna",
+      "stagione": "estivo",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/menu-infanzia-con-cucina-interna-2026-27-estivo-1268645.pdf": {
+      "sha256": "bc6897e13bf33947e016a486544741325324abae29abfd8f79d73c0c846fa948",
+      "etag": "\"63f0c-65aa9b2986a89-gzip\"",
+      "lastModified": "Fri, 04 Sep 2026 15:12:32 GMT",
+      "feed": "infanzia-cucina-interna",
+      "stagione": "estivo",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-08"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/4-primaria-lambruschini-primaverile-2025-26-7296369.pdf": {
+      "sha256": "6fe0425d69a6a5f58c723456653d4675915e5ebe415223a0b5633b21295628e6",
+      "etag": "\"64bef-650ae25ebb5c0-gzip\"",
+      "lastModified": "Thu, 30 Apr 2026 14:19:11 GMT",
+      "feed": "primaria-lambruschini",
+      "stagione": "primaverile",
+      "annoScolastico": "2025-26",
+      "visto": "2026-11-08",
+      "ignorato": "anno 2025-26"
+    }
+  },
+  "notizie": {
+    "post_78825": {
+      "titolo": "VARIAZIONE MENU' 20/11",
+      "pubblicata": "2026-11-06",
+      "sha256": "45565aaae9bcc1599a1fe2f7a354636c2445f9638ba5364e5e2812aa90d82ceb"
+    },
+    "post_52042": {
+      "titolo": "VARIAZIONE MENU' 10 NOVEMBRE",
+      "pubblicata": "2026-11-06",
+      "sha256": "dd511b9c0601c416f2d449e509ee0a1c75cc893904920875c5bbd00a9826b0a0"
+    },
+    "post_27615": {
+      "titolo": "VARIAZIONE MENU 04/11/2026",
+      "pubblicata": "2026-11-03",
+      "sha256": "a280e02fccb746b31c45965612b899ef25a002efb447c6a1a66056bf816e72c4"
+    },
+    "post_98193": {
+      "titolo": "VARIAZIONE MENU' 5 e 17 NOVEMBRE",
+      "pubblicata": "2026-10-30",
+      "sha256": "f5d653c54088ea09630e2d796cf8f58c0809d8295b019d5d06503ed0a064fe62"
+    },
+    "post_64182": {
+      "titolo": "VARIAZIONE MENU 28/10",
+      "pubblicata": "2026-10-21",
+      "sha256": "b78a7b1fd16da0379c127d06a771f7e85894349976809a7e5eb208f62fea9d85"
+    },
+    "post_72521": {
+      "titolo": "VARIAZIONE MENU 22/10/2026 - INFANZIA VEICOLATE",
+      "pubblicata": "2026-10-21",
+      "sha256": "b1f6d882184ff024b5dfe22d291775b797a26490523bb205e89f6a3db418c0bc"
+    },
+    "post_27151": {
+      "titolo": "VARIAZIONE 30/10/26",
+      "pubblicata": "2026-10-19",
+      "sha256": "03317ae50a2cd9e40e9aa7936896d4440d60a630c38aa5a9212afe2f18770a6f"
+    },
+    "post_58151": {
+      "titolo": "VARIAZIONE MENU 15 e 16 OTTOBRE",
+      "pubblicata": "2026-09-29",
+      "sha256": "10d7fc1e63ed5e70ccd29a7c892230517de5d7d1cd96353fa46f71f6f519d9ad"
+    },
+    "post_49719": {
+      "titolo": "VARIAZIONE MENU 05/10, 06/10 e 09/10",
+      "pubblicata": "2026-09-29",
+      "sha256": "aed8abc782a14fc6f0237a3367c73bacf6582c897a406bf707b0e1045f000434"
+    },
+    "post_17671": {
+      "titolo": "Variazione Menù",
+      "pubblicata": "2026-09-28",
+      "sha256": "8f855af954773e3f45cc580d1d63c08225cf4f0e0bc2fce94acb2bd0009b1e51"
+    },
+    "post_88641": {
+      "titolo": "Variazione Menù 07 Ottobre 2026",
+      "pubblicata": "2026-09-28",
+      "sha256": "02db2a09231f0ee4eeea8e7ba5f9df17f614b73b06cf0ff266177b66a41fa364"
+    },
+    "post_55296": {
+      "titolo": "VARIAZIONE MENU 17 SETTEMBRE 2026",
+      "pubblicata": "2026-09-15",
+      "sha256": "09da081be720f33821fe996a13c127ba7d16063217ac1d4d5a5b5ed81fb7bc73"
+    },
+    "post_54200": {
+      "titolo": "VARIAZIONE MENU 23 SETTEMBRE 2026",
+      "pubblicata": "2026-09-10",
+      "sha256": "294ee29d40dce99a99cadd0cb646f44e0f7a9a5ea8b03745f83c11484d70d6e5"
+    }
+  },
+  "aggiornato": "2026-11-08"
+}

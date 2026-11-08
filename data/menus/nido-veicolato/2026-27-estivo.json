@@ -1,0 +1,238 @@
+{
+  "feed": "nido-veicolato",
+  "stagione": "estivo",
+  "annoScolastico": "2026-27",
+  "titolo": "Menù estivo Settembre-Ottobre · Nido veicolato · A.s. 2026-27",
+  "validita": [
+    {
+      "dal": "2026-09-01",
+      "al": "2026-10-09",
+      "giorno": "mar",
+      "settimana": 1
+    }
+  ],
+  "riavvii": [],
+  "intervalli": [
+    {
+      "settimana": 1,
+      "dal": "2026-09-01",
+      "al": "2026-09-04"
+    },
+    {
+      "settimana": 1,
+      "dal": "2026-09-28",
+      "al": "2026-10-02"
+    },
+    {
+      "settimana": 2,
+      "dal": "2026-09-07",
+      "al": "2026-09-11"
+    },
+    {
+      "settimana": 2,
+      "dal": "2026-10-05",
+      "al": "2026-10-09"
+    },
+    {
+      "settimana": 3,
+      "dal": "2026-09-14",
+      "al": "2026-09-18"
+    },
+    {
+      "settimana": 4,
+      "dal": "2026-09-21",
+      "al": "2026-09-25"
+    }
+  ],
+  "settimane": {
+    "1": {
+      "lun": [
+        "Crema di zucchine con riso",
+        "Caciotta",
+        "Insalata e mais/Melanzane al funghetto",
+        "Pane",
+        "Frullato frutta 100%",
+        "Biscotti e latte tiepido"
+      ],
+      "mar": [
+        "Pipe baby al pesto alla genovese",
+        "Platessa alla mugnaia",
+        "Carote julienne/Bieta all’olio",
+        "Pane",
+        "Torta margherita",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Passato di verdure con orzo",
+        "Hamburger di pollo con aromi",
+        "Patate al forno",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e tè deteinato tiepido"
+      ],
+      "gio": [
+        "Mezze penne alla mammarosa (ricotta e pomodoro)",
+        "Polpette di legumi (lenticchie o cannellini) e verdure",
+        "Pomodori/Carote vichy",
+        "Pane",
+        "Yogurt in vasetto",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Chifferi pomodoro e basilico",
+        "Prosciutto cotto Alta Qualità",
+        "Fagiolini all’olio/Insalata",
+        "Pane",
+        "Frutta fresca",
+        "Crackers e succo di frutta senza zuccheri aggiunti"
+      ]
+    },
+    "2": {
+      "lun": [
+        "Crema di piselli e patate con risoni",
+        "Robiola",
+        "Cappuccio julienne/Piselli al tegame",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e latte tiepido"
+      ],
+      "mar": [
+        "Stortini al pomodoro",
+        "Uova sode",
+        "Insalata/Finocchi gratinati al forno",
+        "Pane",
+        "Focaccia morbida all’olio extra vergine d’oliva o gelato coppetta¹",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Riso alla parmigiana",
+        "Coscette di pollo al forno (disossate)",
+        "Carote julienne/Fagiolini al pomodoro",
+        "Pane",
+        "Frutta fresca",
+        "Crackers e tè deteinato tiepido"
+      ],
+      "gio": [
+        "Crema di porri con tempestina",
+        "Polpette di manzo in umido",
+        "Zucchine trifolate/Insalata",
+        "Pane",
+        "Frutta fresca",
+        "Biscotti e succo di frutta senza zuccheri aggiunti"
+      ],
+      "ven": [
+        "Crema di verdure con orzo",
+        "Filetto di merluzzo gratinato con fettina di limone",
+        "Pomodori/Purè di patate",
+        "Pane",
+        "Yogurt da bere alla frutta",
+        "Frutta fresca"
+      ]
+    },
+    "3": {
+      "lun": [
+        "Mezze penne con crema di zucchine",
+        "Asiago",
+        "Carote e finocchi julienne",
+        "Pane",
+        "Frutta fresca",
+        "Biscotti e tè deteinato tiepido"
+      ],
+      "mar": [
+        "Crema di zucca con riso",
+        "Straccetti di manzo",
+        "Cappuccio julienne/Melanzane al funghetto",
+        "Pane",
+        "Yogurt in vasetto alla frutta",
+        "Crackers e succo di frutta senza zuccheri aggiunti"
+      ],
+      "mer": [
+        "Vellutata di cannellini con tempestina",
+        "Polpette di verdura, patate e ricotta",
+        "Carote julienne",
+        "Pane",
+        "Torta al cioccolato",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Crema di peperoni con stelline",
+        "Bocconcini di pollo panati",
+        "Patate e zucchine gratinate agli aromi",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e latte tiepido"
+      ],
+      "ven": [
+        "Stortini al pesto alla genovese",
+        "Polpette di pesce",
+        "Pomodori e cetrioli",
+        "Pane",
+        "Frullato di frutta 100%",
+        "Frutta fresca"
+      ]
+    },
+    "4": {
+      "lun": [
+        "Mezze penne al ragù vegetale",
+        "Striscioline di mozzarella",
+        "Cappuccio julienne/Piselli in tegame",
+        "Pane",
+        "Frutta fresca",
+        "Fette biscottate e succo di frutta senza zuccheri aggiunti"
+      ],
+      "mar": [
+        "Chifferi alla norma",
+        "Hamburger di manzo",
+        "Zucchine trifolate/Carote julienne",
+        "Pane",
+        "Gelato coppetta",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Riso morbido con crema di spinaci",
+        "Uova sode",
+        "Zucca al forno/Finocchi julienne",
+        "Pane",
+        "Panino al latte con confettura di albicocche",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Passato di verdure con orzo",
+        "Spezzatino di pollo e tacchino",
+        "Insalata/Carote prezzemolate",
+        "Pane",
+        "Frutta fresca",
+        "Crackers e tè deteinato tiepido"
+      ],
+      "ven": [
+        "Vellutata di ceci con ditalini",
+        "Halibut gratinato",
+        "Purè di patate/Zucchine al tegame",
+        "Pane",
+        "Yogurt da bere alla frutta",
+        "Frutta fresca"
+      ]
+    }
+  },
+  "note": {
+    "1": "Gelato 08.09.2026 – Focaccia morbida 06.10.2026"
+  },
+  "eccezioni": [
+    {
+      "nota": 1,
+      "data": "2026-09-08",
+      "piatto": "Gelato"
+    },
+    {
+      "nota": 1,
+      "data": "2026-10-06",
+      "piatto": "Focaccia morbida"
+    }
+  ],
+  "avvertenze": [],
+  "fonte": {
+    "url": "https://www.scuoledussmann.it/upload/editorpagine/ok1-asilo-nido-veicolato-estivo-sett-ott--2026-27-2929534.pdf",
+    "sha256": "93d13af638d36c76c628c215b335cefc8d6e72aba11787bc61d4b4617b23b420",
+    "scaricatoIl": "2026-11-08"
+  }
+}
