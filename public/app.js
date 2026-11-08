@@ -594,12 +594,27 @@ async function avvia() {
   $('#succ').addEventListener('click', () => sposta(1));
   $('#oggi').addEventListener('click', () => sposta(0));
   $('#copia').addEventListener('click', copia);
-  // "?" in testata: porta alla nota in fondo senza toccare l'indirizzo (dopo # c'è la scuola scelta).
-  $('#info').addEventListener('click', (e) => {
+  // "?" in testata. Su schermi stretti porta alla nota in fondo senza toccare l'indirizzo (dopo # c'è la scuola scelta);
+  // su schermi larghi la nota è già visibile in fondo e lo scroll non si nota: apre un riquadro con lo stesso testo.
+  const info = $('#info');
+  const pop = $('#info-pop');
+  const largo = matchMedia('(min-width: 700px)');
+  pop.append($('#nota p').cloneNode(true));
+  const chiudiPop = () => { pop.hidden = true; info.removeAttribute('aria-expanded'); };
+  info.addEventListener('click', (e) => {
     e.preventDefault();
+    if (largo.matches) {
+      pop.hidden = !pop.hidden;
+      if (pop.hidden) info.removeAttribute('aria-expanded');
+      else info.setAttribute('aria-expanded', 'true');
+      return;
+    }
     $('#nota').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     $('#nota').focus({ preventScroll: true });
   });
+  document.addEventListener('click', (e) => { if (!pop.hidden && !pop.contains(e.target) && e.target !== info) chiudiPop(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !pop.hidden) { chiudiPop(); info.focus(); } });
+  largo.addEventListener('change', chiudiPop);
   window.addEventListener('hashchange', () => {
     const v = daHash();
     if (v && v.id !== stato.attiva?.id) attiva(v);

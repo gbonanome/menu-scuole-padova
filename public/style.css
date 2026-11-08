@@ -67,6 +67,10 @@ button { cursor: pointer; }
 .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 14px 18px 0; }
 .brand { font: 800 1rem var(--f-display); letter-spacing: -0.01em; margin: 0; }
 .info { flex: none; display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--b-muted); color: var(--b-muted); font-weight: 800; font-size: 0.9rem; text-decoration: none; align-self: center; }
+.top { position: relative; }
+.info[aria-expanded="true"] { background: var(--b-ink); border-color: var(--b-ink); color: var(--b-bg); }
+.info-pop { position: absolute; top: calc(100% + 8px); right: 18px; z-index: 5; width: min(360px, calc(100vw - 36px)); background: var(--b-surface); color: var(--b-ink); padding: 12px 14px; border-radius: 14px; box-shadow: 0 6px 24px rgb(0 0 0 / 0.16); font-size: 0.85rem; }
+.info-pop p { margin: 0; }
 .foot:focus { outline: none; }
 
 .prova { margin: 10px 12px 0; padding: 8px 12px; border-radius: 12px; background: var(--b-today); color: #18241b; font-size: 0.85rem; font-weight: 600; }
