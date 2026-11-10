@@ -58,7 +58,7 @@
 
       <div class="in-alto">
         <section id="oggi-box" class="today" aria-label="Menu di oggi" hidden></section>
-        <aside id="mese" class="mese" aria-label="Calendario del mese" hidden></aside>
+        <aside id="mese" class="mese" aria-label="Calendario del mese" data-t-aria-label="mese.aria" hidden></aside>
       </div>
 
       <section id="settimana" class="settimana" aria-label="Menu della settimana" data-t-aria-label="settimana.aria" tabindex="-1" hidden>
@@ -68,6 +68,7 @@
           <h2 class="range" id="titolo-settimana" aria-live="polite"></h2>
           <button type="button" class="arrow" id="succ" aria-label="Settimana successiva" data-t-aria-label="settimana.succ">›</button>
           <button type="button" class="btn" id="oggi" data-t="oggi">Oggi</button>
+          <div id="mese-pop" class="mese-pop" role="group" aria-label="Calendario del mese" data-t-aria-label="mese.aria" hidden></div>
         </div>
         <div id="giorni" class="days"></div>
       </section>
@@ -100,6 +101,11 @@
         </details>
       </section>
     </main>
+
+    <dialog id="mese-foglio" class="foglio-mese" aria-label="Calendario del mese" data-t-aria-label="mese.aria">
+      <button type="button" class="chiudi" id="chiudi-mese" aria-label="Chiudi" data-t-aria-label="mese.chiudi">×</button>
+      <div id="mese-foglio-corpo"></div>
+    </dialog>
 
     <footer class="foot" id="nota" tabindex="-1">
       <p data-t="piede.nota">Progetto non ufficiale, senza legami con Dussmann Service o con il Comune di Padova. Fa sempre fede il menu ufficiale su <a href="https://www.scuoledussmann.it/padova">scuoledussmann.it/padova</a>. Diete speciali e allergeni esclusi. L’abbinamento tra scuola e menu è ricavato dai documenti del Comune.</p>

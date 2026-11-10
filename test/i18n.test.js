@@ -18,6 +18,7 @@ import {
   impostaLingua,
   linguaIniziale,
   linkTraduzione,
+  meseEAnno,
   nomeGiorno,
   nomeMese,
   numeroGiorno,
@@ -35,6 +36,7 @@ const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const leggi = (p) => readFileSync(path.join(RADICE, p), 'utf8');
 const APP = leggi('public/app.js');
 const I18N = leggi('public/i18n.js');
+const MESE = leggi('public/mese.js');
 const HTML = leggi('public/index.html');
 const EN = JSON.parse(leggi('public/lingue/en.json'));
 
@@ -51,6 +53,7 @@ test('date in italiano come prima', () => {
   const settimana = ['2026-11-09', '2026-11-10', '2026-11-11', '2026-11-12', '2026-11-13', '2026-11-14', '2026-11-15'];
   assert.deepEqual(settimana.map(giornoBreve), ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom']);
   assert.equal(nomeMese('2027-01-04'), 'gennaio');
+  assert.equal(meseEAnno('2026-11-10'), 'novembre 2026');
 });
 
 test('settimana: stesso mese, due mesi, due anni', () => {
@@ -94,10 +97,10 @@ test('testi di chiusura e giorni senza menu come prima', () => {
   assert.equal(testoCambioStagione({ stagione: 'boh' }), 'Da qui: boh');
 });
 
-/** Chiavi usate nel codice: t('…') in app.js e i18n.js, data-t* in index.html. */
+/** Chiavi usate nel codice: t('…') in app.js, i18n.js e mese.js, data-t* in index.html. */
 function chiaviUsate() {
   const usate = new Set();
-  for (const js of [APP, I18N]) for (const m of js.matchAll(/\bt\(\s*(?:[^'()]*\?\s*)?'([^']+)'(?:\s*:\s*'([^']+)')?/g)) for (const k of m.slice(1)) if (k) usate.add(k);
+  for (const js of [APP, I18N, MESE]) for (const m of js.matchAll(/\bt\(\s*(?:[^'()]*\?\s*)?'([^']+)'(?:\s*:\s*'([^']+)')?/g)) for (const k of m.slice(1)) if (k) usate.add(k);
   for (const m of HTML.matchAll(/\sdata-t(?:-[a-z-]+)?="([^"]+)"/g)) if (!m[0].startsWith(' data-t-valori')) usate.add(m[1]);
   return usate;
 }

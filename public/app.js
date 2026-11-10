@@ -27,6 +27,7 @@ import {
   testoGiornoVuoto,
   testoOggi as testoOggiDi
 } from './i18n.js';
+import { disegnaMese, giornoAttivo, limitiMesi, meseDaMostrare } from './mese.js';
 
 const REPO = 'https://github.com/gbonanome/menu-scuole-padova';
 const FONTE_NOTIZIE = 'https://www.scuoledussmann.it/padova#notizie';
@@ -42,6 +43,7 @@ const stato = {
   giorni: new Map(),
   copertura: null,
   lunedi: null,
+  mese: null,
   scelte: [],
   attiva: null,
   modo: 'aggiungi',
@@ -344,7 +346,8 @@ function rimuovi() {
   stato.scelte = stato.scelte.filter((v) => v.id !== stato.attiva?.id);
   if (stato.scelte.length) return attiva(stato.scelte[0]);
   stato.attiva = stato.feed = stato.scuola = null;
-  for (const id of ['#scuola', '#oggi-box', '#oggi-riga', '#settimana', '#iscriviti']) $(id).hidden = true;
+  chiudiMese();
+  for (const id of ['#scuola', '#oggi-box', '#mese', '#oggi-riga', '#settimana', '#iscriviti']) $(id).hidden = true;
   salvaScelte();
   mostraSwitcher();
   mostraPicker(true, 'aggiungi');
@@ -374,6 +377,7 @@ async function attiva(voce) {
   stato.giorni = giorni;
   stato.copertura = copertura;
   stato.lunedi = lunediDi(oggi());
+  stato.mese = null;
   mostraOggi();
   mostraRigaOggi();
   mostraSettimana();
@@ -449,10 +453,14 @@ function mostraOggi() {
   const dataOggi = oggi();
   const g = stato.giorni.get(dataOggi);
   if (g?.stato === 'menu') {
+    // "Oggi martedì 10"; da 700px anche il mese ("Oggi martedì 10 novembre"). Nelle altre lingue la data è già intera.
+    const giorno = giornoENumero(dataOggi);
+    const intera = dataLunga(dataOggi);
+    const mese = intera.startsWith(giorno) ? intera.slice(giorno.length) : '';
     box.replaceChildren(
-      el('p', { class: 'when' }, el('mark', {}, t('oggi')), ` ${giornoENumero(dataOggi)}`),
+      el('p', { class: 'when' }, el('mark', {}, t('oggi')), ` ${giorno}`, mese ? el('span', { class: 'solo-largo' }, mese) : null),
       el('p', { class: 'meta' }, testoCiclo(g)),
-      ...riquadriVariazione(g),
+      variazioniVassoio(g),
       elencoPiatti(g, 'tray', true)
     );
     box.setAttribute('aria-label', t('oggi.aria'));
@@ -479,11 +487,17 @@ function mostraOggi() {
       ` ${giornoEMese(prossimo)}`
     ),
     el('p', { class: 'meta' }, testoCiclo(gp)),
-    ...riquadriVariazione(gp),
+    variazioniVassoio(gp),
     elencoPiatti(gp, 'tray', true)
   );
   box.setAttribute('aria-label', t('oggi.prossimo.aria'));
   box.hidden = false;
+}
+
+/** Riquadri di variazione del vassoio, insieme: da 700px vanno sotto data e scomparti, a tutta larghezza. */
+function variazioniVassoio(g) {
+  const riquadri = riquadriVariazione(g);
+  return riquadri.length ? el('div', { class: 'vboxes' }, riquadri) : null;
 }
 
 const maiuscola = (s) => s.replace(/^./, (c) => c.toUpperCase());
@@ -535,7 +549,7 @@ function cardGiorno(data, precedente) {
   );
 }
 
-function mostraSettimana() {
+function mostraSettimana(fuocoMese = null) {
   $('#settimana').hidden = false;
   const cont = $('#giorni');
   cont.replaceChildren();
@@ -545,8 +559,148 @@ function mostraSettimana() {
     cont.append(cardGiorno(d, prec));
     prec = stato.giorni.get(d) ?? prec;
   }
-  $('#titolo-settimana').textContent = etichettaSettimana(stato.lunedi);
+  mostraTitoloSettimana();
   $('#oggi').disabled = stato.lunedi === lunediDi(oggi());
+  // Il mese segue la settimana (frecce, "Oggi", scelta di un giorno, cambio di scuola o di lingua).
+  stato.mese = meseDaMostrare(stato.mese, stato.lunedi, oggi());
+  mostraMese(fuocoMese);
+}
+
+// ---------- mini mese ----------
+// Un solo componente (mese.js), in un contenitore diverso per larghezza:
+// da 900px sempre visibile accanto al vassoio (#mese); 700–899px in un riquadro sotto la navigazione,
+// aperto dal titolo della settimana (#mese-pop); sotto i 700px in un foglio dal basso (#mese-foglio),
+// aperto dalla voce Mese della barra in basso ([data-azione="mese"]).
+const LARGO = matchMedia('(min-width: 900px)');
+const MEDIO = matchMedia('(min-width: 700px) and (max-width: 899.98px)');
+const quadroMese = el('div', { id: 'mini-mese', class: 'mini-mese' });
+const bottoneMese = el(
+  'button',
+  { type: 'button', class: 'apri-mese', 'aria-expanded': 'false', 'aria-controls': 'mese-pop' },
+  el('span', {}),
+  el('span', { class: 'freccina', 'aria-hidden': 'true' }, '▾')
+);
+
+/** Titolo della settimana: tra 700 e 899px è il pulsante che apre il mese, altrimenti testo. */
+function mostraTitoloSettimana() {
+  const h2 = $('#titolo-settimana');
+  const testo = etichettaSettimana(stato.lunedi);
+  if (!MEDIO.matches) {
+    h2.textContent = testo;
+    return;
+  }
+  bottoneMese.firstChild.textContent = testo;
+  bottoneMese.title = t('mese.apri');
+  if (bottoneMese.parentNode !== h2) h2.replaceChildren(bottoneMese);
+}
+
+function mostraMese(fuoco = null) {
+  if (!stato.lunedi || !stato.mese) return;
+  disegnaMese(quadroMese, {
+    mese: stato.mese,
+    giorni: stato.giorni,
+    oggi: oggi(),
+    lunedi: stato.lunedi,
+    limiti: limitiMesi(stato.giorni.keys(), stato.copertura),
+    fuoco,
+    suGiorno: scegliGiorno,
+    suMese: (m, f) => {
+      stato.mese = m;
+      mostraMese(f);
+    }
+  });
+  $('#mese').hidden = false;
+  if (LARGO.matches && quadroMese.parentNode !== $('#mese')) $('#mese').append(quadroMese);
+}
+
+const popAperto = () => !$('#mese-pop').hidden;
+const scorri = (e) => e.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+
+/** Un giorno scelto nel mese: la sua settimana. Da 900px il mese resta aperto, altrimenti si chiude e si va alla settimana. */
+function scegliGiorno(d) {
+  const pop = popAperto();
+  const foglio = $('#mese-foglio').open;
+  stato.lunedi = lunediDi(d);
+  mostraSettimana(LARGO.matches ? d : null);
+  if (pop) {
+    chiudiPopMese();
+    bottoneMese.focus({ preventScroll: true });
+  }
+  if (foglio) {
+    $('#mese-foglio').close();
+    $('#settimana').focus({ preventScroll: true });
+  }
+  if (pop || foglio) scorri($('#settimana'));
+}
+
+function apriPopMese() {
+  stato.mese = meseDaMostrare(stato.mese, stato.lunedi, oggi());
+  $('#mese-pop').append(quadroMese);
+  mostraMese();
+  $('#mese-pop').hidden = false;
+  bottoneMese.setAttribute('aria-expanded', 'true');
+  giornoAttivo(quadroMese)?.focus();
+}
+
+function chiudiPopMese() {
+  $('#mese-pop').hidden = true;
+  bottoneMese.setAttribute('aria-expanded', 'false');
+}
+
+/** Apertura dalla barra in basso (o da qualsiasi [data-azione="mese"]): il contenitore dipende dalla larghezza. */
+function apriMese() {
+  if (!stato.lunedi) return;
+  if (LARGO.matches) {
+    scorri($('#mese'));
+    giornoAttivo(quadroMese)?.focus({ preventScroll: true });
+    return;
+  }
+  if (MEDIO.matches) return popAperto() ? chiudiPopMese() : apriPopMese();
+  stato.mese = meseDaMostrare(stato.mese, stato.lunedi, oggi());
+  $('#mese-foglio-corpo').append(quadroMese);
+  mostraMese();
+  if (!$('#mese-foglio').open) $('#mese-foglio').showModal();
+  giornoAttivo(quadroMese)?.focus();
+}
+
+function chiudiMese() {
+  chiudiPopMese();
+  if ($('#mese-foglio').open) $('#mese-foglio').close();
+}
+
+function collegaMese() {
+  const foglio = $('#mese-foglio');
+  bottoneMese.addEventListener('click', () => (popAperto() ? chiudiPopMese() : apriPopMese()));
+  // Delegazione: la voce Mese della barra può arrivare dopo.
+  document.addEventListener('click', (e) => {
+    // Un clic su frecce o giorni ridisegna il mese: l'elemento toccato non è più nella pagina, ma non era "fuori".
+    if (!e.target.isConnected) return;
+    if (e.target.closest?.('[data-azione="mese"]')) {
+      e.preventDefault();
+      apriMese();
+      return;
+    }
+    if (popAperto() && !$('#mese-pop').contains(e.target) && !bottoneMese.contains(e.target)) chiudiPopMese();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && popAperto()) {
+      chiudiPopMese();
+      bottoneMese.focus();
+    }
+  });
+  $('#chiudi-mese').addEventListener('click', () => foglio.close());
+  // Tocco sullo sfondo del foglio: il clic arriva al <dialog> stesso, non al contenuto.
+  foglio.addEventListener('click', (e) => {
+    if (e.target === foglio) foglio.close();
+  });
+  const cambiaLarghezza = () => {
+    chiudiMese();
+    if (!stato.lunedi) return;
+    mostraTitoloSettimana();
+    if (LARGO.matches) mostraMese();
+  };
+  LARGO.addEventListener('change', cambiaLarghezza);
+  MEDIO.addEventListener('change', cambiaLarghezza);
 }
 
 function sposta(settimane) {
@@ -683,6 +837,7 @@ async function avvia() {
   $('#succ').addEventListener('click', () => sposta(1));
   $('#oggi').addEventListener('click', () => sposta(0));
   $('#copia').addEventListener('click', copia);
+  collegaMese();
   // "?" in testata. Su schermi stretti porta alla nota in fondo senza toccare l'indirizzo (dopo # c'è la scuola scelta);
   // su schermi larghi la nota è già visibile in fondo e lo scroll non si nota: apre un riquadro con lo stesso testo.
   const info = $('#info');
