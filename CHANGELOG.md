@@ -15,9 +15,11 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 - Nelle altre lingue i nomi dei piatti arrivano da `data/piatti-<codice>.json` (se manca una voce resta il nome italiano) e sotto il testo degli avvisi, che resta in italiano, c'è il link per tradurlo con Google Traduttore.
 - Arabo e urdu da destra a sinistra: il foglio di stile usa proprietà logiche e le frecce della settimana si girano.
 - Dizionario dei nomi dei piatti in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu (`data/traduzioni/`), con i soli piatti in uso pubblicati in `data/piatti-<lingua>.json` per la pagina. `npm run piatti` elenca le traduzioni mancanti; la PR "Nuovo menu da rivedere" segnala i piatti nuovi ancora da tradurre.
+- Calendario del mese, per saltare a una data e vedere a colpo d'occhio i giorni con variazioni, senza mensa o con il menu non ancora pubblicato. Solo lunedì–venerdì, oggi in giallo e la settimana mostrata evidenziata; toccando un giorno si passa alla sua settimana, e il mese segue le frecce della settimana e "Oggi". Da 900px è sempre visibile accanto al vassoio; tra 700 e 899px si apre dal titolo della settimana; sul telefono si apre dalla voce Mese della barra in basso, come foglio dal basso. Si usa anche da tastiera (frecce tra i giorni) ed è tradotto.
 
 ### Modificato
-- Su tablet e computer il vassoio di oggi (o del prossimo giorno di mensa) compare in alto, disposto in orizzontale: a sinistra il giorno, a destra il piatto principale grande e gli altri scomparti accanto. Sotto restano la navigazione e la settimana su 5 colonne. Da 900px accanto al vassoio c'è posto per il calendario del mese, che arriverà più avanti.
+- Su tablet e computer il vassoio di oggi (o del prossimo giorno di mensa) compare in alto, disposto in orizzontale: a sinistra il giorno, a destra il piatto principale grande e gli altri scomparti accanto. Sotto restano la navigazione e la settimana su 5 colonne. Da 900px accanto al vassoio c'è il calendario del mese.
+- Su tablet e computer i riquadri delle variazioni del vassoio stanno sotto data e scomparti, a tutta larghezza (affiancati se sono due), invece di allungare la colonna di sinistra; il titolo del vassoio dice anche il mese ("Oggi martedì 10 novembre"). Sul telefono non cambia nulla.
 - La riga "Oggi, …: niente mensa." sopra la settimana compare solo quando non c'è il vassoio, cioè quando nei prossimi 14 giorni non c'è mensa.
 
 ## [1.1.1] - 2026-11-08
