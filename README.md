@@ -48,7 +48,7 @@ Il workflow [`update.yml`](.github/workflows/update.yml) gira ogni giorno alle 0
 4. Costruisce feed `.ics` e pagina e li pubblica su GitHub Pages.
 5. Se lo scraping o il parsing falliscono (sito cambiato, PDF in un formato nuovo) si apre la issue **"Aggiornamento automatico non riuscito"**, che si chiude da sola quando tutto torna a posto. I dati già pubblicati restano invariati.
 
-Comandi utili in locale: `npm run update` (scraping), `npm run build` (genera `dist/`), `npm run serve` (anteprima su http://localhost:8080), `npm test`.
+Comandi utili in locale: `npm run update` (scraping), `npm run build` (genera `dist/`), `npm run piatti` (traduzioni mancanti), `npm run serve` (anteprima su http://localhost:8080), `npm test`.
 
 ### Test
 
@@ -63,6 +63,14 @@ Impostazione richiesta nel repository: *Settings → Actions → General → Wor
 ### A ogni cambio di stagione
 
 Arriva la PR "Nuovo menu da rivedere": controllala con il PDF e fai il merge. Se chiudi la PR senza merge il menu non viene pubblicato; per riproporlo, togli il suo PDF da `data/state.json`.
+
+### Traduzioni dei nomi dei piatti
+
+La pagina mostra i piatti anche in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu. Le traduzioni stanno in `data/traduzioni/piatti-<lingua>.json` (`en`, `ro`, `zh`, `bn`, `sq`, `ar`, `ur`): un oggetto `{ "nome italiano esatto": "traduzione" }`, con le chiavi in ordine alfabetico. La build copia in `dist/data/piatti-<lingua>.json` solo i piatti dei menu in uso; un piatto senza traduzione si vede in italiano, quindi niente si blocca.
+
+- `npm run piatti` elenca, lingua per lingua, i piatti senza traduzione e le voci non più usate. La PR "Nuovo menu da rivedere" riporta in fondo i piatti nuovi ancora da tradurre.
+- Per un piatto nuovo aggiungi la voce in tutti e sette i file, al suo posto in ordine alfabetico, copiando il nome italiano esattamente com'è nel menu (apostrofi tipografici, asterischi, maiuscole); per una correzione basta il file di quella lingua. Poi `npm test`: controlla che i file siano validi e in ordine, e che i piatti delle fixture siano tutti tradotti.
+- I dubbi da far rivedere a madrelingua sono in [`data/traduzioni/NOTE.md`](data/traduzioni/NOTE.md).
 
 ### A ogni inizio d'anno scolastico
 
