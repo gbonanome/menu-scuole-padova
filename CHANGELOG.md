@@ -21,6 +21,7 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 - Calendario del mese, per saltare a una data e vedere a colpo d'occhio i giorni con variazioni, senza mensa o con il menu non ancora pubblicato. Solo lunedì–venerdì, oggi in giallo e la settimana mostrata evidenziata; toccando un giorno si passa alla sua settimana, e il mese segue le frecce della settimana e "Oggi". Da 900px è sempre visibile accanto al vassoio; tra 700 e 899px si apre dal titolo della settimana; sul telefono si apre dalla voce Mese della barra in basso, come foglio dal basso. Si usa anche da tastiera (frecce tra i giorni) ed è tradotto.
 
 ### Modificato
+- I giorni con una variazione non hanno più lo sfondo rosso: bastano il riquadro "Variazione" e il bollino "variato" sul piatto.
 - Le istruzioni per il calendario e per la schermata Home sono passate dalla pagina al pannello *Impostazioni*: sotto *Aggiungi al calendario* resta la riga "Come funziona? Istruzioni nelle impostazioni". Da 700px *Impostazioni* è in testata; su telefono in testata non c'è nessuna icona.
 - Sotto i 700px il pulsante *Oggi* accanto alle frecce della settimana lascia il posto a quello della barra in basso.
 - Su tablet e computer il vassoio di oggi (o del prossimo giorno di mensa) compare in alto, disposto in orizzontale: a sinistra il giorno, a destra il piatto principale grande e gli altri scomparti accanto. Sotto restano la navigazione e la settimana su 5 colonne. Da 900px accanto al vassoio c'è il calendario del mese.
