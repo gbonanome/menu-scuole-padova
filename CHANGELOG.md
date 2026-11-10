@@ -14,6 +14,7 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 - Base per tradurre la pagina: i testi passano da `public/i18n.js` (italiano incluso) e le altre lingue da `public/lingue/<codice>.json`, con l'inglese come prima traduzione. La lingua si sceglie per ora con `?lingua=en`; quella salvata sul dispositivo vince sull'indirizzo e il default resta sempre l'italiano. In italiano la pagina non cambia.
 - Nelle altre lingue i nomi dei piatti arrivano da `data/piatti-<codice>.json` (se manca una voce resta il nome italiano) e sotto il testo degli avvisi, che resta in italiano, c'è il link per tradurlo con Google Traduttore.
 - Arabo e urdu da destra a sinistra: il foglio di stile usa proprietà logiche e le frecce della settimana si girano.
+- Dizionario dei nomi dei piatti in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu (`data/traduzioni/`), con i soli piatti in uso pubblicati in `data/piatti-<lingua>.json` per la pagina. `npm run piatti` elenca le traduzioni mancanti; la PR "Nuovo menu da rivedere" segnala i piatti nuovi ancora da tradurre.
 
 ## [1.1.1] - 2026-11-08
 

@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { riepilogoMenu } from './riepilogo-menu.js';
 import { validaMenu } from './validate.js';
 import { caricaCalendario } from './lib/calendario.js';
+import { caricaTraduzioni, piattiDelMenu, sezioneTraduzioniMancanti } from './piatti.js';
 
 const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RUN_URL = process.env.GITHUB_RUN_ID ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}` : null;
@@ -121,6 +122,7 @@ async function corpoPr() {
     "- Se chiudi la PR senza merge il menu non viene pubblicato. Per riproporlo, togli il suo PDF da `data/state.json`.",
     ''
   ];
+  const piatti = new Set();
   for (const nome of nomi) {
     const file = path.join(RADICE, 'data/menus', `${nome}.json`);
     const menu = await leggiJson(file, null);
@@ -130,13 +132,16 @@ async function corpoPr() {
       prec = JSON.parse(execFileSync('git', ['show', `origin/main:data/menus/${nome}.json`], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }));
     } catch {}
     parti.push(riepilogoMenu(menu, prec, validaMenu(menu, cal).avvisi));
+    for (const p of piattiDelMenu(menu)) piatti.add(p);
   }
   if (rep.pdfIgnorati?.length) parti.push('', '<details><summary>PDF ignorati</summary>', '', ...rep.pdfIgnorati.map((p) => `- ${p}`), '', '</details>');
-  parti.push('', '---', '_PR aperta automaticamente dal workflow di aggiornamento._');
-  // GitHub limita il corpo delle PR a 65 536 caratteri
+  // In fondo, solo come promemoria: i piatti dei menu nuovi senza traduzione (non blocca il merge).
+  const traduzioni = sezioneTraduzioniMancanti([...piatti], await caricaTraduzioni());
+  const coda = [...(traduzioni ? ['', traduzioni] : []), '', '---', '_PR aperta automaticamente dal workflow di aggiornamento._'].join('\n');
+  // GitHub limita il corpo delle PR a 65 536 caratteri: si accorcia il riepilogo, non la coda
   let corpo = parti.join('\n');
-  if (corpo.length > 64000) corpo = `${corpo.slice(0, 63000)}\n\n_(riepilogo troncato: troppo lungo per una PR)_`;
-  process.stdout.write(corpo);
+  if (corpo.length + coda.length > 64000) corpo = `${corpo.slice(0, 63000 - coda.length)}\n\n_(riepilogo troncato: troppo lungo per una PR)_`;
+  process.stdout.write(`${corpo}\n${coda}`);
 }
 
 const comandi = { segnala, 'corpo-pr': corpoPr };
