@@ -91,6 +91,10 @@ Le modifiche al codice e alla pagina sono raccolte in [CHANGELOG.md](CHANGELOG.m
 3. `npm version minor` (oppure `patch` per le sole correzioni, `major` se cambiano gli indirizzi dei feed o gli UID): aggiorna `package.json`, fa il commit e crea il tag.
 4. `git push --follow-tags`: il workflow [`release.yml`](.github/workflows/release.yml) crea la release su GitHub con le note del CHANGELOG.
 
+## Sei di Venezia?
+
+Usa **Scodella**, l'app con il menu delle mense scolastiche di Venezia: è grazie a lei che questo progetto è stato immaginato e sviluppato. Trovi il sito su <https://markco.github.io/scodella_website/> e il codice su <https://github.com/MarKco/scodella_website>.
+
 ## Licenza
 
 Codice sotto licenza [MIT](LICENSE). I font [Figtree](https://github.com/erikdkennedy/figtree) e [Bricolage Grotesque](https://github.com/ateliertriay/bricolage) sono distribuiti con licenza SIL Open Font License 1.1 e sono ospitati insieme alla pagina (nessuna richiesta a servizi esterni). I contenuti dei menu appartengono ai rispettivi autori; il progetto ne riporta una rielaborazione con link alla fonte.
