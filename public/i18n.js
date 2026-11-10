@@ -150,6 +150,11 @@ export const IT = {
 export const PREFISSO_DATI = 'dati.';
 
 let lingua = 'it';
+/** Lingua per Intl: se il browser non ha i dati di quella lingua (succede per esempio con l'albanese)
+ *  meglio l'inglese che le date nella lingua del sistema, spesso l'italiano. */
+const localeDate = () => (Intl.DateTimeFormat.supportedLocalesOf(lingua).length ? lingua : 'en');
+/** Numeri nella scrittura della lingua (per esempio le cifre bengalesi); in italiano come prima. */
+const numero = (n) => (it() || !Intl.NumberFormat.supportedLocalesOf(lingua).length ? n : new Intl.NumberFormat(lingua).format(n));
 let dizionario = {};
 let piatti = {};
 
@@ -230,7 +235,7 @@ export const piuGiorni = (s, n) => {
 };
 export const numGiorno = (s) => Number(s.slice(8, 10));
 const anno = (s) => s.slice(0, 4);
-const formato = (s, opzioni) => new Intl.DateTimeFormat(lingua, opzioni).format(daIso(s));
+const formato = (s, opzioni) => new Intl.DateTimeFormat(localeDate(), opzioni).format(daIso(s));
 const it = () => lingua === 'it';
 
 /** "lunedì" */
@@ -260,7 +265,7 @@ export function etichettaSettimana(lun) {
   if (it()) {
     return nomeMese(lun) === nomeMese(ven) ? `${numGiorno(lun)}–${numGiorno(ven)} ${nomeMese(ven)}` : `${numGiorno(lun)} ${nomeMese(lun)} – ${numGiorno(ven)} ${nomeMese(ven)}`;
   }
-  const f = new Intl.DateTimeFormat(lingua, { day: 'numeric', month: 'long' });
+  const f = new Intl.DateTimeFormat(localeDate(), { day: 'numeric', month: 'long' });
   return f.formatRange ? f.formatRange(daIso(lun), daIso(ven)) : `${f.format(daIso(lun))} – ${f.format(daIso(ven))}`;
 }
 
@@ -269,7 +274,7 @@ const nomeStagione = (s) =>
   ({ estivo: t('stagione.estivo'), autunnale: t('stagione.autunnale'), invernale: t('stagione.invernale'), primaverile: t('stagione.primaverile') })[s];
 
 /** "Menu autunnale · settimana 3 di 4" */
-export const testoCiclo = (g) => t('ciclo', nomeStagione(g.stagione) ?? t('stagione.altra'), g.settimana, g.settimane);
+export const testoCiclo = (g) => t('ciclo', nomeStagione(g.stagione) ?? t('stagione.altra'), numero(g.settimana), numero(g.settimane));
 /** "Da qui: Menu invernale" quando cambia la stagione */
 export const testoCambioStagione = (g) => t('giorno.daqui', nomeStagione(g.stagione) ?? g.stagione);
 
