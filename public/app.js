@@ -1,4 +1,33 @@
 // Menu Scuole Padova — pagina statica, vanilla JS, nessuna dipendenza. Direzione visiva B "Vassoio".
+import {
+  CHIAVE_LINGUA,
+  LINGUE,
+  applicaTesti,
+  caricaLingua,
+  daIso,
+  dataConAnno,
+  dataLunga,
+  dataLungaConAnno,
+  etichettaSettimana,
+  giornoBreve,
+  giornoEMese,
+  giornoENumero,
+  iso,
+  linguaAttiva,
+  linguaIniziale,
+  linkTraduzione,
+  nomeGiorno,
+  numeroGiorno,
+  piatto,
+  piuGiorni,
+  t,
+  tDato,
+  testoCambioStagione,
+  testoCiclo,
+  testoGiornoVuoto,
+  testoOggi as testoOggiDi
+} from './i18n.js';
+
 const REPO = 'https://github.com/gbonanome/menu-scuole-padova';
 const FONTE_NOTIZIE = 'https://www.scuoledussmann.it/padova#notizie';
 const CHIAVE = 'menu-scuole-padova:scelta';
@@ -33,22 +62,7 @@ function el(tag, attrs = {}, ...figli) {
   return e;
 }
 
-const MESI = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
-const GIORNI = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
-const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-const daIso = (s) => {
-  const [y, m, d] = s.split('-').map(Number);
-  return new Date(y, m - 1, d);
-};
-const piuGiorni = (s, n) => {
-  const d = daIso(s);
-  d.setDate(d.getDate() + n);
-  return iso(d);
-};
-const numGiorno = (s) => Number(s.slice(8, 10));
-const mese = (s) => MESI[Number(s.slice(5, 7)) - 1];
-const nomeGiorno = (s) => GIORNI[daIso(s).getDay()];
-const dataLunga = (s) => `${nomeGiorno(s)} ${numGiorno(s)} ${mese(s)}`;
+// Date e testi composti sono in i18n.js: in italiano restano identici, nelle altre lingue passano da Intl.
 /** Lunedì della settimana; sabato e domenica portano alla settimana dopo. */
 function lunediDi(s) {
   const g = daIso(s).getDay();
@@ -60,7 +74,10 @@ function lunediDi(s) {
 const OGGI_PROVA = /^\d{4}-\d{2}-\d{2}$/.test(new URLSearchParams(location.search).get('oggi') ?? '') ? new URLSearchParams(location.search).get('oggi') : null;
 const oggi = () => OGGI_PROVA ?? iso(new Date());
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’'.]/g, ' ').replace(/\s+/g, ' ').trim();
-const STAGIONE = { estivo: 'Menu estivo', autunnale: 'Menu autunnale', invernale: 'Menu invernale', primaverile: 'Menu primaverile' };
+// Nomi dei menu e ordini di scuola vengono dai dati, in italiano: si traducono solo se la lingua ha la chiave.
+const nomeFeed = (f) => tDato(`feed.${f.slug}`, f.nome);
+const breveFeed = (f) => tDato(`feed.${f.slug}.breve`, f.breve);
+const nomeOrdine = (o) => tDato(`ordine.${o}`, o);
 
 const salva = (v) => {
   try {
@@ -89,7 +106,7 @@ function mostraRisultati(q) {
   if (nq.length < 2) return;
   const trovate = stato.scuole.filter((s) => norm(s.nome).includes(nq)).slice(0, 10);
   if (!trovate.length) {
-    ul.append(el('li', { class: 'vuoto' }, 'Nessuna scuola trovata. Prova a scegliere direttamente il menu qui sotto.'));
+    ul.append(el('li', { class: 'vuoto' }, t('scelta.nessuna')));
     return;
   }
   for (const s of trovate) {
@@ -102,13 +119,15 @@ function mostraRisultati(q) {
           'button',
           { type: 'button', onclick: () => scegliVoce(voceDiScuola(s)) },
           el('span', { class: 'nome' }, s.nome),
-          el('span', { class: 'dettaglio' }, `${s.ordine}${s.ic ? ` · ${s.ic} IC` : ''} · ${f?.breve ?? s.feed}`)
+          el('span', { class: 'dettaglio' }, `${nomeOrdine(s.ordine)}${s.ic ? ` · ${t('scelta.ic', s.ic)}` : ''} · ${f ? breveFeed(f) : s.feed}`)
         )
       )
     );
   }
 }
 
+// La segnalazione va al manutentore su GitHub: resta in italiano in ogni lingua (nomi di scuole e menu
+// come nei dati), con la lingua della pagina in fondo se non è l'italiano.
 function linkSegnalazione() {
   const s = stato.scuola;
   const f = stato.feeds.find((x) => x.slug === stato.feed);
@@ -118,7 +137,8 @@ function linkSegnalazione() {
     `Menu mostrato: ${f?.breve} (${stato.feed})`,
     '',
     'Cosa non torna? (es. la scuola usa un altro menu, un giorno è sbagliato…)',
-    ''
+    '',
+    ...(linguaAttiva() === 'it' ? [] : [`Lingua della pagina: ${linguaAttiva()}`])
   ].join('\n');
   return `${REPO}/issues/new?title=${encodeURIComponent(titolo)}&body=${encodeURIComponent(corpo)}`;
 }
@@ -127,11 +147,7 @@ function mostraPicker(aperto, modo = stato.modo) {
   stato.modo = modo;
   $('#scelta').hidden = !aperto;
   $('#cambia').setAttribute('aria-expanded', String(aperto && modo === 'cambia'));
-  $('#titolo-scelta').textContent = !stato.attiva
-    ? 'Che cosa si mangia oggi a scuola?'
-    : modo === 'cambia'
-      ? `Cambia ${etichetta(stato.attiva)} con…`
-      : 'Aggiungi una scuola';
+  mostraTitoloScelta();
   $('#annulla').hidden = !stato.attiva;
   $('#risultati').replaceChildren();
   $('#cerca-scuola').value = '';
@@ -139,12 +155,20 @@ function mostraPicker(aperto, modo = stato.modo) {
   if (aperto && stato.attiva) $('#cerca-scuola').focus();
 }
 
+function mostraTitoloScelta() {
+  $('#titolo-scelta').textContent = !stato.attiva
+    ? t('scelta.titolo')
+    : stato.modo === 'cambia'
+      ? t('scelta.titolo.cambia', etichetta(stato.attiva))
+      : t('scelta.titolo.aggiungi');
+}
+
 function mostraScuola() {
   const f = stato.feeds.find((x) => x.slug === stato.feed);
   if (!f) return;
   const s = stato.scuola;
-  $('#scuola-nome').textContent = s ? s.nome : f.nome;
-  $('#scuola-feed').textContent = s ? f.nome : 'Menu scelto dall’elenco';
+  $('#scuola-nome').textContent = s ? s.nome : nomeFeed(f);
+  $('#scuola-feed').textContent = s ? nomeFeed(f) : t('scuola.dallelenco');
   const note = [];
   if (s?.avviso) note.push(el('p', { class: 'avviso', role: 'note' }, s.avviso));
   $('#scuola-note').replaceChildren(...note);
@@ -195,16 +219,27 @@ function risolvi(testo) {
 }
 
 function etichetta(v) {
-  const base = v.scuola ? nomeBreve(v.scuola.nome) : (stato.feeds.find((f) => f.slug === v.feed)?.breve ?? v.feed);
+  const f = stato.feeds.find((x) => x.slug === v.feed);
+  const base = v.scuola ? nomeBreve(v.scuola.nome) : f ? breveFeed(f) : v.feed;
   const doppia = stato.scelte.some((x) => x.id !== v.id && (x.scuola ? nomeBreve(x.scuola.nome) : null) === base);
-  return doppia && v.scuola ? `${base} · ${v.scuola.ordine}` : base;
+  return doppia && v.scuola ? `${base} · ${nomeOrdine(v.scuola.ordine)}` : base;
 }
 
 function salvaScelte() {
   salva({ scelte: stato.scelte.map((v) => v.id), attiva: stato.attiva?.id ?? null });
-  // Le scuole vanno anche nell'indirizzo: l'icona sulla schermata Home di iPhone non vede quanto salvato in Safari.
+  aggiornaIndirizzo();
+}
+
+/**
+ * Le scuole vanno anche nell'indirizzo: l'icona sulla schermata Home di iPhone non vede quanto salvato in Safari.
+ * Così la lingua: ?lingua= dice quella mostrata (assente se italiano), e l'icona aggiunta da qui la ricorda.
+ * Gli altri parametri (per esempio ?oggi=) restano come sono; dopo # solo la scuola aperta.
+ */
+function aggiornaIndirizzo() {
   const p = new URLSearchParams(location.search);
   p.delete('scuola');
+  p.delete('lingua');
+  if (linguaAttiva() !== 'it') p.set('lingua', linguaAttiva());
   const ids = stato.scelte.map((v) => v.id).join('|');
   const query = [ids ? `scuola=${ids}` : '', p.toString()].filter(Boolean).join('&');
   history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${stato.attiva ? `#${stato.attiva.id}` : ''}`);
@@ -264,7 +299,7 @@ function mostraSwitcher() {
                 'aria-pressed': 'true',
                 'aria-controls': 'scuola',
                 'aria-expanded': String(stato.dettagli),
-                title: 'Dettagli, cambia o rimuovi',
+                title: t('scuole.dettagli'),
                 onclick: () => {
                   stato.dettagli = !stato.dettagli;
                   mostraScuola();
@@ -281,11 +316,11 @@ function mostraSwitcher() {
             {
               type: 'button',
               class: 'chip aggiungi',
-              'aria-label': 'Aggiungi scuola',
+              'aria-label': t('scuole.aggiungi.aria'),
               'aria-controls': 'scelta',
               onclick: () => mostraPicker(true, 'aggiungi')
             },
-            '＋ Aggiungi'
+            t('scuole.aggiungi')
           )
         : null
     ].filter(Boolean)
@@ -347,7 +382,13 @@ async function attiva(voce) {
 // ---------- piatti e variazioni ----------
 const eVariato = (g, i) => g.originali && !g.menuSostituito && g.originali[i] !== g.piatti[i];
 
-/** Riquadri "Variazione" di un giorno: cosa si serve, al posto di cosa, e il testo dell'avviso. */
+/** Attributi per un testo lasciato in italiano in una pagina in un'altra lingua (anche da destra a sinistra). */
+const testoItaliano = () => (linguaAttiva() === 'it' ? {} : { lang: 'it', dir: 'ltr' });
+
+/**
+ * Riquadri "Variazione" di un giorno: cosa si serve, al posto di cosa, e il testo dell'avviso.
+ * Il testo dell'avviso resta in italiano: nelle altre lingue sotto c'è il link a Google Traduttore.
+ */
 function riquadriVariazione(g) {
   if (!g.variazioni?.length) return [];
   const cambi = [];
@@ -356,23 +397,26 @@ function riquadriVariazione(g) {
   });
   return g.variazioni.map((v, k) => {
     const strutturata = k === 0 && (cambi.length || g.menuSostituito);
-    const pubblicata = `Avviso pubblicato da Dussmann il ${numGiorno(v.pubblicata)} ${mese(v.pubblicata)}`;
+    const pubblicata = t('variazione.pubblicata', giornoEMese(v.pubblicata));
     return el(
       'div',
       { class: 'vbox', role: 'note' },
-      el('span', { class: 'vt' }, 'Variazione'),
+      el('span', { class: 'vt' }, t('variazione.titolo')),
       strutturata && g.menuSostituito
         ? [
-            el('span', { class: 'vnew' }, 'Menu sostitutivo'),
-            el('span', { class: 'vold' }, `al posto di: ${g.originali.filter((p) => p !== 'oppure').join(', ')}`)
+            el('span', { class: 'vnew' }, t('variazione.sostitutivo')),
+            el('span', { class: 'vold' }, t('variazione.alposto', g.originali.filter((p) => p !== 'oppure').map(piatto).join(', ')))
           ]
         : null,
       strutturata && !g.menuSostituito
-        ? cambi.map((c) => [el('span', { class: 'vnew' }, c.nuovo), el('span', { class: 'vold' }, `al posto di: ${c.vecchio}`)])
+        ? cambi.map((c) => [el('span', { class: 'vnew' }, piatto(c.nuovo)), el('span', { class: 'vold' }, t('variazione.alposto', piatto(c.vecchio)))])
         : null,
-      !strutturata ? el('span', { class: 'vnew' }, 'Il menu di questo giorno potrebbe essere diverso: leggi l’avviso.') : null,
-      el('span', { class: 'vsrc' }, pubblicata, ' · ', el('a', { href: FONTE_NOTIZIE }, 'fonte')),
-      el('details', { open: !strutturata }, el('summary', {}, 'Testo dell’avviso'), el('p', { class: 'vtesto' }, v.testo))
+      !strutturata ? el('span', { class: 'vnew' }, t('variazione.generica')) : null,
+      el('span', { class: 'vsrc' }, pubblicata, ' · ', el('a', { href: FONTE_NOTIZIE }, t('variazione.fonte'))),
+      el('details', { open: !strutturata }, el('summary', {}, t('variazione.testo')), el('p', { class: 'vtesto', ...testoItaliano() }, v.testo)),
+      linguaAttiva() !== 'it' && v.testo
+        ? el('span', { class: 'vsrc' }, el('a', { href: linkTraduzione(v.testo), target: '_blank', rel: 'noopener' }, t('variazione.traduci')))
+        : null
     );
   });
 }
@@ -391,8 +435,8 @@ function elencoPiatti(g, classe, conScomparti) {
     'ul',
     { class: classe },
     g.piatti.map((p, i) => {
-      if (p === 'oppure') return el('li', { class: 'oppure' }, 'oppure');
-      const testo = conScomparti ? el('span', { class: 'dish' }, p) : p;
+      if (p === 'oppure') return el('li', { class: 'oppure' }, t('oppure'));
+      const testo = conScomparti ? el('span', { class: 'dish' }, piatto(p)) : piatto(p);
       const classi = [i === principale ? 'principale' : '', eVariato(g, i) ? 'changed' : ''].join(' ').trim();
       return el('li', { class: classi || null }, testo);
     })
@@ -402,22 +446,23 @@ function elencoPiatti(g, classe, conScomparti) {
 // ---------- oggi (vassoio, solo su telefono) ----------
 function mostraOggi() {
   const box = $('#oggi-box');
-  const t = oggi();
-  const g = stato.giorni.get(t);
+  const dataOggi = oggi();
+  const g = stato.giorni.get(dataOggi);
   if (g?.stato === 'menu') {
     box.replaceChildren(
-      el('p', { class: 'when' }, el('mark', {}, 'Oggi'), ` ${nomeGiorno(t)} ${numGiorno(t)}`),
-      el('p', { class: 'meta' }, `${STAGIONE[g.stagione] ?? 'Menu'} · settimana ${g.settimana} di ${g.settimane}`),
+      el('p', { class: 'when' }, el('mark', {}, t('oggi')), ` ${giornoENumero(dataOggi)}`),
+      el('p', { class: 'meta' }, testoCiclo(g)),
       ...riquadriVariazione(g),
       elencoPiatti(g, 'tray', true)
     );
+    box.setAttribute('aria-label', t('oggi.aria'));
     box.hidden = false;
     return;
   }
   // Oggi niente mensa: lo dice con la data di oggi, poi mostra il prossimo giorno con il menu (entro due settimane).
   let prossimo = null;
   for (let i = 1; i <= 14 && !prossimo; i++) {
-    const d = piuGiorni(t, i);
+    const d = piuGiorni(dataOggi, i);
     if (stato.giorni.get(d)?.stato === 'menu') prossimo = d;
   }
   if (!prossimo) {
@@ -430,42 +475,35 @@ function mostraOggi() {
     el(
       'p',
       { class: 'when' },
-      el('mark', {}, prossimo === piuGiorni(t, 1) ? 'Domani' : maiuscola(nomeGiorno(prossimo))),
-      ` ${numGiorno(prossimo)} ${mese(prossimo)}`
+      el('mark', {}, prossimo === piuGiorni(dataOggi, 1) ? t('domani') : maiuscola(nomeGiorno(prossimo))),
+      ` ${giornoEMese(prossimo)}`
     ),
-    el('p', { class: 'meta' }, `${STAGIONE[gp.stagione] ?? 'Menu'} · settimana ${gp.settimana} di ${gp.settimane}`),
+    el('p', { class: 'meta' }, testoCiclo(gp)),
     ...riquadriVariazione(gp),
     elencoPiatti(gp, 'tray', true)
   );
-  box.setAttribute('aria-label', 'Prossimo menu');
+  box.setAttribute('aria-label', t('oggi.prossimo.aria'));
   box.hidden = false;
 }
 
 const maiuscola = (s) => s.replace(/^./, (c) => c.toUpperCase());
 
+/** Dati per i testi di un giorno senza menu (testoOggi e testoGiornoVuoto in i18n.js). */
+const giornoSenzaMenu = (data) => ({ data, giorno: stato.giorni.get(data), nido: !!stato.feed?.startsWith('nido'), dal: stato.copertura?.dal });
+
 /** "Oggi, domenica 8 novembre: niente mensa." con il motivo quando c'è. */
-function testoOggi() {
-  const t = oggi();
-  const g = stato.giorni.get(t);
-  const nido = stato.feed?.startsWith('nido');
-  let motivo;
-  if (g?.stato === 'chiuso') motivo = `${nido ? 'nido chiuso' : 'scuola chiusa'} (${g.motivo})`;
-  else if (g?.stato === 'non-pubblicato') motivo = 'menu non ancora pubblicato';
-  else if (stato.copertura && t < stato.copertura.dal) motivo = 'la mensa non è ancora iniziata';
-  else motivo = 'niente mensa';
-  return `Oggi, ${dataLunga(t)}: ${motivo}.`;
-}
+const testoOggi = () => testoOggiDi(giornoSenzaMenu(oggi()));
 
 /** Riga sopra la settimana quando oggi non c'è mensa (su telefono la dice già il vassoio). */
 function mostraRigaOggi() {
   const riga = $('#oggi-riga');
-  const t = oggi();
-  if (stato.giorni.get(t)?.stato === 'menu') {
+  const dataOggi = oggi();
+  if (stato.giorni.get(dataOggi)?.stato === 'menu') {
     riga.hidden = true;
     return;
   }
-  const lun = lunediDi(t);
-  const extra = lun > t ? ` Ecco la prossima settimana.` : '';
+  const lun = lunediDi(dataOggi);
+  const extra = lun > dataOggi ? ` ${t('oggi.prossimasettimana')}` : '';
   riga.textContent = testoOggi() + extra;
   riga.classList.toggle('solo-largo', !$('#oggi-box').hidden);
   riga.hidden = false;
@@ -475,14 +513,10 @@ function mostraRigaOggi() {
 function cardGiorno(data, precedente) {
   const g = stato.giorni.get(data);
   const eOggi = data === oggi();
-  const intestazione = el('h3', { class: 'dname' }, String(numGiorno(data)), el('small', {}, eOggi ? 'oggi' : nomeGiorno(data).slice(0, 3)));
-  const etichetta = `${dataLunga(data)}${eOggi ? ', oggi' : ''}`;
+  const intestazione = el('h3', { class: 'dname' }, numeroGiorno(data), el('small', {}, eOggi ? t('giorno.oggi') : giornoBreve(data)));
+  const etichetta = eOggi ? t('giorno.oggi.aria', dataLunga(data)) : dataLunga(data);
   if (!g || g.stato !== 'menu') {
-    let testo;
-    if (g?.stato === 'chiuso') testo = `${stato.feed.startsWith('nido') ? 'Nido chiuso' : 'Scuola chiusa'} · ${g.motivo}`;
-    else if (g?.stato === 'non-pubblicato') testo = 'Menu non ancora pubblicato';
-    else if (stato.copertura && data < stato.copertura.dal) testo = 'Mensa non ancora iniziata';
-    else testo = 'Nessun menu';
+    const testo = testoGiornoVuoto(giornoSenzaMenu(data));
     return el(
       'article',
       { class: `day ${g?.stato === 'chiuso' ? 'closed' : 'empty'}${eOggi ? ' is-today' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
@@ -495,16 +529,11 @@ function cardGiorno(data, precedente) {
     'article',
     { class: `day${eOggi ? ' is-today' : ''}${g.variazioni.length ? ' varied' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
     intestazione,
-    cambioStagione ? el('p', { class: 'season' }, `Da qui: ${STAGIONE[g.stagione] ?? g.stagione}`) : null,
+    cambioStagione ? el('p', { class: 'season' }, testoCambioStagione(g)) : null,
     ...riquadriVariazione(g),
     elencoPiatti(g, null, false),
-    el('p', { class: 'ciclo' }, `${STAGIONE[g.stagione] ?? 'Menu'} · settimana ${g.settimana} di ${g.settimane}`)
+    el('p', { class: 'ciclo' }, testoCiclo(g))
   );
-}
-
-function etichettaSettimana(lun) {
-  const ven = piuGiorni(lun, 4);
-  return mese(lun) === mese(ven) ? `${numGiorno(lun)}–${numGiorno(ven)} ${mese(ven)}` : `${numGiorno(lun)} ${mese(lun)} – ${numGiorno(ven)} ${mese(ven)}`;
 }
 
 function mostraSettimana() {
@@ -533,7 +562,7 @@ function mostraIscrizione() {
   const https = new URL(f.ics, location.href).href;
   $('#url-feed').value = https;
   $('#link-webcal').href = https.replace(/^https?:/, 'webcal:');
-  $('#link-webcal').textContent = stato.scelte.length > 1 ? `Aggiungi al calendario: ${etichetta(stato.attiva)}` : 'Aggiungi al calendario';
+  $('#link-webcal').textContent = stato.scelte.length > 1 ? t('cal.titolo.scuola', etichetta(stato.attiva)) : t('cal.titolo');
   $('#iscriviti').hidden = false;
 }
 
@@ -545,46 +574,107 @@ async function copia() {
     input.select();
     document.execCommand?.('copy');
   }
-  $('#copiato').textContent = 'Indirizzo copiato.';
+  $('#copiato').textContent = t('cal.copiato');
+}
+
+// ---------- lingua ----------
+// Precedenza: lingua salvata su questo dispositivo › ?lingua= nell'indirizzo › italiano. La salvata vince, così un
+// link condiviso non cambia lingua a chi ne ha già scelta una; l'icona sulla schermata Home di iPhone parte con lo
+// storage vuoto, e lì vale l'indirizzo. Mai la lingua del browser: il default è sempre l'italiano.
+function linguaSalvata() {
+  try {
+    return localStorage.getItem(CHIAVE_LINGUA);
+  } catch {
+    return null;
+  }
+}
+
+/** Cambia la lingua della pagina: la salva, la mette nell'indirizzo (e nel manifest) e ridisegna tutto. */
+export async function cambiaLingua(codice) {
+  const lingua = LINGUE.includes(codice) ? codice : 'it';
+  try {
+    localStorage.setItem(CHIAVE_LINGUA, lingua);
+  } catch {}
+  await caricaLingua(lingua);
+  aggiornaIndirizzo();
+  ridisegna();
+}
+
+/** Tutti i testi della pagina nella lingua attiva, senza toccare scelte, ricerca in corso e settimana mostrata. */
+function ridisegna() {
+  applicaTesti();
+  $('#info-pop').replaceChildren($('#nota p').cloneNode(true));
+  mostraProva();
+  mostraAggiornato();
+  for (const o of $('#scegli-feed').options) {
+    const f = stato.feeds.find((x) => x.slug === o.value);
+    if (f) o.textContent = nomeFeed(f);
+  }
+  mostraTitoloScelta();
+  mostraRisultati($('#cerca-scuola').value);
+  $('#copiato').textContent = '';
+  if (!stato.attiva) return;
+  mostraSwitcher();
+  mostraScuola();
+  mostraIscrizione();
+  if (!stato.lunedi) return; // menu ancora in arrivo: lo disegna attiva()
+  mostraOggi();
+  mostraRigaOggi();
+  mostraSettimana();
+}
+
+/** Fascia gialla con la data simulata da ?oggi=. */
+function mostraProva() {
+  if (!OGGI_PROVA) return;
+  const fascia = el(
+    'p',
+    { class: 'prova', role: 'note' },
+    t('prova.testo', dataLungaConAnno(OGGI_PROVA)),
+    ' ',
+    el(
+      'a',
+      {
+        href: location.pathname,
+        onclick: (e) => {
+          e.preventDefault();
+          const u = new URL(location.href);
+          u.searchParams.delete('oggi');
+          location.href = u.href;
+        }
+      },
+      t('prova.torna')
+    )
+  );
+  const vecchia = $('.prova');
+  if (vecchia) vecchia.replaceWith(fascia);
+  else $('.top').after(fascia);
+}
+
+function mostraAggiornato() {
+  if (!stato.meta) return;
+  $('#aggiornato').textContent = t('piede.aggiornato', dataConAnno(iso(new Date(stato.meta.generato))));
 }
 
 // ---------- avvio ----------
 async function avvia() {
-  if (OGGI_PROVA) {
-    $('.top').after(
-      el(
-        'p',
-        { class: 'prova', role: 'note' },
-        `Data simulata: la pagina fa come se oggi fosse ${dataLunga(OGGI_PROVA)} ${OGGI_PROVA.slice(0, 4)}. `,
-        el(
-          'a',
-          {
-            href: location.pathname,
-            onclick: (e) => {
-              e.preventDefault();
-              const u = new URL(location.href);
-              u.searchParams.delete('oggi');
-              location.href = u.href;
-            }
-          },
-          'Torna alla data reale'
-        )
-      )
-    );
-  }
+  const dati = Promise.all([json('data/feeds.json'), json('data/scuole.json'), caricaManifest()]);
+  dati.catch(() => {}); // l'errore si gestisce sotto, dopo la lingua
+  await caricaLingua(linguaIniziale(linguaSalvata(), new URLSearchParams(location.search).get('lingua')));
+  applicaTesti();
+  mostraProva();
   try {
-    const [indice, scuole] = await Promise.all([json('data/feeds.json'), json('data/scuole.json'), caricaManifest()]);
+    const [indice, scuole] = await dati;
     stato.feeds = indice.feeds;
     stato.meta = indice;
     stato.scuole = scuole;
     assegnaId();
   } catch (e) {
-    $('#scelta').append(el('p', { class: 'avviso' }, 'Impossibile caricare i dati. Riprova più tardi.'));
+    $('#scelta').append(el('p', { class: 'avviso' }, t('errore.dati')));
     console.error(e);
     return;
   }
   const sel = $('#scegli-feed');
-  for (const f of stato.feeds) sel.append(el('option', { value: f.slug }, f.nome));
+  for (const f of stato.feeds) sel.append(el('option', { value: f.slug }, nomeFeed(f)));
   sel.addEventListener('change', () => sel.value && scegliVoce(voceDiFeed(sel.value)));
   $('#cerca-scuola').addEventListener('input', (e) => mostraRisultati(e.target.value));
   $('#cambia').addEventListener('click', () => mostraPicker($('#scelta').hidden || stato.modo !== 'cambia', 'cambia'));
@@ -620,9 +710,7 @@ async function avvia() {
     if (v && v.id !== stato.attiva?.id) attiva(v);
   });
 
-  const m = stato.meta;
-  const quando = iso(new Date(m.generato));
-  $('#aggiornato').textContent = `Ultimo controllo della fonte: ${numGiorno(quando)} ${mese(quando)} ${quando.slice(0, 4)}.`;
+  mostraAggiornato();
 
   // Scuole salvate: prima quelle di questo dispositivo, poi quelle dell'indirizzo (icona sulla Home, link condiviso).
   const salvato = leggi();

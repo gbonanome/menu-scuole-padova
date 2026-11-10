@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Menu Scuole Padova · il menu della mensa nel tuo calendario</title>
-  <meta name="description" content="Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.">
+  <title data-t="pagina.titolo">Menu Scuole Padova · il menu della mensa nel tuo calendario</title>
+  <meta name="description" data-t-content="pagina.descrizione" content="Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#eef1e7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121813" media="(prefers-color-scheme: dark)">
@@ -18,89 +18,89 @@
   <script type="module" src="app.js"></script>
 </head>
 <body>
-  <a class="salta" href="#contenuto">Vai al contenuto</a>
+  <a class="salta" href="#contenuto" data-t="salta">Vai al contenuto</a>
   <div class="pagina">
     <header class="top">
       <h1 class="brand"><img src="icona.svg" alt="" width="30" height="30">Menu Scuole Padova</h1>
-      <a id="info" class="info" href="#nota" aria-label="Progetto non ufficiale: leggi la nota" aria-controls="info-pop">?</a>
+      <a id="info" class="info" href="#nota" aria-label="Progetto non ufficiale: leggi la nota" data-t-aria-label="info.aria" aria-controls="info-pop">?</a>
       <div id="info-pop" class="info-pop" role="note" hidden></div>
     </header>
 
     <main id="contenuto" tabindex="-1">
-      <nav id="scuole-salvate" class="switcher" aria-label="Le tue scuole" hidden></nav>
+      <nav id="scuole-salvate" class="switcher" aria-label="Le tue scuole" data-t-aria-label="scuole.aria" hidden></nav>
 
-      <section id="scuola" class="school" aria-label="Scuola scelta" hidden>
+      <section id="scuola" class="school" aria-label="Scuola scelta" data-t-aria-label="scuola.aria" hidden>
         <div class="who">
           <span class="name" id="scuola-nome"></span>
           <span class="feed" id="scuola-feed"></span>
         </div>
         <div class="azioni">
-          <button type="button" class="btn" id="cambia" aria-controls="scelta" aria-expanded="false">Cambia scuola</button>
-          <button type="button" class="btn leggero" id="rimuovi" hidden>Rimuovi</button>
+          <button type="button" class="btn" id="cambia" aria-controls="scelta" aria-expanded="false" data-t="scuola.cambia">Cambia scuola</button>
+          <button type="button" class="btn leggero" id="rimuovi" hidden data-t="scuola.rimuovi">Rimuovi</button>
         </div>
       </section>
       <div id="scuola-note" class="school-note"></div>
 
       <section id="scelta" class="picker" aria-labelledby="titolo-scelta">
-        <h2 id="titolo-scelta">Che cosa si mangia oggi a scuola?</h2>
-        <p class="intro">Cerca la tua scuola o il tuo nido: vedi il menu della mensa giorno per giorno, con le variazioni comunicate da Dussmann, e puoi aggiungerlo al tuo calendario.</p>
-        <label for="cerca-scuola">Nome della scuola o del nido</label>
+        <h2 id="titolo-scelta" data-t="scelta.titolo">Che cosa si mangia oggi a scuola?</h2>
+        <p class="intro" data-t="scelta.intro">Cerca la tua scuola o il tuo nido: vedi il menu della mensa giorno per giorno, con le variazioni comunicate da Dussmann, e puoi aggiungerlo al tuo calendario.</p>
+        <label for="cerca-scuola" data-t="scelta.etichetta">Nome della scuola o del nido</label>
         <input id="cerca-scuola" type="search" autocomplete="off" spellcheck="false"
-               placeholder="es. Montegrappa, Il Trenino…" aria-controls="risultati" aria-describedby="aiuto-cerca">
-        <p id="aiuto-cerca" class="aiuto">Scrivi almeno 2 lettere.</p>
-        <ul id="risultati" class="risultati" aria-label="Scuole trovate" aria-live="polite"></ul>
-        <label for="scegli-feed" class="secondaria">Non trovi la scuola? Scegli direttamente il menu</label>
+               placeholder="es. Montegrappa, Il Trenino…" data-t-placeholder="scelta.esempio" aria-controls="risultati" aria-describedby="aiuto-cerca">
+        <p id="aiuto-cerca" class="aiuto" data-t="scelta.aiuto">Scrivi almeno 2 lettere.</p>
+        <ul id="risultati" class="risultati" aria-label="Scuole trovate" data-t-aria-label="scelta.risultati" aria-live="polite"></ul>
+        <label for="scegli-feed" class="secondaria" data-t="scelta.menu">Non trovi la scuola? Scegli direttamente il menu</label>
         <select id="scegli-feed">
-          <option value="">— scegli il menu —</option>
+          <option value="" data-t="scelta.menu.vuoto">— scegli il menu —</option>
         </select>
-        <button type="button" class="btn annulla" id="annulla" hidden>Annulla</button>
+        <button type="button" class="btn annulla" id="annulla" hidden data-t="scelta.annulla">Annulla</button>
       </section>
 
       <section id="oggi-box" class="today" aria-label="Menu di oggi" hidden></section>
 
-      <section id="settimana" class="settimana" aria-label="Menu della settimana" tabindex="-1" hidden>
+      <section id="settimana" class="settimana" aria-label="Menu della settimana" data-t-aria-label="settimana.aria" tabindex="-1" hidden>
         <p id="oggi-riga" class="oggi-riga" hidden></p>
         <div class="nav">
-          <button type="button" class="arrow" id="prec" aria-label="Settimana precedente">‹</button>
+          <button type="button" class="arrow" id="prec" aria-label="Settimana precedente" data-t-aria-label="settimana.prec">‹</button>
           <h2 class="range" id="titolo-settimana" aria-live="polite"></h2>
-          <button type="button" class="arrow" id="succ" aria-label="Settimana successiva">›</button>
-          <button type="button" class="btn" id="oggi">Oggi</button>
+          <button type="button" class="arrow" id="succ" aria-label="Settimana successiva" data-t-aria-label="settimana.succ">›</button>
+          <button type="button" class="btn" id="oggi" data-t="oggi">Oggi</button>
         </div>
         <div id="giorni" class="days"></div>
       </section>
 
       <section id="iscriviti" class="cal" aria-labelledby="titolo-iscriviti" hidden>
-        <h2 id="titolo-iscriviti" class="visually-hidden">Aggiungi al calendario</h2>
+        <h2 id="titolo-iscriviti" class="visually-hidden" data-t="cal.titolo">Aggiungi al calendario</h2>
         <a id="link-webcal" class="primary" href="#">Aggiungi al calendario</a>
         <details class="cal-altro">
-          <summary>Altri modi e istruzioni</summary>
-          <label for="url-feed">Indirizzo del calendario</label>
+          <summary data-t="cal.altro">Altri modi e istruzioni</summary>
+          <label for="url-feed" data-t="cal.indirizzo">Indirizzo del calendario</label>
           <div class="riga-copia">
             <input id="url-feed" type="text" readonly>
-            <button type="button" class="btn" id="copia">Copia</button>
+            <button type="button" class="btn" id="copia" data-t="cal.copia">Copia</button>
           </div>
           <p id="copiato" class="aiuto" role="status"></p>
-          <h3>iPhone e iPad</h3>
-          <p>Tocca <em>Aggiungi al calendario</em> e conferma con <em>Iscriviti</em>. In alternativa: Impostazioni → Calendario → Account → Aggiungi account → Altro → Aggiungi calendario sottoscritto, e incolla l'indirizzo. Per ricevere l'avviso delle 7:00 nei giorni variati, nelle impostazioni del calendario sottoscritto disattiva <em>Rimuovi avvisi</em>.</p>
-          <h3>Android e Google Calendar</h3>
-          <p>Da computer apri Google Calendar → <em>Altri calendari</em> → <em>+</em> → <em>Da URL</em> e incolla l'indirizzo. Sul telefono, nell'app Google Calendar, attiva la sincronizzazione del nuovo calendario. Google aggiorna i calendari sottoscritti con calma: una variazione può comparire anche dopo 24 ore. Google non mostra gli avvisi dei calendari sottoscritti: nelle impostazioni del calendario lascia le notifiche disattivate, così non ricevi un avviso ogni giorno.</p>
+          <h3 data-t="cal.iphone">iPhone e iPad</h3>
+          <p data-t="cal.iphone.testo">Tocca <em>Aggiungi al calendario</em> e conferma con <em>Iscriviti</em>. In alternativa: Impostazioni → Calendario → Account → Aggiungi account → Altro → Aggiungi calendario sottoscritto, e incolla l'indirizzo. Per ricevere l'avviso delle 7:00 nei giorni variati, nelle impostazioni del calendario sottoscritto disattiva <em>Rimuovi avvisi</em>.</p>
+          <h3 data-t="cal.android">Android e Google Calendar</h3>
+          <p data-t="cal.android.testo">Da computer apri Google Calendar → <em>Altri calendari</em> → <em>+</em> → <em>Da URL</em> e incolla l'indirizzo. Sul telefono, nell'app Google Calendar, attiva la sincronizzazione del nuovo calendario. Google aggiorna i calendari sottoscritti con calma: una variazione può comparire anche dopo 24 ore. Google non mostra gli avvisi dei calendari sottoscritti: nelle impostazioni del calendario lascia le notifiche disattivate, così non ricevi un avviso ogni giorno.</p>
           <h3>Outlook</h3>
-          <p>In Outlook web: <em>Aggiungi calendario</em> → <em>Sottoscrivi dal Web</em>, incolla l'indirizzo e salva.</p>
+          <p data-t="cal.outlook.testo">In Outlook web: <em>Aggiungi calendario</em> → <em>Sottoscrivi dal Web</em>, incolla l'indirizzo e salva.</p>
         </details>
         <details class="cal-altro">
-          <summary>Metti la pagina sulla schermata Home</summary>
-          <p>Un'icona sul telefono che apre direttamente il menu della tua scuola. Prima scegli la scuola, poi:</p>
-          <h3>iPhone e iPad</h3>
-          <p>In Safari tocca il pulsante <em>Condividi</em> (il quadrato con la freccia verso l'alto), poi <em>Aggiungi alla schermata Home</em> e conferma con <em>Aggiungi</em>.</p>
+          <summary data-t="home.titolo">Metti la pagina sulla schermata Home</summary>
+          <p data-t="home.intro">Un'icona sul telefono che apre direttamente il menu della tua scuola. Prima scegli la scuola, poi:</p>
+          <h3 data-t="cal.iphone">iPhone e iPad</h3>
+          <p data-t="home.iphone.testo">In Safari tocca il pulsante <em>Condividi</em> (il quadrato con la freccia verso l'alto), poi <em>Aggiungi alla schermata Home</em> e conferma con <em>Aggiungi</em>.</p>
           <h3>Android</h3>
-          <p>In Chrome tocca il menu <em>⋮</em> in alto a destra, poi <em>Aggiungi a schermata Home</em> (o <em>Installa app</em>) e conferma.</p>
+          <p data-t="home.android.testo">In Chrome tocca il menu <em>⋮</em> in alto a destra, poi <em>Aggiungi a schermata Home</em> (o <em>Installa app</em>) e conferma.</p>
         </details>
       </section>
     </main>
 
     <footer class="foot" id="nota" tabindex="-1">
-      <p>Progetto non ufficiale, senza legami con Dussmann Service o con il Comune di Padova. Fa sempre fede il menu ufficiale su <a href="https://www.scuoledussmann.it/padova">scuoledussmann.it/padova</a>. Diete speciali e allergeni esclusi. L’abbinamento tra scuola e menu è ricavato dai documenti del Comune.</p>
-      <p><span id="aggiornato"></span> <a id="link-segnala" href="https://github.com/gbonanome/menu-scuole-padova/issues/new">Segnala un errore</a> · <a href="https://github.com/gbonanome/menu-scuole-padova">Codice sorgente</a> · <a href="https://github.com/gbonanome/menu-scuole-padova/blob/main/CHANGELOG.md">Versione __VERSIONE__</a></p>
+      <p data-t="piede.nota">Progetto non ufficiale, senza legami con Dussmann Service o con il Comune di Padova. Fa sempre fede il menu ufficiale su <a href="https://www.scuoledussmann.it/padova">scuoledussmann.it/padova</a>. Diete speciali e allergeni esclusi. L’abbinamento tra scuola e menu è ricavato dai documenti del Comune.</p>
+      <p><span id="aggiornato"></span> <a id="link-segnala" href="https://github.com/gbonanome/menu-scuole-padova/issues/new" data-t="piede.segnala">Segnala un errore</a> · <a href="https://github.com/gbonanome/menu-scuole-padova" data-t="piede.codice">Codice sorgente</a> · <a href="https://github.com/gbonanome/menu-scuole-padova/blob/main/CHANGELOG.md" data-t="piede.versione" data-t-valori="__VERSIONE__">Versione __VERSIONE__</a></p>
     </footer>
   </div>
 </body>

@@ -17,10 +17,17 @@ const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
  * e Safari (soprattutto dalla schermata Home) altrimenti abbina la pagina nuova al foglio di stile vecchio.
  */
 async function versionaRisorse(out) {
+  const impronta = async (nome) => createHash('sha256').update(await readFile(path.join(out, nome))).digest('hex').slice(0, 10);
+  // Lo stesso per i18n.js, importato da app.js: prima si cambia app.js, poi se ne calcola l'impronta.
+  const appJs = path.join(out, 'app.js');
+  const js = await readFile(appJs, 'utf8');
+  const importa = `from './i18n.js'`;
+  if (!js.includes(importa)) throw new Error(`app.js: manca ${importa}`);
+  await writeFile(appJs, js.replace(importa, `from './i18n.js?v=${await impronta('i18n.js')}'`));
   const file = path.join(out, 'index.html');
   let html = await readFile(file, 'utf8');
   for (const [attr, nome] of [['href', 'style.css'], ['src', 'app.js'], ['href', 'manifest.webmanifest']]) {
-    const v = createHash('sha256').update(await readFile(path.join(out, nome))).digest('hex').slice(0, 10);
+    const v = await impronta(nome);
     const prima = `${attr}="${nome}"`;
     if (!html.includes(prima)) throw new Error(`index.html: manca ${prima}`);
     html = html.replace(prima, `${attr}="${nome}?v=${v}"`);
