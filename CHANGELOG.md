@@ -10,6 +10,12 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Modificato
+- Sul telefono la barra in basso resta visibile anche con il calendario del mese o le impostazioni aperti: la voce attiva è evidenziata, un secondo tocco chiude il pannello e si passa dall'uno all'altro senza chiuderlo prima. *Oggi* chiude tutto.
+
+### Corretto
+- In cima ai pannelli *Impostazioni* e *Vista mensile* gli angoli arrotondati non mostrano più un bordo dritto, e all'apertura delle impostazioni non compare più una riga verde (il focus va sul titolo).
+
 ## [1.2.1] - 2026-11-10
 
 ### Modificato
