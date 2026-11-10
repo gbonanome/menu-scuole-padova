@@ -184,12 +184,20 @@ button { cursor: pointer; }
 .foot { margin: 32px 12px 0; padding: 18px 6px 24px; border-top: 1px solid var(--b-tray); font-size: 0.75rem; color: var(--b-muted); }
 .foot p { margin: 0 0 6px; }
 
-/* ---- schermi larghi: settimana su 5 colonne, "oggi" già evidenziato nella griglia ---- */
-@media (max-width: 699.98px) {
-  .oggi-riga.solo-largo { display: none; }
-}
+/* ---- schermi larghi: vassoio di oggi in orizzontale, settimana su 5 colonne ---- */
 @media (min-width: 700px) {
-  .today { display: none; }
+  /* Vassoio: a sinistra il giorno (con nota, meta e variazioni), a destra gli scomparti.
+     L'ultima riga (1fr) assorbe l'altezza degli scomparti, così il testo a sinistra resta compatto in alto. */
+  .today { display: grid; grid-template-columns: minmax(11rem, 1fr) minmax(0, 2.4fr); grid-template-rows: repeat(8, auto) 1fr; column-gap: 18px; padding: 18px; }
+  .today > * { grid-column: 1; }
+  .today > .tray { grid-column: 2; grid-row: 1 / -1; align-self: start; }
+  .today .meta { margin-block-end: 12px; }
+  /* Scomparti: il piatto principale grande su due righe, gli altri accanto su due colonne */
+  .tray:not(:has(> .oppure)) { grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr)); }
+  .tray:not(:has(> .oppure)) > li.principale { grid-column: auto; grid-row: span 2; min-height: 140px; padding: 14px 16px; }
+  .tray:not(:has(> .oppure)) > li.principale .dish { font-size: 1.45rem; }
+  /* numero pari di scomparti con il principale in testa: l'ultimo (di solito il pane) chiude la riga */
+  .tray:not(:has(> .oppure)):has(> li.principale:first-child) > li:last-child:nth-child(even) { grid-column: span 2; }
   .oggi-riga { max-width: 640px; margin-inline: auto; }
   .days { grid-template-columns: repeat(5, 1fr); align-items: stretch; }
   .day { grid-template-columns: 1fr; }
@@ -200,6 +208,15 @@ button { cursor: pointer; }
   .nav { max-width: 520px; margin-inline: auto; }
   .cal { max-width: 420px; margin-inline: auto; }
   .picker { max-width: 640px; margin-inline: auto; }
+}
+/* Da 900px: in alto il vassoio e, accanto, la colonna del calendario del mese (finché è nascosta, il vassoio prende tutta la riga) */
+@media (min-width: 900px) {
+  .in-alto { display: flex; align-items: stretch; gap: 14px; margin-block-start: 14px; margin-inline: 12px; }
+  .in-alto:not(:has(> :not([hidden]))) { display: none; }
+  .in-alto > .today { flex: 1 1 0; min-width: 0; margin: 0; }
+  .mese { flex: 0 0 300px; background: var(--b-surface); border-radius: 22px; padding: 14px; }
+  .today { grid-template-columns: minmax(13rem, 1fr) minmax(0, 2.6fr); padding: 20px; }
+  .today .when { font-size: 1.85rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
