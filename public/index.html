@@ -95,10 +95,13 @@
     </footer>
   </div>
 
+  <!-- Velo sulla pagina quando mese o impostazioni sono aperti sopra la barra (telefono) -->
+  <div id="velo" class="velo" hidden></div>
+
   <!-- Barra in basso, solo sotto i 700px. "Mese" è collegato da mese.js (data-azione="mese"). -->
   <nav id="barra" class="barra" aria-label="Scorciatoie" data-t-aria-label="barra.aria">
     <button type="button" id="barra-oggi" data-azione="oggi" hidden><svg class="icona" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/><circle cx="12" cy="15" r="1.8" fill="currentColor"/></svg><span data-t="oggi">Oggi</span></button>
-    <button type="button" id="barra-mese" data-azione="mese" hidden><svg class="icona" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/><path d="M8.5 13.5h.01M12 13.5h.01M15.5 13.5h.01M8.5 16.5h.01M12 16.5h.01" stroke-width="2.6"/></svg><span data-t="barra.mese">Mese</span></button>
+    <button type="button" id="barra-mese" data-azione="mese" aria-haspopup="dialog" aria-expanded="false" aria-controls="mese-foglio" hidden><svg class="icona" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/><path d="M8.5 13.5h.01M12 13.5h.01M15.5 13.5h.01M8.5 16.5h.01M12 16.5h.01" stroke-width="2.6"/></svg><span data-t="barra.mese">Mese</span></button>
     <button type="button" id="barra-impostazioni" data-azione="impostazioni" aria-haspopup="dialog" aria-expanded="false" aria-controls="impostazioni"><svg class="icona" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></svg><span data-t="impostazioni">Impostazioni</span></button>
   </nav>
 

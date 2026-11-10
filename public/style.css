@@ -242,6 +242,20 @@ button { cursor: pointer; }
   border: 0; border-radius: 12px; background: none; color: var(--b-muted); font-size: 0.72rem; font-weight: 700; }
 .barra button:active, .barra button[aria-expanded="true"] { color: var(--b-ink); }
 .barra button[aria-expanded="true"] .icona, .barra button[aria-pressed="true"] .icona { color: var(--b-ink); }
+/* voce attiva (foglio aperto): l'icona prende la pillola gialla di "oggi" */
+.barra .icona { box-sizing: content-box; padding: 2px 12px; border-radius: 999px; }
+.barra button[aria-expanded="true"] .icona { background: var(--b-today); color: #18241b; }
+/* Telefono: mese e impostazioni si aprono sopra la barra, che resta visibile (vedi apriFoglio in app.js) */
+:root { --barra-h: calc(61px + env(safe-area-inset-bottom)); }
+dialog.sopra-barra { position: fixed; inset: auto 0 var(--barra-h) 0; margin: 0; z-index: 4; width: 100%; max-width: 100%;
+  max-height: calc(100dvh - var(--barra-h) - 24px); border-radius: 22px 22px 0 0; box-shadow: 0 -8px 28px rgb(0 0 0 / 0.18); }
+dialog.sopra-barra.foglio-mese, dialog.sopra-barra .pannello-dentro { padding-bottom: 16px; }
+.velo { position: fixed; inset: 0; z-index: 3; background: rgb(0 0 0 / 0.35); }
+body:has(dialog.sopra-barra[open]) { overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  .velo:not([hidden]) { animation: appare 0.22s ease-out; }
+  dialog.sopra-barra[open] { animation: sale 0.22s ease-out; }
+}
 /* la barra non copre il piede, né l'elemento che riceve il focus con Tab */
 .pagina { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
 html { scroll-padding-bottom: calc(72px + env(safe-area-inset-bottom)); }

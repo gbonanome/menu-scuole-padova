@@ -662,10 +662,12 @@ function apriMese() {
     return;
   }
   if (MEDIO.matches) return popAperto() ? chiudiPopMese() : apriPopMese();
+  // Secondo tocco su "Mese" nella barra: chiude il foglio
+  if ($('#mese-foglio').open) return $('#mese-foglio').close();
   stato.mese = meseDaMostrare(stato.mese, stato.lunedi, oggi());
   $('#mese-foglio-corpo').append(quadroMese);
   mostraMese();
-  if (!$('#mese-foglio').open) $('#mese-foglio').showModal();
+  apriFoglio($('#mese-foglio'));
   giornoAttivo(quadroMese)?.focus();
 }
 
@@ -786,10 +788,58 @@ const movimento = () => (matchMedia('(prefers-reduced-motion: reduce)').matches 
 
 /** Torna alla settimana corrente e porta in vista il vassoio di oggi (o la settimana, se il vassoio non c'è). */
 function tornaAOggi() {
+  chiudiFogli();
   if (!stato.lunedi) return;
   sposta(0);
   const meta = [$('#oggi-box'), $('#oggi-riga'), $('#settimana')].find((e) => !e.hidden);
   meta?.scrollIntoView({ behavior: movimento(), block: 'start' });
+}
+
+// ---------- fogli sopra la barra (sotto i 700px) ----------
+// Sul telefono mese e impostazioni si aprono sopra la barra in basso, che resta visibile e usabile per
+// passare dall'uno all'altro o tornare a Oggi. Per questo il <dialog> non è modale: un velo copre la pagina
+// e la pagina diventa inerte, la barra no. Da 700px la barra non c'è e i pannelli restano modali.
+const TELEFONO = matchMedia('(max-width: 699.98px)');
+const fogli = () => [$('#mese-foglio'), $('#impostazioni')];
+
+function apriFoglio(d) {
+  if (!TELEFONO.matches) {
+    if (!d.open) d.showModal();
+    return;
+  }
+  for (const altro of fogli()) if (altro !== d && altro.open) altro.close();
+  d.classList.add('sopra-barra');
+  if (!d.open) d.show();
+  aggiornaVelo();
+}
+
+function chiudiFogli() {
+  for (const d of fogli()) if (d.open) d.close();
+}
+
+function aggiornaVelo() {
+  const aperto = fogli().some((d) => d.open && d.classList.contains('sopra-barra'));
+  $('#velo').hidden = !aperto;
+  for (const figlio of $('.pagina').children) if (figlio.tagName !== 'DIALOG') figlio.inert = aperto;
+  $('#barra-mese').setAttribute('aria-expanded', String($('#mese-foglio').open));
+}
+
+function preparaFogli() {
+  for (const d of fogli()) {
+    d.addEventListener('close', () => {
+      d.classList.remove('sopra-barra');
+      aggiornaVelo();
+    });
+  }
+  $('#velo').addEventListener('click', chiudiFogli);
+  // Un <dialog> non modale non si chiude da solo con Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !$('#velo').hidden) {
+      e.preventDefault();
+      chiudiFogli();
+    }
+  });
+  TELEFONO.addEventListener('change', chiudiFogli);
 }
 
 // ---------- pannello impostazioni ----------
@@ -823,7 +873,7 @@ function apriImpostazioni(sezione) {
   const d = $('#impostazioni');
   apertoDa = document.activeElement;
   mostraPannello();
-  if (!d.open) d.showModal();
+  apriFoglio(d);
   for (const b of document.querySelectorAll('[aria-controls="impostazioni"][aria-expanded]')) b.setAttribute('aria-expanded', 'true');
   if (sezione) {
     sezione.scrollIntoView({ block: 'start' });
@@ -833,7 +883,9 @@ function apriImpostazioni(sezione) {
 
 function preparaImpostazioni() {
   const d = $('#impostazioni');
-  for (const b of ['#apri-impostazioni', '#barra-impostazioni']) $(b).addEventListener('click', () => apriImpostazioni());
+  $('#apri-impostazioni').addEventListener('click', () => apriImpostazioni());
+  // Nella barra la voce fa da interruttore: un secondo tocco chiude il pannello
+  $('#barra-impostazioni').addEventListener('click', () => (d.open ? d.close() : apriImpostazioni()));
   $('#istruzioni').addEventListener('click', () => apriImpostazioni($('#titolo-calendario')));
   $('#chiudi-impostazioni').addEventListener('click', () => d.close());
   // Il dialog non ha margini interni: un clic che ha come bersaglio il dialog stesso è sullo sfondo.
@@ -842,7 +894,8 @@ function preparaImpostazioni() {
     if (d.open) return; // già riaperto
     for (const b of document.querySelectorAll('[aria-controls="impostazioni"][aria-expanded]')) b.setAttribute('aria-expanded', 'false');
     $('#copiato').textContent = '';
-    if (apertoDa?.isConnected && !apertoDa.closest('[hidden]')) apertoDa.focus();
+    // Se si è passati al mese dalla barra il focus resta lì
+    if (!$('#mese-foglio').open && apertoDa?.isConnected && !apertoDa.closest('[hidden]')) apertoDa.focus();
     apertoDa = null;
   });
   for (const b of document.querySelectorAll('[data-lingua]')) b.addEventListener('click', () => cambiaLingua(b.dataset.lingua));
@@ -936,6 +989,7 @@ async function avvia() {
   applicaTesti();
   mostraProva();
   preparaImpostazioni();
+  preparaFogli();
   mostraPannello();
   try {
     const [indice, scuole] = await dati;
