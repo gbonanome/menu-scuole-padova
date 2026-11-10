@@ -58,3 +58,43 @@ Le traduzioni in `piatti-<lingua>.json` non sono state riviste da madrelingua. Q
 - "Fette biscottate" → "رس" (rusk); "basilico" → "نیازبو"; "zucchine" → "زوکینی".
 - "Crema di …" → "گاڑھا سوپ"; "uova strapazzate" → "انڈا بھرجی".
 - Traslitterazione dei formati di pasta da verificare.
+
+## Interfaccia (`public/lingue/<lingua>.json`)
+
+Anche i testi della pagina non sono stati rivisti da madrelingua.
+
+### Tutte le lingue
+
+- **Pulsanti di sistema** (iOS, Android/Chrome, Google Calendar, Outlook web): dove il nome tradotto non è sicuro c'è il nome inglese tra parentesi, es. "… (Subscribe)". Il percorso delle Impostazioni di iOS è tradotto e ripetuto in inglese tra parentesi (tranne in cinese). Molti genitori avranno comunque il telefono in italiano: si potrebbe aggiungere anche il nome italiano.
+- **Tradotti senza inglese** perché ragionevolmente sicuri: cinese "订阅", "共享", "添加到主屏幕", "添加", percorso iOS "设置 → 日历 → 账户 → 添加账户 → 其他 → 添加已订阅的日历"; arabo "مشاركة", "إضافة إلى الشاشة الرئيسية", "إضافة".
+- **"Nido"** è reso come servizio 0–3 anni: ro "creșă", zh "托儿所", bn "ডে-কেয়ার", sq "çerdhe", ar "حضانة", ur "ڈے کیئر". In bengalese e urdu si evita "nursery/নার্সারি/نرسری", che nel paese d'origine è una classe della scuola (3–4 anni). "Nido integrato" è reso alla lettera ("integrata", "مربوط"…), in arabo "حضانة ملحقة بروضة" (annesso alla scuola dell'infanzia): da verificare.
+- **"Secondaria"** è la secondaria di primo grado: ro "gimnaziu", zh "初中", bn "নিম্ন মাধ্যমিক", sq "e mesme e ulët", ar "إعدادي", ur "مڈل".
+- **"Veicolato"** reso come "pasti portati da una cucina centrale"; nelle forme brevi solo "portati".
+
+### Rumeno (ro)
+
+- Forma di cortesia con il plurale ("Căutați", "Alegeți", "dumneavoastră") in tutta la pagina.
+- "Comune di Padova" → "Primăria Padova".
+
+### Cinese (zh)
+
+- Google Calendar "其他日历" e "通过网址添加" non verificati (hanno l'inglese accanto). "移除提醒" (Remove Alerts) non verificato.
+- La barra in basso usa "月历" per *Mese*.
+
+### Bengalese (bn)
+
+- Cifre bengalesi nei testi fissi (২টি, ৭:০০, ২৪), come fa Intl per le date; ma i numeri di "settimana 3 di 4" arrivano dal codice e restano in cifre latine.
+- iOS non è sicuro che esista in bengalese: nomi dei pulsanti tutti con l'inglese.
+
+### Albanese (sq)
+
+- iOS non ha l'albanese: nomi dei pulsanti tradotti per orientarsi, con l'inglese.
+- Nel Chrome di prova (headless, macOS) le date in albanese escono in italiano ("martedì 10 novembre"): Intl non ha i dati `sq` e ripiega. Non dipende dalle traduzioni.
+
+### Arabo (ar) e urdu (ur)
+
+- **Frecce →** nei percorsi (Impostazioni → Calendario …): conservate come richiesto, ma in una frase da destra a sinistra puntano al contrario del verso di lettura. Valutare "←" per arabo e urdu.
+- I nomi inglesi tra parentesi dentro il testo arabo/urdu si leggono, ma l'ordine visivo di parentesi e frecce può confondere: è il punto più delicato da far rivedere.
+- "In alto a destra" per il menu ⋮ di Chrome è diventato "in alto": con il telefono in arabo o urdu il menu sta a sinistra.
+- Arabo standard; "Comune di Padova" → "بلدية بادوفا", "secondaria" → "إعدادي" (uso marocchino ed egiziano).
+- Urdu: numeri in cifre latine, come nei siti pakistani. Nel Chrome di prova si vede in naskh (nessun font nastaliq installato): leggibile ma meno naturale.

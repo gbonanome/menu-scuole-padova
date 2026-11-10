@@ -1,7 +1,7 @@
 // Traduzioni della pagina: l'italiano deve restare identico a prima, le chiavi devono tornare.
 import { test, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
@@ -38,7 +38,7 @@ const APP = leggi('public/app.js');
 const I18N = leggi('public/i18n.js');
 const MESE = leggi('public/mese.js');
 const HTML = leggi('public/index.html');
-const EN = JSON.parse(leggi('public/lingue/en.json'));
+const FILE_LINGUE = readdirSync(path.join(RADICE, 'public/lingue')).filter((f) => f.endsWith('.json')).sort();
 
 afterEach(() => impostaLingua('it'));
 
@@ -151,18 +151,27 @@ function chiaviDati() {
   return k;
 }
 
-test('en.json: completo, nessuna chiave sconosciuta, stessi segnaposto ed elementi', () => {
-  const dati = chiaviDati();
-  for (const [k, v] of Object.entries(EN)) {
-    assert.equal(typeof v, 'string', k);
-    assert.ok(k in IT || dati.has(k), `chiave sconosciuta in en.json: ${k}`);
-    if (!(k in IT)) continue;
-    const segnaposto = (s) => [...s.matchAll(/\{\d+\}/g)].map((x) => x[0]).sort().join();
-    assert.equal(segnaposto(v), segnaposto(IT[k]), `${k}: segnaposto diversi`);
-    assert.equal(tag(v), tag(IT[k]), `${k}: elementi <em>/<a> diversi`);
-  }
-  for (const k of Object.keys(IT)) assert.ok(k in EN, `manca in en.json: ${k}`);
+test('ogni lingua di LINGUE ha il suo file, e ogni file è una lingua di LINGUE', () => {
+  assert.deepEqual(FILE_LINGUE, LINGUE.filter((c) => c !== 'it').map((c) => `${c}.json`).sort());
 });
+
+for (const file of FILE_LINGUE) {
+  test(`${file}: completo, nessuna chiave sconosciuta o vuota, stessi segnaposto ed elementi`, () => {
+    const testi = JSON.parse(leggi(`public/lingue/${file}`));
+    const dati = chiaviDati();
+    const segnaposto = (s) => [...s.matchAll(/\{\d+\}/g)].map((x) => x[0]).sort().join();
+    for (const [k, v] of Object.entries(testi)) {
+      assert.equal(typeof v, 'string', k);
+      assert.ok(v.trim() !== '', `${file}: testo vuoto per ${k}`);
+      assert.ok(k in IT || dati.has(k), `chiave sconosciuta in ${file}: ${k}`);
+      if (!(k in IT)) continue;
+      assert.equal(segnaposto(v), segnaposto(IT[k]), `${file} ${k}: segnaposto diversi`);
+      assert.equal(tag(v), tag(IT[k]), `${file} ${k}: elementi <em>/<a> diversi`);
+    }
+    const mancanti = Object.keys(IT).filter((k) => !(k in testi));
+    assert.deepEqual(mancanti, [], `${file}: chiavi mancanti`);
+  });
+}
 
 test('lingua scelta: testi, piatti e dati con ritorno all\'italiano', () => {
   impostaLingua('en', { oppure: 'or', ciclo: '{0} · week {1} of {2}', 'stagione.autunnale': 'Autumn menu', 'dati.ordine.primaria': 'primary' }, { 'Pane': 'Bread' });
