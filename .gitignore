@@ -6,3 +6,6 @@ dist/
 
 # Materiale promozionale locale (non pubblicato)
 promo/
+
+# worktree locali di Claude Code
+.claude/worktrees/

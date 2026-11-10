@@ -1,4 +1,5 @@
-// Build completa in dist/: feed .ics, JSON per la pagina (indice feed, indice scuole, giorni per feed) e file statici.
+// Build completa in dist/: feed .ics, JSON per la pagina (indice feed, indice scuole, giorni per feed,
+// nomi dei piatti tradotti) e file statici.
 // Uso: node src/build-site.js [--ora 2026-11-08T12:00:00Z] [--out dist] [--anno 2026-27]
 import { createHash } from 'node:crypto';
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
@@ -9,6 +10,7 @@ import { caricaMenus } from './lib/applica.js';
 import { annoScolasticoDi } from './lib/dates.js';
 import { FEED_INFO, FONTE, costruisciModello } from './model.js';
 import { BASE_URL, costruisciIcs } from './build-ics.js';
+import { DIR_TRADUZIONI, LINGUE, caricaTraduzioni, piattiDeiFeed, vociUsate } from './piatti.js';
 
 const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -17,10 +19,26 @@ const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
  * e Safari (soprattutto dalla schermata Home) altrimenti abbina la pagina nuova al foglio di stile vecchio.
  */
 async function versionaRisorse(out) {
+  const impronta = async (nome) => createHash('sha256').update(await readFile(path.join(out, nome))).digest('hex').slice(0, 10);
+  // Lo stesso per i moduli importati da app.js: prima si cambia chi importa, poi se ne calcola l'impronta.
+  // mese.js importa anche lui i18n.js, con la stessa impronta: un indirizzo diverso darebbe un secondo
+  // modulo i18n.js, con la sua lingua.
+  const versiona = async (chi, moduli) => {
+    const file = path.join(out, chi);
+    let js = await readFile(file, 'utf8');
+    for (const m of moduli) {
+      const importa = `from './${m}'`;
+      if (!js.includes(importa)) throw new Error(`${chi}: manca ${importa}`);
+      js = js.replace(importa, `from './${m}?v=${await impronta(m)}'`);
+    }
+    await writeFile(file, js);
+  };
+  await versiona('mese.js', ['i18n.js']);
+  await versiona('app.js', ['i18n.js', 'mese.js']);
   const file = path.join(out, 'index.html');
   let html = await readFile(file, 'utf8');
   for (const [attr, nome] of [['href', 'style.css'], ['src', 'app.js'], ['href', 'manifest.webmanifest']]) {
-    const v = createHash('sha256').update(await readFile(path.join(out, nome))).digest('hex').slice(0, 10);
+    const v = await impronta(nome);
     const prima = `${attr}="${nome}"`;
     if (!html.includes(prima)) throw new Error(`index.html: manca ${prima}`);
     html = html.replace(prima, `${attr}="${nome}?v=${v}"`);
@@ -44,7 +62,7 @@ const scrivi = async (p, s) => {
 };
 const ordina = (o) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
 
-export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), pubblico = path.join(RADICE, 'public') }) {
+export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), pubblico = path.join(RADICE, 'public'), traduzioni = DIR_TRADUZIONI }) {
   const cal = caricaCalendario(anno, dati);
   const menus = await caricaMenus(path.join(dati, 'menus'), anno);
   const variazioni = await leggiJson(path.join(dati, 'variations.json'), []);
@@ -83,6 +101,12 @@ export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), 
     ...(s.avviso ? { avviso: s.avviso } : {})
   }));
   await scrivi(path.join(out, 'data', 'scuole.json'), `${JSON.stringify(indiceScuole, null, 2)}\n`);
+  // Nomi dei piatti tradotti: solo quelli usati nei feed. Un piatto senza traduzione resta in italiano.
+  const piatti = piattiDeiFeed(feeds.values());
+  const dizionari = await caricaTraduzioni(traduzioni);
+  for (const codice of LINGUE) {
+    await scrivi(path.join(out, 'data', `piatti-${codice}.json`), `${JSON.stringify(vociUsate(piatti, dizionari[codice]))}\n`);
+  }
   await writeFile(path.join(out, '.nojekyll'), '');
 
   await scrivi(statoIcsPath, `${JSON.stringify(ordina(statoIcs), null, 1)}\n`);

@@ -47,6 +47,8 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; }
+/* viewport-fit=cover: in orizzontale su iPhone il contenuto non finisce sotto la tacca (le safe area sono fisiche) */
+body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
 body { background: var(--b-bg); color: var(--b-ink); font: 400 15px/1.45 var(--f-body); -webkit-text-size-adjust: 100%; }
 a { color: inherit; text-underline-offset: 2px; }
 button, input, select { font: inherit; color: inherit; }
@@ -57,8 +59,8 @@ html, body { overflow-wrap: break-word; }
 button { cursor: pointer; }
 :focus-visible { outline: 3px solid var(--b-focus); outline-offset: 2px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.salta { position: absolute; left: -999px; }
-.salta:focus { left: 12px; top: 12px; z-index: 10; background: var(--b-surface); padding: 8px 12px; border-radius: 10px; }
+.salta { position: absolute; inset-inline-start: -999px; }
+.salta:focus { inset-inline-start: 12px; top: 12px; z-index: 10; background: var(--b-surface); padding: 8px 12px; border-radius: 10px; }
 [hidden] { display: none !important; }
 
 .pagina { max-width: 1120px; margin: 0 auto; padding-bottom: 8px; }
@@ -67,11 +69,10 @@ button { cursor: pointer; }
 .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 14px 18px 0; }
 .brand { display: flex; align-items: center; gap: 9px; font: 800 1.12rem var(--f-display); letter-spacing: -0.01em; margin: 0; }
 .brand img { flex: none; border-radius: 8px; }
-.info { flex: none; display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--b-muted); color: var(--b-muted); font-weight: 800; font-size: 0.9rem; text-decoration: none; align-self: center; }
-.top { position: relative; }
-.info[aria-expanded="true"] { background: var(--b-ink); border-color: var(--b-ink); color: var(--b-bg); }
-.info-pop { position: absolute; top: calc(100% + 8px); right: 18px; z-index: 5; width: min(360px, calc(100vw - 36px)); background: var(--b-surface); color: var(--b-ink); padding: 12px 14px; border-radius: 14px; box-shadow: 0 6px 24px rgb(0 0 0 / 0.16); font-size: 0.85rem; }
-.info-pop p { margin: 0; }
+.icona { flex: none; display: block; }
+/* Impostazioni in testata: solo da 700px (sotto c'è la barra in basso) */
+.apri-impostazioni { display: none; align-items: center; gap: 6px; min-height: 40px; padding: 7px 14px; border: 1.5px solid var(--b-tray); border-radius: 999px; background: transparent; color: var(--b-ink); font-weight: 700; font-size: 0.85rem; }
+.apri-impostazioni:hover, .apri-impostazioni[aria-expanded="true"] { background: var(--b-tray); }
 .foot:focus { outline: none; }
 
 .prova { margin: 10px 12px 0; padding: 8px 12px; border-radius: 12px; background: var(--b-today); color: #18241b; font-size: 0.85rem; font-weight: 600; }
@@ -85,7 +86,7 @@ button { cursor: pointer; }
 .switcher { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 12px 0; }
 .chip { min-height: 40px; max-width: 100%; padding: 8px 12px; border: 0; border-radius: 999px; background: var(--b-surface); color: var(--b-ink); font-weight: 700; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chip[aria-pressed="true"] { background: var(--b-ink); color: var(--b-bg); }
-.chip .matita { display: inline-block; margin-left: 5px; vertical-align: -1px; opacity: 0.85; }
+.chip .matita { display: inline-block; margin-inline-start: 5px; vertical-align: -1px; opacity: 0.85; }
 .chip.aggiungi { background: transparent; border: 1.5px dashed var(--b-muted); color: var(--b-muted); }
 
 /* ---- scuola scelta ---- */
@@ -99,7 +100,7 @@ button { cursor: pointer; }
 .school-note { margin: 12px 12px 0; display: grid; gap: 6px; font-size: 0.85rem; }
 .school-note:empty { display: none; }
 .school-note p { margin: 0; }
-.school-note .avviso { background: var(--b-alert-bg); border-left: 4px solid var(--b-alert); padding: 6px 10px; border-radius: 8px; }
+.school-note .avviso { background: var(--b-alert-bg); border-inline-start: 4px solid var(--b-alert); padding: 6px 10px; border-radius: 8px; }
 
 /* ---- ricerca ---- */
 .picker { background: var(--b-surface); margin: 12px 12px 0; padding: 16px 14px; border-radius: 18px; }
@@ -111,7 +112,7 @@ button { cursor: pointer; }
 .picker input:focus, .picker select:focus { border-color: var(--b-focus); outline: none; }
 .aiuto { margin: 4px 0 0; font-size: 0.8rem; color: var(--b-muted); }
 .risultati { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
-.risultati button { width: 100%; text-align: left; background: var(--b-well); border: 0; border-radius: 12px; padding: 10px 12px; display: grid; gap: 2px; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06); }
+.risultati button { width: 100%; text-align: start; background: var(--b-well); border: 0; border-radius: 12px; padding: 10px 12px; display: grid; gap: 2px; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06); }
 .risultati button:hover { background: var(--b-tray); }
 .risultati .nome { font-weight: 700; }
 .risultati .dettaglio { font-size: 0.82rem; color: var(--b-muted); }
@@ -129,6 +130,7 @@ button { cursor: pointer; }
 .tray li.oppure { grid-column: 1 / -1; min-height: 0; padding: 2px 12px; background: none; box-shadow: none; font-style: italic; color: var(--b-muted); }
 .tray .dish { font-weight: 500; }
 .today .vbox { margin: 0 0 10px; }
+.today .solo-largo { display: none; }
 .today .oggi-nota { margin: 0 0 10px; font-weight: 700; }
 .oggi-riga { margin: 16px 12px 0; padding: 10px 14px; border-radius: 14px; background: var(--b-surface); font-weight: 700; text-align: center; }
 
@@ -137,6 +139,56 @@ button { cursor: pointer; }
 .nav { display: flex; align-items: center; gap: 6px; margin: 20px 12px 10px; }
 .nav .range { flex: 1; text-align: center; font: 800 1.05rem var(--f-display); margin: 0; }
 .nav .arrow { width: 42px; height: 42px; border-radius: 12px; border: 0; background: var(--b-surface); color: var(--b-ink); font-size: 1.1rem; font-weight: 700; }
+/* da destra a sinistra la settimana precedente sta a destra: ‹ › si girano */
+[dir="rtl"] .nav .arrow { transform: scaleX(-1); }
+
+/* ---- titolo della settimana come pulsante (700–899px) ---- */
+.nav { position: relative; }
+.apri-mese { font: inherit; background: none; border: 0; padding: 6px 10px; border-radius: 10px; display: inline-flex; align-items: center; gap: 6px; }
+.apri-mese:hover, .apri-mese[aria-expanded="true"] { background: var(--b-surface); }
+.apri-mese .freccina { font-size: 0.8em; color: var(--b-muted); transition: transform 0.15s; }
+.apri-mese[aria-expanded="true"] .freccina { transform: rotate(180deg); }
+
+/* ---- mini mese: lo stesso componente nei tre contenitori ---- */
+.mini-mese { display: grid; gap: 8px; }
+.mm-testa { display: flex; align-items: center; gap: 6px; }
+.mm-titolo { flex: 1; margin: 0; text-align: center; font: 800 1.05rem var(--f-display); }
+.mm-freccia { width: 36px; height: 36px; border-radius: 10px; border: 0; background: var(--b-well); color: var(--b-ink); font-size: 1.05rem; font-weight: 700; }
+.mm-freccia:disabled { opacity: 0.35; cursor: default; }
+[dir="rtl"] .mm-freccia { transform: scaleX(-1); }
+.mm-griglia { width: 100%; border-collapse: separate; border-spacing: 0 3px; table-layout: fixed; }
+.mm-griglia th { font: 700 0.68rem var(--f-body); text-transform: uppercase; letter-spacing: 0.06em; color: var(--b-muted); padding: 0 0 2px; }
+.mm-griglia td { padding: 2px; text-align: center; }
+/* la settimana mostrata è una fascia, come un vassoio */
+.mm-griglia tr.mostrata td { background: var(--b-tray); }
+.mm-griglia tr.mostrata td:first-child { border-start-start-radius: 12px; border-end-start-radius: 12px; }
+.mm-griglia tr.mostrata td:last-child { border-start-end-radius: 12px; border-end-end-radius: 12px; }
+.mm-giorno { position: relative; width: 100%; max-width: 46px; aspect-ratio: 1; margin: 0 auto; border: 0; border-radius: 10px; background: var(--b-well); color: var(--b-ink);
+  display: inline-grid; grid-template-rows: 1fr auto; justify-items: center; align-content: center; gap: 2px; padding: 4px 0 6px; font: 700 0.9rem/1 var(--f-body); }
+.mm-giorno:hover { box-shadow: inset 0 0 0 2px var(--b-muted); }
+.mm-segno { width: 6px; height: 6px; border-radius: 50%; }
+.mm-menu .mm-segno { background: var(--b-muted); }
+.mm-variato .mm-segno { background: var(--b-alert); width: 8px; height: 8px; margin-block: -1px; }
+.mm-non-pubblicato .mm-segno { border: 1.5px solid var(--b-muted); }
+.mm-chiuso { background: var(--b-closed); border: 1.5px dashed var(--b-tray); color: var(--b-muted); font-weight: 500; }
+.mm-vuoto { background: none; color: var(--b-muted); font-weight: 500; }
+.mm-oggi { background: var(--b-today); color: #18241b; }
+.mm-oggi.mm-menu .mm-segno { background: #18241b; }
+.mm-legenda { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.75rem; color: var(--b-muted); }
+.mm-legenda li { display: flex; align-items: center; gap: 5px; }
+.mm-legenda .mm-giorno { width: 16px; height: 16px; aspect-ratio: auto; padding: 0; border-radius: 5px; display: inline-grid; place-items: center; grid-template-rows: none; }
+.mm-legenda .mm-chiuso { border-width: 1px; }
+
+/* 700–899px: riquadro sotto la navigazione */
+.mese-pop { position: absolute; top: calc(100% + 6px); inset-inline: 0; margin-inline: auto; z-index: 5; width: min(340px, 100%);
+  background: var(--b-surface); padding: 12px; border-radius: 18px; box-shadow: 0 6px 24px rgb(0 0 0 / 0.18); }
+/* sotto i 700px: foglio dal basso */
+.foglio-mese { margin: auto 0 0; width: 100%; max-width: 100%; max-height: 90dvh; border: 0; border-radius: 22px 22px 0 0; padding: 12px 14px calc(16px + env(safe-area-inset-bottom));
+  background: var(--b-surface); color: var(--b-ink); }
+.foglio-mese::backdrop { background: rgb(0 0 0 / 0.35); }
+.foglio-mese .chiudi { display: block; margin-inline-start: auto; width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--b-well); color: var(--b-ink); font-size: 1.3rem; line-height: 1; }
+.foglio-mese .mini-mese { max-width: 420px; margin-inline: auto; }
+.foglio-mese .mm-giorno { max-width: 52px; }
 
 /* ---- giorni ---- */
 .days { display: grid; gap: 8px; padding: 0 12px; }
@@ -149,9 +201,10 @@ button { cursor: pointer; }
 .day li.principale { font-weight: 700; }
 .day li.oppure { font-style: italic; color: var(--b-muted); font-weight: 400; }
 .day.is-today { box-shadow: inset 0 0 0 3px var(--b-today); }
-.day.varied { background: var(--b-alert-bg); }
+/* Giorni con variazione: niente sfondo rosso, bastano il riquadro e il bollino "variato". Nella card bianca il riquadro prende il fondo "pozzetto" per staccarsi. */
+.day .vbox { background: var(--b-well); }
 .day li.changed::after, .tray li.changed .dish::after {
-  content: "variato"; margin-left: 6px; font: 800 0.68rem var(--f-body); letter-spacing: 0.05em; text-transform: uppercase;
+  content: var(--t-variato, "variato"); margin-inline-start: 6px; font: 800 0.68rem var(--f-body); letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--b-surface); background: var(--b-alert); padding: 1px 6px; border-radius: 999px; vertical-align: 1px; white-space: nowrap;
 }
 .day.closed, .day.empty { background: var(--b-closed); border: 1.5px dashed var(--b-tray); }
@@ -160,7 +213,7 @@ button { cursor: pointer; }
 .season { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--b-muted); padding: 6px 2px 0; }
 
 /* ---- riquadro variazione ---- */
-.vbox { margin: 2px 0 6px; padding: 8px 10px; border-radius: 10px; background: var(--b-surface); border-left: 4px solid var(--b-alert); display: grid; gap: 2px; }
+.vbox { margin: 2px 0 6px; padding: 8px 10px; border-radius: 10px; background: var(--b-surface); border-inline-start: 4px solid var(--b-alert); display: grid; gap: 2px; }
 .vbox .vt { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--b-alert); }
 .vbox .vnew { font-weight: 700; }
 .vbox .vold { font-size: 0.85rem; color: var(--b-muted); }
@@ -172,34 +225,123 @@ button { cursor: pointer; }
 /* ---- calendario ---- */
 .cal { margin: 22px 12px 0; display: grid; gap: 6px; }
 .cal .primary { display: block; text-align: center; text-decoration: none; background: var(--b-ink); color: var(--b-bg); border-radius: 14px; padding: 14px; font: 800 1rem var(--f-display); }
-.cal-altro { background: var(--b-surface); border-radius: 14px; padding: 4px 12px; margin-top: 8px; }
-.cal-altro summary { cursor: pointer; font-weight: 700; min-height: 40px; display: flex; align-items: center; }
-.cal-altro label { display: block; font-weight: 700; font-size: 0.85rem; margin-top: 4px; }
-.cal-altro h3 { font: 800 0.95rem var(--f-display); margin: 14px 0 2px; }
-.cal-altro p { margin: 0 0 6px; font-size: 0.9rem; }
+.cal .condividi { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; border: 0; border-radius: 14px; background: var(--b-surface); color: var(--b-ink); font-weight: 700; }
+.cal .condividi:hover { background: var(--b-tray); }
+.cal .stato-breve { text-align: center; margin: 0; }
+.cal .stato-breve:empty { display: none; }
+.cal .come { margin: 2px 0 0; text-align: center; font-size: 0.82rem; }
+.link { background: none; border: 0; padding: 6px 2px; color: var(--b-muted); text-decoration: underline; text-underline-offset: 2px; font-size: inherit; }
 .riga-copia { display: flex; gap: 6px; margin-top: 4px; }
 .riga-copia input { flex: 1; min-width: 0; min-height: 40px; padding: 6px 10px; border-radius: 10px; border: 2px solid var(--b-tray); background: var(--b-well); }
+
+/* ---- barra in basso (sotto i 700px) ---- */
+.barra { position: fixed; inset-inline: 0; bottom: 0; z-index: 5; display: flex; justify-content: space-around; background: var(--b-surface); border-top: 1px solid var(--b-tray);
+  padding: 4px max(8px, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(8px, env(safe-area-inset-left)); }
+.barra button { flex: 1 1 0; max-width: 140px; min-height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  border: 0; border-radius: 12px; background: none; color: var(--b-muted); font-size: 0.72rem; font-weight: 700; }
+.barra button:active, .barra button[aria-expanded="true"] { color: var(--b-ink); }
+.barra button[aria-expanded="true"] .icona, .barra button[aria-pressed="true"] .icona { color: var(--b-ink); }
+/* la barra non copre il piede, né l'elemento che riceve il focus con Tab */
+.pagina { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+html { scroll-padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+/* "Oggi" nella barra porta qui: un po' d'aria sopra */
+#oggi-box, #oggi-riga, #settimana { scroll-margin-top: 12px; }
+/* sotto i 700px "Oggi" sta nella barra, non accanto alle frecce */
+.nav #oggi { display: none; }
+
+/* ---- pannello impostazioni ---- */
+/* Telefono: foglio dal basso. Il dialog non ha margini interni (vedi il clic sullo sfondo in app.js). */
+.pannello { padding: 0; border: 0; background: var(--b-bg); color: var(--b-ink); width: 100%; max-width: 100%; max-height: min(88dvh, 100%);
+  margin: auto 0 0; border-radius: 22px 22px 0 0; box-shadow: 0 -8px 32px rgb(0 0 0 / 0.2); }
+.pannello[open] { display: flex; }
+.pannello::backdrop { background: rgb(0 0 0 / 0.4); }
+body:has(.pannello[open]) { overflow: hidden; }
+.pannello-dentro { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 12px calc(16px + env(safe-area-inset-bottom));
+  padding-inline: max(12px, env(safe-area-inset-left)) max(12px, env(safe-area-inset-right)); }
+.pannello-testa { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 16px 4px 10px; background: var(--b-bg); }
+.pannello-testa h2 { font: 800 1.45rem/1.1 var(--f-display); letter-spacing: -0.02em; margin: 0; }
+.sez { background: var(--b-surface); border-radius: 14px; padding: 12px 14px; margin-top: 10px; }
+.sez h3 { font: 800 1.05rem/1.2 var(--f-display); margin: 0 0 8px; scroll-margin-top: 70px; }
+.sez h3:focus { outline: none; }
+.sez h4 { font: 800 0.95rem var(--f-display); margin: 14px 0 2px; }
+.sez p { margin: 0 0 6px; font-size: 0.9rem; }
+.sez label { display: block; font-weight: 700; font-size: 0.85rem; }
+.sez #copiato:empty { display: none; }
+.lingue { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.lingue button { min-height: 44px; padding: 8px 12px; border: 0; border-radius: 999px; background: var(--b-well); color: var(--b-ink); font-weight: 700; font-size: 0.95rem; text-align: center; box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06); }
+.lingue button:hover { background: var(--b-tray); }
+.lingue button[aria-pressed="true"] { background: var(--b-ink); color: var(--b-bg); box-shadow: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .pannello[open] { animation: sale 0.22s ease-out; }
+  .pannello[open]::backdrop { animation: appare 0.22s ease-out; }
+}
+@keyframes sale { from { transform: translateY(40px); opacity: 0; } }
+@keyframes entra { from { transform: translateX(40px); opacity: 0; } }
+@keyframes entra-rtl { from { transform: translateX(-40px); opacity: 0; } }
+@keyframes appare { from { opacity: 0; } }
 
 /* ---- piede ---- */
 .foot { margin: 32px 12px 0; padding: 18px 6px 24px; border-top: 1px solid var(--b-tray); font-size: 0.75rem; color: var(--b-muted); }
 .foot p { margin: 0 0 6px; }
 
-/* ---- schermi larghi: settimana su 5 colonne, "oggi" già evidenziato nella griglia ---- */
-@media (max-width: 699.98px) {
-  .oggi-riga.solo-largo { display: none; }
-}
+/* ---- schermi larghi: vassoio di oggi in orizzontale, settimana su 5 colonne ---- */
 @media (min-width: 700px) {
-  .today { display: none; }
+  /* niente barra: Impostazioni torna in testata, Oggi accanto alle frecce */
+  .barra { display: none; }
+  .pagina { padding-bottom: 8px; }
+  html { scroll-padding-bottom: 0; }
+  .nav #oggi { display: inline-block; }
+  .apri-impostazioni { display: inline-flex; }
+  /* pannello laterale sul lato di fine riga (a sinistra in arabo e urdu) */
+  .pannello { margin-block: 0; margin-inline: auto 0; width: min(440px, 100%); height: 100%; max-height: 100%; border-radius: 0; border-start-start-radius: 22px; border-end-start-radius: 22px; box-shadow: -8px 0 32px rgb(0 0 0 / 0.2); }
+  .pannello-dentro { padding: 0 18px 24px; }
+  /* Vassoio: a sinistra il giorno (con nota, meta e variazioni), a destra gli scomparti.
+     L'ultima riga (1fr) assorbe l'altezza degli scomparti, così il testo a sinistra resta compatto in alto. */
+  /* Le righe: nota (se c'è), data, meta, uno spazio che assorbe l'altezza degli scomparti, poi le variazioni a tutta larghezza. */
+  .today { display: grid; grid-template-columns: minmax(11rem, 1fr) minmax(0, 2.4fr); grid-template-rows: auto auto auto 1fr auto; column-gap: 18px; padding: 18px; }
+  .today > * { grid-column: 1; }
+  .today > .tray { grid-column: 2; grid-row: 1 / 5; align-self: start; }
+  .today > .vboxes { grid-column: 1 / -1; grid-row: 5; display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 10px; margin-block-start: 14px; }
+  .today .vboxes .vbox { margin: 0; }
+  .today .solo-largo { display: inline; }
+  .today .meta { margin-block-end: 12px; }
+  /* Scomparti: il piatto principale grande su due righe, gli altri accanto su due colonne */
+  .tray:not(:has(> .oppure)) { grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr)); }
+  .tray:not(:has(> .oppure)) > li.principale { grid-column: auto; grid-row: span 2; min-height: 140px; padding: 14px 16px; }
+  .tray:not(:has(> .oppure)) > li.principale .dish { font-size: 1.45rem; }
+  /* numero pari di scomparti con il principale in testa: l'ultimo (di solito il pane) chiude la riga */
+  .tray:not(:has(> .oppure)):has(> li.principale:first-child) > li:last-child:nth-child(even) { grid-column: span 2; }
   .oggi-riga { max-width: 640px; margin-inline: auto; }
   .days { grid-template-columns: repeat(5, 1fr); align-items: stretch; }
   .day { grid-template-columns: 1fr; }
   .day > :not(.dname) { grid-column: 1; }
-  .day .dname { grid-row: auto; justify-items: start; text-align: left; display: flex; gap: 8px; align-items: baseline; }
+  .day .dname { grid-row: auto; justify-items: start; text-align: start; display: flex; gap: 8px; align-items: baseline; }
   .day .dname small { order: 0; }
   .season { grid-column: 1 / -1; }
   .nav { max-width: 520px; margin-inline: auto; }
   .cal { max-width: 420px; margin-inline: auto; }
   .picker { max-width: 640px; margin-inline: auto; }
+}
+/* Da 900px: in alto il vassoio e, accanto, la colonna del calendario del mese (finché è nascosta, il vassoio prende tutta la riga) */
+@media (min-width: 900px) {
+  .in-alto { display: flex; align-items: stretch; gap: 14px; margin-block-start: 14px; margin-inline: 12px; }
+  .in-alto:not(:has(> :not([hidden]))) { display: none; }
+  /* niente vassoio (nessun menu nei prossimi giorni): il mese da solo, al centro */
+  .in-alto:has(> .today[hidden]) { justify-content: center; }
+  .in-alto > .today { flex: 1 1 0; min-width: 0; margin: 0; }
+  .mese { flex: 0 0 300px; background: var(--b-surface); border-radius: 22px; padding: 14px; }
+  .today { grid-template-columns: minmax(13rem, 1fr) minmax(0, 2.6fr); padding: 20px; }
+  .today .when { font-size: 1.85rem; }
+}
+
+@media (min-width: 700px) and (prefers-reduced-motion: no-preference) {
+  .pannello[open] { animation-name: entra; }
+  [dir="rtl"] .pannello[open] { animation-name: entra-rtl; }
+}
+
+/* Sotto i 900px la colonna del mese non c'è: il mese si apre dal titolo della settimana o dalla barra in basso */
+@media (max-width: 899.98px) {
+  .in-alto > .mese { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

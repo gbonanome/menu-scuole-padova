@@ -10,6 +10,28 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Aggiunto
+- Base per tradurre la pagina: i testi passano da `public/i18n.js` (italiano incluso) e le altre lingue da `public/lingue/<codice>.json`, tradotti in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu (traduzioni non ancora riviste da madrelingua; i dubbi sono in `data/traduzioni/NOTE.md`). La lingua si sceglie per ora con `?lingua=en`; quella salvata sul dispositivo vince sull'indirizzo e il default resta sempre l'italiano. In italiano la pagina non cambia.
+- Nelle altre lingue i nomi dei piatti arrivano da `data/piatti-<codice>.json` (se manca una voce resta il nome italiano) e sotto il testo degli avvisi, che resta in italiano, c'è il link per tradurlo con Google Traduttore.
+- Arabo e urdu da destra a sinistra: il foglio di stile usa proprietà logiche e le frecce della settimana si girano.
+- Pannello *Impostazioni*: la lingua della pagina (italiano, inglese, rumeno, cinese, bengalese, albanese, arabo, urdu), le istruzioni per il calendario con l'indirizzo della scuola aperta e il pulsante *Copia*, quelle per la schermata Home, *Segnala un errore* e la nota sul progetto. Su telefono si apre come un foglio dal basso, da 700px come pannello laterale; si chiude con Esc, toccando fuori o con *Chiudi*, e non cambia l'indirizzo.
+- Su telefono una barra fissa in basso con *Oggi* (torna alla settimana corrente e al vassoio), *Mese* e *Impostazioni*. Oggi e Mese compaiono quando c'è una scuola scelta.
+- Pulsante *Condividi* sotto *Aggiungi al calendario*: condivide il link alla scuola aperta (con la lingua, se non è l'italiano) oppure lo copia negli appunti.
+- Dizionario dei nomi dei piatti in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu (`data/traduzioni/`), con i soli piatti in uso pubblicati in `data/piatti-<lingua>.json` per la pagina. `npm run piatti` elenca le traduzioni mancanti; la PR "Nuovo menu da rivedere" segnala i piatti nuovi ancora da tradurre.
+- Calendario del mese, per saltare a una data e vedere a colpo d'occhio i giorni con variazioni, senza mensa o con il menu non ancora pubblicato. Solo lunedì–venerdì, oggi in giallo e la settimana mostrata evidenziata; toccando un giorno si passa alla sua settimana, e il mese segue le frecce della settimana e "Oggi". Da 900px è sempre visibile accanto al vassoio; tra 700 e 899px si apre dal titolo della settimana; sul telefono si apre dalla voce Mese della barra in basso, come foglio dal basso. Si usa anche da tastiera (frecce tra i giorni) ed è tradotto.
+
+### Modificato
+- I giorni con una variazione non hanno più lo sfondo rosso: bastano il riquadro "Variazione" e il bollino "variato" sul piatto.
+- Le istruzioni per il calendario e per la schermata Home sono passate dalla pagina al pannello *Impostazioni*: sotto *Aggiungi al calendario* resta la riga "Come funziona? Istruzioni nelle impostazioni". Da 700px *Impostazioni* è in testata; su telefono in testata non c'è nessuna icona.
+- Sotto i 700px il pulsante *Oggi* accanto alle frecce della settimana lascia il posto a quello della barra in basso.
+- Su tablet e computer il vassoio di oggi (o del prossimo giorno di mensa) compare in alto, disposto in orizzontale: a sinistra il giorno, a destra il piatto principale grande e gli altri scomparti accanto. Sotto restano la navigazione e la settimana su 5 colonne. Da 900px accanto al vassoio c'è il calendario del mese.
+- Su tablet e computer i riquadri delle variazioni del vassoio stanno sotto data e scomparti, a tutta larghezza (affiancati se sono due), invece di allungare la colonna di sinistra; il titolo del vassoio dice anche il mese ("Oggi martedì 10 novembre"). Sul telefono non cambia nulla.
+- La riga "Oggi, …: niente mensa." sopra la settimana compare solo quando non c'è il vassoio, cioè quando nei prossimi 14 giorni non c'è mensa.
+
+### Rimosso
+- Il pulsante "?" in testata e il suo riquadro: la nota sul progetto è nel pannello *Impostazioni* (e resta nel piede).
+- I due riquadri a scomparsa "Altri modi e istruzioni" e "Metti la pagina sulla schermata Home" in fondo alla pagina: il contenuto è nel pannello.
+
 ## [1.1.1] - 2026-11-08
 
 ### Modificato
@@ -27,6 +49,7 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 - Quando oggi non c'è mensa, la pagina lo dice con la data e il motivo (weekend, chiusura, menu non ancora pubblicato).
 - Fascia gialla quando la data è simulata con `?oggi=`, con il link per tornare alla data reale.
 - Versione della pagina nel piede, con il link a questo changelog.
+
 
 ### Modificato
 - I dettagli della scuola (nome completo, menu, "Cambia scuola", "Rimuovi") si aprono toccando la pillola della scuola attiva, segnata da una matita.

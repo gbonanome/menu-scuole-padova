@@ -12,6 +12,7 @@
     "update": "node src/update.js",
     "build": "node src/build-site.js",
     "serve": "node src/serve.js",
+    "piatti": "node src/piatti.js",
     "test": "node --test \"test/**/*.test.js\""
   },
   "repository": {
