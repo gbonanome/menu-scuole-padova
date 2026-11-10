@@ -76,6 +76,7 @@ export const IT = {
   // mini mese (navigatore delle date)
   'mese.aria': 'Calendario del mese',
   'mese.apri': 'Scegli una data dal calendario',
+  'mese.titolo': 'Vista mensile',
   'mese.chiudi': 'Chiudi',
   'mese.prec': 'Mese precedente',
   'mese.succ': 'Mese successivo',

@@ -10,6 +10,9 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Modificato
+- Sul telefono il calendario del mese si apre con il titolo "Vista mensile" e il pulsante *Chiudi*, come il pannello *Impostazioni*.
+
 ## [1.2.0] - 2026-11-10
 
 ### Aggiunto

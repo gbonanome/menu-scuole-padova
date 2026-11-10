@@ -183,10 +183,11 @@ button { cursor: pointer; }
 .mese-pop { position: absolute; top: calc(100% + 6px); inset-inline: 0; margin-inline: auto; z-index: 5; width: min(340px, 100%);
   background: var(--b-surface); padding: 12px; border-radius: 18px; box-shadow: 0 6px 24px rgb(0 0 0 / 0.18); }
 /* sotto i 700px: foglio dal basso */
-.foglio-mese { margin: auto 0 0; width: 100%; max-width: 100%; max-height: 90dvh; border: 0; border-radius: 22px 22px 0 0; padding: 12px 14px calc(16px + env(safe-area-inset-bottom));
-  background: var(--b-surface); color: var(--b-ink); }
+.foglio-mese { margin: auto 0 0; width: 100%; max-width: 100%; max-height: 90dvh; border: 0; border-radius: 22px 22px 0 0; padding: 0 12px calc(16px + env(safe-area-inset-bottom));
+  background: var(--b-bg); color: var(--b-ink); }
+/* Come il pannello Impostazioni: titolo e "Chiudi" in testa, il calendario in un riquadro */
+#mese-foglio-corpo { background: var(--b-surface); border-radius: 18px; padding: 12px; }
 .foglio-mese::backdrop { background: rgb(0 0 0 / 0.35); }
-.foglio-mese .chiudi { display: block; margin-inline-start: auto; width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--b-well); color: var(--b-ink); font-size: 1.3rem; line-height: 1; }
 .foglio-mese .mini-mese { max-width: 420px; margin-inline: auto; }
 .foglio-mese .mm-giorno { max-width: 52px; }
 

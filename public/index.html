@@ -81,8 +81,11 @@
       </section>
     </main>
 
-    <dialog id="mese-foglio" class="foglio-mese" aria-label="Calendario del mese" data-t-aria-label="mese.aria">
-      <button type="button" class="chiudi" id="chiudi-mese" aria-label="Chiudi" data-t-aria-label="mese.chiudi">×</button>
+    <dialog id="mese-foglio" class="foglio-mese" aria-labelledby="titolo-mese-foglio">
+      <div class="pannello-testa">
+        <h2 id="titolo-mese-foglio" data-t="mese.titolo">Vista mensile</h2>
+        <button type="button" class="btn" id="chiudi-mese" data-t="mese.chiudi">Chiudi</button>
+      </div>
       <div id="mese-foglio-corpo"></div>
     </dialog>
 
