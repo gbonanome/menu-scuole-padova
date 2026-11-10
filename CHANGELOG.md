@@ -10,8 +10,10 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+## [1.2.0] - 2026-11-10
+
 ### Aggiunto
-- Base per tradurre la pagina: i testi passano da `public/i18n.js` (italiano incluso) e le altre lingue da `public/lingue/<codice>.json`, tradotti in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu (traduzioni non ancora riviste da madrelingua; i dubbi sono in `data/traduzioni/NOTE.md`). La lingua si sceglie per ora con `?lingua=en`; quella salvata sul dispositivo vince sull'indirizzo e il default resta sempre l'italiano. In italiano la pagina non cambia.
+- Base per tradurre la pagina: i testi passano da `public/i18n.js` (italiano incluso) e le altre lingue da `public/lingue/<codice>.json`, tradotti in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu (traduzioni non ancora riviste da madrelingua; i dubbi sono in `data/traduzioni/NOTE.md`). La lingua si sceglie nel pannello *Impostazioni* (o con `?lingua=<codice>` nell'indirizzo); quella salvata sul dispositivo vince sull'indirizzo e il default resta sempre l'italiano. In italiano la pagina non cambia.
 - Nelle altre lingue i nomi dei piatti arrivano da `data/piatti-<codice>.json` (se manca una voce resta il nome italiano) e sotto il testo degli avvisi, che resta in italiano, c'è il link per tradurlo con Google Traduttore.
 - Arabo e urdu da destra a sinistra: il foglio di stile usa proprietà logiche e le frecce della settimana si girano.
 - Pannello *Impostazioni*: la lingua della pagina (italiano, inglese, rumeno, cinese, bengalese, albanese, arabo, urdu), le istruzioni per il calendario con l'indirizzo della scuola aperta e il pulsante *Copia*, quelle per la schermata Home, *Segnala un errore* e la nota sul progetto. Su telefono si apre come un foglio dal basso, da 700px come pannello laterale; si chiude con Esc, toccando fuori o con *Chiudi*, e non cambia l'indirizzo.
@@ -76,7 +78,8 @@ Prima versione pubblica.
 - Workflow GitHub: PR da rivedere per i nuovi menu stagionali, issue per errori e variazioni incerte, pubblicazione su GitHub Pages.
 - Test su fixture reali, snapshot dei feed e rilettura con un parser indipendente.
 
-[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.1...HEAD
+[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/gbonanome/menu-scuole-padova/releases/tag/v1.0.0
