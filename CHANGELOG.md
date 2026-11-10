@@ -18,11 +18,13 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 - Su telefono una barra fissa in basso con *Oggi* (torna alla settimana corrente e al vassoio), *Mese* e *Impostazioni*. Oggi e Mese compaiono quando c'è una scuola scelta.
 - Pulsante *Condividi* sotto *Aggiungi al calendario*: condivide il link alla scuola aperta (con la lingua, se non è l'italiano) oppure lo copia negli appunti.
 - Dizionario dei nomi dei piatti in inglese, rumeno, cinese, bengalese, albanese, arabo e urdu (`data/traduzioni/`), con i soli piatti in uso pubblicati in `data/piatti-<lingua>.json` per la pagina. `npm run piatti` elenca le traduzioni mancanti; la PR "Nuovo menu da rivedere" segnala i piatti nuovi ancora da tradurre.
+- Calendario del mese, per saltare a una data e vedere a colpo d'occhio i giorni con variazioni, senza mensa o con il menu non ancora pubblicato. Solo lunedì–venerdì, oggi in giallo e la settimana mostrata evidenziata; toccando un giorno si passa alla sua settimana, e il mese segue le frecce della settimana e "Oggi". Da 900px è sempre visibile accanto al vassoio; tra 700 e 899px si apre dal titolo della settimana; sul telefono si apre dalla voce Mese della barra in basso, come foglio dal basso. Si usa anche da tastiera (frecce tra i giorni) ed è tradotto.
 
 ### Modificato
 - Le istruzioni per il calendario e per la schermata Home sono passate dalla pagina al pannello *Impostazioni*: sotto *Aggiungi al calendario* resta la riga "Come funziona? Istruzioni nelle impostazioni". Da 700px *Impostazioni* è in testata; su telefono in testata non c'è nessuna icona.
 - Sotto i 700px il pulsante *Oggi* accanto alle frecce della settimana lascia il posto a quello della barra in basso.
-- Su tablet e computer il vassoio di oggi (o del prossimo giorno di mensa) compare in alto, disposto in orizzontale: a sinistra il giorno, a destra il piatto principale grande e gli altri scomparti accanto. Sotto restano la navigazione e la settimana su 5 colonne. Da 900px accanto al vassoio c'è posto per il calendario del mese, che arriverà più avanti.
+- Su tablet e computer il vassoio di oggi (o del prossimo giorno di mensa) compare in alto, disposto in orizzontale: a sinistra il giorno, a destra il piatto principale grande e gli altri scomparti accanto. Sotto restano la navigazione e la settimana su 5 colonne. Da 900px accanto al vassoio c'è il calendario del mese.
+- Su tablet e computer i riquadri delle variazioni del vassoio stanno sotto data e scomparti, a tutta larghezza (affiancati se sono due), invece di allungare la colonna di sinistra; il titolo del vassoio dice anche il mese ("Oggi martedì 10 novembre"). Sul telefono non cambia nulla.
 - La riga "Oggi, …: niente mensa." sopra la settimana compare solo quando non c'è il vassoio, cioè quando nei prossimi 14 giorni non c'è mensa.
 
 ### Rimosso

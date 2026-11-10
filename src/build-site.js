@@ -20,12 +20,21 @@ const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
  */
 async function versionaRisorse(out) {
   const impronta = async (nome) => createHash('sha256').update(await readFile(path.join(out, nome))).digest('hex').slice(0, 10);
-  // Lo stesso per i18n.js, importato da app.js: prima si cambia app.js, poi se ne calcola l'impronta.
-  const appJs = path.join(out, 'app.js');
-  const js = await readFile(appJs, 'utf8');
-  const importa = `from './i18n.js'`;
-  if (!js.includes(importa)) throw new Error(`app.js: manca ${importa}`);
-  await writeFile(appJs, js.replace(importa, `from './i18n.js?v=${await impronta('i18n.js')}'`));
+  // Lo stesso per i moduli importati da app.js: prima si cambia chi importa, poi se ne calcola l'impronta.
+  // mese.js importa anche lui i18n.js, con la stessa impronta: un indirizzo diverso darebbe un secondo
+  // modulo i18n.js, con la sua lingua.
+  const versiona = async (chi, moduli) => {
+    const file = path.join(out, chi);
+    let js = await readFile(file, 'utf8');
+    for (const m of moduli) {
+      const importa = `from './${m}'`;
+      if (!js.includes(importa)) throw new Error(`${chi}: manca ${importa}`);
+      js = js.replace(importa, `from './${m}?v=${await impronta(m)}'`);
+    }
+    await writeFile(file, js);
+  };
+  await versiona('mese.js', ['i18n.js']);
+  await versiona('app.js', ['i18n.js', 'mese.js']);
   const file = path.join(out, 'index.html');
   let html = await readFile(file, 'utf8');
   for (const [attr, nome] of [['href', 'style.css'], ['src', 'app.js'], ['href', 'manifest.webmanifest']]) {

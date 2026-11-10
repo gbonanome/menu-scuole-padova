@@ -73,6 +73,18 @@ export const IT = {
   'giorno.nessuno': 'Nessun menu',
   'giorno.daqui': 'Da qui: {0}',
 
+  // mini mese (navigatore delle date)
+  'mese.aria': 'Calendario del mese',
+  'mese.apri': 'Scegli una data dal calendario',
+  'mese.chiudi': 'Chiudi',
+  'mese.prec': 'Mese precedente',
+  'mese.succ': 'Mese successivo',
+  'mese.legenda': 'Legenda',
+  'mese.menu': 'menu',
+  'mese.variazione': 'variazione',
+  'mese.nonpubblicato': 'menu non pubblicato',
+  'mese.chiuso': 'chiuso',
+
   // piatti e variazioni
   oppure: 'oppure',
   variato: 'variato',
@@ -229,6 +241,8 @@ export const giornoBreve = (s) => (it() ? nomeGiorno(s).slice(0, 3) : formato(s,
 export const nomeMese = (s) => (it() ? MESI[Number(s.slice(5, 7)) - 1] : formato(s, { month: 'long' }));
 /** "9", il numero grande nell'intestazione dei giorni */
 export const numeroGiorno = (s) => (it() ? String(numGiorno(s)) : formato(s, { day: 'numeric' }));
+/** "novembre 2026", nell'intestazione del mini mese */
+export const meseEAnno = (s) => (it() ? `${nomeMese(s)} ${anno(s)}` : formato(s, { month: 'long', year: 'numeric' }));
 /** "lunedì 9 novembre" */
 export const dataLunga = (s) => (it() ? `${nomeGiorno(s)} ${numGiorno(s)} ${nomeMese(s)}` : formato(s, { weekday: 'long', day: 'numeric', month: 'long' }));
 /** "lunedì 9 novembre 2026" */

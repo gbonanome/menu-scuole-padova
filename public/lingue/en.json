@@ -56,6 +56,17 @@
   "giorno.nessuno": "No menu",
   "giorno.daqui": "From here: {0}",
 
+  "mese.aria": "Month calendar",
+  "mese.apri": "Pick a date from the calendar",
+  "mese.chiudi": "Close",
+  "mese.prec": "Previous month",
+  "mese.succ": "Next month",
+  "mese.legenda": "Legend",
+  "mese.menu": "menu",
+  "mese.variazione": "change",
+  "mese.nonpubblicato": "menu not published",
+  "mese.chiuso": "closed",
+
   "oppure": "or",
   "variato": "changed",
   "variazione.titolo": "Change",
