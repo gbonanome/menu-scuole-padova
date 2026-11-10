@@ -16,7 +16,6 @@ export const IT = {
   'pagina.titolo': 'Menu Scuole Padova · il menu della mensa nel tuo calendario',
   'pagina.descrizione': 'Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.',
   salta: 'Vai al contenuto',
-  'info.aria': 'Progetto non ufficiale: leggi la nota',
   'errore.dati': 'Impossibile caricare i dati. Riprova più tardi.',
 
   // scuole salvate e scuola scelta
@@ -89,8 +88,11 @@ export const IT = {
   // calendario e schermata Home
   'cal.titolo': 'Aggiungi al calendario',
   'cal.titolo.scuola': 'Aggiungi al calendario: {0}',
-  'cal.altro': 'Altri modi e istruzioni',
-  'cal.indirizzo': 'Indirizzo del calendario',
+  'cal.istruzioni': 'Come funziona? Istruzioni nelle impostazioni',
+  condividi: 'Condividi',
+  'condividi.titolo': 'Il menu della mensa: {0}',
+  'condividi.copiato': 'Link copiato.',
+  'cal.indirizzo': 'Indirizzo del calendario: {0}',
   'cal.copia': 'Copia',
   'cal.copiato': 'Indirizzo copiato.',
   'cal.iphone': 'iPhone e iPad',
@@ -100,11 +102,23 @@ export const IT = {
   'cal.android.testo':
     'Da computer apri Google Calendar → <em>Altri calendari</em> → <em>+</em> → <em>Da URL</em> e incolla l\'indirizzo. Sul telefono, nell\'app Google Calendar, attiva la sincronizzazione del nuovo calendario. Google aggiorna i calendari sottoscritti con calma: una variazione può comparire anche dopo 24 ore. Google non mostra gli avvisi dei calendari sottoscritti: nelle impostazioni del calendario lascia le notifiche disattivate, così non ricevi un avviso ogni giorno.',
   'cal.outlook.testo': 'In Outlook web: <em>Aggiungi calendario</em> → <em>Sottoscrivi dal Web</em>, incolla l\'indirizzo e salva.',
-  'home.titolo': 'Metti la pagina sulla schermata Home',
+  'home.titolo': 'La pagina sulla schermata Home',
   'home.intro': 'Un\'icona sul telefono che apre direttamente il menu della tua scuola. Prima scegli la scuola, poi:',
   'home.iphone.testo':
     'In Safari tocca il pulsante <em>Condividi</em> (il quadrato con la freccia verso l\'alto), poi <em>Aggiungi alla schermata Home</em> e conferma con <em>Aggiungi</em>.',
   'home.android.testo': 'In Chrome tocca il menu <em>⋮</em> in alto a destra, poi <em>Aggiungi a schermata Home</em> (o <em>Installa app</em>) e conferma.',
+
+  // barra in basso e pannello impostazioni
+  'barra.aria': 'Scorciatoie',
+  'barra.mese': 'Mese',
+  impostazioni: 'Impostazioni',
+  'impostazioni.chiudi': 'Chiudi',
+  'impostazioni.lingua': 'Lingua',
+  'impostazioni.calendario': 'Il menu nel tuo calendario',
+  'impostazioni.calendario.scegli': 'Scegli prima una scuola: qui trovi poi l’indirizzo del suo calendario.',
+  'impostazioni.segnala':
+    'Un giorno sbagliato, una scuola con il menu sbagliato? <a>Apri una segnalazione su GitHub</a>, già compilata con la scuola scelta.',
+  'impostazioni.progetto': 'Il progetto',
 
   // piede e data simulata
   'piede.nota':

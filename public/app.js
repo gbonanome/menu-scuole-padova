@@ -131,6 +131,7 @@ function mostraRisultati(q) {
 function linkSegnalazione() {
   const s = stato.scuola;
   const f = stato.feeds.find((x) => x.slug === stato.feed);
+  if (!s && !f) return `${REPO}/issues/new`;
   const titolo = s ? `Scuola ${s.nome}: menu da verificare` : `Menu ${f?.breve}: segnalazione`;
   const corpo = [
     s ? `Scuola: ${s.nome} (${s.ordine})` : '',
@@ -173,6 +174,7 @@ function mostraScuola() {
   if (s?.avviso) note.push(el('p', { class: 'avviso', role: 'note' }, s.avviso));
   $('#scuola-note').replaceChildren(...note);
   $('#link-segnala').href = linkSegnalazione();
+  mostraPannello();
   const salvata = stato.scelte.some((v) => v.id === stato.attiva?.id);
   $('#rimuovi').hidden = !salvata;
   // Il riquadro si apre toccando la pillola della scuola attiva; resta aperto se la scuola non è tra le salvate.
@@ -347,6 +349,9 @@ function rimuovi() {
   for (const id of ['#scuola', '#oggi-box', '#oggi-riga', '#settimana', '#iscriviti']) $(id).hidden = true;
   salvaScelte();
   mostraSwitcher();
+  mostraBarra();
+  mostraPannello();
+  $('#link-segnala').href = linkSegnalazione();
   mostraPicker(true, 'aggiungi');
 }
 
@@ -357,6 +362,7 @@ async function attiva(voce) {
   stato.scuola = voce.scuola;
   salvaScelte();
   mostraSwitcher();
+  mostraBarra();
   mostraPicker(false);
   mostraScuola();
   mostraIscrizione();
@@ -554,26 +560,139 @@ function sposta(settimane) {
   mostraSettimana();
 }
 
-// ---------- iscrizione al calendario ----------
+// ---------- iscrizione al calendario e condivisione ----------
 function mostraIscrizione() {
   const f = stato.feeds.find((x) => x.slug === stato.feed);
   if (!f) return;
   const https = new URL(f.ics, location.href).href;
-  $('#url-feed').value = https;
   $('#link-webcal').href = https.replace(/^https?:/, 'webcal:');
   $('#link-webcal').textContent = stato.scelte.length > 1 ? t('cal.titolo.scuola', etichetta(stato.attiva)) : t('cal.titolo');
   $('#iscriviti').hidden = false;
 }
 
+/** Negli appunti; se il browser non lo permette, con il vecchio execCommand da un campo di testo. */
+async function copiaTesto(testo, campo) {
+  try {
+    await navigator.clipboard.writeText(testo);
+    return true;
+  } catch {
+    const c = campo ?? document.body.appendChild(el('textarea', { readonly: true, class: 'visually-hidden' }, testo));
+    c.select();
+    const ok = document.execCommand?.('copy') ?? false;
+    if (!campo) c.remove();
+    return ok;
+  }
+}
+
 async function copia() {
   const input = $('#url-feed');
-  try {
-    await navigator.clipboard.writeText(input.value);
-  } catch {
-    input.select();
-    document.execCommand?.('copy');
-  }
+  await copiaTesto(input.value, input);
   $('#copiato').textContent = t('cal.copiato');
+}
+
+/**
+ * Link alla pagina con la sola scuola aperta (più la lingua, se non è l'italiano): chi lo apre la trova
+ * accanto alle sue scuole salvate. Niente ?oggi=, che serve solo alle prove.
+ */
+function linkCondivisione() {
+  const v = stato.attiva;
+  const p = new URLSearchParams({ scuola: v.id });
+  if (linguaAttiva() !== 'it') p.set('lingua', linguaAttiva());
+  return new URL(`${location.pathname}?${p}#${v.id}`, location.href).href;
+}
+
+let timerCondiviso = null;
+async function condividi() {
+  if (!stato.attiva) return;
+  const url = linkCondivisione();
+  const titolo = t('condividi.titolo', etichetta(stato.attiva));
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: titolo, text: titolo, url });
+      return;
+    } catch (e) {
+      if (e.name === 'AbortError') return; // chiuso senza condividere
+    }
+  }
+  if (!(await copiaTesto(url))) return;
+  const riga = $('#condiviso');
+  riga.textContent = t('condividi.copiato');
+  clearTimeout(timerCondiviso);
+  timerCondiviso = setTimeout(() => (riga.textContent = ''), 4000);
+}
+
+// ---------- barra in basso (sotto i 700px) ----------
+/** Oggi e Mese servono solo con una scuola scelta; Impostazioni c'è sempre. */
+function mostraBarra() {
+  $('#barra-oggi').hidden = !stato.attiva;
+  $('#barra-mese').hidden = !stato.attiva;
+}
+
+const movimento = () => (matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
+
+/** Torna alla settimana corrente e porta in vista il vassoio di oggi (o la settimana, se il vassoio non c'è). */
+function tornaAOggi() {
+  if (!stato.lunedi) return;
+  sposta(0);
+  const meta = [$('#oggi-box'), $('#oggi-riga'), $('#settimana')].find((e) => !e.hidden);
+  meta?.scrollIntoView({ behavior: movimento(), block: 'start' });
+}
+
+// ---------- pannello impostazioni ----------
+// Un <dialog> modale: Esc lo chiude da solo, il tocco fuori e "Chiudi" lo chiudono qui. Alla chiusura il
+// focus torna al pulsante che l'ha aperto. Non scrive nulla nell'indirizzo.
+const PAROLA_LINGUA = { it: 'Lingua', en: 'Language', ro: 'Limba', zh: '语言' };
+let apertoDa = null;
+
+/** "Lingua · Language · Limba · 语言", con la parola della lingua attiva per prima. */
+function titoloLingua() {
+  const prima = t('impostazioni.lingua');
+  const altre = Object.entries(PAROLA_LINGUA).filter(([, parola]) => parola !== prima);
+  $('#titolo-lingua').replaceChildren(prima, ...altre.flatMap(([codice, parola]) => [' · ', el('span', { lang: codice, dir: 'ltr' }, parola)]));
+}
+
+/** Testi del pannello che dipendono dalla scuola aperta e dalla lingua. */
+function mostraPannello() {
+  titoloLingua();
+  for (const b of document.querySelectorAll('[data-lingua]')) b.setAttribute('aria-pressed', String(b.dataset.lingua === linguaAttiva()));
+  const f = stato.attiva && stato.feeds.find((x) => x.slug === stato.attiva.feed);
+  $('#cal-nessuna').hidden = !!f;
+  $('#cal-feed').hidden = !f;
+  if (f) {
+    $('#url-feed').value = new URL(f.ics, location.href).href;
+    $('#etichetta-feed').textContent = t('cal.indirizzo', etichetta(stato.attiva));
+  }
+  $('#pannello-segnala').href = linkSegnalazione();
+}
+
+function apriImpostazioni(sezione) {
+  const d = $('#impostazioni');
+  apertoDa = document.activeElement;
+  mostraPannello();
+  if (!d.open) d.showModal();
+  for (const b of document.querySelectorAll('[aria-controls="impostazioni"][aria-expanded]')) b.setAttribute('aria-expanded', 'true');
+  if (sezione) {
+    sezione.scrollIntoView({ block: 'start' });
+    sezione.focus({ preventScroll: true });
+  } else d.querySelector('.pannello-dentro').scrollTop = 0;
+}
+
+function preparaImpostazioni() {
+  const d = $('#impostazioni');
+  for (const b of ['#apri-impostazioni', '#barra-impostazioni']) $(b).addEventListener('click', () => apriImpostazioni());
+  $('#istruzioni').addEventListener('click', () => apriImpostazioni($('#titolo-calendario')));
+  $('#chiudi-impostazioni').addEventListener('click', () => d.close());
+  // Il dialog non ha margini interni: un clic che ha come bersaglio il dialog stesso è sullo sfondo.
+  d.addEventListener('click', (e) => e.target === d && d.close());
+  d.addEventListener('close', () => {
+    if (d.open) return; // già riaperto
+    for (const b of document.querySelectorAll('[aria-controls="impostazioni"][aria-expanded]')) b.setAttribute('aria-expanded', 'false');
+    $('#copiato').textContent = '';
+    if (apertoDa?.isConnected && !apertoDa.closest('[hidden]')) apertoDa.focus();
+    apertoDa = null;
+  });
+  for (const b of document.querySelectorAll('[data-lingua]')) b.addEventListener('click', () => cambiaLingua(b.dataset.lingua));
+  $('#copia').addEventListener('click', copia);
 }
 
 // ---------- lingua ----------
@@ -602,7 +721,6 @@ export async function cambiaLingua(codice) {
 /** Tutti i testi della pagina nella lingua attiva, senza toccare scelte, ricerca in corso e settimana mostrata. */
 function ridisegna() {
   applicaTesti();
-  $('#info-pop').replaceChildren($('#nota p').cloneNode(true));
   mostraProva();
   mostraAggiornato();
   for (const o of $('#scegli-feed').options) {
@@ -612,6 +730,8 @@ function ridisegna() {
   mostraTitoloScelta();
   mostraRisultati($('#cerca-scuola').value);
   $('#copiato').textContent = '';
+  $('#condiviso').textContent = '';
+  mostraPannello();
   if (!stato.attiva) return;
   mostraSwitcher();
   mostraScuola();
@@ -661,6 +781,8 @@ async function avvia() {
   await caricaLingua(linguaIniziale(linguaSalvata(), new URLSearchParams(location.search).get('lingua')));
   applicaTesti();
   mostraProva();
+  preparaImpostazioni();
+  mostraPannello();
   try {
     const [indice, scuole] = await dati;
     stato.feeds = indice.feeds;
@@ -682,28 +804,8 @@ async function avvia() {
   $('#prec').addEventListener('click', () => sposta(-1));
   $('#succ').addEventListener('click', () => sposta(1));
   $('#oggi').addEventListener('click', () => sposta(0));
-  $('#copia').addEventListener('click', copia);
-  // "?" in testata. Su schermi stretti porta alla nota in fondo senza toccare l'indirizzo (dopo # c'è la scuola scelta);
-  // su schermi larghi la nota è già visibile in fondo e lo scroll non si nota: apre un riquadro con lo stesso testo.
-  const info = $('#info');
-  const pop = $('#info-pop');
-  const largo = matchMedia('(min-width: 700px)');
-  pop.append($('#nota p').cloneNode(true));
-  const chiudiPop = () => { pop.hidden = true; info.removeAttribute('aria-expanded'); };
-  info.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (largo.matches) {
-      pop.hidden = !pop.hidden;
-      if (pop.hidden) info.removeAttribute('aria-expanded');
-      else info.setAttribute('aria-expanded', 'true');
-      return;
-    }
-    $('#nota').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    $('#nota').focus({ preventScroll: true });
-  });
-  document.addEventListener('click', (e) => { if (!pop.hidden && !pop.contains(e.target) && e.target !== info) chiudiPop(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !pop.hidden) { chiudiPop(); info.focus(); } });
-  largo.addEventListener('change', chiudiPop);
+  $('#barra-oggi').addEventListener('click', tornaAOggi);
+  $('#condividi').addEventListener('click', condividi);
   window.addEventListener('hashchange', () => {
     const v = daHash();
     if (v && v.id !== stato.attiva?.id) attiva(v);

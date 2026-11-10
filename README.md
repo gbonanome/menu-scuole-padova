@@ -12,7 +12,7 @@ Il menu delle mense scolastiche del Comune di Padova nel tuo calendario, con le 
 
 ## Come iscriversi
 
-**Pagina web:** <https://gbonanome.github.io/menu-scuole-padova/>: cerca la scuola, vedi il menu e trovi il pulsante *Aggiungi al calendario*.
+**Pagina web:** <https://gbonanome.github.io/menu-scuole-padova/>: cerca la scuola, vedi il menu e trovi il pulsante *Aggiungi al calendario* (le istruzioni per iPhone, Android e Outlook sono nelle *Impostazioni* della pagina).
 
 | Menu | Feed (.ics) | Google Calendar | iPhone / Mac (apri in Safari) |
 |---|---|---|---|
