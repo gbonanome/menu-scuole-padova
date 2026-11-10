@@ -443,7 +443,7 @@ function elencoPiatti(g, classe, conScomparti) {
   );
 }
 
-// ---------- oggi (vassoio, solo su telefono) ----------
+// ---------- oggi (vassoio, a tutte le larghezze) ----------
 function mostraOggi() {
   const box = $('#oggi-box');
   const dataOggi = oggi();
@@ -494,18 +494,17 @@ const giornoSenzaMenu = (data) => ({ data, giorno: stato.giorni.get(data), nido:
 /** "Oggi, domenica 8 novembre: niente mensa." con il motivo quando c'è. */
 const testoOggi = () => testoOggiDi(giornoSenzaMenu(oggi()));
 
-/** Riga sopra la settimana quando oggi non c'è mensa (su telefono la dice già il vassoio). */
+/** Riga sopra la settimana quando oggi non c'è mensa e manca anche il vassoio (nessun menu nei prossimi 14 giorni). */
 function mostraRigaOggi() {
   const riga = $('#oggi-riga');
   const dataOggi = oggi();
-  if (stato.giorni.get(dataOggi)?.stato === 'menu') {
+  if (stato.giorni.get(dataOggi)?.stato === 'menu' || !$('#oggi-box').hidden) {
     riga.hidden = true;
     return;
   }
   const lun = lunediDi(dataOggi);
   const extra = lun > dataOggi ? ` ${t('oggi.prossimasettimana')}` : '';
   riga.textContent = testoOggi() + extra;
-  riga.classList.toggle('solo-largo', !$('#oggi-box').hidden);
   riga.hidden = false;
 }
 
