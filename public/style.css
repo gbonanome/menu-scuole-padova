@@ -275,6 +275,11 @@ body:has(.pannello[open]) { overflow: hidden; }
   padding-inline: max(12px, env(safe-area-inset-left)) max(12px, env(safe-area-inset-right)); }
 .pannello-testa { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 16px 4px 10px; background: var(--b-bg); }
 .pannello-testa h2 { font: 800 1.45rem/1.1 var(--f-display); letter-spacing: -0.02em; margin: 0; }
+/* All'apertura il focus va sul titolo (annunciato dagli screen reader): niente contorno, non è un comando */
+.pannello-testa h2:focus { outline: none; }
+/* Gli angoli arrotondati ritagliano anche la testata, che ha uno sfondo suo */
+.pannello { overflow: hidden; }
+.foglio-mese { overflow-y: auto; }
 .sez { background: var(--b-surface); border-radius: 14px; padding: 12px 14px; margin-top: 10px; }
 .sez h3 { font: 800 1.05rem/1.2 var(--f-display); margin: 0 0 8px; scroll-margin-top: 70px; }
 .sez h3:focus { outline: none; }
