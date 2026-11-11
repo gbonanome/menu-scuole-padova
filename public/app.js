@@ -1,4 +1,6 @@
 // Menu Scuole Padova — pagina statica, vanilla JS, nessuna dipendenza. Direzione visiva B "Vassoio".
+// I JSON di data/ rispettano src/contratto.js (la build non pubblica altrimenti): qui i campi obbligatori
+// si usano senza fallback; quelli facoltativi sono elencati nel contratto e gestiti caso per caso.
 import {
   CHIAVE_LINGUA,
   LINGUE,
