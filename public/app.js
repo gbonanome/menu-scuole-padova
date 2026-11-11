@@ -463,11 +463,14 @@ function mostraOggi() {
     const giorno = giornoENumero(dataOggi);
     const intera = dataLunga(dataOggi);
     const mese = intera.startsWith(giorno) ? intera.slice(giorno.length) : '';
+    // replaceChildren scriverebbe "null" come testo: senza variazioni il riquadro va tolto dall'elenco.
     box.replaceChildren(
-      el('p', { class: 'when' }, el('mark', {}, t('oggi')), ` ${giorno}`, mese ? el('span', { class: 'solo-largo' }, mese) : null),
-      el('p', { class: 'meta' }, testoCiclo(g)),
-      variazioniVassoio(g),
-      elencoPiatti(g, 'tray', true)
+      ...[
+        el('p', { class: 'when' }, el('mark', {}, t('oggi')), ` ${giorno}`, mese ? el('span', { class: 'solo-largo' }, mese) : null),
+        el('p', { class: 'meta' }, testoCiclo(g)),
+        variazioniVassoio(g),
+        elencoPiatti(g, 'tray', true)
+      ].filter(Boolean)
     );
     box.setAttribute('aria-label', t('oggi.aria'));
     box.hidden = false;
@@ -485,16 +488,18 @@ function mostraOggi() {
   }
   const gp = stato.giorni.get(prossimo);
   box.replaceChildren(
-    el('p', { class: 'oggi-nota' }, testoOggi()),
-    el(
-      'p',
-      { class: 'when' },
-      el('mark', {}, prossimo === piuGiorni(dataOggi, 1) ? t('domani') : maiuscola(nomeGiorno(prossimo))),
-      ` ${giornoEMese(prossimo)}`
-    ),
-    el('p', { class: 'meta' }, testoCiclo(gp)),
-    variazioniVassoio(gp),
-    elencoPiatti(gp, 'tray', true)
+    ...[
+      el('p', { class: 'oggi-nota' }, testoOggi()),
+      el(
+        'p',
+        { class: 'when' },
+        el('mark', {}, prossimo === piuGiorni(dataOggi, 1) ? t('domani') : maiuscola(nomeGiorno(prossimo))),
+        ` ${giornoEMese(prossimo)}`
+      ),
+      el('p', { class: 'meta' }, testoCiclo(gp)),
+      variazioniVassoio(gp),
+      elencoPiatti(gp, 'tray', true)
+    ].filter(Boolean)
   );
   box.setAttribute('aria-label', t('oggi.prossimo.aria'));
   box.hidden = false;

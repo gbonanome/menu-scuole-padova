@@ -10,6 +10,9 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Corretto
+- Nel riquadro del menu di oggi (e del prossimo giorno con mensa) non compare più la scritta "null" sopra i piatti nei giorni senza variazioni.
+
 ## [1.2.2] - 2026-11-10
 
 ### Modificato
