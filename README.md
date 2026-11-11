@@ -54,6 +54,10 @@ Comandi utili in locale: `npm run update` (scraping), `npm run build` (genera `d
 
 `npm test` esegue i test con `node:test`. Il cuore è [`test/pipeline.test.js`](test/pipeline.test.js): rifà tutto il percorso (scraping → parsing → validazione → build) sulle fixture reali in `fixtures/`, con data fissa, e confronta il risultato con gli snapshot in `test/snapshots/` (menu JSON, variazioni, feed `.ics`). Ogni `.ics` viene riletto con un parser indipendente ([ical.js](https://github.com/kewisch/ical.js)) per controllare UID univoci, eventi di giornata intera e nessun evento in festività o sospensioni. C'è anche una variazione simulata, dalla notizia all'evento: stesso UID, `SEQUENCE` aumentata, titolo e descrizione aggiornati, nessun altro evento toccato.
 
+La build verifica anche il contratto con la pagina ([`src/contratto.js`](src/contratto.js)): i campi che `public/app.js` usa senza controlli devono esserci e avere la forma giusta, altrimenti la build si ferma e non pubblica. I casi sono provati in [`test/contratto.test.js`](test/contratto.test.js).
+
+`npm run test:pagina` apre la pagina in Chromium con [Playwright](https://playwright.dev/) sulla build delle fixture (la prima volta: `npx playwright install chromium`). Per i giorni tipici (menu, variazione, menu sostitutivo, non pubblicato, chiuso, fine settimana), in italiano, inglese e arabo e a due larghezze, controlla che nessun testo o attributo contenga `null`, `undefined`, `NaN` o un segnaposto `{0}` rimasto, e che un menu non caricato mostri l'errore con *Riprova*. Gira anche in CI.
+
 Se cambi il parser o la build di proposito, rigenera gli snapshot con `UPDATE_SNAPSHOTS=1 npm test` e controlla il diff prima del commit. Per aggiungere un caso nuovo (un PDF o una notizia), salvalo in `fixtures/` e rigenera gli snapshot.
 
 Validatore online dei feed: <https://icalendar.org/validator.html?url=https://gbonanome.github.io/menu-scuole-padova/feed/primaria-secondaria-veicolato.ics>

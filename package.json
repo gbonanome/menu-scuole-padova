@@ -13,7 +13,8 @@
     "build": "node src/build-site.js",
     "serve": "node src/serve.js",
     "piatti": "node src/piatti.js",
-    "test": "node --test \"test/**/*.test.js\""
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:pagina": "node --test test/pagina.e2e.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "pdfjs-dist": "^6.5.438"
   },
   "devDependencies": {
-    "ical.js": "^2.2.1"
+    "ical.js": "^2.2.1",
+    "playwright": "1.63.0"
   }
 }
