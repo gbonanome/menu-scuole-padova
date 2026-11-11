@@ -3,6 +3,8 @@
   "pagina.descrizione": "The school canteen menus of the City of Padova, with up-to-date changes. Unofficial project.",
   "salta": "Skip to content",
   "errore.dati": "The data could not be loaded. Please try again later.",
+  "errore.menu": "The menu could not be loaded. Check your connection and try again.",
+  "errore.riprova": "Try again",
 
   "scuole.aria": "Your schools",
   "scuole.dettagli": "Details, change or remove",

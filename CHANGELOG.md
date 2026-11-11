@@ -10,6 +10,13 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Aggiunto
+- La build verifica i dati della pagina prima di pubblicarli (`src/contratto.js`): un giorno chiuso senza motivo, una variazione senza data, una scuola con un menu che non esiste e simili fermano la pubblicazione con l'elenco dei problemi, invece di arrivare sulla pagina come "null" o testi a metà.
+
+### Corretto
+- Se il menu della scuola non si carica (connessione assente, file non raggiungibile) la pagina lo dice, con il pulsante *Riprova*, invece di mostrare "niente mensa" e una settimana di giorni senza menu.
+- Nel riquadro del menu di oggi (e del prossimo giorno con mensa) non compare più la scritta "null" sopra i piatti nei giorni senza variazioni.
+
 ## [1.2.2] - 2026-11-10
 
 ### Modificato
