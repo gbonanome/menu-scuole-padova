@@ -48,7 +48,8 @@ const stato = {
   attiva: null,
   modo: 'aggiungi',
   carica: 0,
-  dettagli: false
+  dettagli: false,
+  erroreMenu: false // il menu della scuola attiva non è arrivato: si dice, invece di mostrare giorni vuoti
 };
 
 // ---------- utilità ----------
@@ -348,6 +349,7 @@ function rimuovi() {
   stato.scelte = stato.scelte.filter((v) => v.id !== stato.attiva?.id);
   if (stato.scelte.length) return attiva(stato.scelte[0]);
   stato.attiva = stato.feed = stato.scuola = null;
+  stato.erroreMenu = false;
   chiudiMese();
   for (const id of ['#scuola', '#oggi-box', '#mese', '#oggi-riga', '#settimana', '#iscriviti']) $(id).hidden = true;
   salvaScelte();
@@ -370,20 +372,29 @@ async function attiva(voce) {
   mostraScuola();
   mostraIscrizione();
   const n = ++stato.carica;
-  let giorni = new Map();
-  let copertura = null;
+  let dati = null;
   try {
-    const dati = await json(`data/${voce.feed}.json`);
-    giorni = new Map(dati.giorni.map((g) => [g.data, g]));
-    copertura = dati.copertura;
+    dati = await json(`data/${voce.feed}.json`);
+    if (!Array.isArray(dati?.giorni)) throw new Error(`data/${voce.feed}.json: manca l'elenco dei giorni`);
   } catch (e) {
     console.error(e);
+    dati = null;
   }
   if (n !== stato.carica) return; // nel frattempo è stata scelta un'altra scuola
-  stato.giorni = giorni;
-  stato.copertura = copertura;
-  stato.lunedi = lunediDi(oggi());
   stato.mese = null;
+  if (!dati) {
+    // Senza dati non si sa nulla dei giorni: mostrare "niente mensa" o "Nessun menu" sarebbe falso.
+    stato.giorni = new Map();
+    stato.copertura = null;
+    stato.lunedi = null;
+    stato.erroreMenu = true;
+    mostraErroreMenu();
+    return;
+  }
+  stato.erroreMenu = false;
+  stato.giorni = new Map(dati.giorni.map((g) => [g.data, g]));
+  stato.copertura = dati.copertura;
+  stato.lunedi = lunediDi(oggi());
   mostraOggi();
   mostraRigaOggi();
   mostraSettimana();
@@ -454,8 +465,35 @@ function elencoPiatti(g, classe, conScomparti) {
 }
 
 // ---------- oggi (vassoio, a tutte le larghezze) ----------
+/** Il menu della scuola non si è caricato: al posto del vassoio l'errore e "Riprova"; settimana e mese nascosti. */
+function mostraErroreMenu() {
+  const box = $('#oggi-box');
+  box.classList.add('errore-menu');
+  box.replaceChildren(
+    el('p', { class: 'errore', role: 'alert' }, t('errore.menu')),
+    el(
+      'button',
+      {
+        type: 'button',
+        class: 'btn',
+        id: 'riprova-menu',
+        onclick: async () => {
+          await attiva(stato.attiva);
+          if (stato.erroreMenu) $('#riprova-menu')?.focus();
+        }
+      },
+      t('errore.riprova')
+    )
+  );
+  box.removeAttribute('aria-label');
+  box.hidden = false;
+  chiudiMese();
+  for (const id of ['#mese', '#oggi-riga', '#settimana', '#barra-mese']) $(id).hidden = true;
+}
+
 function mostraOggi() {
   const box = $('#oggi-box');
+  box.classList.remove('errore-menu');
   const dataOggi = oggi();
   const g = stato.giorni.get(dataOggi);
   if (g?.stato === 'menu') {
@@ -948,6 +986,7 @@ function ridisegna() {
   mostraSwitcher();
   mostraScuola();
   mostraIscrizione();
+  if (stato.erroreMenu) return mostraErroreMenu();
   if (!stato.lunedi) return; // menu ancora in arrivo: lo disegna attiva()
   mostraOggi();
   mostraRigaOggi();

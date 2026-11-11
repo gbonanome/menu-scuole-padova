@@ -132,6 +132,8 @@ button { cursor: pointer; }
 .today .vbox { margin: 0 0 10px; }
 .today .solo-largo { display: none; }
 .today .oggi-nota { margin: 0 0 10px; font-weight: 700; }
+.today.errore-menu { display: block; background: var(--b-alert-bg); border-inline-start: 4px solid var(--b-alert); }
+.today.errore-menu .errore { margin: 0 0 10px; font-weight: 700; }
 .oggi-riga { margin: 16px 12px 0; padding: 10px 14px; border-radius: 14px; background: var(--b-surface); font-weight: 700; text-align: center; }
 
 /* ---- navigazione settimane ---- */

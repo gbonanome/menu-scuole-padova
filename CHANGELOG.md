@@ -11,6 +11,7 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 ## [Non ancora rilasciato]
 
 ### Corretto
+- Se il menu della scuola non si carica (connessione assente, file non raggiungibile) la pagina lo dice, con il pulsante *Riprova*, invece di mostrare "niente mensa" e una settimana di giorni senza menu.
 - Nel riquadro del menu di oggi (e del prossimo giorno con mensa) non compare più la scritta "null" sopra i piatti nei giorni senza variazioni.
 
 ## [1.2.2] - 2026-11-10
