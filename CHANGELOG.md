@@ -10,6 +10,8 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+## [1.3.0] - 2026-11-11
+
 ### Aggiunto
 - La build verifica i dati della pagina prima di pubblicarli (`src/contratto.js`): un giorno chiuso senza motivo, una variazione senza data, una scuola con un menu che non esiste e simili fermano la pubblicazione con l'elenco dei problemi, invece di arrivare sulla pagina come "null" o testi a metà.
 
@@ -98,7 +100,8 @@ Prima versione pubblica.
 - Workflow GitHub: PR da rivedere per i nuovi menu stagionali, issue per errori e variazioni incerte, pubblicazione su GitHub Pages.
 - Test su fixture reali, snapshot dei feed e rilettura con un parser indipendente.
 
-[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.2...HEAD
+[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.1...v1.2.0
