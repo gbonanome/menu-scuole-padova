@@ -10,6 +10,7 @@ import { caricaMenus } from './lib/applica.js';
 import { annoScolasticoDi } from './lib/dates.js';
 import { FEED_INFO, FONTE, costruisciModello } from './model.js';
 import { BASE_URL, costruisciIcs } from './build-ics.js';
+import { verificaContratto } from './contratto.js';
 import { DIR_TRADUZIONI, LINGUE, caricaTraduzioni, piattiDeiFeed, vociUsate } from './piatti.js';
 
 const RADICE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -72,26 +73,17 @@ export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), 
 
   const { feeds, problemi } = costruisciModello({ menus, variazioni, cal });
 
-  await rm(out, { recursive: true, force: true });
-  await cp(pubblico, out, { recursive: true, filter: (src) => !src.endsWith('.gitkeep') });
-  await versionaRisorse(out);
-
-  const indice = [];
-  for (const [feed, { giorni, copertura }] of feeds) {
-    await scrivi(path.join(out, 'feed', `${feed}.ics`), costruisciIcs(feed, giorni, statoIcs, { ora }));
-    await scrivi(path.join(out, 'data', `${feed}.json`), `${JSON.stringify({ feed, copertura, giorni })}\n`);
-    indice.push({
-      slug: feed,
-      nome: scuole.feeds?.[feed] ?? FEED_INFO[feed].breve,
-      breve: FEED_INFO[feed].breve,
-      ordine: FEED_INFO[feed].ordine,
-      ics: `feed/${feed}.ics`,
-      copertura,
-      variati: giorni.filter((g) => g.variazioni?.length).length
-    });
-  }
+  // Prima i JSON della pagina, poi il controllo del contratto (src/contratto.js), solo dopo si scrive dist/.
+  const indice = [...feeds].map(([feed, { giorni, copertura }]) => ({
+    slug: feed,
+    nome: scuole.feeds?.[feed] ?? FEED_INFO[feed].breve,
+    breve: FEED_INFO[feed].breve,
+    ordine: FEED_INFO[feed].ordine,
+    ics: `feed/${feed}.ics`,
+    copertura,
+    variati: giorni.filter((g) => g.variazioni?.length).length
+  }));
   const meta = { generato: ora, annoScolastico: anno, fonte: FONTE, baseUrl: BASE_URL };
-  await scrivi(path.join(out, 'data', 'feeds.json'), `${JSON.stringify({ ...meta, feeds: indice }, null, 2)}\n`);
   const indiceScuole = scuole.scuole.map((s) => ({
     nome: s.nome,
     ordine: s.ordine,
@@ -100,6 +92,22 @@ export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), 
     confidenza: s.confidenza,
     ...(s.avviso ? { avviso: s.avviso } : {})
   }));
+  const violazioni = verificaContratto({ meta, feeds: indice, scuole: indiceScuole, giorni: feeds });
+  if (violazioni.length) {
+    const elenco = violazioni.slice(0, 50).map((v) => `  - ${v}`);
+    if (violazioni.length > 50) elenco.push(`  … e altre ${violazioni.length - 50}`);
+    throw new Error(`Dati della pagina fuori contratto (src/contratto.js), pubblicazione bloccata:\n${elenco.join('\n')}`);
+  }
+
+  await rm(out, { recursive: true, force: true });
+  await cp(pubblico, out, { recursive: true, filter: (src) => !src.endsWith('.gitkeep') });
+  await versionaRisorse(out);
+
+  for (const [feed, { giorni, copertura }] of feeds) {
+    await scrivi(path.join(out, 'feed', `${feed}.ics`), costruisciIcs(feed, giorni, statoIcs, { ora }));
+    await scrivi(path.join(out, 'data', `${feed}.json`), `${JSON.stringify({ feed, copertura, giorni })}\n`);
+  }
+  await scrivi(path.join(out, 'data', 'feeds.json'), `${JSON.stringify({ ...meta, feeds: indice }, null, 2)}\n`);
   await scrivi(path.join(out, 'data', 'scuole.json'), `${JSON.stringify(indiceScuole, null, 2)}\n`);
   // Nomi dei piatti tradotti: solo quelli usati nei feed. Un piatto senza traduzione resta in italiano.
   const piatti = piattiDeiFeed(feeds.values());

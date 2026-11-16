@@ -3,6 +3,8 @@
   "pagina.descrizione": "Meniurile cantinelor școlare ale Primăriei Padova (Comune di Padova), cu modificările la zi. Proiect neoficial.",
   "salta": "Salt la conținut",
   "errore.dati": "Datele nu au putut fi încărcate. Încercați din nou mai târziu.",
+  "errore.menu": "Meniul nu a putut fi încărcat. Verificați conexiunea și încercați din nou.",
+  "errore.riprova": "Reîncercați",
 
   "scuole.aria": "Școlile dumneavoastră",
   "scuole.dettagli": "Detalii, schimbare sau ștergere",

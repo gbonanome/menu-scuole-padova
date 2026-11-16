@@ -3,6 +3,8 @@
   "pagina.descrizione": "帕多瓦市政府（Comune di Padova）的学校食堂菜单，含最新变更。非官方项目。",
   "salta": "跳到正文",
   "errore.dati": "无法加载数据，请稍后再试。",
+  "errore.menu": "无法加载菜单，请检查网络连接后重试。",
+  "errore.riprova": "重试",
 
   "scuole.aria": "您的学校",
   "scuole.dettagli": "详情、更换或移除",

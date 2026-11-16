@@ -3,6 +3,8 @@
   "pagina.descrizione": "Menytë e mensave shkollore të Bashkisë së Padovës (Comune di Padova), me ndryshimet e përditësuara. Projekt jozyrtar.",
   "salta": "Kalo te përmbajtja",
   "errore.dati": "Të dhënat nuk u ngarkuan. Provoni përsëri më vonë.",
+  "errore.menu": "Menyja nuk u ngarkua. Kontrolloni lidhjen dhe provoni përsëri.",
+  "errore.riprova": "Provoni përsëri",
 
   "scuole.aria": "Shkollat tuaja",
   "scuole.dettagli": "Detaje, ndryshoni ose hiqni",

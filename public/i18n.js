@@ -17,6 +17,8 @@ export const IT = {
   'pagina.descrizione': 'Il menu delle mense scolastiche del Comune di Padova, con le variazioni aggiornate. Progetto non ufficiale.',
   salta: 'Vai al contenuto',
   'errore.dati': 'Impossibile caricare i dati. Riprova più tardi.',
+  'errore.menu': 'Impossibile caricare il menu. Controlla la connessione e riprova.',
+  'errore.riprova': 'Riprova',
 
   // scuole salvate e scuola scelta
   'scuole.aria': 'Le tue scuole',

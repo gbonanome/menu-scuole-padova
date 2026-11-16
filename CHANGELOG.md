@@ -13,6 +13,15 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 ### Corretto
 - Le variazioni che cambiano un piatto in un altro giorno indicato solo col nome, per esempio "(il frullato di martedì verrà sostituito da frutta fresca)" nell'avviso dello sciopero del 20/11, ora vengono applicate a quel giorno e solo all'ordine di scuola che le nomina. Prima la frase si perdeva: il 17/11 le primarie e il 19/11 le infanzie veicolate mostravano ancora il frullato. Il menu sostitutivo completo di uno sciopero vale solo per il suo giorno.
 
+## [1.3.0] - 2026-11-11
+
+### Aggiunto
+- La build verifica i dati della pagina prima di pubblicarli (`src/contratto.js`): un giorno chiuso senza motivo, una variazione senza data, una scuola con un menu che non esiste e simili fermano la pubblicazione con l'elenco dei problemi, invece di arrivare sulla pagina come "null" o testi a metà.
+
+### Corretto
+- Se il menu della scuola non si carica (connessione assente, file non raggiungibile) la pagina lo dice, con il pulsante *Riprova*, invece di mostrare "niente mensa" e una settimana di giorni senza menu.
+- Nel riquadro del menu di oggi (e del prossimo giorno con mensa) non compare più la scritta "null" sopra i piatti nei giorni senza variazioni.
+
 ## [1.2.2] - 2026-11-10
 
 ### Modificato
@@ -94,7 +103,8 @@ Prima versione pubblica.
 - Workflow GitHub: PR da rivedere per i nuovi menu stagionali, issue per errori e variazioni incerte, pubblicazione su GitHub Pages.
 - Test su fixture reali, snapshot dei feed e rilettura con un parser indipendente.
 
-[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.2...HEAD
+[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.1.1...v1.2.0
