@@ -1299,16 +1299,29 @@ LAST-MODIFIED:20261108T120000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
-SUMMARY:🍽 Minestra in brodo vegetale con risoni · Spezzatino di manzo
+SUMMARY:⚠️ VARIATO · Minestra in brodo vegetale con risoni · Spezzati
+ no di manzo
 DESCRIPTION:• Minestra in brodo vegetale con risoni\n• Spezzatino di ma
- nzo\n• Patate al forno\n• Pane semintegrale\n• Frullato di frutta 10
- 0%\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): 
- https://www.scuoledussmann.it/upload/editorpagine/ok02-menu-autunnale-infa
- nzie-veicolate-2026-27-4876134.pdf\nTutto il menu: https://gbonanome.githu
- b.io/menu-scuole-padova/#infanzia-veicolato
+ nzo\n• Patate al forno\n• Pane semintegrale\n• Frutta fresca (era: F
+ rullato di frutta 100%)\n\nSettimana 4 di 4 · Menu autunnale 2026-27\n\n
+ ⚠️ VARIAZIONE (pubblicata il 06/11/2026): VARIAZIONE MENU' 20/11\ninfo
+ rmiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù
+  saranno così articolati:\nInfanzie veicolate: pasta al pomodoro\, tonno 
+ all’olio\, fagiolini all’olio\, pane\, frullato (il frullato di gioved
+ ì verrà sostituito da frutta fresca)\nFonte: https://www.scuoledussmann.
+ it/padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/u
+ pload/editorpagine/ok02-menu-autunnale-infanzie-veicolate-2026-27-4876134.
+ pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-padova/#infanz
+ ia-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#infanzia-veicolato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚠️ VARIATO · Minestra in brodo vegetale con risoni · Spez
+ zatino di manzo
+TRIGGER;RELATED=START:PT7H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:infanzia-veicolato-20261120@gbonanome.github.io
