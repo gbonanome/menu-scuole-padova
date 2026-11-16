@@ -375,6 +375,8 @@
     "pubblicata": "2026-11-06",
     "testo": "Gentili genitori,\n\r\ninformiamo che a causa dello sciopero previsto per venerdì 20/11/2026 i menù saranno così articolati:\n\r\n\r\n\r\n- Nido veicolato: invariato\n\r\n- Infanzie veicolate: pasta al pomodoro, tonno all’olio, fagiolini all’olio, pane, frullato (il frullato di giovedì verrà sostituito da frutta fresca)\n\r\n- Primarie e secondarie veicolate + primaria Lambruschini: pasta al pomodoro, tonno all’olio, fagiolini all’olio, cracker, frullato (il frullato di martedì verrà sostituito da frutta fresca)",
     "date": [
+      "2026-11-17",
+      "2026-11-19",
       "2026-11-20"
     ],
     "parti": [
@@ -396,7 +398,8 @@
           "Fagiolini all’olio",
           "Pane",
           "Frullato"
-        ]
+        ],
+        "dataMenu": "2026-11-20"
       },
       {
         "feed": [
@@ -410,13 +413,37 @@
           "Fagiolini all’olio",
           "Cracker",
           "Frullato"
+        ],
+        "dataMenu": "2026-11-20"
+      }
+    ],
+    "sostituzioni": [
+      {
+        "da": "frullato",
+        "a": "frutta fresca",
+        "date": [
+          "2026-11-19"
+        ],
+        "feed": [
+          "infanzia-veicolato"
+        ]
+      },
+      {
+        "da": "frullato",
+        "a": "frutta fresca",
+        "date": [
+          "2026-11-17"
+        ],
+        "feed": [
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
         ]
       }
     ],
-    "sostituzioni": [],
-    "confidenza": "alta",
+    "confidenza": "media",
     "motivi": [
-      "testo diviso per ordine di scuola"
+      "testo diviso per ordine di scuola",
+      "piatto sostituito in un giorno indicato solo col nome, nella settimana del 2026-11-16"
     ]
   }
 ]

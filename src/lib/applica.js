@@ -57,11 +57,14 @@ export function risolviVariazioni(variazioni, menus, cal) {
     const trovate = [];
     for (const data of v.date) {
       const sostData = v.sostituzioni.filter((s) => s.date.includes(data));
+      // Sostituzioni legate a un ordine di scuola: quel giorno riguarda solo i loro feed.
+      const soloFeed = sostData.length && sostData.every((s) => s.feed) ? new Set(sostData.flatMap((s) => s.feed)) : null;
+      const vale = (s, feed) => !s.feed || s.feed.includes(feed);
       const candidati = [];
       for (const parte of v.parti) {
         for (const feed of parte.feed) {
           const g = giorni.get(feed)?.get(data);
-          if (g && !parte.invariato) candidati.push({ feed, g, parte });
+          if (g && !parte.invariato && (!soloFeed || soloFeed.has(feed))) candidati.push({ feed, g, parte });
         }
       }
       if (!candidati.length) {
@@ -69,18 +72,20 @@ export function risolviVariazioni(variazioni, menus, cal) {
         continue;
       }
       // Se la variazione dice quale piatto cambia, vale solo per i feed che quel giorno lo servono.
-      const conferma = sostData.length ? candidati.filter((c) => sostData.some((s) => piattoPresente(s.da, c.g.piatti))) : [];
+      const conferma = sostData.length ? candidati.filter((c) => sostData.some((s) => vale(s, c.feed) && piattoPresente(s.da, c.g.piatti))) : [];
       const usati = conferma.length ? conferma : candidati;
       for (const c of usati) {
+        // il menu sostitutivo completo vale solo per il suo giorno (non per gli altri giorni citati)
+        const menu = c.parte.menu && (!c.parte.dataMenu || c.parte.dataMenu === data) ? c.parte.menu : null;
         trovate.push({
           data,
           feed: c.feed,
           id: v.id,
           titolo: v.titolo,
           testo: c.parte.testo,
-          ambito: conferma.length || c.parte.menu ? 'confermato' : 'ipotizzato',
-          ...(c.parte.menu ? { menu: c.parte.menu } : {}),
-          sostituzioni: conferma.length ? sostData.filter((s) => piattoPresente(s.da, c.g.piatti)).map(({ da, a }) => ({ da, a })) : []
+          ambito: conferma.length || menu ? 'confermato' : 'ipotizzato',
+          ...(menu ? { menu } : {}),
+          sostituzioni: conferma.length ? sostData.filter((s) => vale(s, c.feed) && piattoPresente(s.da, c.g.piatti)).map(({ da, a }) => ({ da, a })) : []
         });
       }
       if (sostData.length && !conferma.length) {

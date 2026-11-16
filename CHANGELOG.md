@@ -10,6 +10,9 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Corretto
+- Le variazioni che cambiano un piatto in un altro giorno indicato solo col nome, per esempio "(il frullato di martedì verrà sostituito da frutta fresca)" nell'avviso dello sciopero del 20/11, ora vengono applicate a quel giorno e solo all'ordine di scuola che le nomina. Prima la frase si perdeva: il 17/11 le primarie e il 19/11 le infanzie veicolate mostravano ancora il frullato. Il menu sostitutivo completo di uno sciopero vale solo per il suo giorno.
+
 ## [1.3.0] - 2026-11-11
 
 ### Aggiunto

@@ -165,6 +165,25 @@ export function giorniSenzaData(righe, date) {
 }
 
 /**
+ * Sostituzioni in un altro giorno della stessa settimana, indicato solo col nome:
+ * "(il frullato di martedì verrà sostituito da frutta fresca)" -> { da: 'frullato', a: 'frutta fresca', date: [martedì] }.
+ * Il giorno si calcola nella settimana di `riferimento` (la data della variazione).
+ */
+export function estraiSostituzioniGiorno(testo, riferimento) {
+  if (!riferimento) return [];
+  const lun = lunediDi(riferimento);
+  const re = /(?:\b(?:il|lo|la|i|gli|le)\s+|\bl[’'])([^(),.;:]+?)\s+(?:di|del|previst[oaie]\s+(?:per\s+)?(?:il\s+)?)\s*(lunedì|martedì|mercoledì|giovedì|venerdì)(?![\p{L}])\s+(?:verr[àa]|verranno|sar[àa]|saranno)\s+sostituit[oaie]\s+(?:da|con)\s+([^(),.;]+)/giu;
+  const out = [];
+  for (const m of testo.matchAll(re)) {
+    const da = m[1].trim();
+    const a = m[3].trim();
+    if (!da || !a || da.length > 90 || a.length > 90) continue;
+    out.push({ da, a, date: [addDays(lun, NOMI_GIORNI[m[2].toLowerCase()] - 1)] });
+  }
+  return out;
+}
+
+/**
  * @param {{id:string,titolo:string,pubblicata:string,testo:string}} notizia
  */
 export function parseVariazione({ id, titolo, pubblicata, testo }) {
@@ -177,6 +196,11 @@ export function parseVariazione({ id, titolo, pubblicata, testo }) {
   const perRiga = righe.map((r) => ({ r, feed: feedCitati(r.replace(/^[-•]\s*/, '').split(/[:(]/)[0]) }));
   const specifiche = perRiga.filter((x) => x.feed && /^[-•]|^[A-ZÀ-Ý][^.]{0,60}:/.test(x.r));
   const motivi = [];
+  // Sostituzioni in un altro giorno indicato col nome: valgono solo per l'ordine di scuola che le cita.
+  const perGiorno = [];
+  const giornoDi = (t, feed) => {
+    for (const s of estraiSostituzioniGiorno(t, date[0])) if (s.date[0] >= pubblicata) perGiorno.push(feed ? { ...s, feed } : s);
+  };
   let parti;
   if (specifiche.length >= 2) {
     // Preambolo e "N.B." valgono per tutti; le righe dopo un ordine di scuola appartengono a quell'ordine.
@@ -194,13 +218,18 @@ export function parseVariazione({ id, titolo, pubblicata, testo }) {
       const dopo = riga.slice(riga.indexOf(':') + 1).trim();
       if (/^invariat[oaie]\b/i.test(dopo) && !proprie.get(x).length) parte.invariato = true;
       const menu = menuCompleto(dopo);
-      if (menu && !proprie.get(x).length && date.length === 1) parte.menu = menu;
+      if (menu && !proprie.get(x).length && date.length === 1) {
+        parte.menu = menu;
+        parte.dataMenu = date[0];
+      }
+      if (!parte.invariato) giornoDi([riga, ...proprie.get(x)].join('\n'), x.feed);
       return parte;
     });
     motivi.push('testo diviso per ordine di scuola');
   } else {
     const feed = feedCitati(`${titolo}\n${testo}`);
     parti = [{ feed: feed ?? VEICOLATI, testo: righe.join('\n') }];
+    giornoDi(righe.join('\n'), null);
     if (!feed) motivi.push('nessun ordine di scuola nominato: applicata a tutti i veicolati');
   }
 
@@ -209,7 +238,13 @@ export function parseVariazione({ id, titolo, pubblicata, testo }) {
     motivi.push(`giorni indicati solo col nome, riferiti alla settimana del ${lunediDi(date[0])}`);
   }
 
-  const sostituzioni = [];
+  const nuoveDate = perGiorno.map((s) => s.date[0]).filter((d) => !date.includes(d));
+  if (nuoveDate.length) {
+    date = [...new Set([...date, ...nuoveDate])].sort();
+    motivi.push(`piatto sostituito in un giorno indicato solo col nome, nella settimana del ${lunediDi(date[0])}`);
+  }
+
+  const sostituzioni = [...perGiorno];
   for (const riga of righe) {
     for (const frase of riga.split(/(?<=[.;])\s+/)) {
       const d = estraiDate(frase, pubblicata);
@@ -222,7 +257,7 @@ export function parseVariazione({ id, titolo, pubblicata, testo }) {
     }
   }
 
-  let confidenza = deduce.length ? 'media' : 'alta';
+  let confidenza = deduce.length || nuoveDate.length ? 'media' : 'alta';
   if (!date.length) {
     confidenza = 'bassa';
     motivi.push('nessuna data riconosciuta');

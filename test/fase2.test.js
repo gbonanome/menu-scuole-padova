@@ -5,7 +5,7 @@ import { parseMenuPdf, righeInPiatti, eccezioniDaNota, parseValidita } from '../
 import { validaMenu } from '../src/validate.js';
 import { caricaCalendario } from '../src/lib/calendario.js';
 import { giorniDaIntervalli, giorniDaRegola } from '../src/lib/expand.js';
-import { estraiDate, estraiScambio, estraiSostituzioni, parseVariazione } from '../src/parse-variation.js';
+import { estraiDate, estraiScambio, estraiSostituzioni, estraiSostituzioniGiorno, parseVariazione } from '../src/parse-variation.js';
 import { estraiLinkPdf, estraiNotizie } from '../src/scrape.js';
 
 const pdf = (n) => readFile(new URL(`../fixtures/pdf/${n}`, import.meta.url));
@@ -105,8 +105,38 @@ test('variazione per ordine di scuola (sciopero 20/11)', async () => {
   const { htmlInTesto } = await import('../src/lib/html.js');
   const corpo = testo.slice(testo.indexOf('</h2>') + 5).replace(/<div class="contimgnews">[\s\S]*$/, '');
   const v = parseVariazione({ id: 'post_78825', titolo: "VARIAZIONE MENU' 20/11", pubblicata: '2026-11-06', testo: htmlInTesto(corpo) });
-  assert.deepEqual(v.date, ['2026-11-20']);
+  // la parentesi "(il frullato di <giorno> verrà sostituito da frutta fresca)" aggiunge il giorno, per il solo ordine che la cita
+  assert.deepEqual(v.date, ['2026-11-17', '2026-11-19', '2026-11-20']);
   assert.deepEqual(v.parti.map((p) => p.feed), [['nido-veicolato'], ['infanzia-veicolato'], ['primaria-secondaria-veicolato', 'primaria-lambruschini']]);
+  assert.deepEqual(v.parti.map((p) => p.dataMenu ?? null), [null, '2026-11-20', '2026-11-20']);
+  assert.deepEqual(v.sostituzioni, [
+    { da: 'frullato', a: 'frutta fresca', date: ['2026-11-19'], feed: ['infanzia-veicolato'] },
+    { da: 'frullato', a: 'frutta fresca', date: ['2026-11-17'], feed: ['primaria-secondaria-veicolato', 'primaria-lambruschini'] }
+  ]);
+  assert.equal(v.confidenza, 'media');
+
+  // applicazione: il menu dello sciopero solo il 20, la frutta al posto del frullato solo nell'ordine giusto
+  const { risolviVariazioni, caricaMenus } = await import('../src/lib/applica.js');
+  const menus = await caricaMenus(new URL('../data/menus', import.meta.url).pathname, '2026-27');
+  const { applicazioni } = risolviVariazioni([v], menus, cal);
+  const di = (feed, data) => applicazioni.filter((a) => a.feed === feed && a.data === data);
+  assert.deepEqual(di('primaria-secondaria-veicolato', '2026-11-17').map((a) => [a.sostituzioni, a.menu ?? null]), [[[{ da: 'frullato', a: 'frutta fresca' }], null]]);
+  assert.deepEqual(di('infanzia-veicolato', '2026-11-17'), []);
+  assert.deepEqual(di('infanzia-veicolato', '2026-11-19').map((a) => a.sostituzioni), [[{ da: 'frullato', a: 'frutta fresca' }]]);
+  assert.deepEqual(di('primaria-secondaria-veicolato', '2026-11-19'), []);
+  assert.ok(di('primaria-secondaria-veicolato', '2026-11-20')[0].menu.includes('Cracker'));
+  assert.equal(applicazioni.filter((a) => a.feed === 'nido-veicolato').length, 0);
+});
+
+test('estraiSostituzioniGiorno: giorno indicato solo col nome', () => {
+  assert.deepEqual(estraiSostituzioniGiorno('frullato (il frullato di martedì verrà sostituito da frutta fresca)', '2026-11-20'), [
+    { da: 'frullato', a: 'frutta fresca', date: ['2026-11-17'] }
+  ]);
+  assert.deepEqual(estraiSostituzioniGiorno('lo yogurt previsto per giovedì sarà sostituito con frutta fresca', '2026-11-16'), [
+    { da: 'yogurt', a: 'frutta fresca', date: ['2026-11-19'] }
+  ]);
+  // spostamento, non sostituzione: nessun risultato
+  assert.deepEqual(estraiSostituzioniGiorno('la frutta prevista viene spostata al martedì al posto del frullato', '2026-10-16'), []);
 });
 
 test('scrape: link PDF e notizie dalla pagina reale salvata', async () => {
