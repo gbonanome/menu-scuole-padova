@@ -493,5 +493,83 @@
     "motivi": [
       "giorni indicati solo col nome, riferiti alla settimana del 2026-12-07"
     ]
+  },
+  {
+    "id": "post_8311",
+    "titolo": "VARIAZIONE MENU 25/11 E 02/12",
+    "pubblicata": "2026-11-18",
+    "testo": "si comunica l’inversione del secondo piatto tra mercoledì 25/11/2026 e mercoledì 02/12/2026.",
+    "date": [
+      "2026-11-25",
+      "2026-12-02"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato",
+          "infanzia-veicolato",
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "si comunica l’inversione del secondo piatto tra mercoledì 25/11/2026 e mercoledì 02/12/2026."
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "bassa",
+    "motivi": [
+      "nessun ordine di scuola nominato: applicata a tutti i veicolati"
+    ]
+  },
+  {
+    "id": "post_97945",
+    "titolo": "VARIAZIONE MENU 04/12",
+    "pubblicata": "2026-11-18",
+    "testo": "Gentili genitori,\n\r\na causa dello sciopero previsto per venerdì 04/12/2026 i menù saranno così articolati:\n\r\n\r\n\r\n- Nido veicolato: invariato\n\r\n- Infanzie veicolate: riso alla zucca, stracchino, carote all’olio, frullato di frutta, pane\n\r\n- Primarie e secondarie veicolate + lambruschini: riso alla zucca, stracchino, carote all’olio, frullato di frutta, cracker",
+    "date": [
+      "2026-12-04"
+    ],
+    "parti": [
+      {
+        "feed": [
+          "nido-veicolato"
+        ],
+        "testo": "Gentili genitori,\na causa dello sciopero previsto per venerdì 04/12/2026 i menù saranno così articolati:\nNido veicolato: invariato",
+        "invariato": true
+      },
+      {
+        "feed": [
+          "infanzia-veicolato"
+        ],
+        "testo": "Gentili genitori,\na causa dello sciopero previsto per venerdì 04/12/2026 i menù saranno così articolati:\nInfanzie veicolate: riso alla zucca, stracchino, carote all’olio, frullato di frutta, pane",
+        "menu": [
+          "Riso alla zucca",
+          "Stracchino",
+          "Carote all’olio",
+          "Frullato di frutta",
+          "Pane"
+        ],
+        "dataMenu": "2026-12-04"
+      },
+      {
+        "feed": [
+          "primaria-secondaria-veicolato",
+          "primaria-lambruschini"
+        ],
+        "testo": "Gentili genitori,\na causa dello sciopero previsto per venerdì 04/12/2026 i menù saranno così articolati:\nPrimarie e secondarie veicolate + lambruschini: riso alla zucca, stracchino, carote all’olio, frullato di frutta, cracker",
+        "menu": [
+          "Riso alla zucca",
+          "Stracchino",
+          "Carote all’olio",
+          "Frullato di frutta",
+          "Cracker"
+        ],
+        "dataMenu": "2026-12-04"
+      }
+    ],
+    "sostituzioni": [],
+    "confidenza": "alta",
+    "motivi": [
+      "testo diviso per ordine di scuola"
+    ]
   }
 ]
