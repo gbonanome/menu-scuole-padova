@@ -21,6 +21,8 @@
   --b-ink: #18241b;
   --b-muted: #566357;
   --b-today: #f3c74a;
+  --b-week: #f7df8f;
+  --b-week-day: #fffdf5;
   --b-alert: #c43d1f;
   --b-alert-bg: #fbe5dc;
   --b-closed: #e2e5dd;
@@ -40,6 +42,8 @@
     --b-alert: #ff8a68;
     --b-alert-bg: #3b221b;
     --b-closed: #1a201b;
+    --b-week: #5a4c1c;
+    --b-week-day: #2a2616;
     --b-focus: #f3c74a;
     color-scheme: dark;
   }
@@ -162,8 +166,8 @@ button { cursor: pointer; }
 .mm-griglia { width: 100%; border-collapse: separate; border-spacing: 0 3px; table-layout: fixed; }
 .mm-griglia th { font: 700 0.68rem var(--f-body); text-transform: uppercase; letter-spacing: 0.06em; color: var(--b-muted); padding: 0 0 2px; }
 .mm-griglia td { padding: 2px; text-align: center; }
-/* la settimana mostrata è una fascia, come un vassoio */
-.mm-griglia tr.mostrata td { background: var(--b-tray); }
+/* la settimana mostrata è una fascia gialla, un tono sotto il giallo pieno di oggi; dentro, i giorni quasi bianchi */
+.mm-griglia tr.mostrata td { background: var(--b-week); }
 .mm-griglia tr.mostrata td:first-child { border-start-start-radius: 12px; border-end-start-radius: 12px; }
 .mm-griglia tr.mostrata td:last-child { border-start-end-radius: 12px; border-end-end-radius: 12px; }
 .mm-giorno { position: relative; width: 100%; max-width: 46px; aspect-ratio: 1; margin: 0 auto; border: 0; border-radius: 10px; background: var(--b-well); color: var(--b-ink);
@@ -175,6 +179,7 @@ button { cursor: pointer; }
 .mm-non-pubblicato .mm-segno { border: 1.5px solid var(--b-muted); }
 .mm-chiuso { background: var(--b-closed); border: 1.5px dashed var(--b-tray); color: var(--b-muted); font-weight: 500; }
 .mm-vuoto { background: none; color: var(--b-muted); font-weight: 500; }
+.mm-settimana:not(.mm-oggi, .mm-chiuso, .mm-vuoto, .mm-scoperto) { background: var(--b-week-day); }
 .mm-oggi { background: var(--b-today); color: #18241b; }
 .mm-oggi.mm-menu .mm-segno { background: #18241b; }
 .mm-legenda { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.75rem; color: var(--b-muted); }
