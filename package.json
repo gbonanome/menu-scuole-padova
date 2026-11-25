@@ -1,6 +1,6 @@
 {
   "name": "menu-scuole-padova",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Feed .ics e pagina web (non ufficiali) per i menu delle mense scolastiche del Comune di Padova",
   "type": "module",
   "license": "MIT",
