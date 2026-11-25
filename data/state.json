@@ -205,6 +205,33 @@
       "annoScolastico": "2025-26",
       "visto": "2026-11-08",
       "ignorato": "anno 2025-26"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/3-asilo-nido-veicolata-invernale-4420110.pdf": {
+      "sha256": "73d8b05be62177f30c0b2555ccd399d252cadf1372e3a6339d68f1ae1010ce14",
+      "etag": "\"1a78e-661040fee980f-gzip\"",
+      "lastModified": "Tue, 24 Nov 2026 11:32:15 GMT",
+      "feed": "nido-veicolato",
+      "stagione": "invernale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-25"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/3-infanzia-veicolata-invernale-2026-2027-2980730.pdf": {
+      "sha256": "0c208984a3a3fcca530d9f3409829bd523848f23fc1014c9e3040e2be534518a",
+      "etag": "\"1a033-6610410c8b21f-gzip\"",
+      "lastModified": "Tue, 24 Nov 2026 11:32:29 GMT",
+      "feed": "infanzia-veicolato",
+      "stagione": "invernale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-25"
+    },
+    "https://www.scuoledussmann.it/upload/editorpagine/3-primaria-e-secondaria-invernale-7845237.pdf": {
+      "sha256": "a73983ed41e9ca6f388a964d26123fad0c57d57c51f87a9a076984f4aa588574",
+      "etag": "\"1a10e-6610411951c26-gzip\"",
+      "lastModified": "Tue, 24 Nov 2026 11:32:43 GMT",
+      "feed": "primaria-secondaria-veicolato",
+      "stagione": "invernale",
+      "annoScolastico": "2026-27",
+      "visto": "2026-11-25"
     }
   },
   "notizie": {
