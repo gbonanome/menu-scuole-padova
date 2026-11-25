@@ -52,6 +52,17 @@ test('modello: variazioni reali applicate ai feed giusti', async () => {
   assert.deepEqual(giorno('nido-cucina-interna', '2026-12-28'), { data: '2026-12-28', stato: 'chiuso', motivo: 'Vacanze di Natale' });
 });
 
+test('modello: un ponte dentro il ciclo tiene i piatti previsti, le vacanze lunghe no', async () => {
+  const feeds = await modello();
+  const giorno = (f, d) => feeds.get(f).giorni.find((g) => g.data === d);
+  // 7/12, ponte dell'Immacolata: la settimana ha altri giorni di scuola, il menu del PDF resta leggibile
+  const ponte = giorno('nido-cucina-interna', '2026-12-07');
+  assert.equal(ponte.stato, 'chiuso');
+  assert.ok(ponte.piatti?.length, 'piatti previsti del ponte');
+  // 28/12, vacanze di Natale: tutta la settimana chiusa, niente piatti
+  assert.equal(giorno('nido-cucina-interna', '2026-12-28').piatti, undefined);
+});
+
 test('ics: UID stabile, SEQUENCE che aumenta solo se cambia il contenuto', async () => {
   const feeds = await modello();
   const giorni = feeds.get('primaria-secondaria-veicolato').giorni;

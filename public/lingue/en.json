@@ -53,6 +53,7 @@
   "giorno.oggi.aria": "{0}, today",
   "giorno.chiuso.nido": "Nursery closed · {0}",
   "giorno.chiuso.scuola": "School closed · {0}",
+  "giorno.menuprevisto": "Menu of the day",
   "giorno.nonpubblicato": "Menu not published yet",
   "giorno.noniniziata": "Canteen not started yet",
   "giorno.nessuno": "No menu",

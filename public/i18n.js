@@ -70,6 +70,7 @@ export const IT = {
   'giorno.oggi.aria': '{0}, oggi',
   'giorno.chiuso.nido': 'Nido chiuso · {0}',
   'giorno.chiuso.scuola': 'Scuola chiusa · {0}',
+  'giorno.menuprevisto': 'Menu del giorno',
   'giorno.nonpubblicato': 'Menu non ancora pubblicato',
   'giorno.noniniziata': 'Mensa non ancora iniziata',
   'giorno.nessuno': 'Nessun menu',
