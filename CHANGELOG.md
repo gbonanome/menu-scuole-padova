@@ -10,10 +10,17 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+## [2.0.0] - 2026-11-25
+
 ### Aggiunto
 - Dopo l'ultimo menu pubblicato la pagina dice chiaramente che il menu non è ancora uscito sul sito di Dussmann, invece di mostrare una fila di giorni vuoti: "Il menu dal 30 novembre non è ancora uscito sul sito di Dussmann. Viene aggiunto automaticamente appena viene pubblicato. Ultimo controllo: oggi alle 15.15.", con il link al sito ufficiale. Nella settimana i giorni scoperti diventano un solo riquadro (le chiusure restano), la navigazione si ferma alla settimana dell'avviso e il calendario del mese ha una sola nota sotto la griglia. Se oggi è uno di quei giorni, l'avviso è nel riquadro di oggi.
 - L'ora dell'ultimo controllo compare solo se l'ultima lettura di pagina e PDF dei menu è riuscita: se è fallita, il menu potrebbe essere uscito senza che lo abbiamo letto.
 - Nei giorni di chiusura dentro una settimana di scuola (ponti e feste, per esempio il 7 e l'8 dicembre) la pagina resta grigia con "Scuola chiusa" ma tiene il menu previsto dal PDF in un riquadro *Menu del giorno*, chiuso finché non lo si apre. Serve a leggere le variazioni che spostano quei piatti in un altro giorno ("mercoledì 9 il menu di lunedì 7"). Nelle vacanze lunghe, con tutta la settimana chiusa, il riquadro non c'è. I feed .ics non cambiano.
+- Quando un avviso cambia tutto il menu del giorno, sopra i piatti un'etichetta dice se è il menu sostitutivo dell'avviso (*Menu variato*) o quello del PDF perché non è chiaro cosa cambia (*Menu originale*). Il singolo piatto sostituito resta segnato con il bollino.
+- Le date citate nel testo di un avviso (25/11/2026, 12/11, 17 novembre, "lunedì 7") sono cliccabili: portano alla settimana di quel giorno ed evidenziano il suo riquadro.
+
+### Modificato
+- Nel calendario del mese la settimana mostrata è evidenziata in giallo burro invece che in verde, che si confondeva con i grigi della pagina; oggi resta in un giallo più acceso, e in tema scuro la settimana è ocra. Riscritto anche il testo del riquadro per le variazioni incerte, in tutte le lingue.
 
 ### Corretto
 - Nel calendario del mese non compare più la scritta "null" sotto la griglia quando il mese non ha giorni con il menu ancora da pubblicare.
@@ -114,7 +121,8 @@ Prima versione pubblica.
 - Workflow GitHub: PR da rivedere per i nuovi menu stagionali, issue per errori e variazioni incerte, pubblicazione su GitHub Pages.
 - Test su fixture reali, snapshot dei feed e rilettura con un parser indipendente.
 
-[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.3.0...HEAD
+[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.3.0...v2.0.0
 [1.3.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.0...v1.2.1
