@@ -109,10 +109,13 @@ export const IT = {
   'variazione.pubblicata': 'Avviso pubblicato da Dussmann il {0}',
   'variazione.sostitutivo': 'Menu sostitutivo',
   'variazione.alposto': 'al posto di: {0}',
-  'variazione.generica': 'Il menu di questo giorno potrebbe essere diverso: leggi l’avviso.',
+  'variazione.generica': 'Non è chiaro cosa cambia: sotto c’è il menu originale, leggi l’avviso.',
   'variazione.fonte': 'fonte',
   'variazione.testo': 'Testo dell’avviso',
   'variazione.traduci': 'Traduci',
+  'variazione.vai': 'Vai a {0}',
+  'menu.variato': 'Menu variato',
+  'menu.originale': 'Menu originale',
 
   // calendario e schermata Home
   'cal.titolo': 'Aggiungi al calendario',

@@ -2,7 +2,7 @@
 import { test, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import { impostaLingua, meseEAnno } from '../public/i18n.js';
-import { grigliaMese, inizioScoperto, limitiMesi, lunediDi, meseDaMostrare, meseDi, spostaFeriale, spostaMese, statoGiorno, ultimaSettimana } from '../public/mese.js';
+import { dateNelTesto, grigliaMese, inizioScoperto, limitiMesi, lunediDi, meseDaMostrare, meseDi, spostaFeriale, spostaMese, statoGiorno, ultimaSettimana } from '../public/mese.js';
 
 afterEach(() => impostaLingua('it'));
 
@@ -111,4 +111,24 @@ test('titolo del mese: italiano dalle tabelle, inglese da Intl', () => {
   assert.equal(meseEAnno('2026-11-01'), 'novembre 2026');
   impostaLingua('en', {});
   assert.equal(meseEAnno('2026-11-01'), 'November 2026');
+});
+
+test('date negli avvisi: con anno, senza anno, col nome del mese, "lunedì 7"; i numeri da soli no', () => {
+  const trova = (testo, pubblicata) => dateNelTesto(testo, pubblicata).map((x) => [testo.slice(x.inizio, x.fine), x.data]);
+  assert.deepEqual(trova('l’inversione del secondo piatto tra mercoledì 25/11/2026 e mercoledì 02/12/2026.', '2026-11-18'), [
+    ['mercoledì 25/11/2026', '2026-11-25'],
+    ['mercoledì 02/12/2026', '2026-12-02']
+  ]);
+  assert.deepEqual(trova('- mercoledì 9 verrà somministrato il menù di lunedì 7 (3° settimana invernale), giovedì invariato', '2026-11-17'), [
+    ['mercoledì 9', '2026-12-09'],
+    ['lunedì 7', '2026-12-07']
+  ]);
+  assert.deepEqual(trova('domani 10/11, il 5 e 17 novembre, frutta 100%, 20.11.26', '2026-11-09'), [
+    ['10/11', '2026-11-10'],
+    ['17 novembre', '2026-11-17'],
+    ['20.11.26', '2026-11-20']
+  ]);
+  // pubblicata a dicembre, "12 gennaio" è dell'anno dopo
+  assert.deepEqual(trova('lunedì 12 gennaio', '2026-12-18'), [['lunedì 12 gennaio', '2027-01-12']]);
+  assert.deepEqual(trova('31/02 e 45/11', '2026-11-18'), []);
 });
