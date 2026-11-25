@@ -2,7 +2,7 @@
 import { test, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import { impostaLingua, meseEAnno } from '../public/i18n.js';
-import { grigliaMese, limitiMesi, meseDaMostrare, meseDi, spostaFeriale, spostaMese, statoGiorno } from '../public/mese.js';
+import { grigliaMese, inizioScoperto, limitiMesi, lunediDi, meseDaMostrare, meseDi, spostaFeriale, spostaMese, statoGiorno, ultimaSettimana } from '../public/mese.js';
 
 afterEach(() => impostaLingua('it'));
 
@@ -59,6 +59,45 @@ test('mesi: spostamento, limiti, mese da mostrare', () => {
   assert.equal(meseDaMostrare(null, '2026-11-30', '2026-12-02'), '2026-12');
   assert.equal(meseDaMostrare(null, '2026-11-30', '2026-11-10'), '2026-11');
   assert.equal(meseDaMostrare('2027-01', '2026-11-09', '2026-11-10'), '2026-11');
+});
+
+// Dopo l'ultimo menu pubblicato il menu non è ancora uscito: da lì in poi un solo avviso e niente navigazione oltre.
+const giorniDi = (voci) => new Map(voci.map(([data, stato]) => [data, { data, stato }]));
+
+test('periodo scoperto: inizia al primo giorno di scuola senza menu dopo l\'ultimo menu pubblicato', () => {
+  const giorni = giorniDi([
+    ['2026-11-26', 'menu'],
+    ['2026-11-27', 'menu'],
+    ['2026-11-30', 'non-pubblicato'],
+    ['2026-12-01', 'non-pubblicato'],
+    ['2026-12-07', 'chiuso'],
+    ['2026-12-09', 'non-pubblicato']
+  ]);
+  assert.equal(inizioScoperto(giorni, { dal: '2026-09-14', al: '2026-11-27' }), '2026-11-30');
+  // chiusure subito dopo l'ultimo menu (vacanze): l'avviso parte dal primo giorno di scuola
+  const natale = giorniDi([['2026-12-23', 'menu'], ['2026-12-24', 'chiuso'], ['2027-01-07', 'non-pubblicato']]);
+  assert.equal(inizioScoperto(natale, { dal: '2026-12-01', al: '2026-12-23' }), '2027-01-07');
+});
+
+test('periodo scoperto: i buchi tra due menu già pubblicati non contano, e senza menu non c\'è avviso', () => {
+  const buco = giorniDi([['2026-11-27', 'menu'], ['2026-11-30', 'non-pubblicato'], ['2026-12-01', 'menu'], ['2026-12-02', 'menu']]);
+  assert.equal(inizioScoperto(buco, { dal: '2026-09-14', al: '2026-12-02' }), null);
+  assert.equal(inizioScoperto(giorniDi([['2027-06-08', 'menu']]), { dal: '2026-09-14', al: '2027-06-08' }), null);
+  assert.equal(inizioScoperto(giorniDi([['2026-11-30', 'non-pubblicato']]), null), null);
+});
+
+test('ultima settimana raggiungibile: quella dell\'avviso, o quella di oggi se è più avanti', () => {
+  assert.equal(lunediDi('2026-11-28'), '2026-11-30'); // sabato: la settimana dopo
+  assert.equal(lunediDi('2026-12-03'), '2026-11-30');
+  assert.equal(ultimaSettimana('2026-11-30', '2026-11-25'), '2026-11-30');
+  assert.equal(ultimaSettimana('2026-12-03', '2026-11-25'), '2026-11-30');
+  assert.equal(ultimaSettimana('2027-03-15', '2027-04-14'), '2027-04-12');
+  assert.equal(ultimaSettimana(null, '2026-11-25'), null);
+  // il mese: non oltre quello dell'avviso (o di oggi)
+  const date = ['2026-09-14', '2026-11-27', '2026-11-30', '2027-06-08'];
+  assert.deepEqual(limitiMesi(date, { dal: '2026-09-14', al: '2026-11-27' }, '2026-11-30'), { primo: '2026-09', ultimo: '2026-11' });
+  assert.deepEqual(limitiMesi(date, { dal: '2026-09-14', al: '2026-11-27' }, '2027-04-14'), { primo: '2026-09', ultimo: '2027-04' });
+  assert.deepEqual(limitiMesi(date, { dal: '2026-09-14', al: '2026-11-27' }, null), { primo: '2026-09', ultimo: '2027-06' });
 });
 
 test('frecce tra i giorni feriali', () => {

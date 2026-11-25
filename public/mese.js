@@ -1,7 +1,7 @@
 // Mini mese: un navigatore, non una vista. Serve a saltare a una data e a vedere dove ci sono variazioni
 // e giorni senza mensa. Un solo componente, montato in contenitori diversi secondo la larghezza (lo decide app.js).
 // Le funzioni sulle date sono pure e si provano in Node (test/mese.test.js); disegnaMese() costruisce il DOM.
-import { daIso, dataLunga, eRtl, giornoBreve, iso, meseEAnno, nomeGiorno, numeroGiorno, piuGiorni, t } from './i18n.js';
+import { daIso, dataLunga, eRtl, giornoBreve, giornoEMese, iso, meseEAnno, nomeGiorno, numeroGiorno, piuGiorni, t } from './i18n.js';
 
 /** "2026-11" da "2026-11-10" */
 export const meseDi = (s) => s.slice(0, 7);
@@ -39,18 +39,53 @@ export function statoGiorno(g) {
   return null;
 }
 
+/** Lunedì della settimana; sabato e domenica portano alla settimana dopo. */
+export function lunediDi(s) {
+  const g = daIso(s).getDay();
+  if (g === 6) return piuGiorni(s, 2);
+  if (g === 0) return piuGiorni(s, 1);
+  return piuGiorni(s, 1 - g);
+}
+
+/**
+ * Primo giorno di scuola dopo l'ultimo menu pubblicato (copertura.al) che non ha ancora un menu:
+ * da lì in poi il menu non è ancora uscito. I giorni senza menu prima di copertura.al (buchi tra due
+ * menu già pubblicati) non contano. Null se dopo l'ultimo menu non c'è nessun giorno di scuola scoperto.
+ */
+export function inizioScoperto(giorni, copertura) {
+  if (!copertura) return null;
+  let primo = null;
+  for (const [d, g] of giorni) if (d > copertura.al && g.stato === 'non-pubblicato' && (!primo || d < primo)) primo = d;
+  return primo;
+}
+
+/**
+ * Ultima settimana raggiungibile: quella in cui inizia il periodo scoperto (così l'avviso si vede),
+ * o quella di oggi se è più avanti. Null se non c'è un periodo scoperto: si naviga come sempre.
+ */
+export function ultimaSettimana(inizio, oggi) {
+  if (!inizio) return null;
+  const a = lunediDi(inizio);
+  const b = lunediDi(oggi);
+  return a > b ? a : b;
+}
+
 /**
  * Primo e ultimo mese navigabili: il periodo coperto dal menu (copertura) e i giorni presenti nei dati
- * (chiusure e menu non ancora pubblicati arrivano fino alla fine dell'anno scolastico). Null se non c'è nulla.
+ * (chiusure e menu non ancora pubblicati arrivano fino alla fine dell'anno scolastico). Con fine (il giorno
+ * oltre il quale il menu non è ancora uscito, o oggi se è più avanti) l'ultimo mese è quello di fine.
+ * Null se non c'è nulla.
  */
-export function limitiMesi(date, copertura) {
+export function limitiMesi(date, copertura, fine = null) {
   let primo = copertura?.dal ?? null;
   let ultimo = copertura?.al ?? null;
   for (const d of date) {
     if (!primo || d < primo) primo = d;
     if (!ultimo || d > ultimo) ultimo = d;
   }
-  return primo ? { primo: meseDi(primo), ultimo: meseDi(ultimo) } : null;
+  if (!primo) return null;
+  if (fine && fine < ultimo) ultimo = fine;
+  return { primo: meseDi(primo), ultimo: meseDi(ultimo) };
 }
 
 /**
@@ -92,7 +127,7 @@ const maiuscola = (s) => s.replace(/^./, (c) => c.toUpperCase());
 
 /** Parola per lo stato di un giorno, nell'etichetta del pulsante e nella legenda. */
 const testoStato = (s) =>
-  ({ menu: t('mese.menu'), variato: t('mese.variazione'), 'non-pubblicato': t('mese.nonpubblicato'), chiuso: t('mese.chiuso') })[s];
+  ({ menu: t('mese.menu'), variato: t('mese.variazione'), 'non-pubblicato': t('mese.nonpubblicato'), chiuso: t('mese.chiuso'), scoperto: t('mese.scoperto.giorno') })[s];
 
 /** "giovedì 12 novembre, variazione"; per oggi "martedì 10 novembre, oggi, variazione". */
 function etichettaGiorno(d, stato, eOggi) {
@@ -103,11 +138,14 @@ function etichettaGiorno(d, stato, eOggi) {
  * Disegna il mini mese dentro radice (sempre lo stesso elemento, spostato da un contenitore all'altro).
  * @param {HTMLElement} radice
  * @param {{mese:string, giorni:Map<string,object>, oggi:string, lunedi:string, limiti:{primo:string,ultimo:string}|null,
- *   fuoco?:string|null, suGiorno:(d:string)=>void, suMese:(mese:string, fuoco?:string)=>void}} o
+ *   inizio?:string|null, fonte?:string, fuoco?:string|null, suGiorno:(d:string)=>void, suMese:(mese:string, fuoco?:string)=>void}} o
+ *   inizio: primo giorno del periodo in cui il menu non è ancora uscito (inizioScoperto); fonte: sito ufficiale.
  *   fuoco: un giorno, oppure 'prec'/'succ', da riprendere dopo il ridisegno.
  */
 export function disegnaMese(radice, o) {
-  const { mese, giorni, oggi, lunedi, limiti } = o;
+  const { mese, giorni, oggi, lunedi, limiti, inizio = null } = o;
+  // Dal giorno inizio il menu non è ancora uscito: quei giorni restano senza segno, con una nota sotto la griglia.
+  const scoperto = (d) => inizio && d >= inizio && giorni.get(d)?.stato === 'non-pubblicato';
   const righe = grigliaMese(mese);
   const dentro = (m) => !limiti || (m >= limiti.primo && m <= limiti.ultimo);
   const prec = spostaMese(mese, -1);
@@ -147,7 +185,7 @@ export function disegnaMese(radice, o) {
         { class: r.lunedi === lunedi ? 'mostrata' : null },
         r.giorni.map((d) => {
           if (!d) return el('td', {});
-          const stato = statoGiorno(giorni.get(d));
+          const stato = scoperto(d) ? 'scoperto' : statoGiorno(giorni.get(d));
           const eOggi = d === oggi;
           return el(
             'td',
@@ -190,6 +228,12 @@ export function disegnaMese(radice, o) {
   });
 
   const segno = (classe) => el('span', { class: `mm-giorno ${classe}`, 'aria-hidden': 'true' }, el('span', { class: 'mm-segno' }));
+  // Nella legenda solo gli stati che ci sono: "menu non pubblicato" ormai compare di rado.
+  const stati = new Set(tutti.map((d) => (scoperto(d) ? 'scoperto' : statoGiorno(giorni.get(d)))));
+  const voci = ['menu', 'variato', 'non-pubblicato', 'chiuso'].filter((s) => s !== 'non-pubblicato' || stati.has(s));
+  const nota = tutti.some(scoperto)
+    ? el('p', { class: 'mm-nota' }, t('mese.scoperto', giornoEMese(inizio)), ' ', el('a', { href: o.fonte }, t('mese.sito')))
+    : null;
   radice.classList.add('mini-mese');
   radice.replaceChildren(
     el(
@@ -200,10 +244,11 @@ export function disegnaMese(radice, o) {
       freccia('succ', succ, t('mese.succ'))
     ),
     el('table', { class: 'mm-griglia', 'aria-labelledby': idTitolo }, el('thead', {}, el('tr', {}, intestazioni)), corpo),
+    nota,
     el(
       'ul',
       { class: 'mm-legenda', 'aria-label': t('mese.legenda') },
-      ['menu', 'variato', 'non-pubblicato', 'chiuso'].map((s) => el('li', {}, segno(`mm-${s}`), testoStato(s)))
+      voci.map((s) => el('li', {}, segno(`mm-${s}`), testoStato(s)))
     )
   );
 

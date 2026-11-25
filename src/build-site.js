@@ -1,6 +1,8 @@
 // Build completa in dist/: feed .ics, JSON per la pagina (indice feed, indice scuole, giorni per feed,
 // nomi dei piatti tradotti) e file statici.
-// Uso: node src/build-site.js [--ora 2026-11-08T12:00:00Z] [--out dist] [--anno 2026-27]
+// Uso: node src/build-site.js [--ora 2026-11-08T12:00:00Z] [--out dist] [--anno 2026-27] [--report report.json]
+//   --report: il report di update.js. Se la lettura di pagina e PDF dei menu ha avuto errori, la pagina
+//   non mostra l'ora dell'ultimo controllo (direbbe che il menu non è uscito, quando forse non l'abbiamo letto).
 import { createHash } from 'node:crypto';
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -63,7 +65,16 @@ const scrivi = async (p, s) => {
 };
 const ordina = (o) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
 
-export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), pubblico = path.join(RADICE, 'public'), traduzioni = DIR_TRADUZIONI }) {
+/**
+ * Ora dell'ultimo controllo riuscito del sito di Dussmann, da mostrare accanto a "il menu non è ancora uscito".
+ * Null se lo scraping dei menu (pagina o PDF) ha dato errori; quelli delle sole notizie non contano.
+ */
+export function oraControllo(ora, report) {
+  const errori = report?.errori ?? [];
+  return errori.some((e) => !e.startsWith('Notizia ')) ? null : ora;
+}
+
+export async function build({ ora, controllo = ora, out, anno, dati = path.join(RADICE, 'data'), pubblico = path.join(RADICE, 'public'), traduzioni = DIR_TRADUZIONI }) {
   const cal = caricaCalendario(anno, dati);
   const menus = await caricaMenus(path.join(dati, 'menus'), anno);
   const variazioni = await leggiJson(path.join(dati, 'variations.json'), []);
@@ -83,7 +94,7 @@ export async function build({ ora, out, anno, dati = path.join(RADICE, 'data'), 
     copertura,
     variati: giorni.filter((g) => g.variazioni?.length).length
   }));
-  const meta = { generato: ora, annoScolastico: anno, fonte: FONTE, baseUrl: BASE_URL };
+  const meta = { generato: ora, controllo, annoScolastico: anno, fonte: FONTE, baseUrl: BASE_URL };
   const indiceScuole = scuole.scuole.map((s) => ({
     nome: s.nome,
     ordine: s.ordine,
@@ -129,7 +140,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const ora = arg('--ora') ?? new Date().toISOString();
   const anno = arg('--anno') ?? annoScolasticoDi(ora.slice(0, 10));
   const out = path.resolve(arg('--out') ?? path.join(RADICE, 'dist'));
-  const { indice, problemi } = await build({ ora, out, anno });
+  const report = arg('--report') ? await leggiJson(arg('--report'), null) : null;
+  const controllo = arg('--report') ? oraControllo(ora, report) : ora;
+  if (!controllo) console.log('Lettura dei menu con errori: la pagina non mostra l\'ora dell\'ultimo controllo');
+  const { indice, problemi } = await build({ ora, controllo, out, anno });
   for (const f of indice) console.log(`${f.slug.padEnd(32)} ${f.copertura ? `${f.copertura.dal} → ${f.copertura.al}` : 'nessun menu'}  variati: ${f.variati}`);
   for (const p of problemi) console.log(`[${p.livello}] ${p.id}: ${p.msg}`);
   if (arg('--problemi')) await writeFile(arg('--problemi'), `${JSON.stringify(problemi, null, 2)}\n`);

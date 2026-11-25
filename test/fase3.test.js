@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { escapeTesto, piegaRiga, costruisciIcs, titoloEvento } from '../src/build-ics.js';
 import { piattiPerTitolo } from '../src/model.js';
 import { caricaCalendario, statoGiorno } from '../src/lib/calendario.js';
+import { oraControllo } from '../src/build-site.js';
 
 const cal = caricaCalendario('2026-27');
 import { pipeline } from './helpers.js';
@@ -72,4 +73,13 @@ test('ics: UID stabile, SEQUENCE che aumenta solo se cambia il contenuto', async
 
 test('titoloEvento', () => {
   assert.equal(titoloEvento({ piatti: ['Spaghetti al pomodoro', 'Caciotta', 'Pane'], variazioni: [] }), '🍽 Spaghetti al pomodoro · Caciotta');
+});
+
+test('ultimo controllo: nascosto se la lettura di pagina o PDF dei menu ha dato errori, non per le notizie', () => {
+  const ora = '2026-11-25T14:15:00Z';
+  assert.equal(oraControllo(ora, null), ora);
+  assert.equal(oraControllo(ora, { errori: [] }), ora);
+  assert.equal(oraControllo(ora, { errori: ['Notizia post_1: HTTP 500'] }), ora);
+  assert.equal(oraControllo(ora, { errori: ['PDF 3-asilo-nido-veicolata-invernale-4420110.pdf: Trovati 0 giorni in intestazione, attesi 5'] }), null);
+  assert.equal(oraControllo(ora, { errori: ['Trovati solo 2 link a PDF nella pagina: il sito è cambiato?'] }), null);
 });

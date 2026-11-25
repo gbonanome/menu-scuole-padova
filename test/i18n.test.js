@@ -27,6 +27,7 @@ import {
   tDato,
   testoCambioStagione,
   testoCiclo,
+  testoControllo,
   testoGiornoVuoto,
   testoOggi
 } from '../public/i18n.js';
@@ -54,6 +55,16 @@ test('date in italiano come prima', () => {
   assert.deepEqual(settimana.map(giornoBreve), ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom']);
   assert.equal(nomeMese('2027-01-04'), 'gennaio');
   assert.equal(meseEAnno('2026-11-10'), 'novembre 2026');
+});
+
+test('ultimo controllo: oggi, ieri o il giorno, all\'ora italiana', () => {
+  assert.equal(testoControllo('2026-11-25T14:15:00Z', '2026-11-25'), 'Ultimo controllo: oggi alle 15.15.');
+  assert.equal(testoControllo('2026-11-24T05:15:00Z', '2026-11-25'), 'Ultimo controllo: ieri alle 6.15.');
+  assert.equal(testoControllo('2026-11-08T12:00:00Z', '2026-11-30'), 'Ultimo controllo: 8 novembre alle 13.00.');
+  // in estate +2 ore, e dopo mezzanotte UTC è già il giorno dopo in Italia
+  assert.equal(testoControllo('2026-07-01T22:30:00Z', '2026-07-02'), 'Ultimo controllo: oggi alle 0.30.');
+  impostaLingua('en', { 'scoperto.controllo.oggi': 'Last checked: today at {0}.' });
+  assert.match(testoControllo('2026-11-25T14:15:00Z', '2026-11-25'), /^Last checked: today at 3:15\sPM\.$/);
 });
 
 test('settimana: stesso mese, due mesi, due anni', () => {

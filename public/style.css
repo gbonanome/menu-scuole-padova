@@ -141,6 +141,7 @@ button { cursor: pointer; }
 .nav { display: flex; align-items: center; gap: 6px; margin: 20px 12px 10px; }
 .nav .range { flex: 1; text-align: center; font: 800 1.05rem var(--f-display); margin: 0; }
 .nav .arrow { width: 42px; height: 42px; border-radius: 12px; border: 0; background: var(--b-surface); color: var(--b-ink); font-size: 1.1rem; font-weight: 700; }
+.nav .arrow:disabled { opacity: 0.35; cursor: default; }
 /* da destra a sinistra la settimana precedente sta a destra: ‹ › si girano */
 [dir="rtl"] .nav .arrow { transform: scaleX(-1); }
 
@@ -180,6 +181,10 @@ button { cursor: pointer; }
 .mm-legenda li { display: flex; align-items: center; gap: 5px; }
 .mm-legenda .mm-giorno { width: 16px; height: 16px; aspect-ratio: auto; padding: 0; border-radius: 5px; display: inline-grid; place-items: center; grid-template-rows: none; }
 .mm-legenda .mm-chiuso { border-width: 1px; }
+/* menu non ancora uscito: giorni senza segno, e una sola nota sotto la griglia */
+.mm-scoperto { background: none; color: var(--b-muted); font-weight: 500; }
+.mm-nota { margin: 2px 0 8px; padding: 8px 10px; border-radius: 10px; background: var(--b-well); border-inline-start: 3px solid var(--b-today); font-size: 0.8rem; line-height: 1.35; }
+.mm-nota a { color: inherit; font-weight: 700; }
 
 /* 700–899px: riquadro sotto la navigazione */
 .mese-pop { position: absolute; top: calc(100% + 6px); inset-inline: 0; margin-inline: auto; z-index: 5; width: min(340px, 100%);
@@ -213,6 +218,15 @@ button { cursor: pointer; }
 .day.closed, .day.empty { background: var(--b-closed); border: 1.5px dashed var(--b-tray); }
 .day .reason { margin: 0; font-weight: 700; color: var(--b-muted); }
 .day .ciclo { margin: 6px 0 0; font-size: 0.72rem; color: var(--b-muted); }
+/* Il menu non è ancora uscito: un riquadro solo per i giorni di fila, senza numero del giorno.
+   È un avviso, non un giorno vuoto: niente tratteggio, una barra a lato. */
+.day.scoperto { display: block; background: var(--b-well); border-inline-start: 4px solid var(--b-today); padding: 12px 14px; }
+.sc-titolo { margin: 0; font-weight: 700; }
+.sc-testo { margin: 4px 0 0; color: var(--b-muted); }
+.sc-link { margin: 8px 0 0; }
+.sc-link a, .today.avviso-scoperto .sc-link a { color: inherit; font-weight: 700; }
+.today.avviso-scoperto { display: block; }
+.today.avviso-scoperto .sc-titolo { font: 800 1.2rem/1.2 var(--f-display); }
 .season { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--b-muted); padding: 6px 2px 0; }
 
 /* ---- riquadro variazione ---- */
@@ -335,6 +349,7 @@ body:has(.pannello[open]) { overflow: hidden; }
   .tray:not(:has(> .oppure)):has(> li.principale:first-child) > li:last-child:nth-child(even) { grid-column: span 2; }
   .oggi-riga { max-width: 640px; margin-inline: auto; }
   .days { grid-template-columns: repeat(5, 1fr); align-items: stretch; }
+  .day.scoperto { grid-column: span var(--span, 1); }
   .day { grid-template-columns: 1fr; }
   .day > :not(.dname) { grid-column: 1; }
   .day .dname { grid-row: auto; justify-items: start; text-align: start; display: flex; gap: 8px; align-items: baseline; }
@@ -351,6 +366,7 @@ body:has(.pannello[open]) { overflow: hidden; }
   /* niente vassoio (nessun menu nei prossimi giorni): il mese da solo, al centro */
   .in-alto:has(> .today[hidden]) { justify-content: center; }
   .in-alto > .today { flex: 1 1 0; min-width: 0; margin: 0; }
+  .in-alto > .today.avviso-scoperto { align-self: flex-start; }
   .mese { flex: 0 0 300px; background: var(--b-surface); border-radius: 22px; padding: 14px; }
   .today { grid-template-columns: minmax(13rem, 1fr) minmax(0, 2.6fr); padding: 20px; }
   .today .when { font-size: 1.85rem; }

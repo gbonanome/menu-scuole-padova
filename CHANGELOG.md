@@ -10,6 +10,10 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+### Aggiunto
+- Dopo l'ultimo menu pubblicato la pagina dice chiaramente che il menu non è ancora uscito sul sito di Dussmann, invece di mostrare una fila di giorni vuoti: "Il menu dal 30 novembre non è ancora uscito sul sito di Dussmann. Viene aggiunto automaticamente appena viene pubblicato. Ultimo controllo: oggi alle 15.15.", con il link al sito ufficiale. Nella settimana i giorni scoperti diventano un solo riquadro (le chiusure restano), la navigazione si ferma alla settimana dell'avviso e il calendario del mese ha una sola nota sotto la griglia. Se oggi è uno di quei giorni, l'avviso è nel riquadro di oggi.
+- L'ora dell'ultimo controllo compare solo se l'ultima lettura di pagina e PDF dei menu è riuscita: se è fallita, il menu potrebbe essere uscito senza che lo abbiamo letto.
+
 ### Corretto
 - I menu invernali dei veicolati (nido, infanzia, primaria e secondaria) non venivano letti: i PDF sono usciti con la pagina ruotata di 90° e l'aggiornamento si fermava con "Trovati 0 giorni in intestazione". Ora il parser raddrizza le pagine ruotate, e riconosce le note con il numero senza punto e i rimandi scritti "(1)".
 - Il rimando a una nota a metà del nome di un piatto, per esempio "Polpettone/Polpette di pollo e tacchino¹ in umido", restava visibile nella pagina e il piatto della nota per quella data non veniva applicato. Ora il rimando va in fondo al piatto e la nota vale.

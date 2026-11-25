@@ -6,7 +6,6 @@ import {
   LINGUE,
   applicaTesti,
   caricaLingua,
-  daIso,
   dataConAnno,
   dataLunga,
   dataLungaConAnno,
@@ -26,12 +25,14 @@ import {
   tDato,
   testoCambioStagione,
   testoCiclo,
+  testoControllo,
   testoGiornoVuoto,
   testoOggi as testoOggiDi
 } from './i18n.js';
-import { disegnaMese, giornoAttivo, limitiMesi, meseDaMostrare } from './mese.js';
+import { disegnaMese, giornoAttivo, inizioScoperto, limitiMesi, lunediDi, meseDaMostrare, ultimaSettimana } from './mese.js';
 
 const REPO = 'https://github.com/gbonanome/menu-scuole-padova';
+const FONTE = 'https://www.scuoledussmann.it/padova';
 const FONTE_NOTIZIE = 'https://www.scuoledussmann.it/padova#notizie';
 const CHIAVE = 'menu-scuole-padova:scelta';
 
@@ -44,6 +45,8 @@ const stato = {
   scuola: null,
   giorni: new Map(),
   copertura: null,
+  inizio: null, // primo giorno di scuola dopo l'ultimo menu pubblicato, ancora senza menu (inizioScoperto)
+  limite: null, // ultima settimana raggiungibile (ultimaSettimana), null se il menu copre tutto l'anno
   lunedi: null,
   mese: null,
   scelte: [],
@@ -68,13 +71,6 @@ function el(tag, attrs = {}, ...figli) {
 }
 
 // Date e testi composti sono in i18n.js: in italiano restano identici, nelle altre lingue passano da Intl.
-/** Lunedì della settimana; sabato e domenica portano alla settimana dopo. */
-function lunediDi(s) {
-  const g = daIso(s).getDay();
-  if (g === 6) return piuGiorni(s, 2);
-  if (g === 0) return piuGiorni(s, 1);
-  return piuGiorni(s, 1 - g);
-}
 // ?oggi=AAAA-MM-GG mostra la pagina come se fosse quel giorno (utile per prove e screenshot).
 const OGGI_PROVA = /^\d{4}-\d{2}-\d{2}$/.test(new URLSearchParams(location.search).get('oggi') ?? '') ? new URLSearchParams(location.search).get('oggi') : null;
 const oggi = () => OGGI_PROVA ?? iso(new Date());
@@ -388,6 +384,8 @@ async function attiva(voce) {
     // Senza dati non si sa nulla dei giorni: mostrare "niente mensa" o "Nessun menu" sarebbe falso.
     stato.giorni = new Map();
     stato.copertura = null;
+    stato.inizio = null;
+    stato.limite = null;
     stato.lunedi = null;
     stato.erroreMenu = true;
     mostraErroreMenu();
@@ -396,6 +394,8 @@ async function attiva(voce) {
   stato.erroreMenu = false;
   stato.giorni = new Map(dati.giorni.map((g) => [g.data, g]));
   stato.copertura = dati.copertura;
+  stato.inizio = inizioScoperto(stato.giorni, stato.copertura);
+  stato.limite = ultimaSettimana(stato.inizio, oggi());
   stato.lunedi = lunediDi(oggi());
   mostraOggi();
   mostraRigaOggi();
@@ -495,7 +495,7 @@ function mostraErroreMenu() {
 
 function mostraOggi() {
   const box = $('#oggi-box');
-  box.classList.remove('errore-menu');
+  box.classList.remove('errore-menu', 'avviso-scoperto');
   const dataOggi = oggi();
   const g = stato.giorni.get(dataOggi);
   if (g?.stato === 'menu') {
@@ -516,6 +516,15 @@ function mostraOggi() {
     box.hidden = false;
     return;
   }
+  // Oggi è dopo l'ultimo menu pubblicato e il menu non è ancora uscito: lo dice, con il link al sito ufficiale.
+  if (g?.stato === 'non-pubblicato' && stato.inizio && dataOggi >= stato.inizio) {
+    box.replaceChildren(...avvisoScoperto(t('scoperto.oggi')));
+    box.classList.add('avviso-scoperto');
+    box.setAttribute('aria-label', t('oggi.aria'));
+    box.hidden = false;
+    return;
+  }
+  box.classList.remove('avviso-scoperto');
   // Oggi niente mensa: lo dice con la data di oggi, poi mostra il prossimo giorno con il menu (entro due settimane).
   let prossimo = null;
   for (let i = 1; i <= 14 && !prossimo; i++) {
@@ -600,18 +609,64 @@ function cardGiorno(data, precedente) {
   );
 }
 
+/**
+ * Testo dell'avviso sul periodo in cui il menu non è ancora uscito: il titolo, che il menu viene aggiunto
+ * da solo con l'ora dell'ultimo controllo riuscito (se c'è), e il link al sito ufficiale.
+ */
+function avvisoScoperto(titolo) {
+  const controllo = stato.meta?.controllo;
+  return [
+    el('p', { class: 'sc-titolo' }, titolo),
+    el('p', { class: 'sc-testo' }, [t('scoperto.auto'), controllo ? ` ${testoControllo(controllo, oggi())}` : null]),
+    el('p', { class: 'sc-link' }, el('a', { href: stato.meta?.fonte ?? FONTE }, t('scoperto.sito')))
+  ];
+}
+
+const eScoperto = (d) => stato.inizio && d >= stato.inizio && stato.giorni.get(d)?.stato === 'non-pubblicato';
+
+/**
+ * Giorni di fila in cui il menu non è ancora uscito: un solo riquadro al posto di tanti giorni vuoti.
+ * Il primo della settimana ha l'avviso intero (solo il titolo se l'avviso è già nel riquadro di oggi),
+ * gli altri (dopo un giorno di chiusura) solo una riga.
+ */
+function riquadroScoperto(giorni, primo) {
+  const contieneOggi = giorni.includes(oggi());
+  return el(
+    'article',
+    {
+      class: `day scoperto${contieneOggi ? ' is-today' : ''}`,
+      style: `--span: ${giorni.length}`,
+      'aria-label': giorni.length > 1 ? `${dataLunga(giorni[0])} – ${dataLunga(giorni.at(-1))}` : dataLunga(giorni[0])
+    },
+    // Se l'avviso intero è già nel riquadro di oggi, qui basta il titolo.
+    primo && !$('#oggi-box').classList.contains('avviso-scoperto')
+      ? avvisoScoperto(t('scoperto.titolo', giornoEMese(stato.inizio)))
+      : el('p', { class: 'sc-titolo' }, primo ? t('scoperto.titolo', giornoEMese(stato.inizio)) : t('scoperto.breve'))
+  );
+}
+
 function mostraSettimana(fuocoMese = null) {
   $('#settimana').hidden = false;
   const cont = $('#giorni');
   cont.replaceChildren();
   let prec = stato.giorni.get(piuGiorni(stato.lunedi, -3));
+  let primo = true;
   for (let i = 0; i < 5; i++) {
     const d = piuGiorni(stato.lunedi, i);
+    if (eScoperto(d)) {
+      const fila = [d];
+      while (i < 4 && eScoperto(piuGiorni(stato.lunedi, i + 1))) fila.push(piuGiorni(stato.lunedi, ++i));
+      cont.append(riquadroScoperto(fila, primo));
+      primo = false;
+      continue;
+    }
     cont.append(cardGiorno(d, prec));
     prec = stato.giorni.get(d) ?? prec;
   }
   mostraTitoloSettimana();
   $('#oggi').disabled = stato.lunedi === lunediDi(oggi());
+  // Oltre la settimana in cui il menu smette di essere pubblicato non c'è niente da vedere.
+  $('#succ').disabled = !!stato.limite && stato.lunedi >= stato.limite;
   // Il mese segue la settimana (frecce, "Oggi", scelta di un giorno, cambio di scuola o di lingua).
   stato.mese = meseDaMostrare(stato.mese, stato.lunedi, oggi());
   mostraMese(fuocoMese);
@@ -652,7 +707,9 @@ function mostraMese(fuoco = null) {
     giorni: stato.giorni,
     oggi: oggi(),
     lunedi: stato.lunedi,
-    limiti: limitiMesi(stato.giorni.keys(), stato.copertura),
+    limiti: limitiMesi(stato.giorni.keys(), stato.copertura, stato.inizio && (stato.inizio > oggi() ? stato.inizio : oggi())),
+    inizio: stato.inizio,
+    fonte: stato.meta?.fonte ?? FONTE,
     fuoco,
     suGiorno: scegliGiorno,
     suMese: (m, f) => {
@@ -671,7 +728,7 @@ const scorri = (e) => e.scrollIntoView({ behavior: matchMedia('(prefers-reduced-
 function scegliGiorno(d) {
   const pop = popAperto();
   const foglio = $('#mese-foglio').open;
-  stato.lunedi = lunediDi(d);
+  stato.lunedi = entroLimite(lunediDi(d));
   mostraSettimana(LARGO.matches ? d : null);
   if (pop) {
     chiudiPopMese();
@@ -756,8 +813,11 @@ function collegaMese() {
   MEDIO.addEventListener('change', cambiaLarghezza);
 }
 
+/** Una settimana oltre l'ultima raggiungibile diventa l'ultima (quella con l'avviso). */
+const entroLimite = (lunedi) => (stato.limite && lunedi > stato.limite ? stato.limite : lunedi);
+
 function sposta(settimane) {
-  stato.lunedi = settimane === 0 ? lunediDi(oggi()) : piuGiorni(stato.lunedi, 7 * settimane);
+  stato.lunedi = entroLimite(settimane === 0 ? lunediDi(oggi()) : piuGiorni(stato.lunedi, 7 * settimane));
   mostraSettimana();
 }
 

@@ -2,7 +2,7 @@
 // La build lo verifica prima di scrivere (build-site.js): se un dato non lo rispetta la build si ferma e la
 // pagina non viene pubblicata, invece di mostrare "null", "{0}", "NaN" o un giorno sbagliato.
 //
-// Campi facoltativi per scelta (la pagina li gestisce caso per caso): ic e avviso delle scuole, copertura di
+// Campi facoltativi per scelta (la pagina li gestisce caso per caso): controllo in feeds.json, ic e avviso delle scuole, copertura di
 // un feed ancora senza menu, originali/menuSostituito/daNota/pdf dei giorni, titolo/ambito/confidenza delle variazioni.
 
 export const STATI = ['menu', 'chiuso', 'non-pubblicato'];
@@ -24,6 +24,10 @@ export function verificaContratto({ meta, feeds, scuole, giorni }) {
 
   // feeds.json
   if (!eTesto(meta?.generato) || Number.isNaN(Date.parse(meta.generato))) no('feeds.json', 'generato deve essere una data e ora ISO', meta?.generato);
+  // controllo: ora dell'ultimo controllo riuscito del sito; null se la lettura dei menu ha dato errori.
+  if (meta?.controllo !== null && meta?.controllo !== undefined && (!eTesto(meta.controllo) || Number.isNaN(Date.parse(meta.controllo)))) {
+    no('feeds.json', 'controllo deve essere null o una data e ora ISO', meta.controllo);
+  }
   if (!Array.isArray(feeds) || !feeds.length) no('feeds.json', 'feeds deve essere un elenco non vuoto', feeds);
   const slugs = new Set();
   for (const [i, f] of (Array.isArray(feeds) ? feeds : []).entries()) {
