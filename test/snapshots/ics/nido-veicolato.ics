@@ -971,31 +971,29 @@ LAST-MODIFIED:20261108T120000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
-SUMMARY:⚠️ VARIATO · Crema di verdura con risoni · Polpettone/Polpett
- e di pollo e tacchino¹ in umido
-DESCRIPTION:• Crema di verdura con risoni\n• Polpettone/Polpette di pol
- lo e tacchino¹ in umido\n• Patate gratinate\n• Pane\n• Yogurt da be
- re alla frutta\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 20
- 26-27\n\n⚠️ VARIAZIONE (pubblicata il 29/09/2026): VARIAZIONE MENU 15 
- e 16 OTTOBRE\na causa dello sciopero di venerdì 16/10/2026 il menù di qu
- ella settimana per i veicolati subirà le seguenti variazioni:\nInversione
-  tra giovedì e venerdì 3 settimana menù autunnale con le seguenti speci
- fiche:\nNido veicolato: giovedì 15/10: crema di verdure con orzo\, boccon
- cini di tacchino alla pizzaiola\, carote vichy/patate al forno\, merende i
- nvariate\;\nvenerdì 16/10: mezze penne al burro\, halibut gratinato\, zuc
- ca al forno\, fagiolini all’olio (le zucchine trifolate previste vengono
-  spostate a martedì 13/10)\nN.B. La crema di porri e cavolfiori prevista 
- verrà somministrata giovedì 29/10.\nFonte: https://www.scuoledussmann.it
- /padova#notizie\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upl
- oad/editorpagine/01-menu-autunnale-nido-veicolato-2026-27-5745094.pdf\nTut
- to il menu: https://gbonanome.github.io/menu-scuole-padova/#nido-veicolato
+SUMMARY:⚠️ VARIATO · Crema di verdura con risoni · Polpettone
+DESCRIPTION:• Crema di verdura con risoni\n• Polpettone\n• Patate gra
+ tinate\n• Pane\n• Yogurt da bere alla frutta\n• Frutta fresca\n\nSet
+ timana 1 di 4 · Menu autunnale 2026-27\n\n⚠️ VARIAZIONE (pubblicata i
+ l 29/09/2026): VARIAZIONE MENU 15 e 16 OTTOBRE\na causa dello sciopero di 
+ venerdì 16/10/2026 il menù di quella settimana per i veicolati subirà l
+ e seguenti variazioni:\nInversione tra giovedì e venerdì 3 settimana men
+ ù autunnale con le seguenti specifiche:\nNido veicolato: giovedì 15/10: 
+ crema di verdure con orzo\, bocconcini di tacchino alla pizzaiola\, carote
+  vichy/patate al forno\, merende invariate\;\nvenerdì 16/10: mezze penne 
+ al burro\, halibut gratinato\, zucca al forno\, fagiolini all’olio (le z
+ ucchine trifolate previste vengono spostate a martedì 13/10)\nN.B. La cre
+ ma di porri e cavolfiori prevista verrà somministrata giovedì 29/10.\nFo
+ nte: https://www.scuoledussmann.it/padova#notizie\n\nMenu ufficiale (PDF):
+  https://www.scuoledussmann.it/upload/editorpagine/01-menu-autunnale-nido-
+ veicolato-2026-27-5745094.pdf\nTutto il menu: https://gbonanome.github.io/
+ menu-scuole-padova/#nido-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#nido-veicolato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:⚠️ VARIATO · Crema di verdura con risoni · Polpettone/Pol
- pette di pollo e tacchino¹ in umido
+DESCRIPTION:⚠️ VARIATO · Crema di verdura con risoni · Polpettone
 TRIGGER;RELATED=START:PT7H
 END:VALARM
 END:VEVENT
@@ -1382,14 +1380,13 @@ LAST-MODIFIED:20261108T120000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
-SUMMARY:🍽 Crema di verdura con risoni · Polpettone/Polpette di pollo e 
- tacchino¹ in umido
-DESCRIPTION:• Crema di verdura con risoni\n• Polpettone/Polpette di pol
- lo e tacchino¹ in umido\n• Patate gratinate\n• Pane\n• Yogurt da be
- re alla frutta\n• Frutta fresca\n\nSettimana 1 di 4 · Menu autunnale 20
- 26-27\n\nMenu ufficiale (PDF): https://www.scuoledussmann.it/upload/editor
- pagine/01-menu-autunnale-nido-veicolato-2026-27-5745094.pdf\nTutto il menu
- : https://gbonanome.github.io/menu-scuole-padova/#nido-veicolato
+SUMMARY:🍽 Crema di verdura con risoni · Polpette
+DESCRIPTION:• Crema di verdura con risoni\n• Polpette\n• Patate grati
+ nate\n• Pane\n• Yogurt da bere alla frutta\n• Frutta fresca\n\nSetti
+ mana 1 di 4 · Menu autunnale 2026-27\n\nMenu ufficiale (PDF): https://www
+ .scuoledussmann.it/upload/editorpagine/01-menu-autunnale-nido-veicolato-20
+ 26-27-5745094.pdf\nTutto il menu: https://gbonanome.github.io/menu-scuole-
+ padova/#nido-veicolato
 URL:https://gbonanome.github.io/menu-scuole-padova/#nido-veicolato
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED

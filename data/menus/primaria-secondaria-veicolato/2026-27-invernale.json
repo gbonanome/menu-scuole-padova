@@ -1,0 +1,374 @@
+{
+  "feed": "primaria-secondaria-veicolato",
+  "stagione": "invernale",
+  "annoScolastico": "2026-27",
+  "titolo": "Menù invernale Scuola primaria e secondaria veicolato A.s. 2026-27",
+  "validita": [
+    {
+      "dal": "2026-11-30",
+      "al": "2027-03-12",
+      "giorno": "lun",
+      "settimana": 2
+    }
+  ],
+  "riavvii": [
+    {
+      "data": "2027-01-07",
+      "giorno": "gio",
+      "settimana": 1
+    }
+  ],
+  "intervalli": [
+    {
+      "settimana": 1,
+      "dal": "2026-12-21",
+      "al": "2026-12-23"
+    },
+    {
+      "settimana": 1,
+      "dal": "2027-01-07",
+      "al": "2027-01-08"
+    },
+    {
+      "settimana": 1,
+      "dal": "2027-02-01",
+      "al": "2027-02-05"
+    },
+    {
+      "settimana": 1,
+      "dal": "2027-03-01",
+      "al": "2027-03-05"
+    },
+    {
+      "settimana": 2,
+      "dal": "2026-11-30",
+      "al": "2026-12-04"
+    },
+    {
+      "settimana": 2,
+      "dal": "2027-01-11",
+      "al": "2027-01-15"
+    },
+    {
+      "settimana": 2,
+      "dal": "2027-02-08",
+      "al": "2027-02-12"
+    },
+    {
+      "settimana": 2,
+      "dal": "2027-03-08",
+      "al": "2027-03-12"
+    },
+    {
+      "settimana": 3,
+      "dal": "2026-12-07",
+      "al": "2026-12-11"
+    },
+    {
+      "settimana": 3,
+      "dal": "2027-01-18",
+      "al": "2027-01-22"
+    },
+    {
+      "settimana": 3,
+      "dal": "2027-02-15",
+      "al": "2027-02-19"
+    },
+    {
+      "settimana": 4,
+      "dal": "2026-12-14",
+      "al": "2026-12-18"
+    },
+    {
+      "settimana": 4,
+      "dal": "2027-01-25",
+      "al": "2027-01-29"
+    },
+    {
+      "settimana": 4,
+      "dal": "2027-02-22",
+      "al": "2027-02-26"
+    }
+  ],
+  "settimane": {
+    "1": {
+      "lun": [
+        "Crema di lenticchie rosse decorticate con tempestina",
+        "Robiola",
+        "Radicchio variegato",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Celentani o stortini al pomodoro",
+        "Filetto di merluzzo gratinato con fettina di limone",
+        "Carote a bastoncino",
+        "Pane",
+        "Macedonia monofrutto"
+      ],
+      "mer": [
+        "Crema di verdura con stagione (cavolfiori o porri a rotazione) con risoni¹",
+        "Bocconcini di tacchino dorati al forno",
+        "Patate al forno/all’olio²",
+        "Pane",
+        "Frullato di frutta 100%"
+      ],
+      "gio": [
+        "Lasagne al forno con ragù di manzo*",
+        "Finocchi julienne e Bieta all’olio",
+        "Pane",
+        "Yogurt alla frutta in vasetto"
+      ],
+      "ven": [
+        "Riso alle verdure di stagione (a rotazione con piselli o al cavolfiore)¹",
+        "Frittata al formaggio o al prosciutto (a rotazione)",
+        "Insalata verde",
+        "Pane semintegrale",
+        "Frutta fresca"
+      ]
+    },
+    "2": {
+      "lun": [
+        "Crema di verdure con orzo",
+        "Fesa di tacchino⁴",
+        "Insalata mista",
+        "Pane semintegrale",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Bigoli al ragù di manzo",
+        "Bis di verdure: zucca la forno con aromi e piselli in tegame",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Fusilli al pomodoro",
+        "Polpette/sformato di Halibut",
+        "Fagiolini all’olio",
+        "Pane",
+        "Yogurt da bere alla frutta"
+      ],
+      "gio": [
+        "Minestra in brodo vegetale con stelline",
+        "Arrosto di maiale al limone",
+        "Purè di patate",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Riso alla zucca",
+        "Stracchino",
+        "Carote julienne",
+        "Pane",
+        "Frullato di frutta 100%"
+      ]
+    },
+    "3": {
+      "lun": [
+        "Pipe alla crema di zucchine",
+        "Tonno all’olio",
+        "Cappuccio bianco o viola julienne (alternati o insieme)",
+        "Pane",
+        "Frullato di frutta 100%"
+      ],
+      "mar": [
+        "Farfalle panna e speck",
+        "Insalata e cavolfiori gratinati",
+        "oppure",
+        "Pizza margherita al trancio*",
+        "Insalata e carote julienne",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mer": [
+        "Crema di verdure con crostini oppure crema di zucca con risoni³",
+        "Spezzatino di manzo",
+        "Polenta",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Riso al pomodoro",
+        "Coscette di pollo al forno",
+        "Finocchi julienne",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Crema di legumi con ditalini",
+        "Asiago",
+        "Spinaci all’olio",
+        "Pane semintegrale",
+        "Macedonia plurifrutto (arancia e kiwi alternata a ananas e mela)"
+      ]
+    },
+    "4": {
+      "lun": [
+        "Crema di carote con risoni",
+        "Uova strapazzate al formaggio",
+        "Piselli in tegame",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "mar": [
+        "Mezze penne alla parmigiana",
+        "Spezzatino di pollo alla cacciatora (base pomodoro)",
+        "Insalata",
+        "Pane semintegrale",
+        "Yogurt alla frutta in vasetto"
+      ],
+      "mer": [
+        "Riso con radicchio variegato",
+        "Caciotta o Provolone dolce⁶",
+        "Zucchine trifolate",
+        "Pane",
+        "Frutta fresca"
+      ],
+      "gio": [
+        "Minestra di brodo di carne con stelline",
+        "Polpette di legumi e manzo al pomodoro/Hamburger di legumi e manzo⁵",
+        "Purè di patate/Pane",
+        "Frutta fresca"
+      ],
+      "ven": [
+        "Fusilli al pomodoro",
+        "Filettini di merluzzo panati",
+        "Carote julienne",
+        "Pane",
+        "Frullato di frutta 100%"
+      ]
+    }
+  },
+  "note": {
+    "1": "Creme e riso alternati secondo rotazione. 23.12.26: Crema di porri. 08.01.27: Riso al cavolfiore. 03.02.27 + 05.02.27: crema al cavolfiore + riso ai piselli. 03.03.27 + 05.03.27: crema di porri + riso al cavolfiore",
+    "2": "Patate al forno: 23.12.26 e 03.02.27. Patate all’olio 03.03.27",
+    "3": "Crema di zucca 09.12.26 e 20.01.27 - Crema di verdure 17.02.27.",
+    "4": "Fesa di tacchino il 30.11.27 e 08.03.27 – Prosciutto cotto 11.01.27 – Mortadella Bologna IGP 08.02.27.",
+    "5": "Polpette 28.01.27 - Hamburger 17.12.26 e 25.02.27.",
+    "6": "Caciotta 16.12.26 e 24.02.27 - Provolone dolce 27.01.27"
+  },
+  "eccezioni": [
+    {
+      "nota": 1,
+      "data": "2026-12-23",
+      "piatto": "Crema di porri"
+    },
+    {
+      "nota": 1,
+      "data": "2027-01-08",
+      "piatto": "Riso al cavolfiore"
+    },
+    {
+      "nota": 1,
+      "data": "2027-02-03",
+      "piatto": "Crema al cavolfiore"
+    },
+    {
+      "nota": 1,
+      "data": "2027-02-05",
+      "piatto": "Riso ai piselli"
+    },
+    {
+      "nota": 1,
+      "data": "2027-03-03",
+      "piatto": "Crema di porri"
+    },
+    {
+      "nota": 1,
+      "data": "2027-03-05",
+      "piatto": "Riso al cavolfiore"
+    },
+    {
+      "nota": 2,
+      "data": "2026-12-23",
+      "piatto": "Patate al forno"
+    },
+    {
+      "nota": 2,
+      "data": "2027-02-03",
+      "piatto": "Patate al forno"
+    },
+    {
+      "nota": 2,
+      "data": "2027-03-03",
+      "piatto": "Patate all’olio"
+    },
+    {
+      "nota": 3,
+      "data": "2026-12-09",
+      "piatto": "Crema di zucca"
+    },
+    {
+      "nota": 3,
+      "data": "2027-01-20",
+      "piatto": "Crema di zucca"
+    },
+    {
+      "nota": 3,
+      "data": "2027-02-17",
+      "piatto": "Crema di verdure"
+    },
+    {
+      "nota": 4,
+      "data": "2026-11-30",
+      "piatto": "Fesa di tacchino"
+    },
+    {
+      "nota": 4,
+      "data": "2027-03-08",
+      "piatto": "Fesa di tacchino"
+    },
+    {
+      "nota": 4,
+      "data": "2027-01-11",
+      "piatto": "Prosciutto cotto"
+    },
+    {
+      "nota": 4,
+      "data": "2027-02-08",
+      "piatto": "Mortadella Bologna IGP"
+    },
+    {
+      "nota": 5,
+      "data": "2027-01-28",
+      "piatto": "Polpette"
+    },
+    {
+      "nota": 5,
+      "data": "2026-12-17",
+      "piatto": "Hamburger"
+    },
+    {
+      "nota": 5,
+      "data": "2027-02-25",
+      "piatto": "Hamburger"
+    },
+    {
+      "nota": 6,
+      "data": "2026-12-16",
+      "piatto": "Caciotta"
+    },
+    {
+      "nota": 6,
+      "data": "2027-02-24",
+      "piatto": "Caciotta"
+    },
+    {
+      "nota": 6,
+      "data": "2027-01-27",
+      "piatto": "Provolone dolce"
+    }
+  ],
+  "avvertenze": [
+    "* In tali giornate prevedere il 15% di pasta in bianco in aggiunta al menù."
+  ],
+  "correzioni": [
+    "Settimana 1: nel PDF c'è 2026-02-05, fuori dal periodo del menu; letta come 2027-02-05",
+    "Nota 4: nel PDF c'è 2027-11-30, fuori dal periodo del menu; letta come 2026-11-30"
+  ],
+  "fonte": {
+    "url": "https://www.scuoledussmann.it/upload/editorpagine/3-primaria-e-secondaria-invernale-7845237.pdf",
+    "sha256": "a73983ed41e9ca6f388a964d26123fad0c57d57c51f87a9a076984f4aa588574",
+    "scaricatoIl": "2026-11-25"
+  }
+}

@@ -16,6 +16,23 @@ test('righeInPiatti ricompone i nomi andati a capo e le alternative', () => {
   assert.deepEqual(righeInPiatti(['Pizza', 'Oppure', 'Crema di ceci']), ['Pizza', 'oppure', 'Crema di ceci']);
 });
 
+test('righeInPiatti: il rimando alla nota resta in fondo al piatto anche se nel PDF sta a metà', () => {
+  assert.deepEqual(righeInPiatti(['Crema di verdura (cavolfiori o porri)¹', 'con risoni', 'Pane']), ['Crema di verdura (cavolfiori o porri) con risoni¹', 'Pane']);
+  assert.deepEqual(righeInPiatti(['Polpettone/Polpette di pollo e tacchino¹', 'in umido']), ['Polpettone/Polpette di pollo e tacchino in umido¹']);
+});
+
+test('eccezioniDaNota: coppie di date e piatti unite da "+"', () => {
+  const nota = 'Creme e riso alternati secondo rotazione. 23.12.26: Crema di porri. 08.01.27: Riso al cavolfiore. 03.02.27 + 05.02.27: crema al cavolfiore + riso ai piselli. 03.03.27 + 05.03.27: crema di porri + riso al cavolfiore';
+  assert.deepEqual(eccezioniDaNota(nota).map((e) => [e.data, e.piatto]), [
+    ['2026-12-23', 'Crema di porri'],
+    ['2027-01-08', 'Riso al cavolfiore'],
+    ['2027-02-03', 'Crema al cavolfiore'],
+    ['2027-02-05', 'Riso ai piselli'],
+    ['2027-03-03', 'Crema di porri'],
+    ['2027-03-05', 'Riso al cavolfiore']
+  ]);
+});
+
 test('eccezioniDaNota: formati diversi', () => {
   assert.deepEqual(eccezioniDaNota('Polpettone 29.10.2026. Polpette 26.11.2026.').map((e) => [e.data, e.piatto]), [['2026-10-29', 'Polpettone'], ['2026-11-26', 'Polpette']]);
   assert.deepEqual(eccezioniDaNota('Polpettone: 29.10.26 – polpette 26.11.2026').map((e) => e.piatto), ['Polpettone', 'Polpette']);
@@ -39,6 +56,53 @@ test('primaria veicolato autunnale: griglia, date e nota', async () => {
   assert.deepEqual(m.settimane['1'].lun, ['Spaghetti al pomodoro', 'Caciotta', 'Bieta all’olio', 'Pane', 'Frutta fresca']);
   assert.ok(m.settimane['1'].gio[1].endsWith('¹'));
   assert.equal(m.intervalli.length, 7);
+  assert.deepEqual(validaMenu(m, cal).errori, []);
+});
+
+// I veicolati invernali 2026-27 sono usciti da una stampante virtuale: pagina ruotata di 90° (/Rotate),
+// numeri delle note in una casella a parte e rimandi scritti "(1)" in piccolo.
+test('PDF con la pagina ruotata: primaria veicolato invernale', async () => {
+  const m = await parseMenuPdf(await pdf('3-primaria-e-secondaria-invernale-7845237.pdf'));
+  assert.equal(m.feed, 'primaria-secondaria-veicolato');
+  assert.equal(m.stagione, 'invernale');
+  assert.equal(m.annoScolastico, '2026-27');
+  assert.deepEqual(m.validita, [{ dal: '2026-11-30', al: '2027-03-12', giorno: 'lun', settimana: 2 }]);
+  assert.deepEqual(m.riavvii, [{ data: '2027-01-07', giorno: 'gio', settimana: 1 }]);
+  assert.deepEqual(m.settimane['2'].lun, ['Crema di verdure con orzo', 'Fesa di tacchino⁴', 'Insalata mista', 'Pane semintegrale', 'Frutta fresca']);
+  assert.deepEqual(m.settimane['1'].mer.slice(0, 3), [
+    'Crema di verdura con stagione (cavolfiori o porri a rotazione) con risoni¹',
+    'Bocconcini di tacchino dorati al forno',
+    'Patate al forno/all’olio²'
+  ]);
+  assert.deepEqual(m.settimane['3'].mar, ['Farfalle panna e speck', 'Insalata e cavolfiori gratinati', 'oppure', 'Pizza margherita al trancio*', 'Insalata e carote julienne', 'Pane', 'Frutta fresca']);
+  assert.equal(Object.keys(m.note).length, 6);
+  assert.match(m.note['6'], /^Caciotta 16\.12\.26/);
+  assert.deepEqual(m.avvertenze, ['* In tali giornate prevedere il 15% di pasta in bianco in aggiunta al menù.']);
+  const r = validaMenu(m, cal);
+  assert.deepEqual(r.errori, []);
+  assert.deepEqual(r.avvisi.filter((a) => /^Nota/.test(a) && !/letta come/.test(a)), []);
+  const tab = giorniDaIntervalli(m);
+  const reg = giorniDaRegola(m);
+  for (const [d, w] of tab) assert.equal(reg.get(d), w, d);
+});
+
+test('refusi nell’anno di una data: corretti se con l’anno accanto la data rientra nel periodo, e segnalati', async () => {
+  const m = await parseMenuPdf(await pdf('3-primaria-e-secondaria-invernale-7845237.pdf'));
+  // nel PDF: "Dal 01.02.27 al 05.02.26" e "Fesa di tacchino il 30.11.27"
+  assert.ok(m.intervalli.some((i) => i.settimana === 1 && i.dal === '2027-02-01' && i.al === '2027-02-05'));
+  assert.ok(m.eccezioni.some((e) => e.nota === 4 && e.data === '2026-11-30' && e.piatto === 'Fesa di tacchino'));
+  assert.equal(m.correzioni.length, 2);
+  assert.equal(validaMenu(m, cal).avvisi.filter((a) => /letta come/.test(a)).length, 2);
+  const senza = await parseMenuPdf(await pdf('3-infanzia-veicolata-invernale-2026-2027-2980730.pdf'));
+  assert.equal(senza.correzioni, undefined);
+});
+
+test('nota che sceglie tra due menu separati da "oppure": nessuna sostituzione di piatti', async () => {
+  const m = await parseMenuPdf(await pdf('3-asilo-nido-veicolata-invernale-4420110.pdf'));
+  assert.deepEqual(m.settimane['3'].mar.slice(0, 4), ['Stortini al pomodoro³', 'Uova sode ed Insalata/Carote al burro', 'oppure', 'Pizza margherita* al trancio³']);
+  assert.match(m.note['3'], /^Menù pizza: 16\.02\.27/);
+  assert.deepEqual(m.eccezioni.filter((e) => e.nota === 3), []);
+  assert.ok(m.eccezioni.some((e) => e.nota === 4 && e.data === '2027-02-17' && e.piatto === 'Crema di verdure con crostini'));
   assert.deepEqual(validaMenu(m, cal).errori, []);
 });
 

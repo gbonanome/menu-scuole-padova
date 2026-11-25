@@ -47,8 +47,36 @@ export async function estraiPagina(buffer) {
     }
     if (xs.length) rects.push({ x0: Math.min(...xs), y0: Math.min(...ys), x1: Math.max(...xs), y1: Math.max(...ys) });
   }
+  const [x0, y0, x1, y1] = page.view;
+  const ruota = ruotatore(page.rotate, x1 - x0, y1 - y0);
   await loading.destroy();
-  return { items, rects };
+  if (!ruota) return { items, rects };
+  return {
+    items: items.map((i) => ({ ...i, ...ruota(i.x - x0, i.y - y0) })),
+    rects: rects.map((r) => {
+      const a = ruota(r.x0 - x0, r.y0 - y0);
+      const b = ruota(r.x1 - x0, r.y1 - y0);
+      return { x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y) };
+    })
+  };
+}
+
+/**
+ * Alcuni PDF (es. quelli passati da una stampante virtuale) hanno il contenuto scritto in verticale
+ * e la pagina ruotata con /Rotate. Riporta le coordinate a come la pagina si vede: x verso destra, y verso l'alto.
+ * @returns {null | ((x:number, y:number) => {x:number, y:number})} null se la pagina non è ruotata
+ */
+export function ruotatore(gradi, larghezza, altezza) {
+  switch (((gradi % 360) + 360) % 360) {
+    case 90:
+      return (x, y) => ({ x: y, y: larghezza - x });
+    case 180:
+      return (x, y) => ({ x: larghezza - x, y: altezza - y });
+    case 270:
+      return (x, y) => ({ x: altezza - y, y: x });
+    default:
+      return null;
+  }
 }
 
 /** Raggruppa per riga (stessa y entro tolleranza), dall'alto in basso. */
