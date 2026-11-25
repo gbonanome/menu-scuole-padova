@@ -75,6 +75,16 @@ export const IT = {
   'giorno.nessuno': 'Nessun menu',
   'giorno.daqui': 'Da qui: {0}',
 
+  // periodo dopo l'ultimo menu pubblicato: il menu non è ancora uscito sul sito di Dussmann
+  'scoperto.titolo': 'Il menu dal {0} non è ancora uscito sul sito di Dussmann.',
+  'scoperto.oggi': 'Il menu di oggi non è ancora uscito sul sito di Dussmann.',
+  'scoperto.breve': 'Menu non ancora uscito',
+  'scoperto.auto': 'Viene aggiunto automaticamente appena viene pubblicato.',
+  'scoperto.controllo.oggi': 'Ultimo controllo: oggi alle {0}.',
+  'scoperto.controllo.ieri': 'Ultimo controllo: ieri alle {0}.',
+  'scoperto.controllo.data': 'Ultimo controllo: {0} alle {1}.',
+  'scoperto.sito': 'Controlla sul sito ufficiale',
+
   // mini mese (navigatore delle date)
   'mese.aria': 'Calendario del mese',
   'mese.apri': 'Scegli una data dal calendario',
@@ -87,6 +97,9 @@ export const IT = {
   'mese.variazione': 'variazione',
   'mese.nonpubblicato': 'menu non pubblicato',
   'mese.chiuso': 'chiuso',
+  'mese.scoperto': 'Dal {0} il menu non è ancora uscito sul sito di Dussmann.',
+  'mese.scoperto.giorno': 'menu non ancora uscito',
+  'mese.sito': 'Sito ufficiale',
 
   // piatti e variazioni
   oppure: 'oppure',
@@ -270,6 +283,32 @@ export function etichettaSettimana(lun) {
   }
   const f = new Intl.DateTimeFormat(localeDate(), { day: 'numeric', month: 'long' });
   return f.formatRange ? f.formatRange(daIso(lun), daIso(ven)) : `${f.format(daIso(lun))} – ${f.format(daIso(ven))}`;
+}
+
+/** Data (AAAA-MM-GG) e ora (ore e minuti) di un istante ISO, in ora italiana: i controlli avvengono a Padova. */
+function oraItaliana(istante) {
+  const parti = Object.fromEntries(
+    new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+      .formatToParts(new Date(istante))
+      .map((p) => [p.type, p.value])
+  );
+  return { data: `${parti.year}-${parti.month}-${parti.day}`, ore: parti.hour, minuti: parti.minute };
+}
+
+/**
+ * "Ultimo controllo: oggi alle 15.15." (ieri, oppure il giorno). L'ora è quella italiana; in italiano
+ * con il punto, nelle altre lingue nel formato della lingua.
+ * @param {string} istante data e ora ISO dell'ultimo controllo riuscito del sito di Dussmann
+ * @param {string} oggi AAAA-MM-GG
+ */
+export function testoControllo(istante, oggi) {
+  const { data, ore, minuti } = oraItaliana(istante);
+  const ora = it()
+    ? `${Number(ore)}.${minuti}`
+    : new Intl.DateTimeFormat(localeDate(), { timeZone: 'Europe/Rome', hour: 'numeric', minute: '2-digit' }).format(new Date(istante));
+  if (data === oggi) return t('scoperto.controllo.oggi', ora);
+  if (data === piuGiorni(oggi, -1)) return t('scoperto.controllo.ieri', ora);
+  return t('scoperto.controllo.data', giornoEMese(data), ora);
 }
 
 // ---------- testi composti (puri, provati nei test) ----------

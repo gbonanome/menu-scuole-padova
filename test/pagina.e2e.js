@@ -135,11 +135,59 @@ test('giorno chiuso e menu non pubblicato: il motivo, non un giorno vuoto', asyn
   } finally {
     await pagina.close();
   }
-  const np = await apri({ oggi: '2026-11-30' });
+});
+
+// Nelle fixture l'ultimo menu dell'infanzia veicolata finisce venerdì 27 novembre: dal 30 il menu non è ancora uscito.
+test('menu non ancora uscito: avviso con ultimo controllo e link, oggi e nella settimana', async () => {
+  const { pagina, errori } = await apri({ oggi: '2026-11-30' });
   try {
-    assert.match(await np.pagina.$eval('#giorni', (e) => e.innerText), /Menu non ancora pubblicato/);
+    const vassoio = await pagina.$eval('#oggi-box', (e) => e.innerText);
+    assert.match(vassoio, /Il menu di oggi non è ancora uscito sul sito di Dussmann\./);
+    assert.match(vassoio, /Viene aggiunto automaticamente appena viene pubblicato\. Ultimo controllo: 8 novembre alle 13\.00\./);
+    const settimana = await pagina.$$eval('#giorni article', (a) => a.map((e) => ({ classe: e.className, testo: e.innerText })));
+    // un solo riquadro al posto dei cinque giorni vuoti
+    assert.equal(settimana.length, 1);
+    assert.match(settimana[0].classe, /scoperto/);
+    assert.match(settimana[0].testo, /Il menu dal 30 novembre non è ancora uscito sul sito di Dussmann\./);
+    assert.equal(await pagina.$eval('#oggi-box .sc-link a', (a) => a.href), 'https://www.scuoledussmann.it/padova');
+    // l'avviso intero è già nel riquadro di oggi: nella settimana solo il titolo
+    assert.equal(await pagina.$('#giorni .sc-link'), null);
+    assert.equal(await pagina.$eval('#succ', (b) => b.disabled), true);
+    assert.deepEqual(errori, []);
   } finally {
-    await np.pagina.close();
+    await pagina.close();
+  }
+});
+
+test('menu non ancora uscito: si arriva alla settimana dell\'avviso e non oltre; nel mese una sola nota', async () => {
+  const { pagina } = await apri({ oggi: '2026-11-25' });
+  try {
+    assert.equal(await pagina.$eval('#succ', (b) => b.disabled), false);
+    await pagina.click('#succ');
+    await pagina.waitForSelector('#giorni article.scoperto');
+    assert.equal(await pagina.$eval('#succ', (b) => b.disabled), true);
+    assert.equal(await pagina.$eval('#titolo-settimana', (e) => e.innerText), '30 novembre – 4 dicembre');
+    // il mese: novembre con la nota, dicembre non si raggiunge
+    const mese = await pagina.$eval('#mese', (e) => ({ nota: e.querySelector('.mm-nota')?.innerText, avanti: e.querySelector('.mm-freccia[data-verso="succ"]').disabled }));
+    assert.match(mese.nota, /Dal 30 novembre il menu non è ancora uscito sul sito di Dussmann\. Sito ufficiale/);
+    assert.equal(mese.avanti, true);
+    assert.equal(await pagina.$$eval('#mese .mm-scoperto', (b) => b.length), 1);
+    // la settimana prima, con il menu, non ha l'avviso
+    await pagina.click('#prec');
+    await pagina.waitForFunction(() => !document.querySelector('#giorni article.scoperto'));
+    assert.equal(await pagina.$$eval('#giorni article', (a) => a.length), 5);
+  } finally {
+    await pagina.close();
+  }
+});
+
+test('menu non ancora uscito, settimana con giorni di chiusura: le chiusure restano, l\'avviso è uno', async () => {
+  const { pagina } = await apri({ oggi: '2026-12-07' });
+  try {
+    const giorni = await pagina.$$eval('#giorni article', (a) => a.map((e) => e.className));
+    assert.deepEqual(giorni.map((c) => (c.includes('scoperto') ? 'scoperto' : c.includes('closed') ? 'chiuso' : c)), ['chiuso', 'chiuso', 'scoperto']);
+  } finally {
+    await pagina.close();
   }
 });
 

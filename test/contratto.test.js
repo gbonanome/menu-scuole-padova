@@ -52,6 +52,15 @@ test('contratto: i campi facoltativi possono mancare', () => {
   assert.deepEqual(verificaContratto(d), []);
 });
 
+test('contratto: ora dell\'ultimo controllo, null se la lettura dei menu ha dato errori', () => {
+  for (const controllo of ['2026-11-08T12:00:00Z', null, undefined]) {
+    const d = validi();
+    d.meta.controllo = controllo;
+    assert.deepEqual(verificaContratto(d), [], String(controllo));
+  }
+  violazione((d) => (d.meta.controllo = 'ieri'), /controllo deve essere null o una data e ora ISO/);
+});
+
 test('contratto: giorni', () => {
   violazione((d) => delete giornoDi(d, '2026-11-10').motivo, /2026-11-10: giorno chiuso senza motivo \(trovato undefined\)/);
   violazione((d) => (giornoDi(d, '2026-11-10').motivo = null), /giorno chiuso senza motivo \(trovato null\)/);
