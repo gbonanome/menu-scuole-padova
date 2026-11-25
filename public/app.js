@@ -29,7 +29,7 @@ import {
   testoGiornoVuoto,
   testoOggi as testoOggiDi
 } from './i18n.js';
-import { disegnaMese, giornoAttivo, inizioScoperto, limitiMesi, lunediDi, meseDaMostrare, ultimaSettimana } from './mese.js';
+import { dateNelTesto, disegnaMese, giornoAttivo, inizioScoperto, limitiMesi, lunediDi, meseDaMostrare, ultimaSettimana } from './mese.js';
 
 const REPO = 'https://github.com/gbonanome/menu-scuole-padova';
 const FONTE = 'https://www.scuoledussmann.it/padova';
@@ -436,12 +436,56 @@ function riquadriVariazione(g) {
         : null,
       !strutturata ? el('span', { class: 'vnew' }, t('variazione.generica')) : null,
       el('span', { class: 'vsrc' }, pubblicata, ' · ', el('a', { href: FONTE_NOTIZIE }, t('variazione.fonte'))),
-      el('details', { open: !strutturata }, el('summary', {}, t('variazione.testo')), el('p', { class: 'vtesto', ...testoItaliano() }, v.testo)),
+      el('details', { open: !strutturata }, el('summary', {}, t('variazione.testo')), el('p', { class: 'vtesto', ...testoItaliano() }, testoConDate(v))),
       linguaAttiva() !== 'it' && v.testo
         ? el('span', { class: 'vsrc' }, el('a', { href: linkTraduzione(v.testo), target: '_blank', rel: 'noopener' }, t('variazione.traduci')))
         : null
     );
   });
+}
+
+/**
+ * Il testo dell'avviso con le date citate ("mercoledì 02/12/2026", "lunedì 7") come link al loro giorno.
+ * Solo i giorni che la pagina conosce: gli altri restano testo.
+ */
+function testoConDate(v) {
+  const parti = [];
+  let da = 0;
+  for (const { inizio, fine, data } of dateNelTesto(v.testo, v.pubblicata)) {
+    if (!stato.giorni.has(data)) continue;
+    parti.push(v.testo.slice(da, inizio));
+    parti.push(
+      el('button', { type: 'button', class: 'vdata', title: t('variazione.vai', dataLunga(data)), onclick: () => vaiAlGiorno(data) }, v.testo.slice(inizio, fine))
+    );
+    da = fine;
+  }
+  parti.push(v.testo.slice(da));
+  return parti;
+}
+
+/** Da una data dell'avviso al suo giorno: la sua settimana, poi la card in vista ed evidenziata. */
+function vaiAlGiorno(d) {
+  chiudiFogli();
+  stato.lunedi = entroLimite(lunediDi(d));
+  mostraSettimana();
+  const card = $(`#giorni [data-data="${d}"]`);
+  if (!card) return scorri($('#settimana'));
+  scorri(card);
+  card.focus({ preventScroll: true });
+  card.classList.add('raggiunto');
+  card.addEventListener('animationend', () => card.classList.remove('raggiunto'), { once: true });
+}
+
+/**
+ * Sopra i piatti di un giorno con avviso, quando cambia tutto il menu: "Menu variato" se mostriamo il menu
+ * dell'avviso, "Menu originale" se non è chiaro cosa cambia e restano i piatti del PDF. Se cambia un piatto
+ * riconosciuto basta il bollino "variato" sul piatto.
+ */
+function statoMenu(g) {
+  if (!g.variazioni?.length) return null;
+  if (g.menuSostituito) return el('p', { class: 'stato-menu variato' }, t('menu.variato'));
+  if (!g.originali) return el('p', { class: 'stato-menu originale' }, t('menu.originale'));
+  return null;
 }
 
 // Il piatto "principale" (in evidenza) è il primo che non sia pane, frutta o verdura generica.
@@ -509,6 +553,7 @@ function mostraOggi() {
         el('p', { class: 'when' }, el('mark', {}, t('oggi')), ` ${giorno}`, mese ? el('span', { class: 'solo-largo' }, mese) : null),
         el('p', { class: 'meta' }, testoCiclo(g)),
         variazioniVassoio(g),
+        statoMenu(g),
         elencoPiatti(g, 'tray', true)
       ].filter(Boolean)
     );
@@ -547,6 +592,7 @@ function mostraOggi() {
       ),
       el('p', { class: 'meta' }, testoCiclo(gp)),
       variazioniVassoio(gp),
+      statoMenu(gp),
       elencoPiatti(gp, 'tray', true)
     ].filter(Boolean)
   );
@@ -592,7 +638,7 @@ function cardGiorno(data, precedente) {
     const testo = testoGiornoVuoto(giornoSenzaMenu(data));
     return el(
       'article',
-      { class: `day ${g?.stato === 'chiuso' ? 'closed' : 'empty'}${eOggi ? ' is-today' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
+      { class: `day ${g?.stato === 'chiuso' ? 'closed' : 'empty'}${eOggi ? ' is-today' : ''}`, 'data-data': data, tabindex: '-1', 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
       intestazione,
       el('p', { class: 'reason' }, testo),
       // Giorno chiuso dentro il ciclo del menu: i piatti previsti, chiusi, per leggere le variazioni che li spostano.
@@ -604,10 +650,11 @@ function cardGiorno(data, precedente) {
   const cambioStagione = precedente?.stato === 'menu' && precedente.stagione !== g.stagione;
   return el(
     'article',
-    { class: `day${eOggi ? ' is-today' : ''}${g.variazioni.length ? ' varied' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
+    { class: `day${eOggi ? ' is-today' : ''}${g.variazioni.length ? ' varied' : ''}`, 'data-data': data, tabindex: '-1', 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
     intestazione,
     cambioStagione ? el('p', { class: 'season' }, testoCambioStagione(g)) : null,
     ...riquadriVariazione(g),
+    statoMenu(g),
     elencoPiatti(g, null, false),
     el('p', { class: 'ciclo' }, testoCiclo(g))
   );

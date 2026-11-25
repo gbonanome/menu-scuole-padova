@@ -110,6 +110,50 @@ export function spostaFeriale(d, n) {
   return s;
 }
 
+const MESI_IT = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+const GIORNI_IT = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
+// "mercoledì 25/11/2026", "12/11", "20.11.26", "9 dicembre", "5 dicembre 2026", "lunedì 7" (giorno della settimana + numero)
+const RE_DATA = new RegExp(
+  `(?:\\b(${GIORNI_IT.join('|')})\\s+)?(?:\\b(\\d{1,2})[/.](\\d{1,2})(?:[/.](\\d{4}|\\d{2}))?(?![\\d/.]\\d)|\\b(\\d{1,2})\\s+(${MESI_IT.join('|')})(?:\\s+(\\d{4}))?|\\b(\\d{1,2})(?![\\d/.°]))`,
+  'giu'
+);
+
+const dataValida = (a, m, g) => {
+  const d = new Date(a, m - 1, g);
+  return d.getFullYear() === a && d.getMonth() === m - 1 && d.getDate() === g ? iso(d) : null;
+};
+
+/**
+ * Le date citate nel testo di un avviso, per farne dei link: [{ inizio, fine, data }] con le posizioni nel testo.
+ * Senza anno vale l'anno della pubblicazione (l'anno dopo se la data verrebbe più di 60 giorni prima).
+ * "lunedì 7" senza mese: il lunedì 7 più vicino alla pubblicazione. Un numero da solo non è una data.
+ */
+export function dateNelTesto(testo, pubblicata) {
+  const anno = Number(pubblicata.slice(0, 4));
+  const out = [];
+  for (const m of testo.matchAll(RE_DATA)) {
+    const [, nomeGiorno, g1, m1, a1, g2, mese2, a2, g3] = m;
+    let data = null;
+    if (g1 || g2) {
+      const g = Number(g1 ?? g2);
+      const mese = g1 ? Number(m1) : MESI_IT.indexOf(mese2.toLowerCase()) + 1;
+      const a = a1 ? (a1.length === 2 ? 2000 + Number(a1) : Number(a1)) : a2 ? Number(a2) : null;
+      data = a ? dataValida(a, mese, g) : dataValida(anno, mese, g);
+      if (data && !a && data < piuGiorni(pubblicata, -60)) data = dataValida(anno + 1, mese, g);
+    } else if (g3 && nomeGiorno) {
+      const dow = GIORNI_IT.indexOf(nomeGiorno.toLowerCase());
+      const [ap, mp] = pubblicata.split('-').map(Number);
+      const candidati = [-1, 0, 1, 2, 3]
+        .map((n) => dataValida(new Date(ap, mp - 1 + n, 1).getFullYear(), new Date(ap, mp - 1 + n, 1).getMonth() + 1, Number(g3)))
+        .filter((d) => d && daIso(d).getDay() === dow);
+      const distanza = (d) => Math.abs(daIso(d) - daIso(pubblicata));
+      data = candidati.sort((a, b) => distanza(a) - distanza(b))[0] ?? null;
+    }
+    if (data) out.push({ inizio: m.index, fine: m.index + m[0].length, data });
+  }
+  return out;
+}
+
 // ---------- DOM ----------
 function el(tag, attrs = {}, ...figli) {
   const e = document.createElement(tag);

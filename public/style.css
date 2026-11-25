@@ -247,6 +247,18 @@ button { cursor: pointer; }
 .vbox details { font-size: 0.85rem; }
 .vbox summary { cursor: pointer; font-weight: 700; color: var(--b-muted); padding: 2px 0; }
 .vbox .vtesto { white-space: pre-line; margin: 4px 0 0; }
+/* Date citate nell'avviso: portano al loro giorno */
+.vbox .vdata { font: inherit; color: inherit; background: none; border: 0; padding: 0; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; cursor: pointer; }
+.vbox .vdata:hover { color: var(--b-alert); }
+/* Sopra i piatti, quando cambia tutto il menu: "Menu variato" pieno come il bollino "variato", "Menu originale" solo bordato. */
+.stato-menu { width: fit-content; margin: 2px 0 6px; padding: 2px 8px; border-radius: 999px; font: 800 0.68rem var(--f-body); letter-spacing: 0.05em; text-transform: uppercase; }
+.stato-menu.variato { color: var(--b-surface); background: var(--b-alert); }
+.stato-menu.originale { color: var(--b-muted); box-shadow: inset 0 0 0 1.5px var(--b-muted); }
+.today .stato-menu { margin: 0 0 8px; align-self: start; }
+/* Giorno raggiunto da una data dell'avviso: un bordo che si spegne */
+.day[tabindex]:focus:not(:focus-visible) { outline: none; }
+.day.raggiunto { animation: raggiunto 1.8s ease-out; }
+@keyframes raggiunto { from { outline: 3px solid var(--b-alert); outline-offset: 2px; } to { outline: 3px solid transparent; outline-offset: 2px; } }
 
 /* ---- calendario ---- */
 .cal { margin: 22px 12px 0; display: grid; gap: 6px; }
