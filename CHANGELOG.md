@@ -10,6 +10,11 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 
 ## [Non ancora rilasciato]
 
+## [2.1.0] - 2026-11-25
+
+### Modificato
+- Il testo del riquadro per le variazioni incerte è più breve: "Il menu forse è diverso: leggi l’avviso.", in tutte le lingue. Il testo precedente diceva che il menu originale era "sotto", ma non sempre è così, e occupava troppo spazio.
+
 ## [2.0.0] - 2026-11-25
 
 ### Aggiunto
@@ -121,7 +126,8 @@ Prima versione pubblica.
 - Workflow GitHub: PR da rivedere per i nuovi menu stagionali, issue per errori e variazioni incerte, pubblicazione su GitHub Pages.
 - Test su fixture reali, snapshot dei feed e rilettura con un parser indipendente.
 
-[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v2.0.0...HEAD
+[Non ancora rilasciato]: https://github.com/gbonanome/menu-scuole-padova/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.3.0...v2.0.0
 [1.3.0]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/gbonanome/menu-scuole-padova/compare/v1.2.1...v1.2.2
