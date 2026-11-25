@@ -20,6 +20,9 @@ export function validaMenu(menu, cal) {
   if (!FEED.includes(menu.feed)) errori.push(`Feed non riconosciuto dal titolo: "${menu.titolo}"`);
   if (!menu.stagione) errori.push(`Stagione non riconosciuta dal titolo: "${menu.titolo}"`);
 
+  // Date del PDF corrette dal parser (refusi nell'anno): da confrontare con il PDF.
+  avvisi.push(...(menu.correzioni ?? []));
+
   // 1. Griglia completa: ogni settimana ha 5 giorni e nessuna portata vuota.
   const n = numeroSettimane(menu);
   if (n !== 4) avvisi.push(`Il ciclo ha ${n} settimane (attese 4)`);

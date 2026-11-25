@@ -11,6 +11,11 @@ Gli aggiornamenti automatici dei menu e delle variazioni sono dati, non versioni
 ## [Non ancora rilasciato]
 
 ### Corretto
+- I menu invernali dei veicolati (nido, infanzia, primaria e secondaria) non venivano letti: i PDF sono usciti con la pagina ruotata di 90° e l'aggiornamento si fermava con "Trovati 0 giorni in intestazione". Ora il parser raddrizza le pagine ruotate, e riconosce le note con il numero senza punto e i rimandi scritti "(1)".
+- Il rimando a una nota a metà del nome di un piatto, per esempio "Polpettone/Polpette di pollo e tacchino¹ in umido", restava visibile nella pagina e il piatto della nota per quella data non veniva applicato. Ora il rimando va in fondo al piatto e la nota vale.
+- Le note che abbinano più date a più piatti, come "03.02.27 + 05.02.27: crema al cavolfiore + riso ai piselli", danno a ogni data il suo piatto.
+- Una data con l'anno sbagliato nel PDF, come "Dal 01.02.27 al 05.02.26", viene letta con l'anno giusto se così rientra nel periodo del menu, e la correzione compare tra gli avvisi della Pull Request del menu. Prima quei giorni sarebbero rimasti senza menu.
+- Una nota che indica quale di due menu separati da "oppure" viene servito (per esempio "Menù pizza: 16.02.27") non sostituisce più i piatti con il testo della nota: restano visibili tutti e due i menu.
 - Le variazioni che cambiano un piatto in un altro giorno indicato solo col nome, per esempio "(il frullato di martedì verrà sostituito da frutta fresca)" nell'avviso dello sciopero del 20/11, ora vengono applicate a quel giorno e solo all'ordine di scuola che le nomina. Prima la frase si perdeva: il 17/11 le primarie e il 19/11 le infanzie veicolate mostravano ancora il frullato. Il menu sostitutivo completo di uno sciopero vale solo per il suo giorno.
 
 ## [1.3.0] - 2026-11-11

@@ -46,8 +46,11 @@ export function righeInPiatti(linee) {
     const prec = piatti.at(-1);
     const continuazione =
       prec && prec !== 'oppure' && (/^[a-zà-ÿ(]/.test(t) || CONNETTIVI_FINALI.test(prec.replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+$/, '')));
-    if (continuazione) piatti[piatti.length - 1] = `${prec} ${t}`.replace(/\s+/g, ' ');
-    else piatti.push(t);
+    if (continuazione) {
+      // il rimando alla nota resta in fondo al piatto anche se nel PDF sta a metà ("porri)¹ con risoni")
+      const [, corpo, apici] = /^(.*?)([⁰¹²³⁴⁵⁶⁷⁸⁹]*)$/su.exec(prec);
+      piatti[piatti.length - 1] = `${corpo} ${t}`.replace(/\s+/g, ' ') + apici;
+    } else piatti.push(t);
   }
   return piatti.map((p) => p.replace(/\s+([,.;:)])/g, '$1').replace(/\(\s+/g, '('));
 }
@@ -85,6 +88,12 @@ export function eccezioniDaNota(testo) {
     const seg = segRaw.trim().replace(/[.;]$/, '');
     const date = [...seg.matchAll(/§(\d{4}-\d{2}-\d{2})§/g)].map((m) => m[1]);
     if (!date.length) continue;
+    // "03.02.27 + 05.02.27: crema al cavolfiore + riso ai piselli": a ogni data il suo piatto, nell'ordine
+    const coppie = /^(?:§[^§]*§\s*\+\s*)+§[^§]*§\s*:\s*(.+)$/u.exec(seg)?.[1].split(/\s+\+\s+/);
+    if (coppie?.length === date.length) {
+      date.forEach((data, k) => out.push({ data, piatto: coppie[k].charAt(0).toUpperCase() + coppie[k].slice(1) }));
+      continue;
+    }
     let piatto;
     if (/^§/.test(seg)) piatto = seg.replace(/^(?:§[^§]*§\s*(?:e|,|-|–)?\s*)+:?\s*/u, '');
     else piatto = seg.split('§')[0];
@@ -146,7 +155,8 @@ export async function parseMenuPdf(buffer, meta = {}) {
   const blocchiVigore = [];
   let notaCorrente = null;
   for (const r of pulite.slice(idxVigore)) {
-    const n = /^(\d+)\.\s*(.*)$/.exec(r.text);
+    // "1. testo" oppure, in alcuni PDF, il numero in una casella a parte senza punto: "1 testo"
+    const n = /^(\d+)\.\s*(.*)$/.exec(r.text) ?? (/^\d$/.test(r.items[0].str) && r.items.length > 1 ? /^(\d)\s+(.*)$/.exec(r.text) : null);
     if (n) {
       notaCorrente = n[1];
       note[notaCorrente] = n[2];
@@ -185,6 +195,23 @@ export async function parseMenuPdf(buffer, meta = {}) {
     taglio = tagliPerLacune(tab, etichette, sinistra);
   }
 
+  // Refusi nell'anno di una data ("05.02.26" in un menu che va da novembre 2026 a marzo 2027):
+  // se la data cade fuori dal periodo di validità ma con l'anno prima o dopo ci rientra, vale quella.
+  const inizio = validita.map((v) => v.dal).sort()[0];
+  const termine = validita.map((v) => v.al).sort().at(-1);
+  const correzioni = [];
+  const annoGiusto = (data, dove) => {
+    if (data >= inizio && data <= termine) return data;
+    for (const delta of [-1, 1]) {
+      const prova = `${Number(data.slice(0, 4)) + delta}${data.slice(4)}`;
+      if (prova >= inizio && prova <= termine) {
+        correzioni.push(`${dove}: nel PDF c'è ${data}, fuori dal periodo del menu; letta come ${prova}`);
+        return prova;
+      }
+    }
+    return data;
+  };
+
   const settimane = {};
   const intervalli = [];
   etichette.forEach((et, k) => {
@@ -193,19 +220,20 @@ export async function parseMenuPdf(buffer, meta = {}) {
     const dentro = tab.filter((i) => i.y < alto && i.y >= basso && i !== et);
     // date nella colonna di sinistra
     const testoDate = righe(dentro.filter((i) => i.x + i.w / 2 < sinistra)).map((r) => r.text).join(' ');
-    const date = tutteLeDate(testoDate);
+    const date = tutteLeDate(testoDate).map((d) => annoGiusto(d, `Settimana ${et.str}`));
     for (let d = 0; d + 1 < date.length; d += 2) intervalli.push({ settimana: Number(et.str), dal: date[d], al: date[d + 1] });
     if (date.length % 2) throw new ParseError(`Settimana ${et.str}: numero dispari di date (${testoDate})`);
     // celle
     const giorni = {};
     for (const col of colonne) {
       const cella = dentro.filter((i) => i.x + i.w / 2 >= sinistra && assegnaColonna(i.x + i.w / 2, colonne) === col.giorno);
-      const marcatori = cella.filter((i) => /^\d$/.test(i.str) && i.h < 6);
+      // rimandi alle note: cifra piccola in apice, anche tra parentesi ("(1)")
+      const marcatori = cella.filter((i) => /^(?:\d|\(\d\))$/.test(i.str) && i.h < 6);
       const testo = cella.filter((i) => !marcatori.includes(i));
       const linee = righe(testo);
       for (const m of marcatori) {
         const target = linee.filter((l) => l.y <= m.y + 1 && m.y - l.y < 9).sort((a, b) => b.y - a.y)[0];
-        if (target) target.text += apice(m.str);
+        if (target) target.text += apice(m.str.replace(/[()]/g, ''));
       }
       giorni[col.giorno] = righeInPiatti(linee.map((l) => l.text));
     }
@@ -221,9 +249,21 @@ export async function parseMenuPdf(buffer, meta = {}) {
 
   const annoRif = validita[0].dal;
   const { feed, stagione } = classifica(titolo);
-  const eccezioni = Object.entries(note).flatMap(([nota, testo]) =>
-    eccezioniDaNota(testo).map((e) => ({ nota: Number(nota), ...e }))
-  );
+  // Una nota che segna i piatti di tutti e due i menu separati da "oppure" (es. "Menù pizza: 16.02.27")
+  // dice quale dei due menu viene servito, non il nome di un piatto: niente sostituzioni, restano entrambi.
+  const noteDiScelta = new Set();
+  for (const sett of Object.values(settimane)) {
+    for (const lista of Object.values(sett)) {
+      const taglio = lista.indexOf('oppure');
+      if (taglio < 0) continue;
+      const apiciIn = (parte) => new Set(parte.flatMap((p) => [...(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+$/.exec(p)?.[0] ?? '')].map((c) => SUPERSCRIPT.indexOf(c))));
+      const prima = apiciIn(lista.slice(0, taglio));
+      for (const n of apiciIn(lista.slice(taglio + 1))) if (prima.has(n)) noteDiScelta.add(n);
+    }
+  }
+  const eccezioni = Object.entries(note)
+    .filter(([nota]) => !noteDiScelta.has(Number(nota)))
+    .flatMap(([nota, testo]) => eccezioniDaNota(testo).map((e) => ({ nota: Number(nota), ...e, data: annoGiusto(e.data, `Nota ${nota}`) })));
 
   return {
     feed,
@@ -237,6 +277,7 @@ export async function parseMenuPdf(buffer, meta = {}) {
     note,
     eccezioni,
     avvertenze,
+    ...(correzioni.length ? { correzioni } : {}),
     fonte: { ...meta }
   };
 }
