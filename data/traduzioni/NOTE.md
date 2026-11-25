@@ -17,6 +17,16 @@ Le traduzioni in `piatti-<lingua>.json` non sono state riviste da madrelingua. Q
 - **Verdura cotta e cruda oppure per entrambi** (dal PDF del nido integrato): il senso non è chiaro, reso come "verdura cotta e cruda, oppure entrambe".
 - **Yogurt da bere in vasetto**: contraddittorio, tradotto alla lettera.
 - **Prosciutto cotto/crudo**: in bengalese, albanese, arabo e urdu c'è scritto anche "carne di maiale"; in inglese, rumeno e cinese basta "ham"/"火腿".
+- **Speck** ("Farfalle panna e speck"): reso come "speck (prosciutto affumicato)"; in bengalese, albanese e urdu c'è scritto anche "carne di maiale", in arabo "لحم خنزير مدخن".
+- **Fesa di tacchino** nel menu invernale è l'affettato (alterna con prosciutto cotto e mortadella): resa come "petto di tacchino (affettato)".
+- **In bianco** ("Straccetti di manzo in bianco"): reso come "semplici (senza salsa di pomodoro)".
+- **Alla cacciatora**: lasciato "alla cacciatora" / "stile cacciatora" senza elencare gli ingredienti; il PDF dice solo "base pomodoro".
+- **Dorati** ("Bocconcini di tacchino dorati"): reso come "rosolati/dorati"; non sappiamo se sono impanati.
+- **Polpette/sformato di halibut** e **di pesce**: resi come "polpette/sformato al forno" dello stesso pesce.
+- **Verze**: rese come cavolo verza (savoy cabbage, varză creață, 皱叶甘蓝, lakër kaçurrele, ملفوف مجعد).
+- **Cappuccio viola**: reso come cavolo rosso (red cabbage), il nome più comune nelle altre lingue; in bengalese e urdu "viola".
+- **Provolone dolce**: "dolce" reso come "dal gusto delicato", non zuccherato.
+- **Macedonia monofrutto**: resa alla lettera, "macedonia di un solo frutto".
 - **Trifolate**, **al funghetto**: resi come "saltate"/"in padella", senza aggiungere aglio e prezzemolo.
 
 ## Inglese (en)
