@@ -3,7 +3,7 @@
 // pagina non viene pubblicata, invece di mostrare "null", "{0}", "NaN" o un giorno sbagliato.
 //
 // Campi facoltativi per scelta (la pagina li gestisce caso per caso): controllo in feeds.json, ic e avviso delle scuole, copertura di
-// un feed ancora senza menu, originali/menuSostituito/daNota/pdf dei giorni, titolo/ambito/confidenza delle variazioni.
+// un feed ancora senza menu, originali/menuSostituito/daNota/pdf dei giorni, piatti dei giorni chiusi, titolo/ambito/confidenza delle variazioni.
 
 export const STATI = ['menu', 'chiuso', 'non-pubblicato'];
 
@@ -69,6 +69,9 @@ export function verificaContratto({ meta, feeds, scuole, giorni }) {
         continue;
       }
       if (g.stato === 'chiuso' && !eTesto(g.motivo)) no(dove, 'giorno chiuso senza motivo', g.motivo);
+      if (g.stato === 'chiuso' && 'piatti' in g && !(Array.isArray(g.piatti) && g.piatti.length > 0 && g.piatti.every(eTesto))) {
+        no(dove, 'piatti di un giorno chiuso, se ci sono, devono essere un elenco non vuoto di testi', g.piatti);
+      }
       if (g.stato !== 'menu') continue;
       if (!eTesto(g.stagione)) no(dove, 'stagione mancante', g.stagione);
       if (!eIntero(g.settimana) || !eIntero(g.settimane) || g.settimana > g.settimane) no(dove, 'settimana e settimane devono essere interi con 1 ≤ settimana ≤ settimane', [g.settimana, g.settimane]);

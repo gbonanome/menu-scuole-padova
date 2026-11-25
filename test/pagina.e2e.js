@@ -226,3 +226,24 @@ test('menu non caricato, poi Riprova con la rete tornata: compare il menu', asyn
     await pagina.close();
   }
 });
+
+test('ponte dentro il ciclo del menu: scuola chiusa, menu previsto in un riquadro chiuso', async () => {
+  const feed = 'nido-cucina-interna';
+  const pagina = await browser.newPage({ viewport: { width: 1100, height: 900 } });
+  const errori = [];
+  pagina.on('pageerror', (e) => errori.push(e.message));
+  try {
+    await pagina.goto(`${base}?scuola=${feed}&oggi=2026-12-07#${feed}`);
+    await pagina.waitForSelector('#giorni article');
+    const ponte = pagina.locator('#giorni article.closed').first();
+    assert.match(await ponte.innerText(), /Ponte dell.Immacolata/);
+    const riquadro = ponte.locator('details.menu-chiuso');
+    assert.equal(await riquadro.evaluate((d) => d.open), false, 'chiuso di default');
+    assert.match(await riquadro.locator('summary').innerText(), /Menu del giorno/);
+    assert.ok((await riquadro.locator('li').count()) > 0, 'piatti nel riquadro');
+    await nienteDiSospetto(pagina, `${feed} 2026-12-07`);
+    assert.deepEqual(errori, []);
+  } finally {
+    await pagina.close();
+  }
+});

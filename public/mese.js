@@ -235,21 +235,24 @@ export function disegnaMese(radice, o) {
     ? el('p', { class: 'mm-nota' }, t('mese.scoperto', giornoEMese(inizio)), ' ', el('a', { href: o.fonte }, t('mese.sito')))
     : null;
   radice.classList.add('mini-mese');
+  // replaceChildren scriverebbe "null" come testo: senza giorni scoperti la nota va tolta dall'elenco.
   radice.replaceChildren(
-    el(
-      'div',
-      { class: 'mm-testa' },
-      freccia('prec', prec, t('mese.prec')),
-      el('p', { class: 'mm-titolo', id: idTitolo, 'aria-live': 'polite' }, maiuscola(meseEAnno(`${mese}-01`))),
-      freccia('succ', succ, t('mese.succ'))
-    ),
-    el('table', { class: 'mm-griglia', 'aria-labelledby': idTitolo }, el('thead', {}, el('tr', {}, intestazioni)), corpo),
-    nota,
-    el(
-      'ul',
-      { class: 'mm-legenda', 'aria-label': t('mese.legenda') },
-      voci.map((s) => el('li', {}, segno(`mm-${s}`), testoStato(s)))
-    )
+    ...[
+      el(
+        'div',
+        { class: 'mm-testa' },
+        freccia('prec', prec, t('mese.prec')),
+        el('p', { class: 'mm-titolo', id: idTitolo, 'aria-live': 'polite' }, maiuscola(meseEAnno(`${mese}-01`))),
+        freccia('succ', succ, t('mese.succ'))
+      ),
+      el('table', { class: 'mm-griglia', 'aria-labelledby': idTitolo }, el('thead', {}, el('tr', {}, intestazioni)), corpo),
+      nota,
+      el(
+        'ul',
+        { class: 'mm-legenda', 'aria-label': t('mese.legenda') },
+        voci.map((s) => el('li', {}, segno(`mm-${s}`), testoStato(s)))
+      )
+    ].filter(Boolean)
   );
 
   if (o.fuoco === 'prec' || o.fuoco === 'succ') {

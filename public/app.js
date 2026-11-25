@@ -594,7 +594,11 @@ function cardGiorno(data, precedente) {
       'article',
       { class: `day ${g?.stato === 'chiuso' ? 'closed' : 'empty'}${eOggi ? ' is-today' : ''}`, 'aria-label': etichetta, 'aria-current': eOggi ? 'date' : null },
       intestazione,
-      el('p', { class: 'reason' }, testo)
+      el('p', { class: 'reason' }, testo),
+      // Giorno chiuso dentro il ciclo del menu: i piatti previsti, chiusi, per leggere le variazioni che li spostano.
+      g?.piatti?.length
+        ? el('details', { class: 'menu-chiuso' }, el('summary', {}, t('giorno.menuprevisto')), elencoPiatti({ ...g, variazioni: [] }, null, false))
+        : null
     );
   }
   const cambioStagione = precedente?.stato === 'menu' && precedente.stagione !== g.stagione;

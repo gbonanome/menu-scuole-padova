@@ -1,5 +1,5 @@
 // Modello comune a feed .ics e pagina: per ogni feed, l'elenco dei giorni con menu, chiusure e variazioni.
-import { GIORNI_LAVORO, giornoSettimana, intervallo } from './lib/dates.js';
+import { GIORNI_LAVORO, addDays, giornoSettimana, intervallo, lunediDi } from './lib/dates.js';
 import { fineAnno, statoGiorno } from './lib/calendario.js';
 import { giorniDelMenu, numeroSettimane, piattiDelGiorno } from './lib/expand.js';
 import { piattoPresente, risolviVariazioni } from './lib/applica.js';
@@ -64,11 +64,17 @@ export function costruisciModello({ menus, variazioni, cal }) {
     for (const data of intervallo(date[0], fine > date.at(-1) ? fine : date.at(-1))) {
       if (!GIORNI_LAVORO.includes(giornoSettimana(data))) continue;
       const st = statoGiorno(cal, feed, data);
+      const gm = giorniMenu.get(data);
       if (!st.scuola) {
-        if (st.motivo !== 'Anno scolastico concluso') giorni.push({ data, stato: 'chiuso', motivo: st.motivo });
+        if (st.motivo === 'Anno scolastico concluso') continue;
+        // Un ponte o una festa dentro il ciclo del menu: il PDF ha comunque i piatti di quel giorno, e le
+        // variazioni li richiamano ("mercoledì 9 il menu di lunedì 7"). La pagina li mostra in un riquadro chiuso.
+        // Solo se nella stessa settimana la scuola è aperta almeno un giorno: non nelle vacanze lunghe.
+        const settimanaAperta = GIORNI_LAVORO.some((_, i) => statoGiorno(cal, feed, addDays(lunediDi(data), i)).scuola);
+        const piatti = gm && settimanaAperta ? piattiDelGiorno(gm.menu, data, gm.settimana).piatti : [];
+        giorni.push({ data, stato: 'chiuso', motivo: st.motivo, ...(piatti.length ? { piatti } : {}) });
         continue;
       }
-      const gm = giorniMenu.get(data);
       if (!gm) {
         giorni.push({ data, stato: 'non-pubblicato' });
         continue;

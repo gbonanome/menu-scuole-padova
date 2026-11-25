@@ -217,6 +217,10 @@ button { cursor: pointer; }
 }
 .day.closed, .day.empty { background: var(--b-closed); border: 1.5px dashed var(--b-tray); }
 .day .reason { margin: 0; font-weight: 700; color: var(--b-muted); }
+/* Menu previsto in un giorno chiuso (ponte, festa): chiuso di default, come il testo dell'avviso nelle variazioni. */
+.day .menu-chiuso { margin-top: 8px; font-size: 0.85rem; color: var(--b-muted); }
+.day .menu-chiuso summary { cursor: pointer; font-weight: 700; padding: 2px 0; }
+.day .menu-chiuso ul { margin-top: 4px; }
 .day .ciclo { margin: 6px 0 0; font-size: 0.72rem; color: var(--b-muted); }
 /* Il menu non è ancora uscito: un riquadro solo per i giorni di fila, senza numero del giorno.
    È un avviso, non un giorno vuoto: niente tratteggio, una barra a lato. */
